@@ -1,0 +1,18 @@
+{
+ "status": "approved by owner 2026-10-28",
+ "previews": {
+  "assets/ui/previews/snack-man.webp": "incoming/RW/preview2-snack-man-v1.png",
+  "assets/ui/previews/class-of-2084.webp": "incoming/RW/preview2-class-of-2084-v1.png"
+ },
+ "doodles": "cut from the approved school-theme sheets (incoming/RW)",
+ "sha256": {
+  "assets/ui/doodles/class-of-2084-a.webp": "02c85fb7a719a60218e389f79165d25130ef6e4588fb5ba4784fb4adc666e031",
+  "assets/ui/doodles/class-of-2084-b.webp": "d779f7dfa8a564b8d3cd677922af651e832b6e317338001d85fabe56282110a5",
+  "assets/ui/doodles/class-of-2084-c.webp": "afc52760edda9da97d05e01db1ae89a6e341dd8e4e1358bce23c5fc0184d9f68",
+  "assets/ui/doodles/snack-man-a.webp": "a05e59cde178921e1bf156d2dc27e619ef9962a5db1d5d42d2967ddd894abf46",
+  "assets/ui/doodles/snack-man-b.webp": "7dfd26b2d00ffaec7d47027a14664c01df3daa3bfdd5fe7336a83365222d8ae4",
+  "assets/ui/doodles/snack-man-c.webp": "ca4e37445017e6ba8875ea74818f8c4c5f26c46ea8799d927c972978ff7d9e96",
+  "assets/ui/previews/class-of-2084.webp": "958ab2c56402fff4cc4deef3e0b6091a02cb333d6401ae7f265d3b3b1ed5fb05",
+  "assets/ui/previews/snack-man.webp": "71f2b0b88d8b92066d4214036887f42ad603b7a8237bd49c1863ca3b18fea4dc"
+ }
+}

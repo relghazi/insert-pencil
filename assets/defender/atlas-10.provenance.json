@@ -1,0 +1,20 @@
+{
+ "status": "approved by owner 2026-10-28",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; cut with tools/cut-sprite-sheet.py",
+ "candidates": {
+  "incoming/DX/def-school-hd-v1.png": "c72cd78da70c03f3beffbcf7546113581b25494811fd9064a8f579f99dbceb60",
+  "incoming/DX/def-tower-hd-v1.png": "d74fb8f2bf93250ae8b91fe25c7947077c394168edc2864c8bacf3582eb5804c",
+  "incoming/DX/def-radar-icons-v1.png": "c881ac16428c42016943f7315d5421604b19b111a0eb55f8c5e748b71dcdb22b"
+ },
+ "atlas": {
+  "assets/defender/atlas-10.webp": "706577e94ec5c2232ce91400470a15407a47cdcfa822e69f5a4aab7256762831"
+ },
+ "frames": [
+  "school",
+  "water-tower",
+  "radar-ship",
+  "radar-human",
+  "radar-human-up",
+  "radar-human-fall"
+ ]
+}

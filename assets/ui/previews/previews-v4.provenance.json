@@ -1,0 +1,31 @@
+{
+ "status": "approved by owner 2026-10-31 (\"approve everything\" for this pass)",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (edits of each game's demo screenshot, incoming/PV4/shot-<id>.png, with the old card and the game's sprite sheet attached); tools/cut-preview.py",
+ "note": "title page previews redrawn from the games at a busy moment (owner 2026-10-31)",
+ "candidates": {
+  "incoming/PV4/preview4-scribble-defender-v2.png": "42d94812a5fca9761c6d1fc73f2ec507180f85f988f3d18c574edd749c7a8df3",
+  "incoming/PV4/preview4-erasteroids-v1.png": "682778db14241177687f60dae84c1b716962eaa5f97791125b196961e0ab0273",
+  "incoming/PV4/preview4-gym-class-pong-v1.png": "e8228beaddd4f5b684f14c09d40036e5a5535fabbd0c2d231efe50799d12d29d",
+  "incoming/PV4/preview4-detention-breakout-v1.png": "81c1dffe81a8b9809bfd1db5b9d62924c8adfe25f2da97434d3a2772b0251a6c",
+  "incoming/PV4/preview4-space-substitutes-v1.png": "f9e0f12a393541bd45726e9c14035b5bb8855f448547895d3cf8dc190c9886ad",
+  "incoming/PV4/preview4-lunch-lander-v2.png": "a90db740c99fd90f441fbf1700396d1740bd857b7061549667625545718adbdd",
+  "incoming/PV4/preview4-spitball-command-v1.png": "403f5ec3cfc4de8e06d2199295c67fed4703c6384fd8e8fec661643b3d37cd2f",
+  "incoming/PV4/preview4-snack-man-v1.png": "d328df48d786a118f8c72c90c1c2feaadc27bdcfee39720146386b33fa5dd051",
+  "incoming/PV4/preview4-recess-zone-v2.png": "a8726a4ebb58a3ef5a2860dffb435e702f5bdfe23ed020a98b12087e8e053213",
+  "incoming/PV4/preview4-galgebra-v3.png": "9100074b4046d6f80d876e5e4840ea20d734801c38a691ed2459612950f90d98",
+  "incoming/PV4/preview4-centigrade-v1.png": "ef15178e04b4fe787a74b9e4921af3fd30b2b57a210606419ba69a3a59376091",
+  "incoming/PV4/preview4-froggology-v1.png": "4306695367c1facf7b8e211bdbf08d3808fbfaf21a0fb2568c42b97944f32bc3",
+  "incoming/PV4/preview4-quiz-v1.png": "c0cd77383d886a7502a983672eebdca3ca4ea46b8f4147673bcd3e01a01a7512",
+  "incoming/PV4/preview4-testpest-v1.png": "fa1f7b81c1bce10117d4043950fd4893826420f50f0fa498d9fb6df95272b333",
+  "incoming/PV4/preview4-home-ec-scramble-v1.png": "7016d34e88126882ba199f9830cba5d9baaffe0d07a0ad300a491c0a48d42e90",
+  "incoming/PV4/preview4-dunce-kong-v1.png": "cfacf24bc3ce3940f81d021f2d4bf7ab5cba08eed1eac8afe5b138a1dc07ca1a",
+  "incoming/PV4/preview4-dig-doug-v1.png": "b26699233f147e9807d347999642b82b9d3e8f0c30dbc151ce782ded43a701e3",
+  "incoming/PV4/preview4-q-nerd-v1.png": "c37886022b51b05e5ae1c2fdccf7d334db80e02901cc59109f89489c2973fa91",
+  "incoming/PV4/preview4-jock-joust-v1.png": "f141b1e5b38d2cfc3e085fa49907c93f69d4c2e81cbe3e89e04a9c8b8797ab7b",
+  "incoming/PV4/preview4-class-of-2084-fix-v1.png": "7d3e9d259f41df2b0fd3f5abfc7e8caf2002f234dc1f654f3e61812a78a80e45",
+  "incoming/PV4/preview4-mystery-meat-time-v1.png": "18ce318e38bf463bd29c626c41281f0ffffdb73042d42a3da50bc14a8d8a4ca4",
+  "incoming/PV4/preview4-hall-patrol-v1.png": "586242eacfddadca5d0cc63a4c3f172cecc517af2cbfcfcb4970fe3e9809468c",
+  "incoming/PV4/preview4-term-paperboy-v1.png": "393373abf9aef3fc7f8df12033b72245827db9adaf6ff07ae14fe43061ae07c3",
+  "incoming/PV4/preview4-locker-gauntlet-v1.png": "f6ac661b1a150588a17931075f2997a8e535fad41d0eaf3400a5ede015ecc540"
+ }
+}

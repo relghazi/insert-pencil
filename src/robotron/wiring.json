@@ -1,0 +1,98 @@
+{
+ "id": "class-of-2084",
+ "dir": "robotron",
+ "core": "RobotronCore",
+ "engine": "RobotronEngine",
+ "tests": "RobotronTests",
+ "adapter": "No2Robotron",
+ "cheat": {
+  "xbox": [
+   [
+    "stick",
+    "move"
+   ],
+   [
+    "D-pad",
+    "move"
+   ],
+   [
+    "R",
+    "fire"
+   ],
+   [
+    "Menu",
+    "pause"
+   ],
+   [
+    "LB",
+    "previous tab"
+   ],
+   [
+    "RB",
+    "next tab"
+   ],
+   [
+    "B",
+    "back"
+   ]
+  ],
+  "keyboard": [
+   [
+    "W",
+    "move up"
+   ],
+   [
+    "A",
+    "move left"
+   ],
+   [
+    "S",
+    "move down"
+   ],
+   [
+    "D",
+    "move right"
+   ],
+   [
+    "Up+Down",
+    "fire up and down"
+   ],
+   [
+    "Left+Right",
+    "fire left and right"
+   ],
+   [
+    "P",
+    "pause"
+   ],
+   [
+    "Esc",
+    "close notebook"
+   ]
+  ],
+  "notes": [
+   "Rescues 1,000 up to 5,000 each. Whistle bots 100, brains 500, balls and jacks 1,000.",
+   "Camera bots cannot be stopped, only pushed back. Extra life every 25,000."
+  ]
+ },
+ "victories": [
+  [
+   "rb-family",
+   "the whole family",
+   "earn the 5,000 rescue bonus in one wave."
+  ],
+  [
+   "rb-all",
+   "everyone in the photo",
+   "clear a wave with every classmate saved."
+  ],
+  [
+   "rb-brain",
+   "mind over matter",
+   "clear a brain wave."
+  ]
+ ],
+ "victoryRule": "(ev,e,n,win)=>{if(ev.type==='rescue'&&ev.points>=5000)win('rb-family');if(ev.type==='cleared'&&ev.saved>0&&ev.lost===0&&!e.humans.length)win('rb-all');if(ev.type==='cleared'&&ev.brain)win('rb-brain')}",
+ "readme": "Robotron: Class of 2084: WASD moves, the arrow keys throw in eight directions (two at once for diagonals), P pauses. On a controller the left stick moves and the right stick throws.",
+ "claude": "- Robotron: Class of 2084 (owner 2026-10-26, locker order): authentic 1982 Robotron: 2084 rules and scoring (src/robotron, 20 rule checks), a class photo in the gym gone wrong: whistle robots, camera-headed Hulks and graduation Brains against the boy with paper balls, the classmates to rescue; same amendment list."
+}

@@ -1,0 +1,4072 @@
+{
+  "version": "0.4.5",
+  "assets": [
+    {
+      "id": "still-blank",
+      "file": "hub/still-blank.webp",
+      "width": 384,
+      "height": 423,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "multiply",
+      "group": "page-common",
+      "source": "lettering-master.png",
+      "brief": "Authored original ballpoint still-blank lettering/doodle; no font used for this display element.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-college",
+      "file": "papers/college.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:college",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled college ruled texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-quiz",
+      "file": "papers/quiz.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:quiz",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled crumpled maths quiz texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-wide",
+      "file": "papers/wide.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:wide",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled wide ruled texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-graph",
+      "file": "papers/graph.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:graph",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled graph paper texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-lab",
+      "file": "papers/lab.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:lab",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled biology lab paper texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-blank",
+      "file": "papers/blank.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "desk-hub",
+      "blend": "normal",
+      "group": "paper:blank",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled blank quiz sheet texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-recipe",
+      "file": "papers/recipe.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:recipe",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled recipe card stock texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-isometric",
+      "file": "papers/isometric.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:isometric",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled isometric dot grid texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "paper-menu",
+      "file": "papers/menu.webp",
+      "width": 1024,
+      "height": 768,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "paper:menu",
+      "source": "covers-master.png blank quiz-paper crop; original manufactured ruling",
+      "brief": "Non-tiled cafeteria menu texture; page content uses multiply ink.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "cheat-card",
+      "file": "hub/cheat-card.webp",
+      "width": 320,
+      "height": 200,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "notebook",
+      "blend": "normal",
+      "group": "page-common",
+      "source": "Scribble Defender v0.3.2 index-card material",
+      "brief": "Physical blank index card for per-notebook cheat sheets, aspect ratio preserved.",
+      "author": "No. 2 Arcade art production",
+      "license": "Original AI-generated artwork; project redistribution",
+      "placeholder": false
+    },
+    {
+      "id": "start-title",
+      "file": "ui/title.webp",
+      "width": 2560,
+      "height": 1429,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "incoming/UI3/ui-title-arrow-v1.png (owner approved 2026-10-27: arrow after INSERT PENCIL points at the pencil; edit of the v0.6.1 title, incoming/UI3/ui-title-v2-v2.png)",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q90",
+      "encodedSha256": "ded213d0ae66d2eda7ec6a3db1ff8a38077116d42db094c309d2bc0a840d375d",
+      "sourceSha256": "92e447d6bbe4e007a24fb4a56e64d35c684f39b23d01f30e72dbb39bba8230a7"
+    },
+    {
+      "id": "comic-page-1",
+      "file": "comic/page-1.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-01-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "3d5c5894b88146a30fe366d7c0a262a09ba293a8d73aa4e491538a013a9b1086"
+    },
+    {
+      "id": "comic-page-2",
+      "file": "comic/page-2.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-02-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "639cb5be229a1bbe05da8782aa4bc3beef9ac4d2d78f240a58966131d348d8ec"
+    },
+    {
+      "id": "comic-page-3",
+      "file": "comic/page-3.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-03-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "c490ea763115bffd25e7568ae2626d603ca51fd2d21adf70a65b8008e552eb75"
+    },
+    {
+      "id": "comic-page-4",
+      "file": "comic/page-4.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-04-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "e3a5fbe57d13ada01a403785ae47c74d7f5bad4a176dec15657f55ac4f142aa1"
+    },
+    {
+      "id": "comic-page-5",
+      "file": "comic/page-5.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-05-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "f546bac288e612aec276d779a089c2b7501d639ec59e8faa7fc61380c7a54790"
+    },
+    {
+      "id": "comic-page-6",
+      "file": "comic/page-6.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-06-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "c402ca954aa9761cb31c95b9d03eb90c78165ae67c4a4c124d818be56a84ea4f"
+    },
+    {
+      "id": "comic-page-7",
+      "file": "comic/page-7.webp",
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-07-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "16d87e404cfa53e78e61e1d170c77582257ff02bb32c2f86d76604be89ec422f"
+    },
+    {
+      "id": "comic-page-8",
+      "file": "comic/page-8.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-08-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "689b6ea3eafad2845384d458c718bec1d8317bb196f136fd41a1a863cff3b727"
+    },
+    {
+      "id": "comic-page-9",
+      "file": "comic/page-9.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-09-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "e989ddb3d5de8875254f802a9b58b11b7866f782bee7954c927a7b326e796547"
+    },
+    {
+      "id": "comic-page-10",
+      "file": "comic/page-10.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-10-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "ca1183f08dbfff35d28b7c4b17f9ad0e41660b4479aa0c1d5a14595c2e73c9d9"
+    },
+    {
+      "id": "comic-page-11",
+      "file": "comic/page-11.webp",
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-11-lettered.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "ddb36da2cd82a5a9795c5cd868198c290c5b318f8933f8a56e41d9c2faca4c91"
+    },
+    {
+      "id": "comic-letters-1-fr",
+      "file": "comic/fr/letters-1.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-01-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "9f2f7c6d3a8ee2d2a3dffc71cb5fda64e2a6d1bd6fe6b842f055ae5bfb8d81b2"
+    },
+    {
+      "id": "comic-page-1-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-1-base",
+        "comic-letters-1-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-2-fr",
+      "file": "comic/fr/letters-2.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-02-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "a853c4d37865a06cb4a22c695d1c9f19430d0e1a171aff65c1445698f0d7a3a4"
+    },
+    {
+      "id": "comic-page-2-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-2-base",
+        "comic-letters-2-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-3-fr",
+      "file": "comic/fr/letters-3.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-03-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "d30433bb7151c8e3f2f36265b70922ccf11a36127e880aa16e6a05e544835af7"
+    },
+    {
+      "id": "comic-page-3-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-3-base",
+        "comic-letters-3-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-4-fr",
+      "file": "comic/fr/letters-4.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-04-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "a3ace6420d39f2f1f054adf272facd599c64e43572f5343916fcc47842213f70"
+    },
+    {
+      "id": "comic-page-4-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-4-base",
+        "comic-letters-4-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-5-fr",
+      "file": "comic/fr/letters-5.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-05-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "91c2ac6cba0e53cf0fd5120cd55284c39a668e98213fafa5c0af991811c1d5ce"
+    },
+    {
+      "id": "comic-page-5-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-5-base",
+        "comic-letters-5-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-6-fr",
+      "file": "comic/fr/letters-6.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-06-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "e1a9119e02496115b739ce5f0dae6c346d523bdb7fa2837e0b90bb1d1dd75536"
+    },
+    {
+      "id": "comic-page-6-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-6-base",
+        "comic-letters-6-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-7-fr",
+      "file": "comic/fr/letters-7.webp",
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-07-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "28ce1393d271215db772b78a29ace60bcf2da51bb57cadb34ff29c4f43f9c544"
+    },
+    {
+      "id": "comic-page-7-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-7-base",
+        "comic-letters-7-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-8-fr",
+      "file": "comic/fr/letters-8.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-08-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "b744e75fad009a0cf5a64ad1968e5a4fb5194fbc8d05b63d6decc0dfe44b4eed"
+    },
+    {
+      "id": "comic-page-8-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-8-base",
+        "comic-letters-8-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-9-fr",
+      "file": "comic/fr/letters-9.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-09-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "d479e95262e6f03222cde8510adcec090494da4d5823ab4a6013e24605ddbd94"
+    },
+    {
+      "id": "comic-page-9-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-9-base",
+        "comic-letters-9-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-10-fr",
+      "file": "comic/fr/letters-10.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-10-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "93035b33737638e34efe6877c70365241a47445281f56df2127735333cbe62ce"
+    },
+    {
+      "id": "comic-page-10-fr",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-10-base",
+        "comic-letters-10-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-11-fr",
+      "file": "comic/fr/letters-11.webp",
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/fr/page-11-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "2a32e5298f6df2c5f11392a424e9f4fdb88b9d886ca502f84f80925dae6adc5f"
+    },
+    {
+      "id": "comic-page-11-fr",
+      "file": null,
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-11-base",
+        "comic-letters-11-fr"
+      ]
+    },
+    {
+      "id": "comic-letters-1-es",
+      "file": "comic/es/letters-1.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-01-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "c4209b0c3d7935fd3726b3180b599167b5bce8ee746b639945661775c0d34d1b"
+    },
+    {
+      "id": "comic-page-1-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-1-base",
+        "comic-letters-1-es"
+      ]
+    },
+    {
+      "id": "comic-letters-2-es",
+      "file": "comic/es/letters-2.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-02-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "fc44a2f977e80e5c7f1ea23f1499f5934cc497fb539ed62ed6c26230f6125355"
+    },
+    {
+      "id": "comic-page-2-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-2-base",
+        "comic-letters-2-es"
+      ]
+    },
+    {
+      "id": "comic-letters-3-es",
+      "file": "comic/es/letters-3.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-03-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "3eb6150fab9e79e7a587a323bc30d329107245a6a65878f5af4076e17445212f"
+    },
+    {
+      "id": "comic-page-3-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-3-base",
+        "comic-letters-3-es"
+      ]
+    },
+    {
+      "id": "comic-letters-4-es",
+      "file": "comic/es/letters-4.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-04-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "0dde63ab7d0e16104a217800756edc1228a199b531ed2cea1087477e5fdec93b"
+    },
+    {
+      "id": "comic-page-4-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-4-base",
+        "comic-letters-4-es"
+      ]
+    },
+    {
+      "id": "comic-letters-5-es",
+      "file": "comic/es/letters-5.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-05-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "016159f80a8352dbd9ea22573ff23d65fa8ec25c406ad60335d1a83d8caf13d4"
+    },
+    {
+      "id": "comic-page-5-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-5-base",
+        "comic-letters-5-es"
+      ]
+    },
+    {
+      "id": "comic-letters-6-es",
+      "file": "comic/es/letters-6.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-06-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "eb3f5b348627d1c723f3e6ae6c05f86d272feb2e1351a8cc9b105e8aa6fc6d7a"
+    },
+    {
+      "id": "comic-page-6-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-6-base",
+        "comic-letters-6-es"
+      ]
+    },
+    {
+      "id": "comic-letters-7-es",
+      "file": "comic/es/letters-7.webp",
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-07-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "98c2fef56fabaefac81d470b92fcefb4d79385f449685d5b905f538ea3fbb3a6"
+    },
+    {
+      "id": "comic-page-7-es",
+      "file": null,
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-7-base",
+        "comic-letters-7-es"
+      ]
+    },
+    {
+      "id": "comic-letters-8-es",
+      "file": "comic/es/letters-8.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-08-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "c33a242133bb012f5e896aa90de4150263cae49f6d0d9585054673547054930e"
+    },
+    {
+      "id": "comic-page-8-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-8-base",
+        "comic-letters-8-es"
+      ]
+    },
+    {
+      "id": "comic-letters-9-es",
+      "file": "comic/es/letters-9.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-09-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "da13b484c07c6050efb2dc8c334badb775875d4c073193ae0bc91ae6b77678d8"
+    },
+    {
+      "id": "comic-page-9-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-9-base",
+        "comic-letters-9-es"
+      ]
+    },
+    {
+      "id": "comic-letters-10-es",
+      "file": "comic/es/letters-10.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-10-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "fcdf70195d038507a8a45d422eb3fdea75ecac871d300c377182ffdd1f571450"
+    },
+    {
+      "id": "comic-page-10-es",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-10-base",
+        "comic-letters-10-es"
+      ]
+    },
+    {
+      "id": "comic-letters-11-es",
+      "file": "comic/es/letters-11.webp",
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/es/page-11-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "478c3fb9f13056445a094d4981dfe1cc902fef0d552f2864c34218b372d445f2"
+    },
+    {
+      "id": "comic-page-11-es",
+      "file": null,
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-11-base",
+        "comic-letters-11-es"
+      ]
+    },
+    {
+      "id": "comic-letters-1-de",
+      "file": "comic/de/letters-1.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-01-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "bf7f4d242019a35ad837abf06150541767fd8bbf5721bd02d02465d48507c10b"
+    },
+    {
+      "id": "comic-page-1-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-1-base",
+        "comic-letters-1-de"
+      ]
+    },
+    {
+      "id": "comic-letters-2-de",
+      "file": "comic/de/letters-2.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-02-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "142a1f609ae9f0be72243170443df32165d07df01b3fbd40945694987c540dcf"
+    },
+    {
+      "id": "comic-page-2-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-2-base",
+        "comic-letters-2-de"
+      ]
+    },
+    {
+      "id": "comic-letters-3-de",
+      "file": "comic/de/letters-3.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-03-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "06bf558a38318d805f5f9dff801f99764acdf91dd7c9353feb03cfecd3019aeb"
+    },
+    {
+      "id": "comic-page-3-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-3-base",
+        "comic-letters-3-de"
+      ]
+    },
+    {
+      "id": "comic-letters-4-de",
+      "file": "comic/de/letters-4.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-04-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "53a7af977bc6bb89bd364839f6adbab81449682925046538c03707d8fe4b45b1"
+    },
+    {
+      "id": "comic-page-4-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-4-base",
+        "comic-letters-4-de"
+      ]
+    },
+    {
+      "id": "comic-letters-5-de",
+      "file": "comic/de/letters-5.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-05-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "e629f66b39bd4165595d3b8c68e26e0c9d697f5aceb91cfc7e29dd77c6ff073a"
+    },
+    {
+      "id": "comic-page-5-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-5-base",
+        "comic-letters-5-de"
+      ]
+    },
+    {
+      "id": "comic-letters-6-de",
+      "file": "comic/de/letters-6.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-06-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "6ffc8e3d49d4568f5dd90fcaa57f92ec3ff4f7a3c6346e7020e820cd3b9721db"
+    },
+    {
+      "id": "comic-page-6-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-6-base",
+        "comic-letters-6-de"
+      ]
+    },
+    {
+      "id": "comic-letters-7-de",
+      "file": "comic/de/letters-7.webp",
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-07-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "884563b366c6ef70ef85fff15b8b2c4946e8037b607a5ac8e30d7b98e35e2770"
+    },
+    {
+      "id": "comic-page-7-de",
+      "file": null,
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-7-base",
+        "comic-letters-7-de"
+      ]
+    },
+    {
+      "id": "comic-letters-8-de",
+      "file": "comic/de/letters-8.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-08-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "ce5f84259d6af706a9dd6e147d851cc020d0bff67d429d60f2c794fa16008122"
+    },
+    {
+      "id": "comic-page-8-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-8-base",
+        "comic-letters-8-de"
+      ]
+    },
+    {
+      "id": "comic-letters-9-de",
+      "file": "comic/de/letters-9.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-09-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "adf326724eaa115e52e8bc52172a948d4b7141a247756c68088d8264b0d18a50"
+    },
+    {
+      "id": "comic-page-9-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-9-base",
+        "comic-letters-9-de"
+      ]
+    },
+    {
+      "id": "comic-letters-10-de",
+      "file": "comic/de/letters-10.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-10-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "0cd932363033f534802c9c7b5545bf204c2962259aa0d97b98dba38ca24082c7"
+    },
+    {
+      "id": "comic-page-10-de",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-10-base",
+        "comic-letters-10-de"
+      ]
+    },
+    {
+      "id": "comic-letters-11-de",
+      "file": "comic/de/letters-11.webp",
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/de/page-11-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "f28a9a560c3618cb9005ab2d6e80e39a06bbfa1969b35ded128bd6c42307cb10"
+    },
+    {
+      "id": "comic-page-11-de",
+      "file": null,
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-11-base",
+        "comic-letters-11-de"
+      ]
+    },
+    {
+      "id": "comic-page-1-base",
+      "file": "comic/base/page-1.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-01.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "3329170a515d202d801be52b8a2801f66c2429426299cc144c02017d8d0d4f4c"
+    },
+    {
+      "id": "comic-letters-1-it",
+      "file": "comic/it/letters-1.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-01-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "8fe0c538e33738183f74da320499046e7995a695a9d6d7541c7863baf017e315"
+    },
+    {
+      "id": "comic-page-1-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-1-base",
+        "comic-letters-1-it"
+      ]
+    },
+    {
+      "id": "comic-page-2-base",
+      "file": "comic/base/page-2.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-02.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "3dfe7726f6abc4c79d23c070fd7527172833652d83c22f7860a8df239d7e84f9"
+    },
+    {
+      "id": "comic-letters-2-it",
+      "file": "comic/it/letters-2.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-02-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "8416fae671207d249435feac1747a8560aefc28d2ac68c9822a3110ca2546669"
+    },
+    {
+      "id": "comic-page-2-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-2-base",
+        "comic-letters-2-it"
+      ]
+    },
+    {
+      "id": "comic-page-3-base",
+      "file": "comic/base/page-3.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-03.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "2d83c3508c67cace00fb50db4fa138a51ad6a5d0ec3653952aebd0f2b47513c5"
+    },
+    {
+      "id": "comic-letters-3-it",
+      "file": "comic/it/letters-3.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-03-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "3049158460ea617ea58028631b90edbd6771d2f6377883a1af78366568ede83d"
+    },
+    {
+      "id": "comic-page-3-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-3-base",
+        "comic-letters-3-it"
+      ]
+    },
+    {
+      "id": "comic-page-4-base",
+      "file": "comic/base/page-4.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-04-base.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "ae627dc34a35650094f4a95a1e04bc29a98001d2f9c6319e0556dad91f66d32f"
+    },
+    {
+      "id": "comic-letters-4-it",
+      "file": "comic/it/letters-4.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-04-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "ed8788d7572e05ef30283ffa54ed1765e3cc7419fc15fb2c1371a223d098a673"
+    },
+    {
+      "id": "comic-page-4-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-4-base",
+        "comic-letters-4-it"
+      ]
+    },
+    {
+      "id": "comic-page-5-base",
+      "file": "comic/base/page-5.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-05-base.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "bc822af02e5b959665ce407346f431bbf183842a63e97092decfec01a78e73d0"
+    },
+    {
+      "id": "comic-letters-5-it",
+      "file": "comic/it/letters-5.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-05-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "ed649ac8357d95656ad5591c67c22ccb91c7608b72d762f974636890638d5bd5"
+    },
+    {
+      "id": "comic-page-5-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-5-base",
+        "comic-letters-5-it"
+      ]
+    },
+    {
+      "id": "comic-page-6-base",
+      "file": "comic/base/page-6.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/page-06-base.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "16914fdce22f3619c9caf4a9a5c3aca4664febddc02ace579d3b60a461c22d4a"
+    },
+    {
+      "id": "comic-letters-6-it",
+      "file": "comic/it/letters-6.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-06-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "d2e77f54b55912d1dcb2a9a148b42b9f1074258dd6f67210bea5662006c5ebe7"
+    },
+    {
+      "id": "comic-page-6-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-6-base",
+        "comic-letters-6-it"
+      ]
+    },
+    {
+      "id": "comic-page-8-base",
+      "file": "comic/base/page-8.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-08.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "09ebae5947719f2a17d485d66d2724df6caef1a0d4b0b31f93bde3ad53b3a5c9"
+    },
+    {
+      "id": "comic-letters-8-it",
+      "file": "comic/it/letters-8.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-08-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "71e065d58c24e6c834af1f95b79192f3347005081fa31058a3818d35cfa3ac5e"
+    },
+    {
+      "id": "comic-page-8-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-8-base",
+        "comic-letters-8-it"
+      ]
+    },
+    {
+      "id": "comic-page-9-base",
+      "file": "comic/base/page-9.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-09.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "3e988eacb70021d9f2d5959844360b06df33f5d522d37cd26c7611ddb4f70a6c"
+    },
+    {
+      "id": "comic-letters-9-it",
+      "file": "comic/it/letters-9.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-09-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "b1ee387f02fd3cf8cc5be746731950b10f63b34d0c8b664891595b3e944069a7"
+    },
+    {
+      "id": "comic-page-9-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-9-base",
+        "comic-letters-9-it"
+      ]
+    },
+    {
+      "id": "comic-page-10-base",
+      "file": "comic/base/page-10.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-10.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "c31eb44f1360aaead990b577bcd5987cdb418f588cbc4781adad40cdae727c24"
+    },
+    {
+      "id": "comic-letters-10-it",
+      "file": "comic/it/letters-10.webp",
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-10-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "7b6c5bc23713b0daa9b0151706b529f9bdf30b118139a8695474ce1ac5560a09"
+    },
+    {
+      "id": "comic-page-10-it",
+      "file": null,
+      "width": 1600,
+      "height": 2400,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-10-base",
+        "comic-letters-10-it"
+      ]
+    },
+    {
+      "id": "comic-page-11-base",
+      "file": "comic/base/page-11.webp",
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-11.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "62e6c6b4bd740ddeb363045452d4a67536a7131d641cf19eb376623d4d2c2c4a"
+    },
+    {
+      "id": "comic-letters-11-it",
+      "file": "comic/it/letters-11.webp",
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-11-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "7aec0095cbfd7ce983c1081154e7e411db80647e48a6df697e9c109cab7b81c6"
+    },
+    {
+      "id": "comic-page-11-it",
+      "file": null,
+      "width": 2400,
+      "height": 1345,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-11-base",
+        "comic-letters-11-it"
+      ]
+    },
+    {
+      "id": "comic-page-7-base",
+      "file": "comic/base/page-7.webp",
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/pages/page-07.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "15357d218fe639a792f0adc996046a01e88af78703fd3a523e5c321df8ea415c"
+    },
+    {
+      "id": "comic-letters-7-it",
+      "file": "comic/it/letters-7.webp",
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "art/comic/lettering/layers/it/page-07-letters.png",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": "c0e0a4a1fd46e7f40492a91720ffae1952845abf4bb10d36c0c06e29b4630e5d"
+    },
+    {
+      "id": "comic-page-7-it",
+      "file": null,
+      "width": 1600,
+      "height": 2386,
+      "frames": 1,
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "blend": "normal",
+      "layer": "intro-art",
+      "group": "intro",
+      "placeholder": false,
+      "source": "composed",
+      "author": "Original No. 2 Arcade / Gemini Nano Banana Pro",
+      "license": "Original generated project art; project redistribution",
+      "alphaMode": "premultiply-alpha-on-upload",
+      "encoding": "WebP q86",
+      "encodedSha256": null,
+      "compose": [
+        "comic-page-7-base",
+        "comic-letters-7-it"
+      ]
+    }
+  ],
+  "fonts": [
+    "MainHand.ttf",
+    "MarkerHand.ttf",
+    "ProductPrint.ttf",
+    "v044/fonts/PatrickHand-Regular.ttf",
+    "v044/fonts/PermanentMarker-Regular.ttf",
+    "v044/fonts/IBMPlexMono-Regular.ttf"
+  ],
+  "budgets": {
+    "htmlBytes": 67108864,
+    "hubPixels": 33554432,
+    "blankNotebookPixels": 12582912,
+    "defenderAtlasPixels": 134217728,
+    "futureSimpleAtlasPixels": 33554432,
+    "futureDenseAtlasPixels": 67108864,
+    "introPixels": 33554432
+  },
+  "files": {
+    "hub/still-blank.webp": "@@asset:assets/arcade/hub/still-blank.webp@@",
+    "papers/college.webp": "@@asset:assets/arcade/papers/college.webp@@",
+    "papers/quiz.webp": "@@asset:assets/arcade/papers/quiz.webp@@",
+    "papers/wide.webp": "@@asset:assets/arcade/papers/wide.webp@@",
+    "papers/graph.webp": "@@asset:assets/arcade/papers/graph.webp@@",
+    "papers/lab.webp": "@@asset:assets/arcade/papers/college.webp@@",
+    "papers/blank.webp": "@@asset:assets/arcade/papers/quiz.webp@@",
+    "papers/recipe.webp": "@@asset:assets/arcade/papers/recipe.webp@@",
+    "papers/isometric.webp": "@@asset:assets/arcade/papers/isometric.webp@@",
+    "papers/menu.webp": "@@asset:assets/arcade/papers/menu.webp@@",
+    "hub/cheat-card.webp": "@@asset:assets/arcade/hub/cheat-card.webp@@",
+    "v044/fonts/PatrickHand-Regular.ttf": "@@asset:assets/arcade/v044/fonts/PatrickHand-Regular.ttf@@",
+    "v044/fonts/PermanentMarker-Regular.ttf": "@@asset:assets/arcade/v044/fonts/PermanentMarker-Regular.ttf@@",
+    "v044/fonts/IBMPlexMono-Regular.ttf": "@@asset:assets/arcade/v044/fonts/IBMPlexMono-Regular.ttf@@",
+    "ui/title.webp": "@@asset:assets/ui/title.webp@@",
+    "comic/page-1.webp": "@@asset:assets/comic/page-1.webp@@",
+    "comic/page-2.webp": "@@asset:assets/comic/page-2.webp@@",
+    "comic/page-3.webp": "@@asset:assets/comic/page-3.webp@@",
+    "comic/page-4.webp": "@@asset:assets/comic/page-4.webp@@",
+    "comic/page-5.webp": "@@asset:assets/comic/page-5.webp@@",
+    "comic/page-6.webp": "@@asset:assets/comic/page-6.webp@@",
+    "comic/page-7.webp": "@@asset:assets/comic/page-7.webp@@",
+    "comic/page-8.webp": "@@asset:assets/comic/page-8.webp@@",
+    "comic/page-9.webp": "@@asset:assets/comic/page-9.webp@@",
+    "comic/page-10.webp": "@@asset:assets/comic/page-10.webp@@",
+    "comic/page-11.webp": "@@asset:assets/comic/page-11.webp@@",
+    "comic/base/page-1.webp": "@@asset:assets/comic/base/page-1.webp@@",
+    "comic/fr/letters-1.webp": "@@asset:assets/comic/fr/letters-1.webp@@",
+    "comic/base/page-2.webp": "@@asset:assets/comic/base/page-2.webp@@",
+    "comic/fr/letters-2.webp": "@@asset:assets/comic/fr/letters-2.webp@@",
+    "comic/base/page-3.webp": "@@asset:assets/comic/base/page-3.webp@@",
+    "comic/fr/letters-3.webp": "@@asset:assets/comic/fr/letters-3.webp@@",
+    "comic/base/page-4.webp": "@@asset:assets/comic/base/page-4.webp@@",
+    "comic/fr/letters-4.webp": "@@asset:assets/comic/fr/letters-4.webp@@",
+    "comic/base/page-5.webp": "@@asset:assets/comic/base/page-5.webp@@",
+    "comic/fr/letters-5.webp": "@@asset:assets/comic/fr/letters-5.webp@@",
+    "comic/base/page-6.webp": "@@asset:assets/comic/base/page-6.webp@@",
+    "comic/fr/letters-6.webp": "@@asset:assets/comic/fr/letters-6.webp@@",
+    "comic/base/page-7.webp": "@@asset:assets/comic/base/page-7.webp@@",
+    "comic/fr/letters-7.webp": "@@asset:assets/comic/fr/letters-7.webp@@",
+    "comic/base/page-8.webp": "@@asset:assets/comic/base/page-8.webp@@",
+    "comic/fr/letters-8.webp": "@@asset:assets/comic/fr/letters-8.webp@@",
+    "comic/base/page-9.webp": "@@asset:assets/comic/base/page-9.webp@@",
+    "comic/fr/letters-9.webp": "@@asset:assets/comic/fr/letters-9.webp@@",
+    "comic/base/page-10.webp": "@@asset:assets/comic/base/page-10.webp@@",
+    "comic/fr/letters-10.webp": "@@asset:assets/comic/fr/letters-10.webp@@",
+    "comic/base/page-11.webp": "@@asset:assets/comic/base/page-11.webp@@",
+    "comic/fr/letters-11.webp": "@@asset:assets/comic/fr/letters-11.webp@@",
+    "comic/es/letters-1.webp": "@@asset:assets/comic/es/letters-1.webp@@",
+    "comic/es/letters-2.webp": "@@asset:assets/comic/es/letters-2.webp@@",
+    "comic/es/letters-3.webp": "@@asset:assets/comic/es/letters-3.webp@@",
+    "comic/es/letters-4.webp": "@@asset:assets/comic/es/letters-4.webp@@",
+    "comic/es/letters-5.webp": "@@asset:assets/comic/es/letters-5.webp@@",
+    "comic/es/letters-6.webp": "@@asset:assets/comic/es/letters-6.webp@@",
+    "comic/es/letters-7.webp": "@@asset:assets/comic/es/letters-7.webp@@",
+    "comic/es/letters-8.webp": "@@asset:assets/comic/es/letters-8.webp@@",
+    "comic/es/letters-9.webp": "@@asset:assets/comic/es/letters-9.webp@@",
+    "comic/es/letters-10.webp": "@@asset:assets/comic/es/letters-10.webp@@",
+    "comic/es/letters-11.webp": "@@asset:assets/comic/es/letters-11.webp@@",
+    "comic/de/letters-1.webp": "@@asset:assets/comic/de/letters-1.webp@@",
+    "comic/de/letters-2.webp": "@@asset:assets/comic/de/letters-2.webp@@",
+    "comic/de/letters-3.webp": "@@asset:assets/comic/de/letters-3.webp@@",
+    "comic/de/letters-4.webp": "@@asset:assets/comic/de/letters-4.webp@@",
+    "comic/de/letters-5.webp": "@@asset:assets/comic/de/letters-5.webp@@",
+    "comic/de/letters-6.webp": "@@asset:assets/comic/de/letters-6.webp@@",
+    "comic/de/letters-7.webp": "@@asset:assets/comic/de/letters-7.webp@@",
+    "comic/de/letters-8.webp": "@@asset:assets/comic/de/letters-8.webp@@",
+    "comic/de/letters-9.webp": "@@asset:assets/comic/de/letters-9.webp@@",
+    "comic/de/letters-10.webp": "@@asset:assets/comic/de/letters-10.webp@@",
+    "comic/de/letters-11.webp": "@@asset:assets/comic/de/letters-11.webp@@",
+    "comic/it/letters-1.webp": "@@asset:assets/comic/it/letters-1.webp@@",
+    "comic/it/letters-2.webp": "@@asset:assets/comic/it/letters-2.webp@@",
+    "comic/it/letters-3.webp": "@@asset:assets/comic/it/letters-3.webp@@",
+    "comic/it/letters-4.webp": "@@asset:assets/comic/it/letters-4.webp@@",
+    "comic/it/letters-5.webp": "@@asset:assets/comic/it/letters-5.webp@@",
+    "comic/it/letters-6.webp": "@@asset:assets/comic/it/letters-6.webp@@",
+    "comic/it/letters-7.webp": "@@asset:assets/comic/it/letters-7.webp@@",
+    "comic/it/letters-8.webp": "@@asset:assets/comic/it/letters-8.webp@@",
+    "comic/it/letters-9.webp": "@@asset:assets/comic/it/letters-9.webp@@",
+    "comic/it/letters-10.webp": "@@asset:assets/comic/it/letters-10.webp@@",
+    "comic/it/letters-11.webp": "@@asset:assets/comic/it/letters-11.webp@@"
+  },
+  "registration": {
+    "canvas": [
+      1672,
+      941
+    ],
+    "deskCm": [
+      90,
+      55
+    ],
+    "deskCorners": [
+      [
+        338,
+        190
+      ],
+      [
+        1292,
+        190
+      ],
+      [
+        1494,
+        766
+      ],
+      [
+        160,
+        766
+      ]
+    ],
+    "props": [
+      {
+        "id": "sharpener",
+        "key": "settings",
+        "cm": [
+          10,
+          12
+        ],
+        "label": "settings",
+        "polygon": [
+          [
+            147,
+            334
+          ],
+          [
+            187,
+            316
+          ],
+          [
+            245,
+            318
+          ],
+          [
+            287,
+            340
+          ],
+          [
+            308,
+            385
+          ],
+          [
+            298,
+            453
+          ],
+          [
+            261,
+            478
+          ],
+          [
+            185,
+            462
+          ],
+          [
+            166,
+            414
+          ],
+          [
+            143,
+            405
+          ]
+        ],
+        "width": 800,
+        "height": 800,
+        "worldCm": [
+          10,
+          12
+        ],
+        "pixelRect": [
+          141,
+          314,
+          170,
+          167
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "sharpener.png"
+      },
+      {
+        "id": "eraser",
+        "key": "eraser",
+        "cm": [
+          6,
+          2.5
+        ],
+        "label": "erase scores",
+        "polygon": [
+          [
+            292,
+            494
+          ],
+          [
+            363,
+            464
+          ],
+          [
+            390,
+            500
+          ],
+          [
+            320,
+            533
+          ]
+        ],
+        "width": 103,
+        "height": 74,
+        "worldCm": [
+          6,
+          2.5
+        ],
+        "pixelRect": [
+          290,
+          462,
+          103,
+          74
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "eraser.png"
+      },
+      {
+        "id": "calculator",
+        "key": "calculator",
+        "cm": [
+          12.8,
+          8
+        ],
+        "label": "total score",
+        "polygon": [
+          [
+            1082,
+            447
+          ],
+          [
+            1300,
+            480
+          ],
+          [
+            1275,
+            617
+          ],
+          [
+            1067,
+            575
+          ]
+        ],
+        "width": 1000,
+        "height": 667,
+        "worldCm": [
+          12.8,
+          8
+        ],
+        "pixelRect": [
+          1065,
+          445,
+          238,
+          175
+        ],
+        "source": "https://commons.wikimedia.org/wiki/File:HP_11c.jpg",
+        "method": "Real HP11C photographed geometry registered to physical12.8x8 cm desk plane",
+        "file": "calculator.png"
+      },
+      {
+        "id": "backpack",
+        "key": "backpack",
+        "cm": [
+          30,
+          42
+        ],
+        "label": "all notebooks",
+        "polygon": [
+          [
+            1278,
+            72
+          ],
+          [
+            1392,
+            69
+          ],
+          [
+            1525,
+            111
+          ],
+          [
+            1573,
+            180
+          ],
+          [
+            1551,
+            324
+          ],
+          [
+            1490,
+            432
+          ],
+          [
+            1383,
+            425
+          ],
+          [
+            1317,
+            362
+          ],
+          [
+            1302,
+            207
+          ],
+          [
+            1253,
+            163
+          ]
+        ],
+        "width": 707,
+        "height": 800,
+        "worldCm": [
+          30,
+          42
+        ],
+        "pixelRect": [
+          1251,
+          67,
+          325,
+          368
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "backpack.png"
+      },
+      {
+        "id": "sketchbook",
+        "key": "intro",
+        "cm": [
+          21,
+          28
+        ],
+        "label": "intro comic",
+        "polygon": [
+          [
+            1328,
+            405
+          ],
+          [
+            1539,
+            450
+          ],
+          [
+            1511,
+            715
+          ],
+          [
+            1260,
+            672
+          ]
+        ],
+        "width": 284,
+        "height": 315,
+        "worldCm": [
+          21,
+          28
+        ],
+        "pixelRect": [
+          1258,
+          403,
+          284,
+          315
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "sketchbook.png"
+      },
+      {
+        "id": "ruler",
+        "key": "volume",
+        "cm": [
+          30,
+          4
+        ],
+        "label": "volume",
+        "polygon": [
+          [
+            822,
+            661
+          ],
+          [
+            1171,
+            607
+          ],
+          [
+            1188,
+            662
+          ],
+          [
+            836,
+            721
+          ]
+        ],
+        "width": 371,
+        "height": 119,
+        "worldCm": [
+          30,
+          4
+        ],
+        "pixelRect": [
+          820,
+          605,
+          371,
+          119
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "ruler.png"
+      },
+      {
+        "id": "sticky-achievements",
+        "key": "achievements",
+        "cm": [
+          7.6,
+          7.6
+        ],
+        "label": "achievements",
+        "polygon": [
+          [
+            982,
+            550
+          ],
+          [
+            1046,
+            533
+          ],
+          [
+            1071,
+            600
+          ],
+          [
+            1001,
+            621
+          ]
+        ],
+        "width": 94,
+        "height": 93,
+        "worldCm": [
+          7.6,
+          7.6
+        ],
+        "pixelRect": [
+          980,
+          531,
+          94,
+          93
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "sticky-achievements.png"
+      },
+      {
+        "id": "sticky-scores",
+        "key": "scores",
+        "cm": [
+          7.6,
+          7.6
+        ],
+        "label": "high scores",
+        "polygon": [
+          [
+            1207,
+            595
+          ],
+          [
+            1269,
+            613
+          ],
+          [
+            1251,
+            667
+          ],
+          [
+            1192,
+            650
+          ]
+        ],
+        "width": 82,
+        "height": 77,
+        "worldCm": [
+          7.6,
+          7.6
+        ],
+        "pixelRect": [
+          1190,
+          593,
+          82,
+          77
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "sticky-scores.png"
+      },
+      {
+        "id": "pencil",
+        "key": null,
+        "cm": [
+          19,
+          1.1
+        ],
+        "label": "",
+        "polygon": [
+          [
+            680,
+            725
+          ],
+          [
+            948,
+            727
+          ],
+          [
+            954,
+            741
+          ],
+          [
+            682,
+            747
+          ]
+        ],
+        "width": 279,
+        "height": 27,
+        "worldCm": [
+          19,
+          1.1
+        ],
+        "pixelRect": [
+          678,
+          723,
+          279,
+          27
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "pencil.png"
+      },
+      {
+        "id": "pencil-short",
+        "key": null,
+        "cm": [
+          7,
+          1.1
+        ],
+        "label": "",
+        "polygon": [
+          [
+            1004,
+            729
+          ],
+          [
+            1102,
+            731
+          ],
+          [
+            1105,
+            747
+          ],
+          [
+            1001,
+            746
+          ]
+        ],
+        "width": 109,
+        "height": 23,
+        "worldCm": [
+          7,
+          1.1
+        ],
+        "pixelRect": [
+          999,
+          727,
+          109,
+          23
+        ],
+        "source": "approved-hub.png",
+        "method": "Registered polygon extraction, original approved pixels preserved",
+        "file": "pencil-short.png"
+      }
+    ],
+    "slots": [
+      {
+        "pixel": [
+          602,
+          503
+        ],
+        "angle": -0.24
+      },
+      {
+        "pixel": [
+          513,
+          329
+        ],
+        "angle": -0.17
+      },
+      {
+        "pixel": [
+          739,
+          302
+        ],
+        "angle": -0.17
+      },
+      {
+        "pixel": [
+          970,
+          310
+        ],
+        "angle": 0.04
+      },
+      {
+        "pixel": [
+          922,
+          519
+        ],
+        "angle": -0.15
+      },
+      {
+        "pixel": [
+          1197,
+          340
+        ],
+        "angle": 0.21
+      }
+    ],
+    "calculatorLCD": [
+      [
+        0.18712574850299402,
+        0.10136765888978279
+      ],
+      [
+        0.6437125748502994,
+        0.10136765888978279
+      ],
+      [
+        0.6437125748502994,
+        0.23813354786806115
+      ],
+      [
+        0.18712574850299402,
+        0.23813354786806115
+      ]
+    ]
+  },
+  "comic": {
+    "panels": [
+      {
+        "id": 1,
+        "page": 1,
+        "title": "Page 1",
+        "start": 0,
+        "duration": 14,
+        "end": 14,
+        "caption": "",
+        "asset": "comic-page-1",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.4203
+          ],
+          [
+            0.0312,
+            0.4533,
+            0.4596,
+            0.2802
+          ],
+          [
+            0.5091,
+            0.4533,
+            0.4596,
+            0.2802
+          ],
+          [
+            0.0312,
+            0.7457,
+            0.9375,
+            0.2335
+          ]
+        ]
+      },
+      {
+        "id": 2,
+        "page": 2,
+        "title": "Page 2",
+        "start": 14,
+        "duration": 14,
+        "end": 28,
+        "caption": "",
+        "asset": "comic-page-2",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.2615
+          ],
+          [
+            0.0312,
+            0.2944,
+            0.9375,
+            0.2802
+          ],
+          [
+            0.0312,
+            0.5868,
+            0.9375,
+            0.3924
+          ]
+        ]
+      },
+      {
+        "id": 3,
+        "page": 3,
+        "title": "Page 3",
+        "start": 28,
+        "duration": 14,
+        "end": 42,
+        "caption": "",
+        "asset": "comic-page-3",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.3736
+          ],
+          [
+            0.0312,
+            0.4066,
+            0.9375,
+            0.2743
+          ],
+          [
+            0.0312,
+            0.6931,
+            0.9375,
+            0.2861
+          ]
+        ]
+      },
+      {
+        "id": 4,
+        "page": 4,
+        "title": "Page 4",
+        "start": 42,
+        "duration": 14,
+        "end": 56,
+        "caption": "",
+        "asset": "comic-page-4",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.1868
+          ],
+          [
+            0.0312,
+            0.2198,
+            0.4596,
+            0.4203
+          ],
+          [
+            0.5091,
+            0.2198,
+            0.4596,
+            0.4203
+          ],
+          [
+            0.0312,
+            0.6523,
+            0.9375,
+            0.3269
+          ]
+        ]
+      },
+      {
+        "id": 5,
+        "page": 5,
+        "title": "Page 5",
+        "start": 56,
+        "duration": 14,
+        "end": 70,
+        "caption": "",
+        "asset": "comic-page-5",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.2802
+          ],
+          [
+            0.0312,
+            0.3132,
+            0.3906,
+            0.4203
+          ],
+          [
+            0.4401,
+            0.3132,
+            0.5286,
+            0.4203
+          ],
+          [
+            0.0312,
+            0.7457,
+            0.9375,
+            0.2335
+          ]
+        ]
+      },
+      {
+        "id": 6,
+        "page": 6,
+        "title": "Page 6",
+        "start": 70,
+        "duration": 14,
+        "end": 84,
+        "caption": "",
+        "asset": "comic-page-6",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.5208
+          ],
+          [
+            0.0312,
+            0.5191,
+            0.9375,
+            0.4601
+          ]
+        ]
+      },
+      {
+        "id": 7,
+        "page": 7,
+        "title": "Page 7",
+        "start": 84,
+        "duration": 14,
+        "end": 98,
+        "caption": "",
+        "asset": "comic-page-7",
+        "layers": [],
+        "fullPage": true
+      },
+      {
+        "id": 8,
+        "page": 8,
+        "title": "Page 8",
+        "start": 98,
+        "duration": 14,
+        "end": 112,
+        "caption": "",
+        "asset": "comic-page-8",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.3003,
+            0.2101
+          ],
+          [
+            0.3497,
+            0.0208,
+            0.3003,
+            0.203
+          ],
+          [
+            0.6682,
+            0.0208,
+            0.3003,
+            0.1958
+          ],
+          [
+            0.0312,
+            0.2366,
+            0.3099,
+            0.2564
+          ],
+          [
+            0.3125,
+            0.2222,
+            0.6562,
+            0.2708
+          ],
+          [
+            0.0312,
+            0.5052,
+            0.349,
+            0.2517
+          ],
+          [
+            0.3516,
+            0.5052,
+            0.6172,
+            0.2517
+          ],
+          [
+            0.0312,
+            0.7691,
+            0.9375,
+            0.2101
+          ]
+        ]
+      },
+      {
+        "id": 9,
+        "page": 9,
+        "title": "Page 9",
+        "start": 112,
+        "duration": 14,
+        "end": 126,
+        "caption": "",
+        "asset": "comic-page-9",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.4688
+          ],
+          [
+            0.0312,
+            0.4957,
+            0.3276,
+            0.2387
+          ],
+          [
+            0.3771,
+            0.4892,
+            0.3276,
+            0.2451
+          ],
+          [
+            0.7229,
+            0.4844,
+            0.2458,
+            0.25
+          ],
+          [
+            0.0312,
+            0.7465,
+            0.3385,
+            0.2326
+          ],
+          [
+            0.388,
+            0.7465,
+            0.1823,
+            0.2326
+          ],
+          [
+            0.5885,
+            0.7465,
+            0.3802,
+            0.2326
+          ]
+        ]
+      },
+      {
+        "id": 10,
+        "page": 10,
+        "title": "Page 10",
+        "start": 126,
+        "duration": 14,
+        "end": 140,
+        "caption": "",
+        "asset": "comic-page-10",
+        "layers": [],
+        "fullPage": true,
+        "boxes": [
+          [
+            0.0312,
+            0.0208,
+            0.9375,
+            0.2865
+          ],
+          [
+            0.0312,
+            0.3194,
+            0.9375,
+            0.3646
+          ],
+          [
+            0.0312,
+            0.6962,
+            0.9375,
+            0.283
+          ]
+        ]
+      },
+      {
+        "id": 11,
+        "page": 11,
+        "title": "Page 11",
+        "start": 140,
+        "duration": 14,
+        "end": 154,
+        "caption": "",
+        "asset": "comic-page-11",
+        "layers": [],
+        "fullPage": true
+      }
+    ],
+    "duration": 154,
+    "style": "Comic v3 (owner 2026-10-25): the approved lettered pages of the new comic, pages 1 to 11; page 11 ends at her locker and hands straight off to the live locker (no extra beat)."
+  },
+  "audio": {
+    "source": "Original procedural synthesis in v044-audio.js",
+    "license": "Original project synthesis; no sampled recordings",
+    "seededNoise": true,
+    "cues": [
+      {
+        "id": "T0",
+        "range": "Title, before 00:00",
+        "music": "Same original motif D4 F4 A4 E5, slow graphite ticks, ink chord, 2-second sting. Input waits after sting.",
+        "sfx": "Pencil sketch then felt pen. All synthesized.",
+        "mix": "Sting -18 LUFS target; do not loop graphite after reveal."
+      },
+      {
+        "id": "C1",
+        "range": "00:00 to 00:30.5",
+        "music": "Quiet classroom: D minor/add9, 72 BPM; felt sine/triangle keys, sparse motif D F A E.",
+        "sfx": "Coin ring, chalk, slam, bell, paper.",
+        "mix": "Duck music 6 dB for slam and bell; 20 ms attack, 450 ms release."
+      },
+      {
+        "id": "C2",
+        "range": "00:30.5 to 00:38.5",
+        "music": "Savings to Saturday: motif develops at 96 BPM; jar pings become offbeat percussion.",
+        "sfx": "Coins, hungry growl, pencil calendar ticks.",
+        "mix": "Keep growl brief and comic; 4 dB duck."
+      },
+      {
+        "id": "C3",
+        "range": "00:38.5 to 00:47.5",
+        "music": "Bike build: 120 BPM, triangle bass, airy pulse ostinato, no real-game quotes.",
+        "sfx": "Wheels, pocket coins, sign buzz, door.",
+        "mix": "Crossfade from C2 over 1 second; 3 dB duck for door."
+      },
+      {
+        "id": "C4",
+        "range": "00:47.5 to 01:08.5",
+        "music": "Arcade: 132 BPM original chiptune, pulse lead and noise percussion; title motif in brighter harmony.",
+        "sfx": "Cabinet ambience, buttons, success, initials, GAME OVER.",
+        "mix": "Cabinet sounds stay behind captions; 8 dB duck for GAME OVER; 800 ms tail."
+      },
+      {
+        "id": "C5",
+        "range": "01:08.5 to 01:24.5",
+        "music": "Reflective night/season montage: 72 BPM half-time motif, warm triangle and filtered noise brush.",
+        "sfx": "Footsteps, pencil, page turns, stack settling.",
+        "mix": "Equal-power 1.5-second crossfade from arcade, preserve game-over tail."
+      },
+      {
+        "id": "C6",
+        "range": "01:24.5 to 01:30",
+        "music": "Your turn: full motif in D(add9), restrained swell ending on A-E-D; same identity as title sting.",
+        "sfx": "Final pencil stroke and offer rustle.",
+        "mix": "4 dB music duck at final stroke; sustain resolves into quiet hub ambience."
+      }
+    ],
+    "foley": [
+      "coin",
+      "jar",
+      "chalk",
+      "scratch",
+      "slam",
+      "bell",
+      "murmur",
+      "growl",
+      "bike",
+      "plastic",
+      "success",
+      "gameover",
+      "page",
+      "tap"
+    ],
+    "algorithms": "Seeded LCG noise with bandpass envelopes, additive decaying coin partials, pulse/triangle/sine motifs and bass. Master gain with fades and priority SFX duck."
+  },
+  "fontContract": [
+    {
+      "file": "v044/fonts/PatrickHand-Regular.ttf",
+      "family": "Schoolhand",
+      "sha256": "a1bd2e309ad2156f65a7db32eddceff316e09dafb2dcbe12109062e55cf482cb",
+      "metadataRepair": {
+        "method": "Local TrueType glyph bounding-box and checksum repair",
+        "originalSha256": "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc",
+        "outlinesAndMetricsUnchanged": true
+      },
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/patrickhand/PatrickHand-Regular.ttf",
+      "license": "OFL-1.1",
+      "licenseText": "Copyright (c) 2010-2012 Patrick Wagesreiter (mail@patrickwagesreiter.at)\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded, \nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n"
+    },
+    {
+      "file": "v044/fonts/PermanentMarker-Regular.ttf",
+      "family": "SchoolMarker",
+      "sha256": "28f82c8a7943cb8e9d599f8554da1d4fc75dbcf69b9885ad6c0611d20c6946c5",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/apache/permanentmarker/PermanentMarker-Regular.ttf",
+      "license": "Apache-2.0",
+      "licenseText": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n"
+    },
+    {
+      "file": "v044/fonts/IBMPlexMono-Regular.ttf",
+      "family": "ProductPrint",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "license": "OFL-1.1",
+      "licenseText": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"\r\n\r\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\r\n\r\nThis license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL\r\n\r\n\r\n-----------------------------------------------------------\r\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\r\n-----------------------------------------------------------\r\n\r\nPREAMBLE\r\nThe goals of the Open Font License (OFL) are to stimulate worldwide\r\ndevelopment of collaborative font projects, to support the font creation\r\nefforts of academic and linguistic communities, and to provide a free and\r\nopen framework in which fonts may be shared and improved in partnership\r\nwith others.\r\n\r\nThe OFL allows the licensed fonts to be used, studied, modified and\r\nredistributed freely as long as they are not sold by themselves. The\r\nfonts, including any derivative works, can be bundled, embedded, \r\nredistributed and/or sold with any software provided that any reserved\r\nnames are not used by derivative works. The fonts and derivatives,\r\nhowever, cannot be released under any other type of license. The\r\nrequirement for fonts to remain under this license does not apply\r\nto any document created using the fonts or their derivatives.\r\n\r\nDEFINITIONS\r\n\"Font Software\" refers to the set of files released by the Copyright\r\nHolder(s) under this license and clearly marked as such. This may\r\ninclude source files, build scripts and documentation.\r\n\r\n\"Reserved Font Name\" refers to any names specified as such after the\r\ncopyright statement(s).\r\n\r\n\"Original Version\" refers to the collection of Font Software components as\r\ndistributed by the Copyright Holder(s).\r\n\r\n\"Modified Version\" refers to any derivative made by adding to, deleting,\r\nor substituting -- in part or in whole -- any of the components of the\r\nOriginal Version, by changing formats or by porting the Font Software to a\r\nnew environment.\r\n\r\n\"Author\" refers to any designer, engineer, programmer, technical\r\nwriter or other person who contributed to the Font Software.\r\n\r\nPERMISSION & CONDITIONS\r\nPermission is hereby granted, free of charge, to any person obtaining\r\na copy of the Font Software, to use, study, copy, merge, embed, modify,\r\nredistribute, and sell modified and unmodified copies of the Font\r\nSoftware, subject to the following conditions:\r\n\r\n1) Neither the Font Software nor any of its individual components,\r\nin Original or Modified Versions, may be sold by itself.\r\n\r\n2) Original or Modified Versions of the Font Software may be bundled,\r\nredistributed and/or sold with any software, provided that each copy\r\ncontains the above copyright notice and this license. These can be\r\nincluded either as stand-alone text files, human-readable headers or\r\nin the appropriate machine-readable metadata fields within text or\r\nbinary files as long as those fields can be easily viewed by the user.\r\n\r\n3) No Modified Version of the Font Software may use the Reserved Font\r\nName(s) unless explicit written permission is granted by the corresponding\r\nCopyright Holder. This restriction only applies to the primary font name as\r\npresented to the users.\r\n\r\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\r\nSoftware shall not be used to promote, endorse or advertise any\r\nModified Version, except to acknowledge the contribution(s) of the\r\nCopyright Holder(s) and the Author(s) or with their explicit written\r\npermission.\r\n\r\n5) The Font Software, modified or unmodified, in part or in whole,\r\nmust be distributed entirely under this license, and must not be\r\ndistributed under any other license. The requirement for fonts to\r\nremain under this license does not apply to any document created\r\nusing the Font Software.\r\n\r\nTERMINATION\r\nThis license becomes null and void if any of the above conditions are\r\nnot met.\r\n\r\nDISCLAIMER\r\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\r\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\r\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\r\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\r\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\r\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\r\nOTHER DEALINGS IN THE FONT SOFTWARE.\r\n"
+    },
+    {
+      "family": "Hand",
+      "file": "v044/fonts/PatrickHand-Regular.ttf"
+    },
+    {
+      "family": "Marker",
+      "file": "v044/fonts/PermanentMarker-Regular.ttf"
+    },
+    {
+      "family": "Printed",
+      "file": "v044/fonts/IBMPlexMono-Regular.ttf"
+    }
+  ],
+  "reconstruction": {
+    "version": 1,
+    "approval": "User approved reconstructed 4K rather than native 4K.",
+    "method": "User-approved reconstructed 4K presentation. Linear-RGB premultiplied-alpha Lanczos3 export from existing approved art. Existing composition and lettering retained. Not native 4K and no claim that reconstruction creates missing source detail.",
+    "recipes": {
+      "still-blank": {
+        "width": 1024,
+        "height": 1128,
+        "sourceHash": "be52156034d12f195d28832836bedcdad2f98f58adc1570be3169086a794bdc7",
+        "exportHash": "1b63522e6cd73507cf637e1d898d6cf383c5411e8562381956785e2414d53272"
+      },
+      "paper-college": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "26d2b9b49e0a249fce3ae59f053237f535d823ad4d959512c7ebf14fe7169b11",
+        "exportHash": "9edb16178f4bf37b05e751dae1f6e12d74e3e1ae5d9152549b33503bc65b42d3"
+      },
+      "paper-quiz": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "297c9b947c93b2142e0347296f74c5008ce5f508c52fc5e6fbaf83d6d653471b",
+        "exportHash": "f5f4420404d9eab54c1ccb27ca2655ab5b48ee879dab0c56d46ca23789763451"
+      },
+      "paper-wide": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "e7c1a9b55ac0c9f76bf634a2dcc9994e1cc41d57d242eeeaf87b8a0240c668f1",
+        "exportHash": "3fe68e2bcbba226b8bb757bdbc1ae4ba72de532f91603028fde5ae42a14d1e2c"
+      },
+      "paper-graph": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "c2d5b216411b82ca79ca09f7aff419934cb13d2ad07dd684c32f30f183ec97c5",
+        "exportHash": "6fa80107c591e6ed11bdfa875942939c5fd286d42514492f1c94e0dfd2b3e9ec"
+      },
+      "paper-lab": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "26d2b9b49e0a249fce3ae59f053237f535d823ad4d959512c7ebf14fe7169b11",
+        "exportHash": "9edb16178f4bf37b05e751dae1f6e12d74e3e1ae5d9152549b33503bc65b42d3"
+      },
+      "paper-blank": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "297c9b947c93b2142e0347296f74c5008ce5f508c52fc5e6fbaf83d6d653471b",
+        "exportHash": "f5f4420404d9eab54c1ccb27ca2655ab5b48ee879dab0c56d46ca23789763451"
+      },
+      "paper-recipe": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "25acec84665bc6c03f4a2ddeaaa46718d0bbe6f1279fbd1b6ec55e639d77ed2d",
+        "exportHash": "64f94f514bc71bb9fbb38753a59cf025dfef04689da3c82893c1ce71ee8b2b7a"
+      },
+      "paper-isometric": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "e6662fff3ebee6708c8de8149842bc6b3abc1037f4af99959f655068f7e1b27e",
+        "exportHash": "d6684b3fd0570e6bbb84e570b031d915bedbab49eff3a4385ed484da6d849c12"
+      },
+      "paper-menu": {
+        "width": 3072,
+        "height": 2304,
+        "sourceHash": "101f04538c8fba9d4add38d5fead613870fff6448681087284412a2b1c7fdd1e",
+        "exportHash": "a494acf3f3fc0c09fd6aa08d94a24fd5a6fb4da869295bff11eb911df3ed3571"
+      }
+    },
+    "buffers": "Compact decoded native source-pixel budgets are unchanged. Larger generated reconstruction render buffers are reported separately by AssetService.stats; GPU copies, mipmaps and driver allocations are not certified."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "mystery-meat-time",
+  "dir": "foodfight",
+  "core": "FoodFightCore",
+  "engine": "FoodFightEngine",
+  "tests": "FoodFightTests",
+  "adapter": "No2MysteryMeatTime",
+  "cheat": {
+    "xbox": [["stick", "run and aim"], ["A", "throw"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Up+Down", "run and aim"], ["Left+Right", "run and aim"], ["Space", "throw"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Run over a pile to grab food. Hit chefs for 100, 200, 300 and up to 1,000.", "Eat the cone before it melts: 500 a level, plus 100 for food left over. Chef in a manhole 200."]
+  },
+  "victories": [
+    ["mm-1000", "ten in a row", "hit ten chefs in one life for 1,000."],
+    ["mm-manhole", "watch your step", "lure a chef into an open manhole."],
+    ["mm-close", "brain freeze", "eat the cone with under two seconds left."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='hit'&&ev.points>=1000)win('mm-1000');if(ev.type==='manhole')win('mm-manhole');if(ev.type==='cone'&&ev.melt<2)win('mm-close')}",
+  "readme": "Mystery Meat Time: arrow keys or WASD run and aim in eight directions, Space throws, P pauses. Reach the cone before it melts.",
+  "claude": "- Mystery Meat Time (owner 2026-10-26, locker order): authentic 1983 Food Fight rules and scoring (src/foodfight, 17 rule checks), a cafeteria food fight on the menu paper: the boy in blue against four angry cafeteria chefs, peas, pies, tomatoes, bananas and watermelons, the melting cone; same amendment list."
+}

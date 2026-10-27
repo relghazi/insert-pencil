@@ -1,0 +1,21 @@
+{
+  "id": "testpest",
+  "dir": "tempest",
+  "core": "TestpestCore",
+  "engine": "TempestEngine",
+  "tests": "TestpestTests",
+  "adapter": "No2Testpest",
+  "cheat": {
+    "xbox": [["stick", "move round the rim"], ["A", "fire"], ["X", "superzapper"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Left+Right", "move round the rim"], ["Space", "fire"], ["Shift", "superzapper"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Beetle 150, shield bug 100, snail 50, zigzag bug 200. Pom-pom 250, sometimes 500 or 750.", "One superzapper per level. Dodge the spikes on the way down. Extra life every 20,000."]
+  },
+  "victories": [
+    ["tp-750", "lucky pom-pom", "shoot a pom-pom worth 750."],
+    ["tp-zap", "pest control", "wipe out five bugs with one superzapper."],
+    ["tp-warp", "down the tunnel", "clear a level and warp to the next."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='kill'&&ev.kind==='fuseball'&&ev.points===750)win('tp-750');if(ev.type==='zap'&&ev.count>=5)win('tp-zap');if(ev.type==='cleared')win('tp-warp')}",
+  "readme": "Testpest: left and right move the claw round the rim, Space fires, Shift uses the superzapper, P pauses.",
+  "claude": "- Testpest (owner 2026-10-26, locker order): authentic 1981 Tempest rules and scoring (src/tempest, 17 rule checks), bugs climbing a ballpoint tunnel in her graph-paper homework, drawn as lines in code like the vector cabinet; the claw, red beetle flippers, shield bug tankers, snail spikers, pom-pom fuseballs and zigzag pulsars are Nano Banana art; same amendment list."
+}

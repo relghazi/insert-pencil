@@ -1,0 +1,29 @@
+{
+ "status": "approved by owner 2026-10-31 (\"approve everything\" for this pass)",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (jobs research-<id>, batch DR2, the game's sprite sheet and her doodle attached); tools/cut-research.py with the arguments in art-prompts/doodles/research/chosen.json",
+ "note": "her research sketches: <id>-d, -e, -f (owner 2026-10-31)",
+ "candidates": {
+  "incoming/DR2/research-gym-class-pong-v1.png": "083f5c6550d70285bc63393cf76f3ec788e516ce58b8129013e198248c4fea1e",
+  "incoming/DR2/research-detention-breakout-v1.png": "79511f4a972f8e4e0793b9d50fa92370374df6cd90d5b5ac0cf925e7217c95c4",
+  "incoming/DR2/research-space-substitutes-v1.png": "2ed4c5daf3c61ae5c321940f6bbb819b8f8dec1669dd1b05524557f03b077295",
+  "incoming/DR2/research-lunch-lander-v1.png": "66a9bb26d90174cc814cd6d7bc6f92925a97d54d6e970e044f632c50f362f7aa",
+  "incoming/DR2/research-spitball-command-v1.png": "75dbfcc2b1e04afde31c870620459abd623a19c62a30e0b8690de5481bb4aeb5",
+  "incoming/DR2/research-snack-man-v1.png": "8c280c814e3960f16c0697fe0ce0c0108002bc8989f08fb6099f19ce3b9d5e9a",
+  "incoming/DR2/research-recess-zone-v1.png": "695ffffc918b9da006bb95cd4731083ee61797d1b33052b90b4ed35f32bd05b9",
+  "incoming/DR2/research-galgebra-v1.png": "7cf37901b21deb232bf4ef57566b5e63e2d3e835a11a678cf691f64d4bc38fee",
+  "incoming/DR2/research-centigrade-v1.png": "00c17ec1a694aaa22755114802db21bf4d55645dd7044c154967844dd0fb2fcb",
+  "incoming/DR2/research-froggology-v1.png": "a2cc698dcfb899cbc46442ce54ccefe96acb6aeaaee94159527f81033164a910",
+  "incoming/DR2/research-quiz-v1.png": "8475b9643c5f9397229cce5332707c95d186e58d692d91cc87637896f4f5121c",
+  "incoming/DR2/research-testpest-v1.png": "e3368a907b147458da3edc9e59826d64f942337d3cddf1a085770d2860b64f19",
+  "incoming/DR2/research-home-ec-scramble-v1.png": "862d33a8f8385fa295f527fa419564bc90ddaf54ecebfe4522f902119bd857d6",
+  "incoming/DR2/research-dunce-kong-v1.png": "272fcceda99c29f8401c2e6173c3255f2d157840a6cf657f62b2fb20da84e189",
+  "incoming/DR2/research-dig-doug-v1.png": "f4f9c3ba764d63fa683bbd037734b4f8057b1aae7f8d10f53d68cda60d45b4b7",
+  "incoming/DR2/research-q-nerd-v1.png": "fdc0242d49c9ea315dc206c0f5cf03e37ee51236616dacaba80b3febf5416717",
+  "incoming/DR2/research-jock-joust-v1.png": "e76ce89a28d527a47e192e4e4d6b159ecdfb80ea715f5ea60b71e42af4a35972",
+  "incoming/DR2/research-class-of-2084-v1.png": "7341f4118df167dd252c0022c82bf54f4d6f0b28130c270d906327be921c3509",
+  "incoming/DR2/research-mystery-meat-time-v1.png": "3f02701594223dff25c6b5ef71ba09bf059d3888db5a9ad06225aa5d7a656f75",
+  "incoming/DR2/research-hall-patrol-v2.png": "56a859e036b7a79027f95e5ecde9ba59755754611b1158faf745d2958dfa460a",
+  "incoming/DR2/research-term-paperboy-v1.png": "d93ab2a1dbf0d9d509761c80358ddc8cafbf5c9f3d8bf155b16b62b6ab1f8330",
+  "incoming/DR2/research-locker-gauntlet-v1.png": "be5ffdf540026828689fd7afe86039459cd064c6548d7d9256890357e3f6c658"
+ }
+}

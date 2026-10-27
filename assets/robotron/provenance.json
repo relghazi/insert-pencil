@@ -1,0 +1,74 @@
+{
+ "status": "approved by owner 2026-10-28 (school themes)",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; cut with tools/cut-sprite-sheet.py",
+ "candidates": {
+  "incoming/RW/robotron-cast-a-v1.png": "f45e7e2f88c24822a27b5636188b72e817793e4bb16c1f8fe0ace3d99943ef9c",
+  "incoming/RW/robotron-cast-b-v1.png": "e37fd362afae6321b654728fa5dca7f571e2b929fc62b5878946469734668cd0",
+  "incoming/RW/robotron-kid-v1.png": "3dc47d0cc190eecaafe9300a9b94d2bfcd6c18ff1ef68805e5b4748062842c08",
+  "incoming/RW/robotron-bully-platter-v2.png": "37757f554bdcb6c941d8335226495f23f58bb11344e49713fc16f3628869cb8b"
+ },
+ "assets": {
+  "assets/robotron/ball-a.webp": "cd4afa59cfa507c9feacbd69b04ca2e5fa54053e2753282c947e83a3bdb70d37",
+  "assets/robotron/ball-b.webp": "471000ccd7415392a0dab42540764549b160dfef6e17d840a7ffce60585d8889",
+  "assets/robotron/bouncy.webp": "451617be9fd1953e70d0e4adaa55e2fbdea22f7477fb35bcccae302148222fec",
+  "assets/robotron/brain-a.webp": "028ca294375cac21879f4df2a3518dc012fd967c6145032574016cd45759b377",
+  "assets/robotron/brain-b.webp": "78f8bf15481b1a3721e33ae70a02b400bf7982c9028ebbe6a897f69019656c24",
+  "assets/robotron/burst.webp": "7581c74bc05368634e96b31c0548ecf72e1e7495ce848db54680335b997eecff",
+  "assets/robotron/daddy-a.webp": "6094482a62d87a86462c8dfc10b26123889bf642ee11c1e378df47c0d82ddba2",
+  "assets/robotron/daddy-b.webp": "fab3124fbe82ba6ff1ddf478df1e12a510c3cba8908bd1ffbbdf8291db848229",
+  "assets/robotron/drone-a.webp": "42c4c8259f0b99173ba3683989d2c08e58dffdc716874f6122989b76dae82447",
+  "assets/robotron/drone-b.webp": "7756080d501593247f67b82a6cd08024d388775bab4b4307a350615639f1544f",
+  "assets/robotron/glasses.webp": "fd55d6b666fb3fd8fb15bb83ccbfa8f18509bbb6dfbda1cc9abfe2e0402b0fec",
+  "assets/robotron/grunt-a.webp": "8658e476bc49bbafe63eb4f69efde2773477179ed44f17c6ade5ff07517c5089",
+  "assets/robotron/grunt-b.webp": "1bbf19aacfea6635b7321849ee5f9f7d5d1d850790b3b358bc585403222865c5",
+  "assets/robotron/hero-a.webp": "9ec17db40e4966e1225c97c5a24fbf1556926bfd0f7de44dec94eb23c97f63be",
+  "assets/robotron/hero-b.webp": "650a66f5af0ce7b82ef7c5e0e8325d9ca998859d443f872f082b297d5a3609b2",
+  "assets/robotron/hulk-a.webp": "c29b1f0f11c8e971e800357b5bcc458ada8d686de4e98c8960d913ce317ecc86",
+  "assets/robotron/hulk-b.webp": "24df92af6bc0711bc9673728ca3da773eaa787d7797532434bcd2cf755b61052",
+  "assets/robotron/jack-a.webp": "f26c8af9d66f948f684b569c61b6af493cd6adc7dc59e307ba628aee522493ba",
+  "assets/robotron/jack-b.webp": "f94891e4d66e2e72e1cc504533b87589e1fe990b31a22b3535ad8424537e60ed",
+  "assets/robotron/lamp-a.webp": "7f153bde801d60276aa36ad181eab02bd6ae6c30208dce57f8964ac2cef81c72",
+  "assets/robotron/lamp-b.webp": "6f5e279765e31a9be3578dff8ab6fed4c200acdf9212ed65dd9a4ba43a1e9e9c",
+  "assets/robotron/mikey-a.webp": "e288f73df5d1f6793ba5463ccec36c21bbd16116995ca48d9313e540689f1fd6",
+  "assets/robotron/mikey-b.webp": "cdf5cca67c6895714dc7faf434afab673e61c87016fab20e09fd0ed28038ecfb",
+  "assets/robotron/mommy-a.webp": "ce1157d26dc111828e496393d9d2f80a9c050d4b8c9499690a23835a97080ef5",
+  "assets/robotron/mommy-b.webp": "d1c0ed6ba743800983d0574a48a066fcc3491466c3bdb8003f886f7d871b53fb",
+  "assets/robotron/paper.webp": "c933bbc0fb4fc439bf14f0087408ffca8b2175107df82dfe1a2f2c894ea74110",
+  "assets/robotron/plane.webp": "fb0e1054091e3b13ec34fa3c8af6cf454a8ff05b51a5f75e3e7a28fd25ea9538",
+  "assets/robotron/prog-a.webp": "dca528a6aea3cacd22d6d3a4516349eb6bc65318eec493b66e18d28cc06af9ca",
+  "assets/robotron/prog-b.webp": "6fa40b8aeb123f092f9ce52df0e859037d3b3651e206a4579bcf2950971e8b5a",
+  "assets/robotron/spark.webp": "d47b4a1966d783da42ea00e48b53a6248895469d5ab05bfb335b9ea15803cd59",
+  "assets/robotron/tank-a.webp": "d3be715400f2964776c94ec373aeee37a22862ca318afcc15dd1948e22d4daf6",
+  "assets/robotron/tank-b.webp": "46260f7e726c7b1a10a1112015be0f8203cd13ca47adfd2a24564f3b8816c8d8"
+ },
+ "recut": "2026-10-28: re-cut whole with tools/cut-sprite-sheet.py --blobs (owner: images cropped)",
+ "frame-match": {
+  "status": "approved by owner 2026-10-29",
+  "note": "second animation frame edited with Nano Banana to show the same character as the first (and drone-a without its yellow sash)",
+  "candidates": {
+   "incoming/FR/robotron-drone-b-match-v1.png": "d0cb0a4b39e24ddedb0655682308fdb8142dc9b5386e4caecfd9f7df093ede3e",
+   "incoming/FR/robotron-drone-a-match-v1.png": "7f7df3571648435144fee54e932c0d937c8223a7150f14a35f6adf1985d9c20f"
+  },
+  "assets": {
+   "assets/robotron/drone-b.webp": "fa4514bc37fa0405696df9337e7586c300acf3d7270a5660d1283830de32f681",
+   "assets/robotron/drone-a.webp": "8b5d3de2e3937fb54da7955931b8567c6477aa25d9527a2ab5569cd716bca128"
+  }
+ },
+ "kindergarten": {
+  "status": "approved by owner 2026-10-30",
+  "note": "the three humans to rescue become a kindergarten field trip (owner pick): balloon girl in a red raincoat (Mommy), dinosaur-hoodie boy (Daddy), bunny kid in purple overalls (Mikey), about 60 to 75 percent of her height",
+  "candidates": {
+   "incoming/RW/robotron-kinder-mommy-v1.png": "6b20bf81fd1cca60393f1aaf56b08687c98a7e2842c9acdc8a8ccac0549c73a6",
+   "incoming/RW/robotron-kinder-daddy-v2.png": "ca429cdbe9c1c9d1a2a52704e8606cc801fd0aefb3b5a1c9be2caa70c0dacc20",
+   "incoming/RW/robotron-kinder-mikey-v1.png": "f498e1d9f57ddef7c0393164a2452bf6e5eea70540094d8c501c688026a3c5e0"
+  },
+  "assets": {
+   "assets/robotron/mommy-a.webp": "3180d425de1b9068fd602af13d76d001503badb63095d8c69fc0da2f8a178f77",
+   "assets/robotron/mommy-b.webp": "c16094db5d93b0c34d5397fa65ffb3fab6244a9369bad6373697a072879153d0",
+   "assets/robotron/daddy-a.webp": "674e5be4c20cf8bd6ef94f3d66b41ca0a9289070679edc5b8b27b9a23fdb6eac",
+   "assets/robotron/daddy-b.webp": "b78469f67661a272d85f15e392b9ebfb80bd973040dd6b9f2a69a9c8b0252ab7",
+   "assets/robotron/mikey-a.webp": "224287331521cb4c6ccbd8497466c135c862421c2583430de77880a4cc3da6a7",
+   "assets/robotron/mikey-b.webp": "17febf392230269c1985c6077bc83cca6444c8e3e7441aff7c36c54dff0b25e9"
+  }
+ }
+}

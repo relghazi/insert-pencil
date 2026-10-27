@@ -1,0 +1,130 @@
+{
+  "approved": "Owner approved erast-sprites-v4 2026-10-22",
+  "tool": "Gemini API, Nano Banana Pro (tools/generate-art.mjs); edit of v3 for bolder ships and saucers; cut with tools/cutout.mjs --despill-edge 4 (crumbs row cut separately)",
+  "sheet": {
+    "file": "incoming/G/erast-sprites-v4.png",
+    "sha256": "fa9917241cb054ee9ac2b1cf8edf1c5df76b456ced4e4dbd949ebf594001ad65",
+    "generation": {
+      "job": "erast-sprites",
+      "version": 4,
+      "model": "gemini-3-pro-image",
+      "aspectRatio": "16:9",
+      "imageSize": "4K",
+      "created": "2026-10-22T22:39:55.440Z",
+      "seconds": 36,
+      "mode": "edit",
+      "prompt": "Edit this image. Keep the flat pure magenta (#FF00FF) background, the four pink eraser rocks, the five small crumbs and the small graphite dot exactly as they are, in the same places. Change only the two ships and the two flying saucers in the top row, keeping their shapes, sizes and positions: give each a very thick dark navy marker-weight outline, as thick as the outlines of the eraser rocks or thicker, and fill them with solid, dense colored pencil with no white gaps (ships: pale blue; saucers: pale grey with a pale green rim and a pale blue dome). The exhaust flame on the second ship stays orange and red but gets the same thick outline. Each object stands alone directly on the magenta, no box or tile behind it. No text.\r\n",
+      "inputs": [
+        {
+          "file": "incoming/G/erast-sprites-v3.png",
+          "sha256": "65907baf5f3b96be6160b8a26b7dff618c0996f434e094633cced25a9fe370a8"
+        },
+        {
+          "file": "assets/hub/covers/erasteroids.webp",
+          "sha256": "0e872bf10ca82f4a942aa56728b29385684081bf7ae04c26046751c5b6468956"
+        }
+      ],
+      "output": {
+        "file": "incoming/G/erast-sprites-v4.png",
+        "sha256": "fa9917241cb054ee9ac2b1cf8edf1c5df76b456ced4e4dbd949ebf594001ad65",
+        "width": 5504,
+        "height": 3072
+      },
+      "usage": {
+        "promptTokenCount": 681,
+        "candidatesTokenCount": 2198,
+        "totalTokenCount": 3074,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 165
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 516
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 2000
+          }
+        ],
+        "thoughtsTokenCount": 195,
+        "serviceTier": "standard"
+      }
+    }
+  },
+  "files": {
+    "ship.webp": {
+      "source": "incoming/G/cut-v4/ship.png",
+      "sourceSha256": "f740f7c11f655920e9a54b5c3700610c021576071be61cce0db6eee9e1393cee",
+      "sha256": "6584dbafac1364415dd2e3ec1cacd0010662584b7715d8e82845c90840a19b73"
+    },
+    "ship-thrust.webp": {
+      "source": "incoming/G/cut-v4/ship-thrust.png",
+      "sourceSha256": "f7c837744edc9a25ef2302e9924c7606c54fb8649d8b7220de5d544f4a58a915",
+      "sha256": "0245881b9189aa4aa1348f32493de390e73468be72adde95f1d32746d8c71310"
+    },
+    "saucer-big.webp": {
+      "source": "incoming/G/cut-v4/saucer-big.png",
+      "sourceSha256": "c43ac0c55df854ec6c7f3d234e808075ced1bf2c6ef3498b1a7a3e7113d13c7c",
+      "sha256": "38b92072e2d49b95ff1ab61048751503f6844301a19971ea77ad13291d05d5a6"
+    },
+    "saucer-small.webp": {
+      "source": "incoming/G/cut-v4/saucer-small.png",
+      "sourceSha256": "27bbcc9ab4ad5a77cec2524e61c8333744412f7c18bb6e86cd6c7c8a0af4b370",
+      "sha256": "5db350753ae604b09c4dc267cb94dc871e2346a6c5ebfc4958a28cfc9fa4d9a8"
+    },
+    "rock-a.webp": {
+      "source": "incoming/G/cut-v4/rock-a.png",
+      "sourceSha256": "fd82a9aa8017987ea46b55e8a423018371449526e2e928d2cf7db447b645a2ee",
+      "sha256": "9acaecccaa425a62e6debde9eaf4a502594b83c18adda3b62af7a8cc6cb52b55"
+    },
+    "rock-b.webp": {
+      "source": "incoming/G/cut-v4/rock-b.png",
+      "sourceSha256": "e1049ad653af0fc75f4c27313d5aa8b16ece0772e4610186b6dbee623466606e",
+      "sha256": "c4a84bc7ab71f0ac12df0b9c6c1e7999fc98cdf0df39e7bdd10d0e6a5fc1d333"
+    },
+    "rock-c.webp": {
+      "source": "incoming/G/cut-v4/rock-c.png",
+      "sourceSha256": "b432187762032e031843c9d2aaa5aaa54d96bda8b39d3216da2af2a42ede79bf",
+      "sha256": "43485baf1e5d14b4da50193f4af4197b6e1b375bb4eefe5734461ec78ca3799b"
+    },
+    "rock-d.webp": {
+      "source": "incoming/G/cut-v4/rock-d.png",
+      "sourceSha256": "4ea553802692b61366db0cf1d28e3f8c88ffd1d477204c458c5609950c30d68c",
+      "sha256": "0220edbfe6fe0e359f4803931541e6a6a1b64daec088f9b56a1ecf488c1ff2e0"
+    },
+    "crumb-1.webp": {
+      "source": "incoming/G/cut-v4/crumb-1.png",
+      "sourceSha256": "7d8e49e31bc0ee040034767dc141aba607afec43dd77f47faf817640e63591c4",
+      "sha256": "8e990fa24151c07076c42a9a00ecf3261e6de844c82c02fe9589d3398d09dbf0"
+    },
+    "crumb-2.webp": {
+      "source": "incoming/G/cut-v4/crumb-2.png",
+      "sourceSha256": "e742d5647624d42a28ef9da8edad4cf49e478a2f1a54d111e31c15b8fb3412b8",
+      "sha256": "8a9da3ff76400757580b88963d66cda6e08a313e572001e41a01f0baab0c0d75"
+    },
+    "crumb-3.webp": {
+      "source": "incoming/G/cut-v4/crumb-3.png",
+      "sourceSha256": "4b7627cebcfbfaa60a4aa5bd1b15a273df1ee294f34c843046a722446c81eb0c",
+      "sha256": "ddb1e0c506a9c27e7c7a5b1971bb8b3809150cc8ac3014bb2b181ff4b0f341fc"
+    },
+    "crumb-4.webp": {
+      "source": "incoming/G/cut-v4/crumb-4.png",
+      "sourceSha256": "44120e1d339722f162d3350db9ca5579146ebc298cf14e828b22e1e7929902dd",
+      "sha256": "3388bda8c92f13b96d27679814a6d81a2bbafe2ecc31c0455717fd34a54f9dc4"
+    },
+    "crumb-5.webp": {
+      "source": "incoming/G/cut-v4/crumb-5.png",
+      "sourceSha256": "b17355bd02f9ea7497a66eabffeacd7492c5a0d46a1ac9c4165b1f13e264e6c0",
+      "sha256": "35b5521950082c90b05f90ed2b6daae5582d312a998e076c7c1fb90ddb625d31"
+    },
+    "shot.webp": {
+      "source": "incoming/G/cut-v4/shot.png",
+      "sourceSha256": "b47c011cc039083943d149feba0627e2acae091ab6bd85075375821e5929b2ca",
+      "sha256": "8cfc2b9882274c80047cecd382eccda7f3ba2f743d21fca35fe803fd47d322f7"
+    }
+  }
+}

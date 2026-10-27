@@ -1,0 +1,21 @@
+{
+  "id": "q-nerd",
+  "dir": "qbert",
+  "core": "QnerdCore",
+  "engine": "QbertEngine",
+  "tests": "QnerdTests",
+  "adapter": "No2Qnerd",
+  "cheat": {
+    "xbox": [["stick", "hop along its diagonal"], ["D-pad", "hop, turned like the arrows"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Up", "hop up-right"], ["Right", "hop down-right"], ["Down", "hop down-left"], ["Left", "hop up-left"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Each cover you finish 25, halfway 15. Snake off the edge 500, an eraser 300, the tennis ball 100.", "Round bonus 1,000 plus 250 a round, 50 a frisbee left. Extra life at 8,000, then every 14,000."]
+  },
+  "victories": [
+    ["qn-coily", "snake charmer", "ride a frisbee and lure the jump rope off the edge."],
+    ["qn-eraser", "caught erasing", "catch one of the chalkboard erasers."],
+    ["qn-level", "whole level", "finish all four rounds of a level."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='coily')win('qn-coily');if(ev.type==='catch')win('qn-eraser');if(ev.type==='level')win('qn-level')}",
+  "readme": "Q*Nerd: the arrow keys or WASD hop on the diagonals, turned like the cabinet's stick (up hops up-right, right down-right, down down-left, left up-left), P pauses.",
+  "claude": "- Q*Nerd (owner 2026-10-26, locker order): authentic 1982 Q*bert rules and scoring (src/qbert, 17 rule checks), a nerd boy hops a pyramid of stacked school books on isometric dot paper, chased by basketballs and a jump rope snake, with chalkboard erasers, a stapler, a hole punch and frisbee discs; arrow keys follow the cabinet's turned stick; same amendment list."
+}

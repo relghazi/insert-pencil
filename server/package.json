@@ -1,0 +1,14 @@
+{
+  "name": "no2-arcade-leaderboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/leaderboard.test.mjs",
+    "dev": "wrangler dev --local",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.45.0"
+  }
+}

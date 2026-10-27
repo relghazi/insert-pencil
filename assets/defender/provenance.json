@@ -1,0 +1,771 @@
+{
+  "approved": "Owner approved hud-icons-v5 2026-10-22",
+  "tool": "Gemini API, Nano Banana Pro (tools/generate-art.mjs); cut with tools/cutout.mjs --despill-edge 4; fitted with tools/hud-cells.mjs 32 30; written with tools/atlas-replace.ps1; atlas re-encoded lossless (cwebp -lossless -exact)",
+  "atlas": {
+    "file": "atlas-5.webp",
+    "sha256": "7289255523666474acca9d257d2b5b236183af6b967b2a955354726f23137adc",
+    "note": "Only the radar-ship and radar-bomb cells (with their 8 px gutters) changed; every other pixel renders identically in Chrome."
+  },
+  "frames": {
+    "radar-ship": {
+      "atlas": 5,
+      "x": 1024,
+      "y": 1548,
+      "w": 32,
+      "h": 32,
+      "cell": "incoming/H/cells/radar-ship.png",
+      "cellSha256": "a31141cb753d97b375553eccd8221ee701aaa9afc39ebac7f643a341d691bacb",
+      "dom": "assets/defender/radar-ship.webp",
+      "domSha256": "6c8f9705fc82777f5f6b0ce9412ef0770054ea9da08785ae4e457da271e6713e",
+      "uses": "HUD lives icon and the player blip on the radar"
+    },
+    "radar-bomb": {
+      "atlas": 5,
+      "x": 784,
+      "y": 1548,
+      "w": 32,
+      "h": 32,
+      "cell": "incoming/H/cells/radar-bomb.png",
+      "cellSha256": "b1180859fb8fa2c75a7d7e12fc83044c74cb5474a2d8de8e03c44ed276c5f90b",
+      "dom": "scribble-assets.json domData (inline)",
+      "uses": "HUD smart bomb icon"
+    }
+  },
+  "source": {
+    "file": "incoming/H/hud-icons-v5.png",
+    "sha256": "f0832574d3532cd802759a42645ddf5cd9f41ecb48b693ebc844f4a0238d35d5",
+    "generation": {
+      "job": "hud-icons",
+      "version": 5,
+      "model": "gemini-3-pro-image",
+      "aspectRatio": "16:9",
+      "imageSize": "2K",
+      "created": "2026-10-22T20:21:14.835Z",
+      "seconds": 22,
+      "mode": "edit",
+      "prompt": "Edit the FIRST image. Keep the bomb on the right exactly as it is. Keep the background exactly as it is: flat pure magenta (#FF00FF) everywhere around both objects. Redraw only the ship on the left: the same arrowhead paper-plane fighter (nose right, V notch at the back, small canopy), drawn as a bold icon. Its outline is a very thick dark navy marker-weight line, as thick as the outline of the bomb or thicker. The inside of the ship only is filled with solid, dense pale-blue colored pencil, no white gaps, no thin inner fold lines. The canopy is one solid dark navy shape. The ship stands alone directly on the magenta: no box, no tile, no frame, no card, no background shape of any kind behind it; magenta must touch the ship outline on every side. Same height as the bomb, centered in the left half. No thruster flame, no text.\r\n",
+      "inputs": [
+        {
+          "file": "incoming/H/hud-icons-v3.png",
+          "sha256": "fea1f900e4bb6dfc3da3832525508760f9c0b3bd88e6fdfd263046fadf914ce2"
+        },
+        {
+          "file": "art-prompts/refs/player-idle-frame0.png",
+          "sha256": "528c81298c966d6fb883eb155b371a8db127c86b8228c81e42373ce4384412a5"
+        },
+        {
+          "file": "work/v045-approved-defender-cover.webp",
+          "sha256": "e8ca60e3eb5155e1c4dd7428e76fec56c234dc1134a5ad0b09a90f029c7610a2"
+        }
+      ],
+      "output": {
+        "file": "incoming/H/hud-icons-v5.png",
+        "sha256": "f0832574d3532cd802759a42645ddf5cd9f41ecb48b693ebc844f4a0238d35d5",
+        "width": 2752,
+        "height": 1536
+      },
+      "usage": {
+        "promptTokenCount": 971,
+        "candidatesTokenCount": 1312,
+        "totalTokenCount": 2551,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 197
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 774
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 268,
+        "serviceTier": "standard"
+      }
+    }
+  },
+  "hills": {
+    "approved": "Owner approved def-hills-v3 2026-10-23",
+    "file": "atlas-6.webp",
+    "source": "incoming/DF/def-hills-v3.png",
+    "sourceSha256": "9b6ac000d07f15b17a32bf8e91512e45896bc5c08a1a56263b58836cd9569949",
+    "generation": {
+      "job": "def-hills",
+      "version": 3,
+      "model": "gemini-3-pro-image",
+      "aspectRatio": "21:9",
+      "imageSize": "4K",
+      "created": "2026-10-23T15:57:33.850Z",
+      "seconds": 34,
+      "mode": "fresh",
+      "prompt": "STYLE: \"her notebook games\". Everything is drawn by a 14-year-old in her Scribble Defender notebook: confident blue ballpoint pen outlines (thick, slightly uneven, some double strokes) with dense colored-pencil fill and visible pencil strokes. Bold, readable silhouettes that still read when shrunk small. Never glossy, never vector, never 3D, never photo-real. Match the hand of the attached approved title art and notebook cover.\n\nThree separate extremely long, very thin horizontal strips of rolling-hill ground for a side-scrolling game, stacked one above the other with wide gaps between them, on a perfectly flat, uniform pure magenta background (#FF00FF). Each strip is a solid rectangular band of grass and earth seen from the side, exactly about 16 times wider than tall (thin like a ribbon), running the full width of the image. Its TOP edge is a perfectly straight horizontal edge: the green colored-pencil grass fill is cut off flat along it like a ruler edge, solid all the way up to that edge with no magenta showing below it anywhere, and one thin dark green ballpoint stroke drawn right on that edge, touching the grass. Nothing at all rises above the top edge: no tufts, flowers or blades poke above it. Below the edge: dense green colored-pencil grass with short blades drawn inside the band, fading through darker green into brown earth with a few pebbles and roots; the bottom edge dissolves into loose pencil strokes. Strip 1: spring green with a few tiny white daisies. Strip 2: deeper summer green with small clover patches. Strip 3: yellow-green late-summer grass with a few dry tufts. Each strip is uniform along its length, with no single big feature, so it can repeat side by side. No sky, no objects, no text. SCALE: this ground sits under tiny game characters only as tall as the strip itself, so draw every detail very small and fine: grass blades are short fine hatching strokes no taller than one tenth of the strip height, pebbles are tiny ovals no bigger than a grain of rice relative to the strip, flowers or clovers are tiny specks, roots are thin hairlines. Many small details evenly spread along the whole length, never any large shapes.",
+      "inputs": [
+        {
+          "file": "assets/arcade/hub/defender-title.webp",
+          "sha256": "f1e623bcab2eec67ae4dc588ff68245c9de3d8343479321790a9d9599c42cd25"
+        },
+        {
+          "file": "work/v045-approved-defender-cover.webp",
+          "sha256": "e8ca60e3eb5155e1c4dd7428e76fec56c234dc1134a5ad0b09a90f029c7610a2"
+        }
+      ],
+      "output": {
+        "file": "incoming/DF/def-hills-v3.png",
+        "sha256": "9b6ac000d07f15b17a32bf8e91512e45896bc5c08a1a56263b58836cd9569949",
+        "width": 6336,
+        "height": 2688
+      },
+      "usage": {
+        "promptTokenCount": 986,
+        "candidatesTokenCount": 2416,
+        "totalTokenCount": 3716,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 470
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 516
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 2000
+          }
+        ],
+        "thoughtsTokenCount": 314,
+        "serviceTier": "standard"
+      }
+    },
+    "cells": [
+      {
+        "id": "hill-1",
+        "sourceCrop": [
+          69,
+          8,
+          5582,
+          608
+        ],
+        "frame": {
+          "atlas": 6,
+          "x": 8,
+          "y": 8,
+          "w": 2048,
+          "h": 320
+        }
+      },
+      {
+        "id": "hill-2",
+        "sourceCrop": [
+          69,
+          4,
+          5582,
+          612
+        ],
+        "frame": {
+          "atlas": 6,
+          "x": 8,
+          "y": 344,
+          "w": 2048,
+          "h": 320
+        }
+      },
+      {
+        "id": "hill-3",
+        "sourceCrop": [
+          69,
+          80,
+          5590,
+          600
+        ],
+        "frame": {
+          "atlas": 6,
+          "x": 8,
+          "y": 680,
+          "w": 2048,
+          "h": 320
+        }
+      }
+    ],
+    "sha256": "b36dd17f06ec0c9cd9e6d2aa0973acc72b4288f8c995852c07f511b8fdb6ae8b",
+    "note": "Hill strips at 2x, top edge at source row zero, 8 px edge-bled gutters. Data-only change; Defender code byte-identical."
+  },
+  "animations": {
+    "file": "atlas-7.webp",
+    "sha256": "fe2e5078f55bd2858adff7cf6e1f067deed8d32a373676af0d06bf6ecc35a679",
+    "approved": "def-cast-v1 key designs approved by the owner 2026-10-23; frame sheets approved by the owner 2026-10-23",
+    "sheets": {
+      "player-idle": {
+        "sheet": "incoming/DF/anim-player-idle-v1.png",
+        "sheetSha256": "95f2eab669f93b9f6726058fe6c4fc6ee7223ff2436071ebd3ad95397d7ac63a",
+        "crop": null,
+        "assets": [
+          "player-idle"
+        ]
+      },
+      "player-reverse": {
+        "sheet": "incoming/DF/anim-player-reverse-v2.png",
+        "sheetSha256": "561e1f20d4e2b053abba0f533b8372b4ab3222d8af6eaf19753bb95f7deb59d8",
+        "crop": null,
+        "assets": [
+          "player-reverse"
+        ]
+      },
+      "player-thrust": {
+        "sheet": "incoming/DF/anim-player-thrust-v2.png",
+        "sheetSha256": "31386ae66753bad0733513f2061c4bf2a177cdd1ec50bac45d88b6531a7c81ba",
+        "crop": null,
+        "assets": [
+          "player-thrust"
+        ]
+      },
+      "lander-idle": {
+        "sheet": "incoming/DF/anim-lander-idle-v2.png",
+        "sheetSha256": "85d802925c16b4111e1d581ede8b0bd94ec2f5bacb3e9bf9eaa9ae3b27945bbf",
+        "crop": null,
+        "assets": [
+          "lander-idle"
+        ]
+      },
+      "mutant-idle": {
+        "sheet": "incoming/DF/anim-mutant-idle-v5.png",
+        "sheetSha256": "4fa9ad3d409d7cfa229baad3bdd03f4d5d76e094cead3c7da8a9b7a81d4e8302",
+        "crop": null,
+        "assets": [
+          "mutant-idle"
+        ]
+      },
+      "bomber-idle": {
+        "sheet": "incoming/DF/anim-bomber-idle-v2.png",
+        "sheetSha256": "b589ef842c9e70f0e49a71821d18f40c1b5f35c0cadf35fbe28a9cf2858eae1b",
+        "crop": null,
+        "assets": [
+          "bomber-idle"
+        ]
+      },
+      "pod-idle": {
+        "sheet": "incoming/DF/anim-pod-idle-v2.png",
+        "sheetSha256": "238fa8c6216a08613670a4caa1a110cdc3a501d0bf066e3d1f41dbf25fcc1825",
+        "crop": null,
+        "assets": [
+          "pod-idle"
+        ]
+      },
+      "swarmer-idle": {
+        "sheet": "incoming/DF/anim-swarmer-idle-v2.png",
+        "sheetSha256": "62e55571d53b051d9f1e46622b2b7ed946c6f106efe706f1bd855dde9c3298e3",
+        "crop": null,
+        "assets": [
+          "swarmer-idle"
+        ]
+      },
+      "enemy-bullet": {
+        "sheet": "incoming/DF/anim-enemy-bullet-v1.png",
+        "sheetSha256": "6094cc32259ad83830a9480abbaf7f23081c6393c1c09b9648ac1038091401a5",
+        "crop": null,
+        "assets": [
+          "enemy-bullet"
+        ]
+      },
+      "mine": {
+        "sheet": "incoming/DF/anim-mine-v1.png",
+        "sheetSha256": "eb848e4d78773f09589d334f5040cbaa69024207bd4c4aabff2adfc7e5febf94",
+        "crop": null,
+        "assets": [
+          "mine"
+        ]
+      },
+      "laser-ink": {
+        "sheet": "incoming/DF/anim-laser-ink-v1.png",
+        "sheetSha256": "caa7c8c3311ad952c96d771460444126086ecf90f4a09584c3060fd9f678ca27",
+        "crop": null,
+        "assets": [
+          "laser-ink"
+        ]
+      },
+      "booms": {
+        "sheet": "incoming/DF/anim-booms-v1.png",
+        "sheetSha256": "ba95d20cfbb5471062a784e5a9b39c6e7375e6de50579f7d152b2487881eabbd",
+        "crop": null,
+        "assets": [
+          "boom-1",
+          "boom-2",
+          "boom-3",
+          "pow-1",
+          "pow-2",
+          "pow-3"
+        ]
+      },
+      "player-explosion": {
+        "sheet": "incoming/DF/anim-player-explosion-v1.png",
+        "sheetSha256": "5b76129de59377b0e011a2b4f9d2ca2292a493d16a0acc6956aadd87d93981f7",
+        "crop": null,
+        "assets": [
+          "player-explosion"
+        ]
+      },
+      "baiter-idle": {
+        "sheet": "incoming/DF/anim-baiter-idle-v2.png",
+        "sheetSha256": "b4a31e0b43a848f3ea05ee3c5ac1dd8f9aa9f8bf46f9de78ae9d0b8066d5ebde",
+        "crop": "0,960,6336,800",
+        "assets": [
+          "baiter-idle"
+        ]
+      }
+    },
+    "note": "Frames at 2x in 8 px transparent gutters, one scale per animation. Data-only change; Defender code byte-identical."
+  },
+  "animations-8": {
+    "file": "atlas-8.webp",
+    "sha256": "9d337ec80d180ce2d875721d0b41a26b03cdd2aa17184bd7f4a922d405f1ac0c",
+    "approved": "Owner approved 2026-10-23",
+    "sheets": {
+      "lander-materialize": {
+        "sheet": "incoming/DF/anim-lander-materialize-v3.png",
+        "sheetSha256": "27e6dde5cfcc7b39b5f5a1d179d3b41fc2534516596bc425c18a27d7e08289c3",
+        "crop": null,
+        "assets": [
+          "lander-materialize"
+        ]
+      },
+      "lander-death": {
+        "sheet": "incoming/DF/anim-lander-death-v1.png",
+        "sheetSha256": "d61453f5a2cb39542f5ec1801f44bb4b33cf9638fc7b53a429b3c34a1d3255dc",
+        "crop": null,
+        "assets": [
+          "lander-death"
+        ]
+      },
+      "mutant-materialize": {
+        "sheet": "incoming/DF/anim-mutant-materialize-v3.png",
+        "sheetSha256": "4735d2467acdcc019e19a152c1617ae190168d1afd2eafbfe920807b91a86db9",
+        "crop": null,
+        "assets": [
+          "mutant-materialize"
+        ]
+      },
+      "mutant-death": {
+        "sheet": "incoming/DF/anim-mutant-death-v1.png",
+        "sheetSha256": "aa1958ce2613bb76e312812dedfb27e887ebc0d59a6e93925c8b03b1c790ab74",
+        "crop": null,
+        "assets": [
+          "mutant-death"
+        ]
+      },
+      "bomber-materialize": {
+        "sheet": "incoming/DF/anim-bomber-materialize-v3.png",
+        "sheetSha256": "3fa422a7e979b350a7f57a17fd07f25a5c6efe8e8283d1ed3bf99755b3dc0953",
+        "crop": null,
+        "assets": [
+          "bomber-materialize"
+        ]
+      },
+      "bomber-death": {
+        "sheet": "incoming/DF/anim-bomber-death-v1.png",
+        "sheetSha256": "3d4e2a26ed59945f7b3579db67eb5ed99ba7d860439239751aa98cb12d3e599d",
+        "crop": null,
+        "assets": [
+          "bomber-death"
+        ]
+      },
+      "pod-materialize": {
+        "sheet": "incoming/DF/anim-pod-materialize-v3.png",
+        "sheetSha256": "4804cf4a8d9cd2c4edb6f35d42129adaea02a6b4b65c210475d625cc4d903796",
+        "crop": null,
+        "assets": [
+          "pod-materialize"
+        ]
+      },
+      "pod-death": {
+        "sheet": "incoming/DF/anim-pod-death-v1.png",
+        "sheetSha256": "19de5359beec4dc9bae1ccda1250b88c4e2d90deda0e2c9d7623a9465d46cb9a",
+        "crop": null,
+        "assets": [
+          "pod-death"
+        ]
+      },
+      "swarmer-materialize": {
+        "sheet": "incoming/DF/anim-swarmer-materialize-v3.png",
+        "sheetSha256": "da24126f931be134a2f7244d3b2d200640188491ecc9995176392fb4650f646c",
+        "crop": null,
+        "assets": [
+          "swarmer-materialize"
+        ]
+      },
+      "swarmer-death": {
+        "sheet": "incoming/DF/anim-swarmer-death-v3.png",
+        "sheetSha256": "b6f6ad112146d969ccc5a7c78c4d4c2df7e2de78240e9c1cc8f76c404c83ed94",
+        "crop": null,
+        "assets": [
+          "swarmer-death"
+        ]
+      },
+      "baiter-materialize": {
+        "sheet": [
+          "incoming/DF/anim-baiter-appear-1-v1.png",
+          "incoming/DF/anim-baiter-appear-2-v1.png",
+          "incoming/DF/anim-baiter-appear-3-v2.png",
+          "incoming/DF/anim-baiter-appear-4-v1.png"
+        ],
+        "sheetSha256": [
+          "839fb4d52af3897b46271df1bdd0262e3a55898d36a612543a84f4b347b32a4c",
+          "bfee35276953ff585a78dd1a4368f36051546afeac3c3ac2fd5ff2a369b05b84",
+          "7038936d6490c03a63fa96e2bbc6071a698007e512e6257a830b345d6ccb5c51",
+          "57a8fa5866028551356f4c66a6a0cb4d876783e87cec0f6b5eaa28ea4bb0e7bf"
+        ],
+        "crop": null,
+        "assets": [
+          "baiter-materialize"
+        ]
+      },
+      "baiter-death": {
+        "sheet": "incoming/DF/anim-baiter-death-v2.png",
+        "sheetSha256": "15760de8ea641d917c7fe1ad531252909f2573947d699692a3b7cdb2594a721c",
+        "crop": null,
+        "assets": [
+          "baiter-death"
+        ]
+      }
+    },
+    "note": "Frames at 2x in 8 px transparent gutters, one scale per animation. Data-only change; Defender code byte-identical."
+  },
+  "animations-9": {
+    "file": "atlas-9.webp",
+    "sha256": "87becdacd94d83f3218a17faa21f50d92f9dd35e79364b2c39aac84895dc99b1",
+    "approved": "Owner approved 2026-10-23",
+    "sheets": {
+      "teen-00-walk": {
+        "sheet": "incoming/DF/anim-teen-00-walk-v1.png",
+        "sheetSha256": "6112b3ea59ffdc22d2d9b14d4912e63058d57d600c134c968be39a5780db4ea8",
+        "crop": null,
+        "assets": [
+          "teen-00-walk"
+        ]
+      },
+      "teen-00-struggle": {
+        "sheet": "incoming/DF/anim-teen-00-struggle-v1.png",
+        "sheetSha256": "202e96cf79a9f5f2144016e50e0abdbbeeac4219485609a14aea9677253adf32",
+        "crop": null,
+        "assets": [
+          "teen-00-struggle"
+        ]
+      },
+      "teen-00-fall": {
+        "sheet": "incoming/DF/anim-teen-00-fall-v1.png",
+        "sheetSha256": "9e39690c4ae07dfbd0734aaff2548aaf14e6833edd0297173b621727ad93b332",
+        "crop": null,
+        "assets": [
+          "teen-00-fall"
+        ]
+      },
+      "teen-00-saved": {
+        "sheet": "incoming/DF/anim-teen-00-saved-v1.png",
+        "sheetSha256": "c79a91829da2c5eee19ade98945084b5627ce97f29fbb72f27036f9003f73105",
+        "crop": null,
+        "assets": [
+          "teen-00-saved"
+        ]
+      },
+      "teen-01-walk": {
+        "sheet": "incoming/DF/anim-teen-01-walk-v1.png",
+        "sheetSha256": "0414ecca42c23c4067e6cf5aa72ea05e54756f44c7c608c4118fd70b20b3cb96",
+        "crop": null,
+        "assets": [
+          "teen-01-walk"
+        ]
+      },
+      "teen-01-struggle": {
+        "sheet": "incoming/DF/anim-teen-01-struggle-v1.png",
+        "sheetSha256": "d03fc89266de68b774d66973cc287a76cefdf53e8b89708861df6c7ba25c9461",
+        "crop": null,
+        "assets": [
+          "teen-01-struggle"
+        ]
+      },
+      "teen-01-fall": {
+        "sheet": "incoming/DF/anim-teen-01-fall-v1.png",
+        "sheetSha256": "550bc2156a6ad3d780bc7b6f9879b8f70f61fa3be16924d44c38bc42b750cbcc",
+        "crop": null,
+        "assets": [
+          "teen-01-fall"
+        ]
+      },
+      "teen-01-saved": {
+        "sheet": "incoming/DF/anim-teen-01-saved-v1.png",
+        "sheetSha256": "225798a081b89eed5c2bf311da88e673f9d0eeb144ae53c2aedac1aec5d93ea6",
+        "crop": null,
+        "assets": [
+          "teen-01-saved"
+        ]
+      },
+      "teen-02-walk": {
+        "sheet": "incoming/TR/teen-02-recolour-v2.png",
+        "sheetSha256": "72894593ac4abae37b0aa972d0d8631872fcb2e77f24186946b3d529d6e042a8",
+        "crop": null,
+        "assets": [
+          "teen-02-walk"
+        ],
+        "recolour": "jacket yellow to deep teal #1F6F73, Gemini edit job teen-02-recolour v2, owner approved 2026-10-27"
+      },
+      "teen-02-struggle": {
+        "sheet": "incoming/TR/teen-02-recolour-v2.png",
+        "sheetSha256": "72894593ac4abae37b0aa972d0d8631872fcb2e77f24186946b3d529d6e042a8",
+        "crop": null,
+        "assets": [
+          "teen-02-struggle"
+        ],
+        "recolour": "jacket yellow to deep teal #1F6F73, Gemini edit job teen-02-recolour v2, owner approved 2026-10-27"
+      },
+      "teen-02-fall": {
+        "sheet": "incoming/TR/teen-02-recolour-v2.png",
+        "sheetSha256": "72894593ac4abae37b0aa972d0d8631872fcb2e77f24186946b3d529d6e042a8",
+        "crop": null,
+        "assets": [
+          "teen-02-fall"
+        ],
+        "recolour": "jacket yellow to deep teal #1F6F73, Gemini edit job teen-02-recolour v2, owner approved 2026-10-27"
+      },
+      "teen-02-saved": {
+        "sheet": "incoming/TR/teen-02-recolour-v2.png",
+        "sheetSha256": "72894593ac4abae37b0aa972d0d8631872fcb2e77f24186946b3d529d6e042a8",
+        "crop": null,
+        "assets": [
+          "teen-02-saved"
+        ],
+        "recolour": "jacket yellow to deep teal #1F6F73, Gemini edit job teen-02-recolour v2, owner approved 2026-10-27"
+      },
+      "teen-03-walk": {
+        "sheet": "incoming/DF/anim-teen-03-walk-v1.png",
+        "sheetSha256": "f682b07cfaa141855867b33fce579e5e9b7a43bae8f869882ac53b03db59629d",
+        "crop": null,
+        "assets": [
+          "teen-03-walk"
+        ]
+      },
+      "teen-03-struggle": {
+        "sheet": "incoming/DF/anim-teen-03-struggle-v1.png",
+        "sheetSha256": "dedea02213940d662582f468221ccdc507d5c21052b403276d24d71180650c01",
+        "crop": null,
+        "assets": [
+          "teen-03-struggle"
+        ]
+      },
+      "teen-03-fall": {
+        "sheet": "incoming/DF/anim-teen-03-fall-v1.png",
+        "sheetSha256": "6e9e6bb3fa8190e3ec644c4d7db848b95b3d37d7f61eb09607b941b5f0f6bcff",
+        "crop": null,
+        "assets": [
+          "teen-03-fall"
+        ]
+      },
+      "teen-03-saved": {
+        "sheet": "incoming/DF/anim-teen-03-saved-v1.png",
+        "sheetSha256": "43aaf3762726f4b9fc10772e63d02e0afe2115bb8047a280daacd133befaeb6a",
+        "crop": null,
+        "assets": [
+          "teen-03-saved"
+        ]
+      },
+      "teen-04-walk": {
+        "sheet": "incoming/DF/anim-teen-04-walk-v1.png",
+        "sheetSha256": "2dd1f88f8454c1cbfa41e116435ae9dee62b6a71722bd72f738a1d68a18c7938",
+        "crop": null,
+        "assets": [
+          "teen-04-walk"
+        ]
+      },
+      "teen-04-struggle": {
+        "sheet": "incoming/DF/anim-teen-04-struggle-v1.png",
+        "sheetSha256": "f3eeb951c660fb7f778f9da3a0420214016ce24906efed519bb3708bfc4ffd17",
+        "crop": null,
+        "assets": [
+          "teen-04-struggle"
+        ]
+      },
+      "teen-04-fall": {
+        "sheet": "incoming/DF/anim-teen-04-fall-v1.png",
+        "sheetSha256": "95eacab7e06aa081d7509999b17585f4d3953638ab0c5540c625e65232bdc2b0",
+        "crop": null,
+        "assets": [
+          "teen-04-fall"
+        ]
+      },
+      "teen-04-saved": {
+        "sheet": "incoming/DF/anim-teen-04-saved-v1.png",
+        "sheetSha256": "73e4c36cbdbd5ceddc4c43998e1ed1c63ae79eebf61d609a8a4c48667fc41e79",
+        "crop": null,
+        "assets": [
+          "teen-04-saved"
+        ]
+      },
+      "teen-05-walk": {
+        "sheet": "incoming/DF/anim-teen-05-walk-v1.png",
+        "sheetSha256": "cb428231227c0d4ac426410c67bb199dcb60f2b1268e9c49253c8f262910ea61",
+        "crop": null,
+        "assets": [
+          "teen-05-walk"
+        ]
+      },
+      "teen-05-struggle": {
+        "sheet": "incoming/DF/anim-teen-05-struggle-v1.png",
+        "sheetSha256": "a80f0a3caae2f79b04c53522f702688261261cd7bd9999338dcf44d6eae70564",
+        "crop": null,
+        "assets": [
+          "teen-05-struggle"
+        ]
+      },
+      "teen-05-fall": {
+        "sheet": "incoming/DF/anim-teen-05-fall-v1.png",
+        "sheetSha256": "aca9023a2af46b729a32d3e93f012cc8b8b99d413b0f7b33b392c83baacaf9e0",
+        "crop": null,
+        "assets": [
+          "teen-05-fall"
+        ]
+      },
+      "teen-05-saved": {
+        "sheet": "incoming/DF/anim-teen-05-saved-v1.png",
+        "sheetSha256": "3414c37862e5d22f22865b7873bb0b72675a9f9a17001b0033b4151aabd7dc59",
+        "crop": null,
+        "assets": [
+          "teen-05-saved"
+        ]
+      },
+      "teen-06-walk": {
+        "sheet": "incoming/DF/anim-teen-06-walk-v1.png",
+        "sheetSha256": "37b557d534b2e64035f4b34c5566d4ffb303f526c97892b4a1c89f7ac5444168",
+        "crop": null,
+        "assets": [
+          "teen-06-walk"
+        ]
+      },
+      "teen-06-struggle": {
+        "sheet": "incoming/DF/anim-teen-06-struggle-v1.png",
+        "sheetSha256": "9bb9c54248d3483e37331124aa627c11144119e70681d2afccfb3048120b2825",
+        "crop": null,
+        "assets": [
+          "teen-06-struggle"
+        ]
+      },
+      "teen-06-fall": {
+        "sheet": "incoming/DF/anim-teen-06-fall-v1.png",
+        "sheetSha256": "f5e73c3ddb00c8f5f3e1784aebf636b5acafbc6d31b1c65c28103d2a296da0af",
+        "crop": null,
+        "assets": [
+          "teen-06-fall"
+        ]
+      },
+      "teen-06-saved": {
+        "sheet": "incoming/DF/anim-teen-06-saved-v1.png",
+        "sheetSha256": "9e1f54a3c84f8f78f2218d0edede50391629dfb4737ab6ad4f1a38187b7483ce",
+        "crop": null,
+        "assets": [
+          "teen-06-saved"
+        ]
+      },
+      "teen-07-walk": {
+        "sheet": "incoming/DF/anim-teen-07-walk-v1.png",
+        "sheetSha256": "6135b50adfc16407efae9695db67f88aca8363c11811c953082c661d28415980",
+        "crop": null,
+        "assets": [
+          "teen-07-walk"
+        ]
+      },
+      "teen-07-struggle": {
+        "sheet": "incoming/DF/anim-teen-07-struggle-v1.png",
+        "sheetSha256": "1ff2abf7516cc5f53084f1d7bb0f2aec67c5b4fe8e67e4a900bbc071998cb3a0",
+        "crop": null,
+        "assets": [
+          "teen-07-struggle"
+        ]
+      },
+      "teen-07-fall": {
+        "sheet": "incoming/DF/anim-teen-07-fall-v1.png",
+        "sheetSha256": "e20211e3c00fe47ce6e5ca4ae3756cd90e2bd76d704bb199eabfc1638c9b2359",
+        "crop": null,
+        "assets": [
+          "teen-07-fall"
+        ]
+      },
+      "teen-07-saved": {
+        "sheet": "incoming/DF/anim-teen-07-saved-v1.png",
+        "sheetSha256": "7400a3898e331a1639d754e2a5d2cc490236d4ed8956bba2efd895826efd5d35",
+        "crop": null,
+        "assets": [
+          "teen-07-saved"
+        ]
+      },
+      "teen-08-walk": {
+        "sheet": "incoming/DF/anim-teen-08-walk-v1.png",
+        "sheetSha256": "c9a186ce90792794d517e535674f06fc1ac8e318e5983cf567f56a9db7e48d5d",
+        "crop": null,
+        "assets": [
+          "teen-08-walk"
+        ]
+      },
+      "teen-08-struggle": {
+        "sheet": "incoming/DF/anim-teen-08-struggle-v1.png",
+        "sheetSha256": "ebb53ac3ff0cfa4fe377e9974ceaf4c8e8f2e48dc64dc6ae37838d1a614e3692",
+        "crop": null,
+        "assets": [
+          "teen-08-struggle"
+        ]
+      },
+      "teen-08-fall": {
+        "sheet": "incoming/DF/anim-teen-08-fall-v1.png",
+        "sheetSha256": "308b32b21dd689f00ae3da67e82c1ef0b85afad436c15aa07631d0912b46589e",
+        "crop": null,
+        "assets": [
+          "teen-08-fall"
+        ]
+      },
+      "teen-08-saved": {
+        "sheet": "incoming/DF/anim-teen-08-saved-v1.png",
+        "sheetSha256": "621dd5186b7f33b11b03b20b881bfff5cb7a0bd794b6871b47e8a65d7e308f1f",
+        "crop": null,
+        "assets": [
+          "teen-08-saved"
+        ]
+      },
+      "teen-09-walk": {
+        "sheet": "incoming/DF/anim-teen-09-walk-v1.png",
+        "sheetSha256": "c18138bd3927b2d6e11d5c8e87a3c7e8b27f17820f78d6ae6f1a79b32e5bc3dc",
+        "crop": null,
+        "assets": [
+          "teen-09-walk"
+        ]
+      },
+      "teen-09-struggle": {
+        "sheet": "incoming/DF/anim-teen-09-struggle-v1.png",
+        "sheetSha256": "b82061d775eeaccf4a29e1d4bbe56ded97edda692993ff4fb9c8ea64538291e0",
+        "crop": null,
+        "assets": [
+          "teen-09-struggle"
+        ]
+      },
+      "teen-09-fall": {
+        "sheet": "incoming/DF/anim-teen-09-fall-v1.png",
+        "sheetSha256": "ca4a25d23475643d1cb3f55e78bd6245af9db235fdeb5e6a655d9b7cf627b8a1",
+        "crop": null,
+        "assets": [
+          "teen-09-fall"
+        ]
+      },
+      "teen-09-saved": {
+        "sheet": "incoming/DF/anim-teen-09-saved-v1.png",
+        "sheetSha256": "db6dd58f30511b25bbe6c9aadf04e201637574bd136f0916c0b067bcb3b02b17",
+        "crop": null,
+        "assets": [
+          "teen-09-saved"
+        ]
+      }
+    },
+    "note": "Frames at 2x in 8 px transparent gutters, one scale per animation. Data-only change; Defender code byte-identical."
+  }
+}
