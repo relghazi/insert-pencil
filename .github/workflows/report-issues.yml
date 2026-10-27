@@ -1,0 +1,38 @@
+# Files the game's detention slips (problem reports from the locker) as issues in this repository, every 20 minutes.
+# Copy to .github/workflows/ in the repository that should receive the issues, and set the repository secrets
+# LEADERBOARD_URL and LEADERBOARD_ADMIN_TOKEN (the same values as for leaderboard-verify).
+name: report-issues
+
+on:
+  schedule:
+    - cron: '14,34,54 * * * *'   # every 20 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: report-issues
+  cancel-in-progress: false
+
+jobs:
+  file:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Pinned to full commit SHAs (tag in the comment).
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: server/reports.mjs
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with:
+          node-version: '24'
+      - name: File new slips as issues
+        env:
+          LEADERBOARD_URL: ${{ secrets.LEADERBOARD_URL }}
+          LEADERBOARD_ADMIN_TOKEN: ${{ secrets.LEADERBOARD_ADMIN_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node server/reports.mjs

@@ -1,0 +1,40 @@
+{
+  "passed": 8,
+  "checks": [
+    {
+      "name": "Whole pages and all panel crops fit above controls at 1280x720",
+      "pass": true
+    },
+    {
+      "name": "Whole pages and all panel crops fit above controls at 1920x1080",
+      "pass": true
+    },
+    {
+      "name": "Whole pages and all panel crops fit above controls at 2560x1080",
+      "pass": true
+    },
+    {
+      "name": "Automatic playback opens every page whole before camera movement",
+      "pass": true
+    },
+    {
+      "name": "Manual Next visits every panel before advancing page, Back reverses panel step",
+      "pass": true
+    },
+    {
+      "name": "Keyboard Right/Left operate the actual player handlers",
+      "pass": true
+    },
+    {
+      "name": "Controller D-pad and A release navigate panels; B held leaves the comic",
+      "pass": true
+    },
+    {
+      "name": "Page 11 Next exposes interactive locker immediately, no synthetic page or handoff delay",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "Production JavaScript exercised with DOM/canvas stubs. Actual screenshots, GPU rendering, physical controller and raster text readability remain unverified."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+ "status": "approved by owner 2026-10-28",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs",
+ "batch": "incoming/PBI",
+ "assets": {
+  "assets/paperboy/house-a.webp": {
+   "candidate": "incoming/PBI/pb-iso-house-a-r-v1.png",
+   "sha256": "534bf15fa0b7d45646925fb937ba78a3f1d9d149b40e1872bf990c17895f40f0"
+  },
+  "assets/paperboy/house-b.webp": {
+   "candidate": "incoming/PBI/pb-iso-house-b-v2.png",
+   "sha256": "9a35c69cd11883908992929b6d5901bbf3119cae1e34a0c1a8f33d84473027f0"
+  },
+  "assets/paperboy/drab-a.webp": {
+   "candidate": "incoming/PBI/pb-iso-drab-a-r-v1.png",
+   "sha256": "796e517d379c778be440b8bc9053aa492ca61babea7fe2991c2fd6968d472aa5"
+  },
+  "assets/paperboy/drab-b.webp": {
+   "candidate": "incoming/PBI/pb-iso-drab-b-r-v1.png",
+   "sha256": "526c69246e2fa8d7887c7650d00c12b05d9bbc1ac2058875905e281ca93ce9fc"
+  },
+  "assets/paperboy/car.webp": {
+   "candidate": "incoming/PBI/pb-iso-car-v1.png",
+   "sha256": "811127f389b99203ecd82275a57ef1ca6812cd476103a69d2c0294e3c8f10762"
+  },
+  "assets/paperboy/ramp.webp": {
+   "candidate": "incoming/PBI/pb-iso-ramp-v1.png",
+   "sha256": "1bf36004b05f7422bddbd84c0ed8ebaca967588f6f08a648d275c4970e63c471"
+  },
+  "assets/paperboy/wall.webp": {
+   "candidate": "incoming/PBI/pb-iso-wall-v1 (mirrored).png",
+   "sha256": "704708bdd8115a359e2c9ee93ee4331062876d4543f89d3e3cd55211a02effe3"
+  }
+ },
+ "cut": "white background keyed by flood fill from the border; houses share one 2048 frame (door base 1494,1442), scaled to the core window offsets",
+ "fit": "drawn 0.81 as tall in the game (ISO_Y) so the 0.62 wall slopes lie on the 2:1 street; the car is not fitted"
+}

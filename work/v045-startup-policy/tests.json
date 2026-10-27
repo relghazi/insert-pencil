@@ -1,0 +1,54 @@
+{
+  "passed": 11,
+  "checks": [
+    {
+      "name": "default policy is first launch and after updates",
+      "pass": true
+    },
+    {
+      "name": "first launch shows title then comic and records version",
+      "pass": true
+    },
+    {
+      "name": "same version still shows title then goes to hub",
+      "pass": true
+    },
+    {
+      "name": "update replays after title",
+      "pass": true
+    },
+    {
+      "name": "Always replays same version",
+      "pass": true
+    },
+    {
+      "name": "sketchbook replay bypasses startup policy without changing seen version",
+      "pass": true
+    },
+    {
+      "name": "old boolean and old seen flag cannot suppress first launch",
+      "pass": true
+    },
+    {
+      "name": "hold is wall-clock timed, no skip before 800 ms, one skip and completes while held",
+      "pass": true
+    },
+    {
+      "name": "title auto advances on wall clock without input",
+      "pass": true
+    },
+    {
+      "name": "settings exposes both approved choices",
+      "pass": true
+    },
+    {
+      "name": "policy and seen version survive actual ArcadeSave persistence in its existing namespace",
+      "pass": true
+    }
+  ],
+  "verificationLimits": [
+    "VM regression tests execute production MotionComic methods with DOM, assets and audio stubs; persistence uses the actual ArcadeSave implementation with an in-memory localStorage provider.",
+    "No game build was rebuilt and no browser or packaged EXE was launched by this test.",
+    "Visual title animation and browser localStorage must also be verified in the assembled build."
+  ]
+}

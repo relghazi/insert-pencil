@@ -1,0 +1,12 @@
+[
+  {
+    "file": "src/defender/renderer.js",
+    "from": "this.terrain=new P.MeshPlane({texture:this.frames['hill-1'][0],verticesX:73,verticesY:2});",
+    "to": "this.terrain=new P.MeshPlane({texture:this.frames['hill-1'][0],verticesX:181,verticesY:2});"
+  },
+  {
+    "file": "src/defender/renderer.js",
+    "from": "const positions=this.terrain.geometry.getBuffer('aPosition').data;for(let i=0;i<73;i++){const x=i*1440/72,y=e.terrain(ScribbleCore.wrap(e.cam+x-720));positions[i*2]=x;positions[i*2+1]=y;positions[(73+i)*2]=x;positions[(73+i)*2+1]=y+95}",
+    "to": "const positions=this.terrain.geometry.getBuffer('aPosition').data;for(let i=0;i<181;i++){const x=i*1440/180,w=e.cam+x-720,n=Math.floor(w/180),f=w/180-n,p=k=>e.terrain(ScribbleCore.wrap((n+k)*180)),a=p(-1),b=p(0),c=p(1),d=p(2),y=b+.5*f*(c-a+f*(2*a-5*b+4*c-d+f*(3*(b-c)+d-a)))+1.2*Math.sin(w*.031)+.7*Math.sin(w*.083);positions[i*2]=x;positions[i*2+1]=y;positions[(181+i)*2]=x;positions[(181+i)*2+1]=y+95}"
+  }
+]

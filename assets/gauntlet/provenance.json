@@ -1,0 +1,16 @@
+{
+ "status": "",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; cut with tools/cut-sprite-sheet.py",
+ "candidates": {},
+ "assets": {},
+ "frame-match": {
+  "status": "approved by owner 2026-10-29",
+  "note": "second animation frame edited with Nano Banana to show the same character as the first (and drone-a without its yellow sash)",
+  "candidates": {
+   "incoming/FR/gauntlet-demon-b-match-v2.png": "beac33408900db6892f4b44b845bc2326af592f7fbbbc3dbaec662a8f34fdd7a"
+  },
+  "assets": {
+   "assets/gauntlet/demon-b.webp": "5f28ff8b8b8ff1777939797a1024d194a71e761dd76642511726f9aa0aec757a"
+  }
+ }
+}

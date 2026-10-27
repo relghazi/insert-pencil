@@ -1,0 +1,13 @@
+{
+ "status": "approved by owner 2026-10-30 (controller setup shows the connected controller)",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (jobs pad-pic-*)",
+ "candidates": {
+  "incoming/PADPIC/pad-pic-xbox-v1.png": "d01b2e4a472c55f33ae1faacaefa9b93ee604fd9b8e91036c8c69100e383cb8a",
+  "incoming/PADPIC/pad-pic-elite-v1.png": "18159b7eada3554f11a256b3b2daeacc369fac9465ce8b0b22044d6ace7b501a",
+  "incoming/PADPIC/pad-pic-ps-v1.png": "3e1bdfc9ea997de4eae3c0b9f5f290c9ee11e3a64eed7f2c0112531a3179b24d",
+  "incoming/PADPIC/pad-pic-steam-v1.png": "b0d578b0c2aa968bd7cf642fa97483ea5715a95a56dc589c40e0536670c0f7cb",
+  "incoming/PADPIC/pad-pic-pad-v2.png": "cd00a3115e39ae0cc2beebbf277b20286e5e1fd126175e83b21d65410fb8135e",
+  "incoming/PADPIC/pad-pic-8bitdo-v1.png": "8814fff4b1191fa90861b50c26af646c9a4fe05c7e5cc5e18f402e25a2179f00",
+  "incoming/PADPIC/pad-pic-8bitdo-v2.png": "49dcf6eda6d242a20fa211297475552fde0faa67354f535f67866bf0ab7ab5f4"
+ }
+}

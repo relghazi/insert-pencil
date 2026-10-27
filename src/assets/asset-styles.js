@@ -1,0 +1,1 @@
+if(typeof document!=='undefined'){const style=document.createElement('style');style.id='offline-font-contract';style.textContent=No2AssetData.fontContract.map(f=>'@font-face{font-family:'+f.family+';src:url("'+No2AssetData.files[f.file]+'") format("truetype");font-display:swap}').join('\n');document.head.appendChild(style)}

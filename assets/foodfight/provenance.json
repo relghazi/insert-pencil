@@ -1,0 +1,11 @@
+{
+ "status": "approved by owner 2026-10-29",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (edit); cut with tools/cut-sprite-sheet.py --blobs",
+ "note": "run-b: backpack added so it stays on in both running frames, Nano Banana edit of the shipped sprite with run-a as reference",
+ "candidates": {
+  "incoming/FF/foodfight-run-b-backpack-v2.png": "25978b0a54c91f5f2f4a7b36c6b2f81658313b519ede2b2142bdba0038eff970"
+ },
+ "assets": {
+  "assets/foodfight/run-b.webp": "44ba0a56e0fa6eb31a56a0f9a12ae1d2abb91342f504f5cd69681c70d4771296"
+ }
+}

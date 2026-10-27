@@ -1,0 +1,120 @@
+
+/* Notebook-world UI (owner-approved Nano Banana batch U, 2026-10-22). Loaded last, so it wins. */
+/* Desk sheets: a taped ruled index card; the tape corners keep their shape, the ruled middle stretches.
+   The bottom slice holds the star, rocket and coffee ring so they stay below the text. */
+#desk-dialog:not(.backpack-dialog){background:transparent!important;border:0!important;box-shadow:none!important;border-style:solid!important;  border-width:96px 64px 128px 64px!important;padding:0 24px 8px!important;filter:drop-shadow(4px 8px 10px #2c201866)}
+#desk-dialog:not(.backpack-dialog)::backdrop{background:#1e1a1640}
+#desk-dialog #dialog-kicker{color:#7b6d5b;font-style:italic}
+#desk-dialog #dialog-title{display:flex;align-items:center;gap:.4em;color:#22355a}
+#desk-dialog #dialog-title::before{content:'';flex:none;width:1.9em;height:1.9em;background:center/contain no-repeat}
+#desk-dialog[data-screen=settings] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-settings.webp@@)}
+#desk-dialog[data-screen=scores] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-scores.webp@@)}
+#desk-dialog[data-screen=achievements] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-achievements.webp@@)}
+#desk-dialog[data-screen=calculator] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-calculator.webp@@)}
+#desk-dialog[data-screen=eraser] #dialog-title::before,#desk-dialog[data-screen=confirm] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-eraser.webp@@)}
+#desk-dialog[data-screen=swap] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-open.webp@@)}
+#desk-dialog[data-screen=globe] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-globe.webp@@)}
+#desk-dialog[data-screen=shoe] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-gym.webp@@)}
+#desk-dialog[data-screen=daily] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-daily.webp@@)}
+#desk-dialog[data-screen=report] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-report.webp@@)}
+#desk-dialog[data-screen=news] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-news.webp@@)}
+#desk-dialog[data-screen=padsetup] #dialog-title::before{background-image:url(@@asset:assets/ui/icon-padsetup.webp@@)}
+#desk-dialog #dialog-close{border:0!important;box-shadow:none!important;padding-left:2.2em!important;color:#22355a}
+
+/* Paper buttons: a drawn rounded label; pressed and current states use the shaded one. */
+#desk-dialog button:not(#dialog-close),#paper-content .actions button,#paper-content .page-actions button,#bag-controls button{
+ background:transparent!important;border:0!important;box-shadow:none!important;border-style:solid!important;
+ padding:.25em .9em!important;color:#22355a!important;text-decoration:none!important}
+#desk-dialog button:not(#dialog-close):is(:hover,:focus-visible),#paper-content .actions button:is(:hover,:focus-visible),#paper-content .page-actions button:is(:hover,:focus-visible),#bag-controls button:is(:hover,:focus-visible){translate:0 -2px;filter:drop-shadow(1px 3px 2px #2d211c55);outline:0}
+#paper-content .actions button.primary,#bag-controls #bag-open-book{color:#fffaf0!important}
+#desk-dialog button:not(#dialog-close):active,#paper-content .actions button:active,#paper-content .page-actions button:active,#bag-controls button:active{
+ color:#fffaf0!important;outline:0}
+
+/* Notebook page tabs: torn colored-pencil flags; the current page's flag sticks out further. */
+#page-tabs button{clip-path:none!important;border:0!important;box-shadow:none!important;background:center/100% 100% no-repeat!important;color:#22355a!important;padding:.45em 1.4em .45em .6em!important;transform:none!important}
+#page-tabs button[aria-current=page]{translate:calc(14 * var(--ui)) 0!important;filter:drop-shadow(2px 3px 2px #2d211c55)}
+#page-tabs button:focus-visible{translate:calc(9 * var(--ui)) 0!important;outline:0}
+#close-book{display:inline-flex!important;align-items:center;gap:.3em;background:transparent!important;border:0!important;box-shadow:none!important;border-style:solid!important;padding:.3em 1em!important;color:#22355a!important;font-size:calc(20 * var(--ui))!important}
+#desk-dialog select{appearance:none;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10'%3E%3Cpath d='M1 2l6 6 6-6' fill='none' stroke='%2322355a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") right 1.1em center/.8em auto no-repeat!important;
+ border:0!important;border-style:solid!important;padding:.3em 2.4em .3em .9em!important;color:#22355a!important;font:inherit;outline:0}
+#desk-dialog select:is(:hover,:focus-visible){filter:drop-shadow(1px 3px 2px #2d211c55)}
+#desk-dialog .options button{color:#22355a!important;text-align:left}
+
+/* Spiral binding: the drawn ballpoint coil strip over the notebook's left edge (placed by ink-ui.js). */
+#ink-binding{position:fixed;z-index:13;pointer-events:none;background:top center/100% auto repeat-y;filter:drop-shadow(2px 2px 2px #2d211c44)}
+.camera-moving #ink-binding{visibility:hidden}
+
+/* Notebook page doodles (ui-nb-doodles-v2), Scribble Defender only: a spot illustration on the title page, margin doodles on every paper page. */
+body[data-notebook=scribble-defender] #paper-content.page-title::after{content:'';position:absolute;left:50%;bottom:calc(30 * var(--ui));width:calc(860 * var(--ui));height:calc(560 * var(--ui));translate:-50% 0;pointer-events:none;
+ background:url(@@asset:assets/ui/nb-spot.webp@@) center bottom/contain no-repeat;mix-blend-mode:multiply}
+#paper-page::before{content:'';position:absolute;inset:0;pointer-events:none;background-repeat:no-repeat;mix-blend-mode:multiply}
+body[data-notebook=scribble-defender][data-view=title] #paper-page::before{background-image:url(@@asset:assets/ui/nb-star.webp@@),url(@@asset:assets/ui/nb-comet.webp@@);
+ background-size:calc(96 * var(--ui)) auto,calc(120 * var(--ui)) auto;background-position:calc(610 * var(--ui)) calc(60 * var(--ui)),calc(52 * var(--ui)) calc(700 * var(--ui))}
+body[data-notebook=scribble-defender][data-view=notes] #paper-page::before{background-image:url(@@asset:assets/ui/nb-saucer.webp@@),url(@@asset:assets/ui/nb-planet.webp@@),url(@@asset:assets/ui/nb-star.webp@@);
+ background-size:calc(110 * var(--ui)) auto,calc(260 * var(--ui)) auto,calc(70 * var(--ui)) auto;
+ background-position:right calc(360 * var(--ui)) bottom calc(150 * var(--ui)),right calc(170 * var(--ui)) top calc(300 * var(--ui)),right calc(420 * var(--ui)) top calc(200 * var(--ui))}
+body[data-notebook=scribble-defender][data-view=scores] #paper-page::before{background-image:url(@@asset:assets/ui/nb-burst.webp@@),url(@@asset:assets/ui/nb-ship.webp@@),url(@@asset:assets/ui/nb-asteroid.webp@@);
+ background-size:calc(110 * var(--ui)) auto,calc(220 * var(--ui)) auto,calc(130 * var(--ui)) auto;
+ background-position:calc(580 * var(--ui)) calc(60 * var(--ui)),right calc(150 * var(--ui)) bottom calc(170 * var(--ui)),left calc(330 * var(--ui)) bottom calc(140 * var(--ui))}
+body[data-notebook=scribble-defender][data-view=back] #paper-page::before{background-image:url(@@asset:assets/ui/nb-spiral.webp@@),url(@@asset:assets/ui/nb-asteroid.webp@@),url(@@asset:assets/ui/nb-comet.webp@@);
+ background-size:calc(100 * var(--ui)) auto,calc(150 * var(--ui)) auto,calc(240 * var(--ui)) auto;
+ background-position:calc(60 * var(--ui)) calc(560 * var(--ui)),right calc(260 * var(--ui)) top calc(420 * var(--ui)),left calc(420 * var(--ui)) bottom calc(150 * var(--ui))}
+
+/* Drawn input prompts: keycaps with the key's name written in ballpoint; Xbox buttons as drawn glyphs. */
+.ink-key{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;height:1.9em;min-width:1.9em;padding:0 .55em .18em;
+ background:center/100% 100% no-repeat;font-family:Hand,Schoolhand,cursive;font-size:.8em;line-height:1;color:#22355a;vertical-align:middle;white-space:nowrap}
+.ink-key.ink-key-wide{min-width:3.4em}.ink-key.ink-key-space{min-width:6em}
+.ink-glyph{display:inline-block;height:1.6em;width:auto;vertical-align:middle;margin:0 .05em}
+.ink-glyph.ink-key-up,.ink-glyph.ink-key-down,.ink-glyph.ink-key-left,.ink-glyph.ink-key-right{height:1.55em}
+.ink-plus{margin:0 .15em;color:#22355a}
+.device-glyph{display:inline-flex;align-items:center;vertical-align:middle}
+.device-glyph svg{height:1.6em;width:auto}
+.glyph-cheat{display:flex;align-items:center;gap:.55em;margin:.18em 0!important}
+.glyph-cheat .device-glyph{min-width:4.2em;justify-content:flex-end}
+#input-prompts{display:flex;gap:1.1em;align-items:center}
+#input-prompts .ink-hint{display:inline-flex;align-items:center;gap:.25em;white-space:nowrap}
+#input-prompts .ink-glyph{height:1.45em}#input-prompts .ink-key{font-size:.72em}
+#paper-content>h1:first-child{padding-top:.2em}
+#paper-page:is([data-paper=quiz],[data-paper=blank])>#paper-content{top:6.6%!important}
+.tab-glyph{position:fixed;display:block;pointer-events:none;z-index:16;color:#182832;mix-blend-mode:multiply}.tab-glyph[hidden],body[data-view=play] .tab-glyph{display:none}.tab-glyph :is(svg,img){width:100%!important;height:100%!important;display:block;object-fit:contain}
+#play-ready{position:fixed;z-index:12;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:.45em;font:var(--t-control,calc(26 * var(--ui)))/1.2 Hand,Schoolhand;color:var(--roller);padding:calc(16 * var(--ui)) calc(40 * var(--ui)) calc(20 * var(--ui));background:none;border:0;box-shadow:none;text-shadow:none;filter:none;cursor:pointer}
+#play-ready.hidden{display:none}
+#play-ready:focus,#play-ready:focus-visible,#play-ready:hover,#play-ready.pad-focus{outline:0;text-decoration:none}
+/* Tracing paper (owner 2026-10-26): the vellum sheet over the play field, under the ready card and the pause screen, reaching just
+   past the field's edges so it is covered evenly; one translucent strip of masking tape across its top edge (No2Tracing in ink-ui.js). */
+#game-mount>.tracing-sheet{position:absolute;z-index:5;pointer-events:none;inset:-.4%;background:center/100% 100% no-repeat;opacity:0;transition:opacity .2s ease}
+#game-mount>.tracing-sheet.on{opacity:.62}
+/* Words on the sheet are written with a BIC 4-Color pen: the lettered title red, the kicker blue, keys and buttons black on the cheat
+   sheet's correction-fluid keycaps; the ready card is the keycap and its word alone (owner 2026-10-27: no box on the sheet), pause actions underlined; no outline, glow or shadow. */
+:root{--roller:#1e1f26;--bic-blue:#1b3591;--bic-red:#c4212f}
+#play-ready .ink-plus,#play-ready .device-glyph{color:var(--roller)}
+/* The pause screen is one composition centred on the field it covers (--field-* from host.js, the visible game area of the turned
+   page): back top left on the sheet margin, the hand-lettered title with its kicker, then the four actions in an even column, all on
+   the UI type sizes. */
+body.locker-hub #desk-dialog[data-screen=pause][open]:not(.backpack-dialog){position:fixed!important;inset:auto!important;margin:0!important;left:var(--field-x)!important;top:var(--field-y)!important;width:var(--field-w)!important;height:var(--field-h)!important;max-width:none!important;max-height:none!important;box-sizing:border-box;padding:0!important;background:none!important;filter:none!important;overflow:hidden!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:calc(14 * var(--ui))}
+body.locker-hub #desk-dialog[data-screen=pause]:not(.backpack-dialog)::backdrop{background:transparent}
+body.locker-hub #desk-dialog[data-screen=pause] :is(button,span,p,h1){color:var(--roller)!important;text-shadow:none!important;filter:none!important}
+body.locker-hub #desk-dialog[data-screen=pause] form{position:absolute;left:0;top:0}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-close{position:absolute!important;left:calc(var(--field-w) * .05)!important;top:calc(var(--field-h) * .06)!important;width:auto!important;font-size:var(--t-control)!important;flex-direction:column!important;align-items:center!important;gap:.2em!important;padding:.1em .3em .45em!important;background:url(@@asset:assets/ui/ink-underline.webp@@) 50% 100%/90% 22% no-repeat!important;translate:none!important}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-title{order:1;margin:0!important;font-size:var(--t-title)!important;line-height:1}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-kicker{order:2;display:block!important;margin:0 0 calc(18 * var(--ui))!important;font:var(--t-body)/1.2 Hand,Schoolhand!important;font-style:normal!important;color:var(--roller)!important}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-content{order:3;margin:0!important;padding:0!important}
+body.locker-hub #desk-dialog[data-screen=pause] .pause-actions{display:flex;flex-direction:column;align-items:center;gap:calc(16 * var(--ui))}
+body.locker-hub #desk-dialog[data-screen=pause] .pause-actions button:not(#dialog-close){box-sizing:border-box;min-width:calc(300 * var(--ui));font-size:var(--t-control)!important;line-height:1.2!important;padding:calc(12 * var(--ui)) calc(36 * var(--ui)) calc(16 * var(--ui))!important;text-align:center!important;outline:0!important;translate:none!important;background:url(@@asset:assets/ui/ink-underline.webp@@) center calc(100% - 4 * var(--ui))/70% 22% no-repeat!important}
+body.locker-hub #desk-dialog[data-screen=pause] .pause-actions button.primary:not(#dialog-close){background:url(@@asset:assets/ui/ink-box.webp@@) center/100% 100% no-repeat!important}
+/* Where the keyboard or controller is: a small ballpoint arrow before the word. */
+body.locker-hub #desk-dialog[data-screen=pause] .pause-actions button:not(#dialog-close):is(:focus-visible,:hover,.pad-focus)::before{content:'';position:absolute;margin-left:calc(-46 * var(--ui));margin-top:calc(4 * var(--ui));width:calc(30 * var(--ui));height:calc(24 * var(--ui));background:url(@@asset:assets/ui/ink-arrow.webp@@) center/contain no-repeat}
+
+/* Scribble Defender draws its score row and scanner inside its own page, so the whole composition starts below them. */
+body.locker-hub[data-notebook=scribble-defender] #desk-dialog[data-screen=pause] #dialog-close{top:calc(var(--field-h) * .2)!important}
+
+body>.tracing-tape{position:fixed;z-index:13;pointer-events:none;width:calc(var(--field-w) * .16);aspect-ratio:300/261;background:var(--tracing-tape) center/contain no-repeat;opacity:0;transform:translate(-50%,-50%);transition:opacity .2s ease}
+body>.tracing-tape{left:calc(var(--field-x) + var(--field-w) * .53);top:max(var(--field-y),calc(var(--field-w) * .035 + 4px));transform:translate(-50%,-50%) rotate(34deg)}
+body>.tracing-tape.on{opacity:.62}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-title::before{display:none!important}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-title{gap:0!important;width:auto!important}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-title .heading-pause{background-image:var(--tracing-paused)!important;aspect-ratio:2.686!important}
+body.locker-hub #desk-dialog[data-screen=pause] #dialog-kicker{color:var(--bic-blue)!important;text-align:center;margin-top:calc(var(--t-body) - var(--t-title) * .27)!important}
+body.locker-hub #desk-dialog[data-screen=pause] :is(button,#dialog-close){color:var(--roller)!important}
+body.locker-hub #desk-dialog[data-screen=pause] .pause-actions button:not(#dialog-close){margin:0!important}
+body.locker-hub[data-notebook=scribble-defender] #desk-dialog[data-screen=pause][open]:not(.backpack-dialog){padding-top:calc(var(--field-h) * .17)!important}

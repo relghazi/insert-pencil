@@ -1,0 +1,35 @@
+# Online leaderboard verifier (free Workers plan): replays pending runs outside Cloudflare and posts verdicts.
+# Runs from the public repository (free Actions minutes), every 20 minutes; the Worker's cron also starts it when runs wait.
+# Copy to .github/workflows/ there and set both secrets (server/README.md).
+name: leaderboard-verify
+
+on:
+  schedule:
+    - cron: '7,27,47 * * * *'   # every 20 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: leaderboard-verify
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Pinned to full commit SHAs (tag in the comment); update both together.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with:
+          node-version: '24'
+      # verify.mjs uses only Node built-ins and the game cores in src/; no npm install needed.
+      - name: Replay pending runs
+        env:
+          LEADERBOARD_URL: ${{ secrets.LEADERBOARD_URL }}
+          LEADERBOARD_ADMIN_TOKEN: ${{ secrets.LEADERBOARD_ADMIN_TOKEN }}
+        run: node server/verify.mjs --batch 10 --max 500

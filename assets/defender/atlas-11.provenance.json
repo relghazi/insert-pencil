@@ -1,0 +1,18 @@
+{
+ "status": "approved by owner 2026-10-29",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; white keyed to transparency, packed at 4096 wide",
+ "note": "hill-1..3 ground strips (taller, hand-drawn grass edge, soil fading into hatching, seamless) and scribble-band (her ballpoint scribble-out of the ground); radar-card (her freehand ballpoint frame on card stock, nine-slice); title page preview redrawn from a screenshot of the polished game",
+ "candidates": {
+  "incoming/DG/defender-ground-1-v1.png": "70adcb0c44d0f134d7f876df44b89cb7a75f62b2d9bd54692795ea23f15ae98f",
+  "incoming/DG/defender-ground-2-v1.png": "029186e6e1b53b52859fc09e17853d6d94864c238d899b9b14037ea8774cd714",
+  "incoming/DG/defender-ground-2-seam-v1.png": "3edd0e7063232c41ffd790632610351829c8376ff3cd64996ca7714257b13c01",
+  "incoming/DG/defender-ground-3-v1.png": "80bdcfc2cb998f0801bfc60cc458aba30d16fa22dda58fd7f43332ed42ef241f",
+  "incoming/DG/defender-scribble-out-v1.png": "f7bd85a8d3d750ff54fa33ffde181dbf165af97b0fc0c0723ae705b09406834f",
+  "incoming/DG/defender-radar-card-v1.png": "b2712fa1d4a90f981341c66dfc0232467b147d95b358ddf62c21a4fb692206bb",
+  "incoming/DG/preview2-scribble-defender-v1.png": "7e5af172e16165e2f3f64e7fdfa68a86beb65d9d07035908111f7f541e24c48e"
+ },
+ "assets": {
+  "assets/defender/atlas-11.webp": "71926996d09a3634c9bce8df41eb84ad297f2686b9675001f80a8d94f46d6a8b",
+  "assets/ui/previews/scribble-defender.webp": "ded378aaeabeeec97943c3290f47145625b286a8ab332bf44beadd52642ec79f"
+ }
+}

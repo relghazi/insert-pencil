@@ -1,0 +1,123 @@
+{
+ "status": "approved by owner 2026-10-29",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; locker patch tools/patch-locker-edit.py (mask art/ui-hub/locker-sets/masks/walkman-mask.png, sets v12); lift frame tools/pack-locker-pull.py",
+ "candidates": {
+  "incoming/WK/locker-walkman-v2.png": "ccd207bc05c192b4dc8639cb2e98df2fd53386c51b20c75d5ab0684baf8006fe",
+  "incoming/WK/walkman-tapes-v1.png": "76fe94eca68580fa189780ce1f0527900004a25568e8534da3f6b153c405a11e",
+  "incoming/HD/heading-mixtapes-v1.png": "8d129ff80e062ccb6019f0219b62e55047378d16b233a9d7ca6b536b4df1dd2e",
+  "incoming/LP/locker-pull-walkman-v3.png": "6fb53952fc9df6f39db14ec3cbab9d9aec3f3637f7cad4d29c728742ab09b328",
+  "incoming/WK/walkman-empty-v1.png": "eb59c55ea686477c6cb374f7925d32c6d7acc6c5c50896233e23f301a865f856",
+  "incoming/WK/walkman-same-hal-v1.png": "08ef8da8048d54b8952c1a4359a64671ffb8f4111c9eb2f5c19887a85dd5f144",
+  "incoming/WK/walkman-same-albright-v1.png": "ad9128cb0b3505ffc8bc20f534a5dd526ae9ff4b7af5d4d759927013c9d85b37",
+  "incoming/WK/tape-case-her-v1.png": "e2c1dd26e21fe612306b218ac5ce1a9625bba376d77c54645d85a66a394e875b",
+  "incoming/WK/tape-case-june-v1.png": "40fd3d6d57d4aab406699124bb1542ea42490f15cea0aac3b3bb41ec1cc8bb1e",
+  "incoming/WK/tape-case-theo-v1.png": "f3135293cd4509ea7846ae4e91e815cc45ec402c45c07b0ab9b62258f34de719",
+  "incoming/WK/tape-case-ace-v1.png": "c5e87c047c744cf428e0af07445c191ea69e432a8a2f3141f84b145658c1e6ae",
+  "incoming/WK/tape-case-hal-v1.png": "e2a2dc103ddcc90df9821d22a0937d96db0711676942bf770fd404c9354219bc",
+  "incoming/WK/tape-case-albright-v1.png": "351149068d43226e44f10759bb73863b60c69a30e663c9fad31fe09e1165a9cb",
+  "incoming/WK/tape-case-her-title-v1.png": "828428a508db9e98880c97f63330115f4afd9c3feea31080a5b941da021bada1",
+  "incoming/WK/tape-case-june-title-v1.png": "33c9517b93496f543a8cf11a8ac9076488d9983b9a7ffbd27bf911d4ff65e30c",
+  "incoming/WK/tape-case-theo-title-v1.png": "28dfc13100aef9658923088e6f6ca2503a73d8471dcea9d5afd8f0ef73b9559b",
+  "incoming/WK/tape-case-ace-title-v1.png": "d6844672354cbaab2ea30e1c65fc60231155eb4ed30c1454c996eaeb6a3dfa4d",
+  "incoming/WK/tape-case-hal-title-v1.png": "f9bae3bf8bf2660a4d9ffb3f4f18231f2cfd52da20ebfa8dd61d2acfc0861462",
+  "incoming/WK/tape-case-albright-title-v1.png": "bb3b7a155e95a89db7dc1c29de3ecd752e676250c252375775c35f411304c787"
+ },
+ "assets": {
+  "assets/ui/locker-1.webp": "4c9d6ffc4aca95140821bc5237c4f413b7324129c3706fca59e22f0672af8ba0",
+  "assets/ui/locker-2.webp": "937e2ae027f16904fdce91d41c19da3feb712f05c6898c44e92c44de48aee795",
+  "assets/ui/locker-3.webp": "d93d5c218a8afb1e2ad0ee820b76aa5a22a63716f134be9da87d0bfdb155010f",
+  "assets/ui/headings/mixtapes.webp": "1dc1b7777c1450cc9d37841c92223f28a5509f3e75c9a8adb9aaddbc56bac3e7",
+  "assets/ui/locker-pull/walkman.webp": "74b484abf92e9e87bdca4ca92bb077f8603457a2b0708f0eb9ae960586a6469c",
+  "assets/ui/walkman/tape-ace.webp": "9521e785b8055bfcc69623ef8463f45ff25cb9737c2c0fbeefa3b5bdfe0c4628",
+  "assets/ui/walkman/tape-her.webp": "8d39ada0ea18830921611eba383b22a066346c31e3848e5ab340054441ff59eb",
+  "assets/ui/walkman/tape-hal.webp": "dcae8e13c73ec77d74bf5ea8f151469ceb0bc31900001be2ac13986ddee8f9c1",
+  "assets/ui/walkman/tape-theo.webp": "734d0bd8ab18acd7248da4317926b3e705a7c0e0f9ea28001f1ad43555faff99",
+  "assets/ui/walkman/tape-june.webp": "3965585835fe379b23e843838f0753dd4f85508170bb8c390506331b1f6092ad"
+ },
+ "makers": {
+  "status": "approved by owner 2026-10-29",
+  "note": "each tape's maker as a Polaroid beside it, painted from the who's who portraits; no names",
+  "candidates": {
+   "incoming/WK/tape-makers-polaroids-v1.png": "b4515703da2f19211ddacf5a644200a269f0d9efb1ecbb903f0c8787faf64fed"
+  },
+  "assets": {
+   "assets/ui/walkman/photo-ace.webp": "5ca91e38d3c1faf53f00063b8bb383438a238450eba79eea7183478b4f2739d0",
+   "assets/ui/walkman/photo-her.webp": "f7ecfa8b235906d07beb6d96deee21a0060ad19ee330e28f309a09f2f7ecc94f",
+   "assets/ui/walkman/photo-hal.webp": "f7b556260b9ff80fe9627919515da898a31b161612107c944c0ee1950542eb62",
+   "assets/ui/walkman/photo-theo.webp": "e762957146776d67572564fea9e2877894dfb8a634b25817ea845b0706a7a6b3",
+   "assets/ui/walkman/photo-june.webp": "b2ac0fb6eb018076039abbb758adaf5d9fdc4ebb90d34c48c13a739212786c40"
+  }
+ },
+ "player": {
+  "status": "approved by owner 2026-10-29",
+  "note": "the Walkman front-on with each tape in its window (one body, the window edited per tape) and its PLAY, FAST FORWARD and STOP/EJECT keys",
+  "candidates": {
+   "incoming/WK/walkman-front-june-v1.png": "bf3a4cca4cef8e69a335e7146a6695d1e73a6f1519ae95fa4f67c8e90dad22f8",
+   "incoming/WK/walkman-swap-ace-v1.png": "a36b5d3ad45f49e03e134b7120f362036f59c9d91c054e4bfa12e64509eb6bf1",
+   "incoming/WK/walkman-swap-her-v1.png": "09d962f57e75c6ba193e286f667e6d24d603f1860dff5d935e16f13062b1e9f7",
+   "incoming/WK/walkman-swap-hal-v1.png": "edca0735f0e1c43d733f785c4aae8ec85a9a59ad01c033ad008d2cf516b85848",
+   "incoming/WK/walkman-swap-theo-v1.png": "d7d5de5e4aac396b85743b78877ae5748089d1700f82223e29a79ae4a8dd67c7",
+   "incoming/WK/walkman-keys-v1.png": "3fd0735a0a19710c94d4bb69f7e1b67b073e383baed8dd66a30ee78e8c0b0deb"
+  },
+  "assets": {
+   "assets/ui/walkman/key-eject.webp": "c40e830591057b37d817ea33c2d71240ff9e163c065731335b235106446d6310",
+   "assets/ui/walkman/key-next.webp": "3ec4f1eb3113eb2530a8679ddff732cb0e2cfefc3e4046a507aaba9aff566ff2",
+   "assets/ui/walkman/key-play.webp": "da392a0ec3a6b8ce67888aa714a294463d2e9403f6095e8c1986c886853281b5",
+   "assets/ui/walkman/walkman-ace.webp": "6ed8acfc5cf7b0211e41e3f8af6cfd15b26e4a0a3a10db77023ae9073371ca6c",
+   "assets/ui/walkman/walkman-hal.webp": "ec911d3fb01a130b403e60cd42d39f68fe45902caa2e0548e995af88e6ab61a4",
+   "assets/ui/walkman/walkman-her.webp": "76da681be386c010b0e26bb0507ee5caf1ba1df896b7e427fd12d17a9074ddfb",
+   "assets/ui/walkman/walkman-june.webp": "dd8fb966fc1bbfaee97cf2c4f99f50d1e51c67a7d9ec5844d09721eb16d01f0a",
+   "assets/ui/walkman/walkman-theo.webp": "42ff35842ac057b4b1f308de0ae4bde50eea20822787e5b590a482d1f535d754"
+  }
+ },
+ "loading": {
+  "status": "approved by owner 2026-10-30",
+  "note": "loading screen cassette labelled No. 2 Arcade in a teal-green shell unlike the five mixtapes; its two reels cut out to spin while the game loads",
+  "candidates": {
+   "incoming/WK/loading-cassette-v1.png": "821bfe6549b733e96ede7a3e54c1f15edae943d8ab125cc45929034405f031f1"
+  },
+  "assets": {
+   "assets/ui/loading-cassette.webp": "5e78616b0e3439160d3255fcf06b1897865ac09d1f59f66397782c331d0c63a3",
+   "assets/ui/loading-reel-l.webp": "3a006117c3ff040c66cefb661c2abfacf60fc0d5207b8ca2eed816afd4e6eefc",
+   "assets/ui/loading-reel-r.webp": "5cf5b8a7a346ef82441b7ede432bdfd5a5525599e37e4d9ee6adb6a126a76f3f"
+  }
+ },
+ "rename": {
+  "status": "owner request 2026-10-30",
+  "note": "her tape renamed Extra Life (label repainted with Nano Banana on the cassette and in the Walkman window)",
+  "candidates": {
+   "incoming/WK/rename-tape-extra-life-v1.png": "6900b7abf8379917e2598fcc02d0fa427bdb1741010f16e0c77447aa09bdb537",
+   "incoming/WK/rename-walkman-extra-life-v1.png": "5eb574a50465b86fcfc5729ecf7d7b698d12a98ff55d7647585fa0e3295afa9c"
+  },
+  "assets": {
+   "assets/ui/walkman/tape-her.webp": "8232740338fa2a1389fc595051aa8cdf7934c463106d6d1d95fe0a0fb2df3b49",
+   "assets/ui/walkman/walkman-her.webp": "5dc697d9ebc752692148e331df1e90b1422ce281d6e6e26cc6739614c612ab26"
+  }
+ },
+ "secret": {
+  "status": "lyrics approved by owner 2026-10-30; art and recording awaiting owner look",
+  "note": "Mrs. Albright's secret disco tape Slide Rule Saturday: cassette (edit of tape-june-src), Walkman window, a photo of her from behind under a mirror ball",
+  "candidates": {
+   "incoming/WK/tape-albright-v1.png": "37941192f2bae3f2a95ff25a943f007ed763db66d98eeba2f318ad006c04789d",
+   "incoming/WK/walkman-swap-albright-v1.png": "a9198f606eb070b2e02b2e42dec92b7b0b475f525a94cad7381f73dccabd6e5a",
+   "incoming/WK/face-albright-v1.png": "a8a61a3c1487b7c1515b8f961473061f21462f2f8166f616cce880318e72b1c8"
+  },
+  "assets": {
+   "assets/ui/walkman/tape-albright.webp": "3d8876a5acc025859b67db28f6f9b93c11db8d556fb1a6b217424b1d1f894ee3",
+   "assets/ui/walkman/walkman-albright.webp": "3e0032f269586f5cc0856b0f9ce27843d8b14b568a5b7a1975d21b99ced3a012",
+   "assets/ui/walkman/face-albright.webp": "fd64b528ddb7d9a0c46e73fcf5ec02ed1aa796982130d6e3bdee022856ca5cd3"
+  }
+ },
+ "loading-v2": {
+  "status": "owner request 2026-10-30 (green tape was meh; first thing people see); awaiting owner look",
+  "note": "loading cassette in a smoky black shell with a composition-notebook marble label, matching the title notebook; reels recut; it lifts away as the card fades into the title",
+  "candidates": {
+   "incoming/WK/loading-cassette-v2-v1.png": "3e04ec15aa22c4975bdba25235860ab679c01f068b5537594e1487d84ef4296a"
+  },
+  "assets": {
+   "assets/ui/loading-cassette.webp": "177283d5e14fd951539a8828b9321e3d95efa4d9dfe68f985778a4c15f4010b6",
+   "assets/ui/loading-reel-l.webp": "07d073213245a427677da401b0540a11ef0ebe8790d10507e93c13feb8e260f6",
+   "assets/ui/loading-reel-r.webp": "2a7925234c197ed6e2d674ea8d5773ba2f3a97089078dabaf5466a423cc6fa47"
+  }
+ }
+}

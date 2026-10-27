@@ -1,0 +1,41 @@
+{
+ "source": "incoming/ST/scores-tapes-v1.png",
+ "sourceSha256": "e3c678c17a3690b3b4394a88cf9e94b63e71de13d95e8d5aff6d17a9f051a7f6",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (job scores-tapes)",
+ "cut": "magenta key at one third scale with colour recovery; frosted and clear pieces neutralised of leftover magenta and green fringe (cut-out cleanup only)",
+ "pieces": {
+  "site/scores/ui/tape-stub.webp": {
+   "cell": 1,
+   "sha256": "5a24f9eb304c6bb29a5a5345a1a2bc1a74887471f8e878f0192f5ea468258dc1"
+  },
+  "site/scores/ui/tape-cross.webp": {
+   "cell": 2,
+   "sha256": "4d43ad362b734495bda413664b850ac81543843b0a73f28eb62a6df4e0df7477"
+  },
+  "site/scores/ui/tape-torn.webp": {
+   "cell": 3,
+   "sha256": "b291a0befe2a48f0a3a07707133149ddc9aa32319aa2fc60f2cff2c83c5d0dc5"
+  },
+  "site/scores/ui/tape-frosted.webp": {
+   "cell": 4,
+   "sha256": "b32a9db48dae678892f3b961b12f7c293a6d2d45707f397a51eaf6c2678fc6bc"
+  },
+  "site/scores/ui/tape-long.webp": {
+   "cell": 5,
+   "sha256": "9955649fb665b6822685d5250d5233a7aacc1c58a5c81f2355ba21c3f4c3a813"
+  },
+  "site/scores/ui/tape-fold.webp": {
+   "cell": 6,
+   "sha256": "807a65c50894a43cbfcb7537a174a1b5134a8616d64432a4d6b68663b71bb20a"
+  },
+  "site/scores/ui/tape-clear.webp": {
+   "cell": 7,
+   "sha256": "c6f4f89040bab3db7cdaa1e0e525477bc6d08d0e2c99eea84b6cad326e059da7"
+  },
+  "site/scores/ui/tape-smudge.webp": {
+   "cell": 8,
+   "sha256": "07781ada483ef57c121860492e89f863c8ec72bbbac55b52ee6ee59db4d7ccf1"
+  }
+ },
+ "status": "approved by owner 2026-10-28"
+}

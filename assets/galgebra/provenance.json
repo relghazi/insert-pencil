@@ -1,0 +1,68 @@
+{
+ "status": "approved by owner 2026-10-28",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (job galgebra-terms)",
+ "candidate": "incoming/GM/galgebra-terms-v1.png",
+ "candidateSha256": "3ba65049a86c68d298329a458e4daaeb6dea2f282c086bc5a47c98644c08d452",
+ "cut": "magenta key per cell at half scale, then 40%",
+ "titlePage": {
+  "status": "approved by owner 2026-10-28",
+  "candidates": {
+   "assets/ui/doodles/galgebra-a.webp": "incoming/GM/galgebra-doodle-a-v1.png",
+   "assets/ui/doodles/galgebra-b.webp": "incoming/GM/galgebra-doodle-b-v1.png",
+   "assets/ui/previews/galgebra.webp": "incoming/GM/galgebra-preview-v3.png"
+  },
+  "sha256": {
+   "assets/ui/doodles/galgebra-a.webp": "475fbfd99914abfc89e9b0a048356eca979e5a308124b25bc7ee18c8d8986d15",
+   "assets/ui/doodles/galgebra-b.webp": "565007b4ff4457a7ac447d928d9e4b6929b05668855d7ea85d1ff81b8a26fbf2",
+   "assets/ui/previews/galgebra.webp": "c599786b7458eedae14e0e0153d72d798e20f17120eda3a921a2bbd02ea17872"
+  }
+ },
+ "equations": {
+  "status": "approved by owner 2026-10-28",
+  "candidates": {
+   "incoming/RW/galgebra-glyphs-v1.png": "ce9c013a503f1ac568462ccbd5a369af97cae9e222873d9cd1b8fd65d8dd27e0",
+   "incoming/RW/galgebra-ships-v1.png": "03a8a2d43bab63a3c98468c448908d31d618c0c6bd944b8aaedf69b4799942a5"
+  },
+  "assets": {
+   "assets/galgebra/g-0.webp": "f210d516482f9263da41b96b771aea9cce39ae804c575fdf8d365d8c75c200dc",
+   "assets/galgebra/g-1.webp": "ea0e6bd3e79a3ab2c08ac70de4403f69f533286bc7a903fbf0a918e6d1ea0ebf",
+   "assets/galgebra/g-2.webp": "da5be50d85f61cc5601398d58c8204a5e8ba69968932cba83960487e7ba284d0",
+   "assets/galgebra/g-3.webp": "8171ad614f44f778459b71e8d09ae33ed9110e85749bae1f3c940192b50e3578",
+   "assets/galgebra/g-4.webp": "62b34e66aab79ac0411d2d9170e750063e900b93ce13d3b619cefb37ce4ec2ba",
+   "assets/galgebra/g-5.webp": "a449f98f2f1339d0b03b658813e532d2c1d4957810fc65b9cf93c237fc032c62",
+   "assets/galgebra/g-6.webp": "08dcfebe056e2d24fa67d6e3a36301c779c27a0a1398901b244f1e3eda9b1b92",
+   "assets/galgebra/g-7.webp": "422c71c09ee57b3d793aadf66e8849909360791c7f8444a0ec7cab25332dd320",
+   "assets/galgebra/g-8.webp": "2467e2a31a235593fba391ec4ab2e62a8c11f898ccdaf96f2cf711dfe494a19e",
+   "assets/galgebra/g-9.webp": "d201a195f87a22079c64e0233c5ded13ebb26efed1b16151a35c44224a224b78",
+   "assets/galgebra/g-a.webp": "f0d25435f146af687f06ef6be4291e6fc3699362b3eaa7eed04498a18fd53de1",
+   "assets/galgebra/g-ant.webp": "42be404a1a2289386631b7b856612466efd4a799caa51090aa84ccdc67688941",
+   "assets/galgebra/g-b.webp": "e17235781b444f3a8c9983c0e10382863f226be42dca8d1ac3d91e4a2783d242",
+   "assets/galgebra/g-c.webp": "4cbef02b747bbcef8f52759a756dfd7f06b6bebd85edba2f9af8d1b148a4af92",
+   "assets/galgebra/g-cap-A.webp": "6a7882300a6630c669fce11fac9463567e3b53f031199a8560c0ef88c6fcc4c5",
+   "assets/galgebra/g-cap-B.webp": "3951a456888d04f38b602da70455a12baaf025804afdbb6f50d0a94d5341ef35",
+   "assets/galgebra/g-cap-C.webp": "0b7fa52da85224d96f3548432deb482a4af4080ac304e45dd7f8bb23e66b7c6c",
+   "assets/galgebra/g-crown.webp": "9985a015446aa15137d7c14e18b99b775ee84e8f4ee18b09b853eeff5443cf20",
+   "assets/galgebra/g-delta.webp": "af7b6c7c3b3b40a551c01cbb56d973e01a8afe2f9c887356cd7f074bbaadcf8d",
+   "assets/galgebra/g-div.webp": "0c57a67e65af81cd8491bc89ccb29158b31f038e02ebe7fc7ceee816d8aa1d50",
+   "assets/galgebra/g-dot.webp": "b68449f205d5e20300bfc0c58c0e591545f3a0e158f55f5dab74eebb40a49a60",
+   "assets/galgebra/g-eq.webp": "c76acc37fdd25945512b1645c03ab68b26640cbbd0752f99bb9d9934b0698320",
+   "assets/galgebra/g-h.webp": "15e84f23dd393bca637f84722441573debf9c49c956d5d39dceb833cd59b9cfd",
+   "assets/galgebra/g-k.webp": "cd063f29c71cfaf30cab2dafd734a069dc77fb758469da6087f2d6e09bc19456",
+   "assets/galgebra/g-lp.webp": "480bf990147ffc37b391178739bc6dc7a02681bedce948d11d0d474fb0f31d1b",
+   "assets/galgebra/g-m.webp": "0caabe92ffd3a597a7b99d9be8fd000091d3c53112dd97c77719703326268e59",
+   "assets/galgebra/g-minus.webp": "77a38451fcd4aabd6980f8f33658305a20903d1b658a30f8d8610c1a52e66d61",
+   "assets/galgebra/g-plus.webp": "336dde3bab38592237259a649c5b39574eaec5f56ad5eb86c0c1ec26cd2f51b9",
+   "assets/galgebra/g-pm.webp": "07cc3e814f53d53e0ca76fffc43afe5629f0fb2f87a0a472f7ddbb39937ea50c",
+   "assets/galgebra/g-rp.webp": "b7a615343bef739b816c6f9abedaa0ce628df550c76dc7c00714b02e7b87167a",
+   "assets/galgebra/g-slash.webp": "9d24d3ecc8520302d3e59648ccd07368737a3b51e12fd07d32f1499b866f8f91",
+   "assets/galgebra/g-sqrt.webp": "2c88e55ae7527ae43f10afc86fee3c736a49b86d50189db1d07fe7694057dd22",
+   "assets/galgebra/g-sub1.webp": "9ca32cce9569c54a6bfd7e4452df31d5e2939e6328eae8532100fafdb074c2d9",
+   "assets/galgebra/g-sub2.webp": "eb4e795c2cbeef8aa2df295baec0e18e04925099171b3c258f2c387e3edd0b4e",
+   "assets/galgebra/g-sup2.webp": "4c85435e1c60f4c4c44e570f13c96e43dc069c6b7e8925dfa6714acdd11d9454",
+   "assets/galgebra/g-x.webp": "fd21b3cf7601586a4108c19bf33018ca0d82f04c8228e4910afc0d368e660051",
+   "assets/galgebra/g-y.webp": "cfdca69e0c47d86e7d6fa466cf1bcd05595665db5710f15710d4e632182ce33b",
+   "assets/galgebra/ship-rule.webp": "6a1af4254bfdf3b75586b39eee4c0027943ffbea8057ea0900b9e06fd3610338",
+   "assets/galgebra/ship-keys.webp": "d467c0fe2f9cb38a6554d79fa695a12feb53af992dcddcd32bac71c8219d88c9"
+  }
+ }
+}

@@ -1,0 +1,33 @@
+/* Classroom integration: one room camera and one physical page. */
+#ambient,#oak-desk,#school-day,#input-prompts{display:none!important}
+html,body{margin:0;overflow:hidden;background:#f4eedd}
+#hub{position:fixed;inset:0;background:none!important;pointer-events:none}
+#desk-stage,#notebook-buttons,#prop-buttons{position:fixed;inset:0;pointer-events:none}
+#notebook-buttons button,#prop-buttons button{position:fixed;pointer-events:auto;opacity:0!important;appearance:none!important;border:0!important;outline:0!important;background:transparent!important}
+#hub.book-open{pointer-events:none!important;opacity:0}
+#ruler-control{pointer-events:auto}
+#book-view{position:fixed;inset:0;background:none!important;transform:none!important;filter:none!important;z-index:5;pointer-events:none}
+#book-view.hidden{display:none!important}
+#paper-page{position:fixed!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:none!important;filter:none!important;overflow:hidden!important}
+#paper-content{position:absolute;inset:4.5% 5% 7%;overflow:auto;padding:0!important;max-width:none!important;background:none!important;font-family:Hand,Schoolhand!important;color:#23364b}
+#paper-content h1{font-family:Marker,SchoolMarker!important;font-size:clamp(27px,3.2vw,62px);line-height:1.15;margin:.2em 0 .45em}
+#paper-content p,#paper-content button,#paper-content li{font-family:Hand,Schoolhand!important;font-size:clamp(20px,1.7vw,34px);line-height:1.35}
+#paper-content .page-actions{justify-content:flex-start;gap:2em;margin-top:1.4em}
+#paper-content button{background:transparent;border:0;border-radius:0;padding:.2em 0;text-decoration:underline;text-underline-offset:.2em;box-shadow:none!important}
+#paper-content .blank-art{height:42%;width:auto;object-fit:contain;float:right;margin:0 3% 1em 1em;mix-blend-mode:multiply}
+#book-chrome{position:fixed;z-index:10;display:flex;justify-content:space-between;align-items:center;background:transparent!important;padding:0!important}
+#close-book,#book-breadcrumb,#book-state{font-family:Hand,Schoolhand!important;font-size:clamp(20px,1.15vw,25px)!important;color:#25394e}
+#close-book{background:#e4d3a9!important;padding:0 .5em!important;min-height:0!important;line-height:1.2!important}
+#book-breadcrumb{max-width:75%;margin:0!important}
+#game-mount{position:fixed!important;transform:none!important;filter:none!important;background:transparent!important;border:0!important;box-shadow:none!important;z-index:6}
+#page-tabs{position:fixed;z-index:9;display:flex!important;flex-direction:row!important;align-items:flex-end;gap:1.2%!important;height:auto!important;max-height:40px;justify-content:center}
+#page-tabs button{font-family:Hand,Schoolhand!important;font-size:clamp(16px,1.1vw,23px)!important;line-height:1.15!important;min-height:0!important;max-width:20%;width:auto!important;padding:.16em .45em!important;white-space:nowrap}
+#page-tabs [aria-current=page]{transform:translateY(-3px)!important;color:#122d4e!important}
+#bag-controls{position:fixed;z-index:12;left:4vw;right:4vw;bottom:2vh;display:flex;justify-content:center;gap:2.5vw;pointer-events:auto}
+#bag-controls.hidden{display:none!important}
+#bag-controls button{font:clamp(22px,2vw,38px) Hand,Schoolhand;color:#182a3b;background:transparent;border:0;padding:.15em .7em;clip-path:none;box-shadow:none}
+#bag-controls button:focus-visible{color:#a46728;text-decoration:underline;text-underline-offset:5px;outline:0}
+#desk-dialog{font-family:Hand,Schoolhand;max-height:87vh;max-width:min(850px,90vw)}
+#desk-dialog p,#desk-dialog button,#desk-dialog select{font-family:Hand,Schoolhand!important;font-size:clamp(20px,1.6vw,31px)!important}
+.camera-moving #book-chrome,.camera-moving #page-tabs,.camera-moving #paper-page,.camera-moving #game-mount{visibility:hidden!important}
+@media(max-aspect-ratio:1/1){#page-tabs{flex-wrap:wrap;max-height:70px}#page-tabs button{max-width:none;font-size:16px!important}#book-breadcrumb{font-size:18px!important}#paper-content{inset:9% 5% 13%}}

@@ -1,0 +1,17 @@
+{
+  "name": "no2-arcade",
+  "version": "0.8.5",
+  "private": true,
+  "description": "No. 2 Arcade: classic arcade remakes drawn as a high schooler's notebooks",
+  "scripts": {
+    "build": "node build/build.cjs",
+    "build:html": "node build/build.cjs --html-only",
+    "test": "node build/test.cjs",
+    "capture": "node tools/capture.mjs dist/No2-Arcade-v0.8.5.html",
+    "postinstall": "npm --prefix tools install",
+    "test:comic": "node tools/check-comic-playback.cjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

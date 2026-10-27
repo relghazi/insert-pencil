@@ -1,0 +1,36 @@
+<!--
+CHANGELOG - No. 2 Arcade v0.8.5
+- Startup: title every launch; intro on first launch and after updates, with an Always option and sketchbook replay.
+- Handwriting font bounding boxes repaired; outlines, metrics and license unchanged.
+- Approved ballpoint and colored-pencil Defender scenery: school, trees, water tower, basketball hoop.
+VERIFICATION LIMITS
+- Comic intro imagery and student sprites are still the earlier provisional art.
+-->
+
+
+
+
+
+<!-- No. 2 Arcade v0.4.2: shell stability fixes. Historical v0.4.1 verification below is not certification of this build. See BUILD-NOTES.txt. -->
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>No. 2 Arcade v0.8.5</title><style>/*@part:base-style*/</style><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; frame-src 'self' about: blob:; connect-src @@leaderboard-connect@@; media-src 'none'; object-src 'none'; base-uri 'none'; worker-src blob:"><script type="application/json" id="font-licenses">/*@part:font-licenses*/</script><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' blob:; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src @@leaderboard-connect@@; frame-src 'self' blob: data:; worker-src blob:; base-uri 'none'; object-src 'none'"><link rel="icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256" href="@@asset:assets/arcade/page/icon.ico@@">
+<style id="repair-presentation">/*@part:repair-style*/</style>
+<style id="classroom-integration">/*@part:classroom-style*/</style><style>html,body{background:#211c27}</style></head>
+<body><div id="loading-card" aria-hidden="true"><style>@font-face{font-family:'No2 Loading Hand';src:url("@@asset:assets/arcade/v044/fonts/PatrickHand-Regular.ttf@@") format("truetype")}#loading-card{position:fixed;inset:0;z-index:2147483647;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.2vh;background:radial-gradient(ellipse at 50% 45%,#3a3140 0%,#211c27 70%);color:#f4ead6;font:clamp(18px,2.8vh,30px)/1.3 'No2 Loading Hand',Georgia,serif;letter-spacing:.01em}#loading-card .cass{position:relative;width:min(66vw,92vh)}#loading-card .cass>img{display:block;width:100%;height:auto;filter:drop-shadow(0 12px 22px rgba(0,0,0,.45))}#loading-card .cass>img.reel{position:absolute;filter:none;width:9.44%;animation:lc-spin 1.6s linear infinite}#loading-card .cass>img.reel.l{left:21.94%;top:37.06%}#loading-card .cass>img.reel.r{left:59.58%;top:36.47%}@keyframes lc-spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){#loading-card .reel{animation:none}}#loading-card .cass>.ver{position:absolute;left:15.6%;top:14.5%;width:7.4%;text-align:center;color:#2b3aa0;font-size:min(1.75vw,2.45vh);line-height:1;transform:rotate(-6deg)}#loading-card p{margin:0;opacity:.85}#loading-card b{display:block;width:min(30vw,46vh);height:6px;border-radius:3px;background:rgba(244,234,214,.18);overflow:hidden}#loading-card b i{display:block;height:100%;width:100%;transform:scaleX(0);transform-origin:left;will-change:transform;background:#f4ead6}</style><div class="cass"><img src="@@asset:assets/ui/loading-cassette.webp@@" alt=""><img class="reel l" src="@@asset:assets/ui/loading-reel-l.webp@@" alt=""><img class="reel r" src="@@asset:assets/ui/loading-reel-r.webp@@" alt=""><span class="ver">v0.8.5</span></div><b><i></i></b></div><style id="v044-presentation">/*@part:v044-style*/</style><style id="v043-presentation">/*@part:v043-style*/</style>
+<canvas id="oak-desk" aria-hidden="true"></canvas>
+<main id="hub" aria-label="No. 2 Arcade locker"><div id="desk-stage"><nav id="notebook-buttons" aria-label="Notebooks in my locker"></nav><nav id="prop-buttons" aria-label="Things in my locker"></nav><label id="ruler-control"><span id="ruler-label">volume: 100%</span><input id="master-volume" type="range" min="0" max="100" value="100" aria-label="Ruler master volume"></label><p id="school-day" class="hidden"></p></div></main>
+<section id="comic-stage" class="hidden" aria-label="The sketchbook intro"></section><p id="input-prompts" aria-live="polite"></p>
+<nav id="bag-controls" class="hidden" aria-label="Backpack notebooks"><button id="bag-previous">previous</button><button id="bag-open-book">open notebook</button><button id="bag-next">next</button><button id="bag-back">back</button></nav><section id="book-view" class="hidden" aria-label="Open notebook">
+ <header id="book-chrome"><button id="close-book">close cover</button><span id="book-breadcrumb"></span><span id="book-state"></span></header>
+ <div id="paper-page"><div id="paper-content"></div></div>
+ <div id="game-mount" class="hidden"></div>
+ <nav id="page-tabs" aria-label="Notebook pages"><button data-page="title">title page</button><button data-page="notes">cheat sheet</button><button data-page="play">play page</button><button data-page="scores">high scores</button><button data-page="back">back page</button></nav>
+</section>
+<dialog id="desk-dialog" aria-labelledby="dialog-title"><form method="dialog"><button id="dialog-close" aria-label="Close this sheet" value="cancel">x</button></form><p id="dialog-kicker"></p><h1 id="dialog-title"></h1><div id="dialog-content"></div></dialog>
+<div id="opening-note" class="hidden" role="status"><p>finding the right page...</p></div>
+<p id="save-notice" class="hidden" role="status">saves aren't sticking. this session still works.</p>
+<input id="import-save" class="hidden" type="file" accept="application/json,.json" aria-label="Import notebook save file">
+<style>@@loading-mark@@</style><script>/*@part:pixi*/</script><style>@@loading-mark@@</style><script>/*@part:asset-data*/</script><style>@@loading-mark@@</style><script>/*@part:defender-pack*/</script><style>@@loading-mark@@</style><script>/*@part:catalog*/</script><style>@@loading-mark@@</style><script>/*@part:services*/</script><style>@@loading-mark@@</style><script>/*@part:intro-state*/</script><style>@@loading-mark@@</style><script>/*@part:physical-layout*/</script><style>@@loading-mark@@</style><script>/*@part:app*/</script><style>@@loading-mark@@</style><script>/*@part:defender-adapter*/</script><style>@@loading-mark@@</style><script>/*@part:shell-tests*/</script><style>@@loading-mark@@</style><script>/*@part:comic*/</script><style>@@loading-mark@@</style><script>/*@part:hub*/</script><style>@@loading-mark@@</style><script>/*@part:layout-audit*/</script><style>@@loading-mark@@</style><script>/*@part:text-audit*/</script>
+<script type="application/json" id="art-pipeline-handoff">/*@part:art-handoff*/</script></body></html>
+

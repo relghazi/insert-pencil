@@ -1,0 +1,94 @@
+{
+  "id": "locker-gauntlet",
+  "dir": "gauntlet",
+  "core": "GauntletCore",
+  "engine": "GauntletEngine",
+  "tests": "GauntletTests",
+  "adapter": "No2Gauntlet",
+  "cheat": {
+    "xbox": [
+      [
+        "stick",
+        "walk"
+      ],
+      [
+        "D-pad",
+        "walk"
+      ],
+      [
+        "A",
+        "throw, hold to aim"
+      ],
+      [
+        "X",
+        "ring the bell"
+      ],
+      [
+        "Menu",
+        "pause"
+      ],
+      [
+        "LB",
+        "previous tab"
+      ],
+      [
+        "RB",
+        "next tab"
+      ],
+      [
+        "B",
+        "back"
+      ]
+    ],
+    "keyboard": [
+      [
+        "Up+Down",
+        "walk up and down"
+      ],
+      [
+        "Left+Right",
+        "walk left and right"
+      ],
+      [
+        "Space",
+        "throw, hold to aim"
+      ],
+      [
+        "Shift",
+        "ring the bell"
+      ],
+      [
+        "P",
+        "pause"
+      ],
+      [
+        "Esc",
+        "close notebook"
+      ]
+    ],
+    "notes": [
+      "Health drops each second and with each hit. Lunch adds 100; do not shoot it.",
+      "Keys open gates, a bell clears the screen. Treasure, keys, bells 100; monsters 5 thrown at, 25 hand to hand."
+    ]
+  },
+  "victories": [
+    [
+      "lg-principal",
+      "see you later",
+      "send the principal away with the bell."
+    ],
+    [
+      "lg-shortcut",
+      "shortcut",
+      "take a stairwell that skips ahead."
+    ],
+    [
+      "lg-deeper",
+      "the lockers go deeper",
+      "make it past level 8."
+    ]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='kill'&&ev.kind==='death')win('lg-principal');if(ev.type==='exit'&&ev.skip)win('lg-shortcut');if(ev.type==='level'&&ev.level>8)win('lg-deeper')}",
+  "readme": "Locker Gauntlet: arrow keys or WASD walk, hold Space to stand and throw, Shift rings a bell, P pauses. Health counts down; lunch brings it back.",
+  "claude": "- Locker Gauntlet (owner 2026-10-26, locker order): authentic 1985 Gauntlet rules and scoring (src/gauntlet, 25 rule checks), the jock alone in the locker hallways going deeper: hall pass ghosts, hall monitors, dodgeball kids, paper wad lobbers, the vanishing substitute and the principal for Death, brick offices for generators; same amendment list."
+}

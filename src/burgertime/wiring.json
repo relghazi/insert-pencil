@@ -1,0 +1,21 @@
+{
+  "id": "home-ec-scramble",
+  "dir": "burgertime",
+  "core": "BurgerCore",
+  "engine": "BurgerEngine",
+  "tests": "BurgerTests",
+  "adapter": "No2HomeEcScramble",
+  "cheat": {
+    "xbox": [["stick","walk and climb"],["D-pad","walk and climb"],["A","pepper"],["Menu","pause"],["LB","previous tab"],["RB","next tab"],["B","back"]],
+    "keyboard": [["Left+Right","walk"],["Up+Down","climb"],["Space","pepper"],["P","pause"],["Esc","close notebook"]],
+    "notes": ["Walk across every ingredient to drop it: 50 a floor. Crush a hot dog 100, pickle 200, egg 300.", "Ride enemies down for 500 up to 16,000. Bonus food and each finished stage give pepper. Extra life every 20,000."]
+  },
+  "victories": [
+    ["he-carry", "special delivery", "carry two or more enemies down on one ingredient."],
+    ["he-crush", "flattened", "drop an ingredient on an enemy."],
+    ["he-stage", "order up", "finish every burger on the page."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='carry'&&ev.count>=2)win('he-carry');if(ev.type==='crush')win('he-crush');if(ev.type==='cleared')win('he-stage')}",
+  "readme": "Home Ec Scramble: arrow keys or WASD walk the girders and climb the ladders, Space shakes the pepper, P pauses.",
+  "claude": "- Home Ec Scramble (owner 2026-10-26, locker order): authentic 1982 BurgerTime rules and scoring (src/burgertime, 15 rule checks), a chef dropping burger ingredients on running hot dogs, pickles and fried eggs over her recipe card; same amendment list."
+}

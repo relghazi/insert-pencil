@@ -1,0 +1,90 @@
+{
+ "id": "quiz",
+ "dir": "qix",
+ "core": "QuizCore",
+ "engine": "QixEngine",
+ "tests": "QuizTests",
+ "adapter": "No2Quiz",
+ "cheat": {
+  "xbox": [
+   [
+    "stick",
+    "move"
+   ],
+   [
+    "A",
+    "draw fast"
+   ],
+   [
+    "X",
+    "draw slow"
+   ],
+   [
+    "Menu",
+    "pause"
+   ],
+   [
+    "LB",
+    "previous tab"
+   ],
+   [
+    "RB",
+    "next tab"
+   ],
+   [
+    "B",
+    "back"
+   ]
+  ],
+  "keyboard": [
+   [
+    "Up+Down",
+    "move up and down"
+   ],
+   [
+    "Left+Right",
+    "move left and right"
+   ],
+   [
+    "Space",
+    "draw fast"
+   ],
+   [
+    "Shift",
+    "draw slow"
+   ],
+   [
+    "P",
+    "pause"
+   ],
+   [
+    "Esc",
+    "close notebook"
+   ]
+  ],
+  "notes": [
+   "Each percent you claim 250, drawn slow 500. Claim 75% to pass, plus 1,000 for each percent over.",
+   "Split two scribbles apart for a bigger multiplier. No extra lives, as on the cabinet."
+  ]
+ },
+ "victories": [
+  [
+   "qx-slow",
+   "slow and steady",
+   "claim a tenth of the sheet in one slow shape."
+  ],
+  [
+   "qx-90",
+   "top marks",
+   "pass a level with 90% claimed."
+  ],
+  [
+   "qx-split",
+   "divide and conquer",
+   "split the two scribbles apart."
+  ]
+ ],
+ "victoryRule": "(ev,e,n,win)=>{if(ev.type==='claim'&&ev.slow&&ev.share>=10)win('qx-slow');if(ev.type==='cleared'&&ev.percent>=90)win('qx-90');if(ev.type==='split')win('qx-split')}",
+ "readme": "Quiz: arrows move along the edges, hold Space to draw fast or Shift to draw slow, P pauses.",
+ "claude": "- Quiz (owner 2026-10-26, locker order): authentic 1981 Qix rules and scoring (src/qix, 17 rule checks), her pencil claiming bubbles on a blank answer sheet; the Qix is a red ballpoint scribble and the lines are drawn in code, ink sparks are the Sparx and a pink cap eraser is the Fuse; same amendment list."
+}

@@ -1,0 +1,55 @@
+# Builds the game's single HTML file from source and publishes it on GitHub Pages as index.html.
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Pinned to full commit SHAs (tag in the comment).
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with:
+          node-version: '24'
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d   # v6.0.0
+      # The build uses only Node built-ins; no npm install needed.
+      - name: Build the HTML
+        run: |
+          node build/build.cjs --html-only
+          mkdir -p _site
+          cp dist/No2-Arcade-v*.html _site/index.html
+          # The scoreboard page (site/scores) with its paper and tape, the lettered titles, its heading, the Esc keycap, the ink underline and two fonts.
+          mkdir -p _site/scores/titles _site/scores/fonts _site/scores/ui
+          cp assets/ui/headings/scoreboard.webp assets/ui/key.webp assets/ui/ink-underline.webp assets/arcade/page/icon.ico _site/scores/ui/
+          cp site/scores/index.html _site/scores/
+          cp site/scores/ui/*.webp _site/scores/ui/
+          cp assets/ui/titles/*.webp _site/scores/titles/
+          cp assets/arcade/v044/fonts/PatrickHand-Regular.ttf assets/arcade/v044/fonts/PermanentMarker-Regular.ttf _site/scores/fonts/
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9   # v5.0.0
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346   # v5.0.1

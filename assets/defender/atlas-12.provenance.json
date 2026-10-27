@@ -1,0 +1,14 @@
+{
+ "status": "approved by owner 2026-10-29",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (edits); cut with tools/cut-sprite-sheet.py --blobs",
+ "note": "scenery fitted to the new ground: lime base grass removed (school bushes a natural green), basketball hoop and trees redrawn in high definition; the ground's lower grass blades are drawn again in front of them",
+ "candidates": {
+  "incoming/DX/def-school-fit-v1.png": "4fb77c727f294331de8d651ac02007667c5ce958e043d1dc52ed056997e53745",
+  "incoming/DX/def-water-tower-fit-v1.png": "8a02f405c0c83b39ea0656d6847e542a6db2b4ce24f92e36146671560bfdf877",
+  "incoming/DX/def-basketball-hoop-fit-v1.png": "7d180294f7bcfa1ac75d82ecca2de627fb62b85d3cdac85652b55b92d3cfc85e",
+  "incoming/DX/def-trees-fit-v1.png": "88a3ecef32f6c697a825ea567c69d61444c50026d3be86ccd8c9b4945be70e56"
+ },
+ "assets": {
+  "assets/defender/atlas-12.webp": "345b6f108fd7d8de5de0dd5d9784ed2d53cd19a3a2d7c0691ebfdfaf1ed3bd2e"
+ }
+}

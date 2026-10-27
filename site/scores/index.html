@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Online scoreboard for the published game (GitHub Pages, /scores/). Reads the leaderboard Worker's public GET /scores
+     (verified runs only, best one per player). The Pages workflow copies the hand-lettered titles, the scoreboard
+     heading, the correction-fluid keycap, the ink underline, the game's icon and the two fonts next to this file; the wooden
+     ruler (ui/ruler.webp) holds the keys for this page, like every screen in the game (owner 2026-10-30). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://no2-arcade-leaderboard.no2-arcade.workers.dev; base-uri 'none'; form-action 'none'">
+<title>No. 2 Arcade Scoreboard</title>
+<link rel="icon" type="image/x-icon" href="ui/icon.ico">
+<style>
+@font-face{font-family:Hand;src:url(fonts/PatrickHand-Regular.ttf) format('truetype');font-display:swap}
+@font-face{font-family:Marker;src:url(fonts/PermanentMarker-Regular.ttf) format('truetype');font-display:swap}
+:root{color-scheme:light;--paper:#fbf7ec;--line:#cdd9ef;--margin:#e7a3a3;--ink:#1b3591;--pencil:#4a4f5c;--soft:#7b7f8c;--card:#fffdf6;--edge:#ddd5c2;--hi:#fff1a8;--red:#c0392b}
+*{box-sizing:border-box}
+html{background:#6b4a2e}
+body{margin:0;min-height:100vh;color:var(--pencil);font:20px/1.35 Hand,'Patrick Hand',ui-rounded,system-ui,sans-serif;
+ background:var(--paper) repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px);background-attachment:local}
+body::before{content:"";position:fixed;inset:0 auto 0 104px;width:2px;background:var(--margin);opacity:.7;pointer-events:none}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 64px 124px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;margin-bottom:18px}
+h1{margin:0;line-height:0;display:flex;align-items:center;gap:12px}h1 img{height:76px;width:auto;max-width:100%}h1 img.icon{height:66px;flex:none}
+header p{margin:0;color:var(--soft)}
+a{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.grid{gap:26px 20px;padding-top:12px}
+/* Each game is a scrap of her ruled notebook paper, a little torn and crooked, held up by one strip of tape. */
+.scrap{position:relative;transform:rotate(var(--r,0deg));filter:drop-shadow(0 5px 8px rgba(60,40,10,.18));transition:transform .15s}
+.scrap:hover,.scrap:focus-within{transform:rotate(var(--r,0deg)) translateY(-3px)}
+.card{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:6px;width:100%;padding:16px 14px 20px;background:#fdfaf2 url(ui/paper.webp) 0 0/420px auto;clip-path:var(--clip,none)}
+.card:focus-visible{outline:2px solid var(--ink);outline-offset:-6px}
+.tape{position:absolute;top:-15px;left:50%;width:calc(var(--tw,118px)*var(--ts,1));height:auto;transform:translateX(calc(-50% + var(--tx,0px))) rotate(var(--tr,0deg));pointer-events:none;z-index:2;opacity:.95}
+.tape.corner{top:-18px;left:-14px;transform:rotate(calc(-38deg + var(--tr,0deg)))}
+.tape.corner.right{left:auto;right:-14px;transform:rotate(calc(38deg + var(--tr,0deg)))}
+.card img{width:100%;aspect-ratio:1000/532;object-fit:contain}
+.card .note{color:var(--soft);font-size:17px;min-height:1.3em}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--edge);padding-top:6px;color:var(--ink);font-size:22px}
+.top .who{letter-spacing:.08em}.top .empty{color:var(--soft);font-size:18px}
+.board{max-width:620px;margin:0 auto}
+/* Back like the game's: her correction-fluid Esc keycap with the word underlined in ink below it, in the page's left margin
+   level with the title, as on every sheet in the game (above the title on phones, where there is no margin). */
+.back{all:unset;cursor:pointer;position:fixed;left:26px;top:150px;z-index:3;display:inline-flex;flex-direction:column;align-items:center;gap:2px;color:var(--ink);font-size:22px}
+.back .key{display:inline-block;min-width:2.4em;padding:.1em .45em .22em;text-align:center;font-size:.85em;color:#1f2433;background:url(ui/key.webp) center/100% 100% no-repeat;filter:drop-shadow(1px 2px 2px #0003)}
+.back .word{padding:0 .3em .3em;background:url(ui/ink-underline.webp) center bottom/100% 34% no-repeat}
+.back:hover,.back:focus-visible{outline:0;filter:drop-shadow(0 0 5px #ffe7a8)}
+.board img{display:block;width:min(100%,520px);margin:8px auto 0}
+.board .note{text-align:center;color:var(--soft);margin:0 0 14px}
+ol{list-style:none;margin:0;padding:0}
+li{display:grid;grid-template-columns:2.6em 1fr auto;align-items:baseline;height:32px;padding:0 10px;font-size:22px}
+li .n{color:var(--soft)}li .who{color:var(--ink);letter-spacing:.1em}li .pts{color:var(--ink);font-variant-numeric:tabular-nums}
+li.first .who,li.first .pts{color:var(--red)}
+li.you{background:var(--hi)}li.you .who::after{content:"  (you)";letter-spacing:0;color:var(--soft);font-size:17px}
+.msg{text-align:center;color:var(--soft);padding:24px 0}
+.legal{margin-top:28px;color:var(--soft);font-size:17px}
+@media (max-width:760px){body::before{left:28px}main{padding:20px 16px 48px 44px}.back{position:static;margin-bottom:4px}}
+@media (max-width:560px){.tape{--ts:.6}.tape.corner{top:-12px}h1 img{height:54px}h1 img.icon{height:46px}li{font-size:20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{padding:8px 9px 6px}.card .note{font-size:14px}.top{font-size:17px}.top .empty{font-size:14px}}
+/* The action ruler (owner 2026-10-30): the keys for this page on her wooden ruler at the bottom, as in the game. */
+#ruler{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:5;display:flex;align-items:center;gap:0;max-width:96vw;height:64px;padding:16px 40px 0;box-sizing:border-box;border-style:solid;border-width:0 34px;border-image:url(ui/ruler.webp) 0 60 fill / 0 34px stretch;filter:drop-shadow(0 4px 6px rgba(30,20,10,.35));white-space:nowrap;color:#22355a;font-size:22px}
+#ruler button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:.35em;padding:.05em .45em;border-radius:8px}
+#ruler button+button{border-left:1.5px solid rgba(60,40,20,.35);border-radius:0;padding-left:.7em;margin-left:.3em}
+#ruler button:is(:hover,:focus-visible){background:rgba(255,231,168,.6)}
+#ruler .short{display:none}
+#ruler .key{display:inline-block;min-width:1.6em;padding:.05em .4em .15em;text-align:center;font-size:.85em;color:#1f2433;background:url(ui/key.webp) center/100% 100% no-repeat;filter:drop-shadow(1px 2px 2px #0003)}
+main{padding-bottom:110px!important}
+@media (max-width:560px){#ruler .long{display:none}#ruler .short{display:inline}#ruler{font-size:17px;height:54px;padding:13px 22px 0;border-width:0 24px}#ruler .key{min-width:1.3em}}
+@media (prefers-reduced-motion:reduce){.scrap{transition:none}}
+</style>
+</head>
+<body>
+<main>
+ <header>
+  <h1><img class="icon" src="ui/icon-scores.webp" alt="" width="160" height="164"><img src="ui/scoreboard.webp" alt="Scoreboard" width="1000" height="307"></h1>
+  <p>Every score here was replayed on the game's own rules before it counts.</p>
+ </header>
+ <div id="view" aria-live="polite"></div>
+ <nav id="ruler" aria-label="what you can do here"></nav>
+ <p class="legal">Scores are checked about every 20 minutes, so a new one can take a while to show up. Only initials are kept, no accounts. Something wrong? Write it up on the detention slip behind her sneaker in the game's locker.</p>
+</main>
+<script>
+const API='https://no2-arcade-leaderboard.no2-arcade.workers.dev';
+const GAMES=[ // in the year each original came out, same-year games in locker order; each credits the original's maker
+ ['gym-class-pong','Gym Class Pong','a gym. allegedly.','Pong by Atari, 1972'],
+ ['detention-breakout','Detention Breakout','one wall at a time.','Breakout by Atari, 1976'],
+ ['space-substitutes','Space Substitutes','the seating chart got weird.','Space Invaders by Taito, 1978'],
+ ['erasteroids','Erasteroids','space, but on squared paper.','Asteroids by Atari, 1979'],
+ ['lunch-lander','Lunch Lander','try not to spill anything.','Lunar Lander by Atari, 1979'],
+ ['galgebra','Galgebra','this counts as maths.','Galaxian by Namco, 1979'],
+ ['spitball-command','Spitball Command','protect the back row.','Missile Command by Atari, 1980'],
+ ['snack-man','Snack-Man','quarters in the hallway.','Pac-Man by Namco, 1980'],
+ ['recess-zone','Recess Zone','the playground is a map now.','Battlezone by Atari, 1980'],
+ ['scribble-defender','Scribble Defender','the invasion starts in the margins.','Defender by Williams, 1981'],
+ ['centigrade','Centigrade','too many legs.','Centipede by Atari, 1981'],
+ ['froggology','Froggology','field notes: do not get squashed.','Frogger by Konami, 1981'],
+ ['quiz','Quiz','please stay inside the lines.','Qix by Taito, 1981'],
+ ['testpest','Testpest','a tunnel in the homework.','Tempest by Atari, 1981'],
+ ['dunce-kong','Dunce Kong','stairs were a bad idea.','Donkey Kong by Nintendo, 1981'],
+ ['home-ec-scramble','Home Ec Scramble','the recipe has other plans.','BurgerTime by Data East, 1982'],
+ ['dig-doug','Dig Doug','there is a world under this page.','Dig Dug by Namco, 1982'],
+ ['q-nerd','Q*Nerd','every corner has another corner.','Q*bert by Gottlieb, 1982'],
+ ['jock-joust','Jock Joust','PE got competitive.','Joust by Williams, 1982'],
+ ['class-of-2084','Robotron: Class of 2084','just another brick.','Robotron: 2084 by Williams, 1982'],
+ ['hall-patrol','Hall Patrol','someone has to check the halls.','Moon Patrol by Irem, 1982'],
+ ['mystery-meat-time','Mystery Meat Time','probably edible.','Food Fight by Atari, 1983'],
+ ['term-paperboy','Term Paperboy','special delivery.','Paperboy by Atari Games, 1985'],
+ ['locker-gauntlet','Locker Gauntlet','the lockers go deeper.','Gauntlet by Atari Games, 1985']];
+const byId=Object.fromEntries(GAMES.map(g=>[g[0],g]));
+// Her tape drawer (owner 2026-10-28): every scrap is held by a different piece, neighbours never the same; the stubby piece and the crossed strips hold a corner.
+const TAPES=[['tape.webp',118],['tape-stub.webp',84,1],['tape-cross.webp',66,1],['tape-torn.webp',120],['tape-frosted.webp',118],['tape-long.webp',150],['tape-fold.webp',104],['tape-clear.webp',122],['tape-smudge.webp',126]];
+
+// The game on this same site keeps a random anonymous id in its save; with it the board marks your own scores.
+let player='';try{player=JSON.parse(localStorage.getItem('No2Arcade:leaderboard')||'{}').playerId||''}catch{}
+if(!/^[a-f0-9]{32}$/.test(player))player='';
+const view=document.getElementById('view');
+const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e};
+const fmt=n=>Number(n).toLocaleString('en-US');
+async function scores(id,limit){const q=new URLSearchParams({game:id,limit:String(limit)});if(player)q.set('player',player);
+ const r=await fetch(API+'/scores?'+q,{cache:'no-store'});const j=await r.json();if(!j.ok)throw Error(j.error||'error');return j.scores}
+const cache=new Map();
+function title(id){const img=el('img');img.src='titles/'+id+'.webp';img.alt=byId[id][1];img.loading='lazy';img.decoding='async';return img}
+
+// A seeded random per game, so each scrap keeps its own tear, tilt and tape from visit to visit.
+function rng(seed){let x=seed>>>0||1;return()=>((x=Math.imul(x^x>>>15,2246822507)^Math.imul(x^x>>>13,3266489909),(x^=x>>>16)>>>0)/4294967296)}
+function torn(r){const pt=[],n=14,m=8,j=(a,b)=>(a+(b-a)*r()).toFixed(1);
+ // Top nearly straight (the tape holds it), the sides a little ragged, the bottom torn off the pad.
+ for(let i=0;i<=m;i++)pt.push(`${(i/m*100).toFixed(1)}% ${j(0,3)}px`);
+ for(let i=1;i<m;i++)pt.push(`calc(100% - ${j(0,7)}px) ${(i/m*100).toFixed(1)}%`);
+ for(let i=n;i>=0;i--)pt.push(`${(i/n*100).toFixed(1)}% calc(100% - ${j(0,14)}px)`);
+ for(let i=m-1;i>0;i--)pt.push(`${j(0,7)}px ${(i/m*100).toFixed(1)}%`);
+ return 'polygon('+pt.join(',')+')'}
+function overview(){
+ document.title='No. 2 Arcade Scoreboard';
+ const grid=el('div','grid');
+ for(const [id,name,note,orig] of GAMES){
+  const b=el('button','card');b.type='button';b.setAttribute('aria-label',name+' scores');
+  const top=el('div','top');top.append(el('span','empty','checking...'));
+  b.append(title(id),el('span','note',orig),top);b.onclick=()=>{location.hash=id};
+  const r=rng([...id].reduce((h,c)=>Math.imul(h,31)+c.charCodeAt(0)|0,7)),scrap=el('div','scrap'),tape=el('img','tape'),[file,tw,corner]=TAPES[GAMES.indexOf(byId[id])*5%TAPES.length];tape.src='ui/'+file;tape.alt='';tape.style.setProperty('--tw',tw+'px');if(corner)tape.classList.add('corner',...(r()<.5?['right']:[]));
+  scrap.style.setProperty('--r',((r()-.5)*4.4).toFixed(2)+'deg');scrap.style.setProperty('--tr',((r()-.5)*8).toFixed(1)+'deg');scrap.style.setProperty('--tx',((r()-.5)*40).toFixed(0)+'px');b.style.setProperty('--clip',torn(r));
+  scrap.append(b,tape);grid.append(scrap);
+  const show=rows=>{top.replaceChildren();const r=rows[0];if(!r){top.append(el('span','empty','no scores yet'));return}
+   top.append(el('span','who',r.initials),el('span','pts',fmt(r.score)))};
+  (cache.has(id)?Promise.resolve(cache.get(id)):scores(id,25).then(rows=>(cache.set(id,rows),rows)))
+   .then(show,()=>{top.replaceChildren(el('span','empty','board unavailable'))});
+ }
+ view.replaceChildren(grid);
+}
+
+function board(id){
+ const [,name,note,orig]=byId[id];document.title=name+' Scoreboard';
+ const wrap=el('section','board'),back=el('button','back');back.type='button';back.setAttribute('aria-label','back to all games');back.append(el('span','key','Esc'),el('span','word','back'));back.onclick=()=>{location.hash=''};
+ const list=el('ol'),msg=el('p','msg','checking the board...');
+ wrap.append(title(id),el('p','note',orig+'. '+note),list,msg);view.replaceChildren(wrap);
+ scores(id,25).then(rows=>{cache.set(id,rows);msg.remove();if(!rows.length){list.after(el('p','msg','No scores yet. Be the first.'));return}
+  rows.forEach((r,i)=>{const li=el('li',(i===0?'first ':'')+(r.you?'you':''));li.append(el('span','n',String(i+1)),el('span','who',r.initials),el('span','pts',fmt(r.score)));list.append(li)})},
+  ()=>{msg.textContent='The board could not be reached. Try again in a moment.'});
+}
+
+const ruler=document.getElementById('ruler');
+function rulerSet(items){ruler.replaceChildren();for(const [keys,word,act,short] of items){const b=el('button');b.type='button';for(const k of keys){if(b.childNodes.length)b.append(' + ');b.append(el('span','key',k))}b.append(el('span',short?'long':'',word));if(short)b.append(el('span','short',short));b.onclick=act;ruler.append(b)}}
+const play=()=>{location.href='../'};
+function step(d){const at=GAMES.findIndex(g=>g[0]===decodeURIComponent(location.hash.slice(1)));location.hash=GAMES[(at+d+GAMES.length)%GAMES.length][0]}
+function move(dx,dy){const cards=[...document.querySelectorAll('.card')];if(!cards.length)return;let i=cards.indexOf(document.activeElement);if(i<0){cards[0].focus();return}
+ const cols=Math.max(1,Math.round(document.querySelector('.grid').clientWidth/cards[0].offsetWidth));i=Math.max(0,Math.min(cards.length-1,i+dx+dy*cols));cards[i].focus();cards[i].scrollIntoView({block:'nearest',behavior:'smooth'})}
+function route(){const id=decodeURIComponent(location.hash.slice(1));if(byId[id]){board(id);rulerSet([[['Esc'],'back',()=>{location.hash=''}],[['\u2190','\u2192'],'other games',()=>step(1),'games'],[['P'],'play No. 2 Arcade',play,'play']])}
+ else{overview();if(location.hash)history.replaceState(null,'',location.pathname);rulerSet([[['\u2190','\u2192'],'choose',()=>move(1,0)],[['Enter'],'open',()=>{(document.activeElement?.classList.contains('card')?document.activeElement:document.querySelector('.card'))?.click()}],[['P'],'play No. 2 Arcade',play,'play']])}}
+addEventListener('hashchange',()=>{route();scrollTo(0,0)});
+addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey)return;const onBoard=!!byId[decodeURIComponent(location.hash.slice(1))];
+ if(e.key==='Escape'&&location.hash){e.preventDefault();location.hash=''}
+ else if(e.key==='p'||e.key==='P'){e.preventDefault();play()}
+ else if(onBoard&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();step(e.key==='ArrowRight'?1:-1)}
+ else if(!onBoard&&/^Arrow/.test(e.key)){e.preventDefault();move(e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0,e.key==='ArrowDown'?1:e.key==='ArrowUp'?-1:0)}});
+route();
+</script>
+</body>
+</html>

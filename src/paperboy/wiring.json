@@ -1,0 +1,21 @@
+{
+  "id": "term-paperboy",
+  "dir": "paperboy",
+  "core": "PaperboyCore",
+  "engine": "PaperboyEngine",
+  "tests": "PaperboyTests",
+  "adapter": "No2TermPaperboy",
+  "cheat": {
+    "xbox": [["stick","steer, speed up and brake"],["D-pad","steer, speed up and brake"],["A","throw a paper"],["Menu","pause"],["LB","previous tab"],["RB","next tab"],["B","back"]],
+    "keyboard": [["Left+Right","steer"],["Up","speed up"],["Down","brake"],["Space","throw a paper"],["P","pause"],["Esc","close notebook"]],
+    "notes": ["Bright houses subscribe: mailbox 250, doorstep 100. Miss one, or break its window, and it cancels.", "Drab house windows 100, paid at the end of the day. Bundles refill papers. Training course: targets 100, jumps 200. Extra life at 15,000."]
+  },
+  "victories": [
+    ["tp-perfect", "perfect day", "deliver to every subscriber in one day."],
+    ["tp-targets", "bullseye", "hit every target on a training course."],
+    ["tp-week", "seven days a week", "finish the Sunday training course."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='perfect')win('tp-perfect');if(ev.type==='report'&&e.targets?.every(t=>t.hit))win('tp-targets');if(ev.type==='week')win('tp-week')}",
+  "readme": "Term Paperboy: left and right steer, up speeds up, down brakes, Space throws a paper to the left, P pauses. Monday to Sunday, then the training course each evening.",
+  "claude": "- Term Paperboy (owner 2026-10-26, locker order): authentic 1985 Paperboy rules and scoring (src/paperboy, 20 rule checks), a boy on a blue bike delivering rolled term papers along one street of her school neighbourhood that changes by the day; same amendment list."
+}

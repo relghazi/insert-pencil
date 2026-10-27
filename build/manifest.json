@@ -1,0 +1,237 @@
+{
+  "output": "No2-Arcade-v0.8.5.html",
+  "version": "0.8.5",
+  "lockedSha256": "31fe0953c519ed6002a6a8c10ef3700a09c75fd92635a5b194157fde1188a86b",
+  "lockedContentSha256": "31fe0953c519ed6002a6a8c10ef3700a09c75fd92635a5b194157fde1188a86b",
+  "readme": "src/release/README.txt",
+  "document": {
+    "template": "src/index.html",
+    "parts": {
+      "base-style": "src/shell/base.css",
+      "font-licenses": "src/shared/font-licenses.json",
+      "repair-style": "src/shell/repair-presentation.css",
+      "classroom-style": "src/hub/classroom.css",
+      "v044-style": "src/shell/v044-presentation.css",
+      "v043-style": [
+        "src/shell/v043-presentation.css",
+        "src/ui/ink-ui.css"
+      ],
+      "pixi": "src/vendor/pixi-8.6.6.js",
+      "asset-data": [
+        {
+          "text": "globalThis.No2AssetData="
+        },
+        {
+          "json": "assets/asset-data.json"
+        },
+        {
+          "text": ";\nglobalThis.No2Audio="
+        },
+        {
+          "json": "assets/audio/audio.json"
+        },
+        {
+          "text": ";\n"
+        },
+        "src/assets/asset-styles.js"
+      ],
+      "defender-pack": [
+        {
+          "text": "\nglobalThis.ArcadePacks={};\n// Scribble Defender's art (owner 2026-10-27: it plays on the page like the other notebooks; no packed frame).\nglobalThis.ScribbleAssets="
+        },
+        {
+          "json": "assets/defender/scribble-assets.json"
+        },
+        {
+          "text": ";\n"
+        }
+      ],
+      "catalog": "src/shell/catalog.js",
+      "services": "src/shell/services.js",
+      "intro-state": "src/startup/intro-state.js",
+      "physical-layout": "src/shell/physical-layout.js",
+      "app": [
+        {
+          "text": "globalThis.No2I18nData={fr:"
+        },
+        {
+          "json": "assets/i18n/fr.json"
+        },
+        {
+          "text": ",es:"
+        },
+        {
+          "json": "assets/i18n/es.json"
+        },
+        {
+          "text": ",de:"
+        },
+        {
+          "json": "assets/i18n/de.json"
+        },
+        {
+          "text": ",it:"
+        },
+        {
+          "json": "assets/i18n/it.json"
+        },
+        {
+          "text": "};\n"
+        },
+        "src/shell/i18n.js",
+        {
+          "text": "globalThis.No2TitleL10N="
+        },
+        {
+          "json": "assets/ui/headings/l10n.json"
+        },
+        {
+          "text": ";\n"
+        },
+        "src/ui/ink-ui.js",
+        {
+          "text": "\nglobalThis.No2SheetBands="
+        },
+        {
+          "json": "assets/ui/headings/sheet-bands-by-phrase.json"
+        },
+        {
+          "text": ";\n"
+        },
+        {
+          "text": "\nglobalThis.No2TitleLettersL10N="
+        },
+        {
+          "json": "assets/ui/headings/l10n-letters.json"
+        },
+        {
+          "text": ";\n"
+        },
+        "src/defender/core.js",
+        {
+          "text": "\nglobalThis.__SCRIBBLE_API__={};\n"
+        },
+        "src/defender/deterministic-tests.js",
+        "src/defender/audio.js",
+        "src/defender/draw-list.js",
+        "src/defender/renderer.js",
+        "src/defender/notebook.js",
+        "src/erasteroids/core.js",
+        "src/erasteroids/rule-tests.js",
+        "src/erasteroids/game.js",
+        "src/pong/core.js",
+        "src/pong/rule-tests.js",
+        "src/pong/game.js",
+        "src/breakout/core.js",
+        "src/breakout/rule-tests.js",
+        "src/breakout/game.js",
+        "src/invaders/core.js",
+        "src/invaders/rule-tests.js",
+        "src/invaders/game.js",
+        "src/lander/core.js",
+        "src/lander/rule-tests.js",
+        "src/lander/game.js",
+        "src/missile/core.js",
+        "src/missile/rule-tests.js",
+        "src/missile/game.js",
+        "src/pacman/core.js",
+        "src/pacman/rule-tests.js",
+        "src/pacman/game.js",
+        "src/battlezone/core.js",
+        "src/battlezone/rule-tests.js",
+        "src/battlezone/game.js",
+        "src/galgebra/core.js",
+        "src/galgebra/rule-tests.js",
+        "src/galgebra/game.js",
+        "src/centigrade/core.js",
+        "src/centigrade/rule-tests.js",
+        "src/centigrade/game.js",
+        "src/frogger/core.js",
+        "src/frogger/rule-tests.js",
+        "src/frogger/game.js",
+        "src/burgertime/core.js",
+        "src/burgertime/rule-tests.js",
+        "src/burgertime/game.js",
+        "src/tempest/core.js",
+        "src/tempest/rule-tests.js",
+        "src/tempest/game.js",
+        "src/qix/core.js",
+        "src/qix/rule-tests.js",
+        "src/qix/game.js",
+        "src/donkeykong/core.js",
+        "src/donkeykong/rule-tests.js",
+        "src/donkeykong/game.js",
+        "src/qbert/core.js",
+        "src/qbert/rule-tests.js",
+        "src/qbert/game.js",
+        "src/digdug/core.js",
+        "src/digdug/rule-tests.js",
+        "src/digdug/game.js",
+        "src/robotron/core.js",
+        "src/robotron/rule-tests.js",
+        "src/robotron/game.js",
+        "src/joust/core.js",
+        "src/joust/rule-tests.js",
+        "src/joust/game.js",
+        "src/foodfight/core.js",
+        "src/foodfight/rule-tests.js",
+        "src/foodfight/game.js",
+        "src/moonpatrol/core.js",
+        "src/moonpatrol/rule-tests.js",
+        "src/moonpatrol/game.js",
+        "src/paperboy/core.js",
+        "src/paperboy/rule-tests.js",
+        "src/paperboy/game.js",
+        "src/gauntlet/core.js",
+        "src/gauntlet/rule-tests.js",
+        "src/gauntlet/game.js",
+        "src/shell/leaderboard.js",
+        "src/shell/victories.js",
+        "src/shell/trophies.js",
+        "src/shell/app.js"
+      ],
+      "defender-adapter": "src/defender/adapter.js",
+      "shell-tests": "src/shell/shell-tests.js",
+      "comic": "src/comic/comic.js",
+      "hub": [
+        {
+          "text": "window.LocalImages="
+        },
+        {
+          "json": "assets/hub/local-images.json"
+        },
+        {
+          "text": ";\nglobalThis.No2Lyrics="
+        },
+        {
+          "json": "assets/audio/lyrics.json"
+        },
+        {
+          "text": ";\nwindow.LockerPull="
+        },
+        {
+          "json": "assets/ui/locker-pull/placements.json"
+        },
+        {
+          "text": ";\n"
+        },
+        {
+          "text": "globalThis.No2HeadingCSS="
+        },
+        {
+          "json": "assets/ui/headings/l10n-css.json"
+        },
+        {
+          "text": ";\n"
+        },
+        "src/hub/locker.js",
+        "src/shell/host.js"
+      ],
+      "layout-audit": "src/shell/layout-audit.js",
+      "text-audit": "src/shell/text-audit.js",
+      "art-handoff": {
+        "json": "src/shell/art-handoff.json"
+      }
+    }
+  }
+}

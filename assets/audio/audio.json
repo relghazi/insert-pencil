@@ -1,0 +1,871 @@
+{
+ "music": {
+  "hub-locker": {
+   "src": "@@asset:assets/audio/music/hub-locker.m4a@@",
+   "seconds": 60.35
+  },
+  "comic": {
+   "src": "@@asset:assets/audio/music/comic.m4a@@",
+   "seconds": 59.15
+  },
+  "scribble-defender": {
+   "src": "@@asset:assets/audio/music/scribble-defender.m4a@@",
+   "seconds": 59.6
+  },
+  "erasteroids": {
+   "src": "@@asset:assets/audio/music/erasteroids.m4a@@",
+   "seconds": 57.0
+  },
+  "gym-class-pong": {
+   "src": "@@asset:assets/audio/music/gym-class-pong.m4a@@",
+   "seconds": 57.35
+  },
+  "detention-breakout": {
+   "src": "@@asset:assets/audio/music/detention-breakout.m4a@@",
+   "seconds": 57.45
+  },
+  "space-substitutes": {
+   "src": "@@asset:assets/audio/music/space-substitutes.m4a@@",
+   "seconds": 67.5
+  },
+  "lunch-lander": {
+   "src": "@@asset:assets/audio/music/lunch-lander.m4a@@",
+   "seconds": 51.9
+  },
+  "spitball-command": {
+   "src": "@@asset:assets/audio/music/spitball-command.m4a@@",
+   "seconds": 62.75
+  },
+  "snack-man": {
+   "src": "@@asset:assets/audio/music/snack-man.m4a@@",
+   "seconds": 60.2
+  },
+  "recess-zone": {
+   "src": "@@asset:assets/audio/music/recess-zone.m4a@@",
+   "seconds": 62.05
+  },
+  "galgebra": {
+   "src": "@@asset:assets/audio/music/galgebra.m4a@@",
+   "seconds": 63.2
+  },
+  "centigrade": {
+   "src": "@@asset:assets/audio/music/centigrade.m4a@@",
+   "seconds": 58.9
+  },
+  "froggology": {
+   "src": "@@asset:assets/audio/music/froggology.m4a@@",
+   "seconds": 59.75
+  },
+  "home-ec-scramble": {
+   "src": "@@asset:assets/audio/music/home-ec-scramble.m4a@@",
+   "seconds": 62.3
+  },
+  "testpest": {
+   "src": "@@asset:assets/audio/music/testpest.m4a@@",
+   "seconds": 56.05
+  },
+  "quiz": {
+   "src": "@@asset:assets/audio/music/quiz.m4a@@",
+   "seconds": 56.8
+  },
+  "dunce-kong": {
+   "src": "@@asset:assets/audio/music/dunce-kong.m4a@@",
+   "seconds": 59.45
+  },
+  "q-nerd": {
+   "src": "@@asset:assets/audio/music/q-nerd.m4a@@",
+   "seconds": 56.65
+  },
+  "dig-doug": {
+   "src": "@@asset:assets/audio/music/dig-doug.m4a@@",
+   "seconds": 58.65
+  },
+  "class-of-2084": {
+   "src": "@@asset:assets/audio/music/class-of-2084.m4a@@",
+   "seconds": 65.8
+  },
+  "jock-joust": {
+   "src": "@@asset:assets/audio/music/jock-joust.m4a@@",
+   "seconds": 59.4
+  },
+  "mystery-meat-time": {
+   "src": "@@asset:assets/audio/music/mystery-meat-time.m4a@@",
+   "seconds": 55.4
+  },
+  "hall-patrol": {
+   "src": "@@asset:assets/audio/music/hall-patrol.m4a@@",
+   "seconds": 57.95
+  },
+  "term-paperboy": {
+   "src": "@@asset:assets/audio/music/term-paperboy.m4a@@",
+   "seconds": 59.0
+  },
+  "locker-gauntlet": {
+   "src": "@@asset:assets/audio/music/locker-gauntlet.m4a@@",
+   "seconds": 60.55
+  }
+ },
+ "sfx": {
+  "coin": "@@asset:assets/audio/sfx/coin.m4a@@",
+  "jar": "@@asset:assets/audio/sfx/jar.m4a@@",
+  "bell": "@@asset:assets/audio/sfx/bell.m4a@@",
+  "slam": "@@asset:assets/audio/sfx/slam.m4a@@",
+  "growl": "@@asset:assets/audio/sfx/growl.m4a@@",
+  "gameover": "@@asset:assets/audio/sfx/gameover.m4a@@",
+  "success": "@@asset:assets/audio/sfx/success.m4a@@",
+  "bike": "@@asset:assets/audio/sfx/bike.m4a@@",
+  "murmur": "@@asset:assets/audio/sfx/murmur.m4a@@",
+  "chalk": "@@asset:assets/audio/sfx/chalk.m4a@@",
+  "plastic": "@@asset:assets/audio/sfx/plastic.m4a@@",
+  "page": "@@asset:assets/audio/sfx/page.m4a@@",
+  "scratch": "@@asset:assets/audio/sfx/scratch.m4a@@",
+  "tap": "@@asset:assets/audio/sfx/tap.m4a@@",
+  "pencil": "@@asset:assets/audio/sfx/pencil.m4a@@",
+  "tape": "@@asset:assets/audio/sfx/tape.m4a@@",
+  "trophy": "@@asset:assets/audio/sfx/trophy.m4a@@",
+  "locker-open": "@@asset:assets/audio/sfx/locker-open.m4a@@"
+ },
+ "games": {
+  "detention-breakout": {
+   "paddle": "@@asset:assets/audio/games/detention-breakout/paddle.m4a@@",
+   "brick": "@@asset:assets/audio/games/detention-breakout/brick.m4a@@",
+   "wall": "@@asset:assets/audio/games/detention-breakout/wall.m4a@@",
+   "miss": "@@asset:assets/audio/games/detention-breakout/miss.m4a@@",
+   "cleared": "@@asset:assets/audio/games/detention-breakout/cleared.m4a@@",
+   "gameover": "@@asset:assets/audio/games/detention-breakout/gameover.m4a@@"
+  },
+  "recess-zone": {
+   "fire": "@@asset:assets/audio/games/recess-zone/fire.m4a@@",
+   "enemy-fire": "@@asset:assets/audio/games/recess-zone/enemy-fire.m4a@@",
+   "kill": "@@asset:assets/audio/games/recess-zone/kill.m4a@@",
+   "death": "@@asset:assets/audio/games/recess-zone/death.m4a@@",
+   "bump": "@@asset:assets/audio/games/recess-zone/bump.m4a@@",
+   "shell-blocked": "@@asset:assets/audio/games/recess-zone/shell-blocked.m4a@@",
+   "bonus-tank": "@@asset:assets/audio/games/recess-zone/bonus-tank.m4a@@"
+  },
+  "home-ec-scramble": {
+   "step": "@@asset:assets/audio/games/home-ec-scramble/step.m4a@@",
+   "release": "@@asset:assets/audio/games/home-ec-scramble/release.m4a@@",
+   "drop": "@@asset:assets/audio/games/home-ec-scramble/drop.m4a@@",
+   "pepper": "@@asset:assets/audio/games/home-ec-scramble/pepper.m4a@@",
+   "stun": "@@asset:assets/audio/games/home-ec-scramble/stun.m4a@@",
+   "crush": "@@asset:assets/audio/games/home-ec-scramble/crush.m4a@@",
+   "carry": "@@asset:assets/audio/games/home-ec-scramble/carry.m4a@@",
+   "bonus": "@@asset:assets/audio/games/home-ec-scramble/bonus.m4a@@",
+   "burger": "@@asset:assets/audio/games/home-ec-scramble/burger.m4a@@",
+   "cleared": "@@asset:assets/audio/games/home-ec-scramble/cleared.m4a@@",
+   "death": "@@asset:assets/audio/games/home-ec-scramble/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/home-ec-scramble/extra.m4a@@",
+   "walk-voice": {
+    "src": "@@asset:assets/audio/games/home-ec-scramble/walk-voice.m4a@@",
+    "f0": 440,
+    "loop": false
+   }
+  },
+  "centigrade": {
+   "shot": "@@asset:assets/audio/games/centigrade/shot.m4a@@",
+   "kill": "@@asset:assets/audio/games/centigrade/kill.m4a@@",
+   "mushroom": "@@asset:assets/audio/games/centigrade/mushroom.m4a@@",
+   "spider-voice": {
+    "src": "@@asset:assets/audio/games/centigrade/spider-voice.m4a@@",
+    "f0": null,
+    "loop": false
+   },
+   "spider": "@@asset:assets/audio/games/centigrade/spider.m4a@@",
+   "flea": "@@asset:assets/audio/games/centigrade/flea.m4a@@",
+   "scorpion-voice": {
+    "src": "@@asset:assets/audio/games/centigrade/scorpion-voice.m4a@@",
+    "f0": 240,
+    "loop": false
+   },
+   "scorpion": "@@asset:assets/audio/games/centigrade/scorpion.m4a@@",
+   "death": "@@asset:assets/audio/games/centigrade/death.m4a@@",
+   "restore": "@@asset:assets/audio/games/centigrade/restore.m4a@@",
+   "extra": "@@asset:assets/audio/games/centigrade/extra.m4a@@",
+   "beat-voice": {
+    "src": "@@asset:assets/audio/games/centigrade/beat-voice.m4a@@",
+    "f0": 160,
+    "loop": false
+   }
+  },
+  "dig-doug": {
+   "shot": "@@asset:assets/audio/games/dig-doug/shot.m4a@@",
+   "pump": "@@asset:assets/audio/games/dig-doug/pump.m4a@@",
+   "pop": "@@asset:assets/audio/games/dig-doug/pop.m4a@@",
+   "wobble": "@@asset:assets/audio/games/dig-doug/wobble.m4a@@",
+   "ghost": "@@asset:assets/audio/games/dig-doug/ghost.m4a@@",
+   "escape": "@@asset:assets/audio/games/dig-doug/escape.m4a@@",
+   "crush": "@@asset:assets/audio/games/dig-doug/crush.m4a@@",
+   "fire": "@@asset:assets/audio/games/dig-doug/fire.m4a@@",
+   "veggie": "@@asset:assets/audio/games/dig-doug/veggie.m4a@@",
+   "bonus": "@@asset:assets/audio/games/dig-doug/bonus.m4a@@",
+   "flee": "@@asset:assets/audio/games/dig-doug/flee.m4a@@",
+   "death": "@@asset:assets/audio/games/dig-doug/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/dig-doug/extra.m4a@@",
+   "cleared": "@@asset:assets/audio/games/dig-doug/cleared.m4a@@",
+   "walk-voice": {
+    "src": "@@asset:assets/audio/games/dig-doug/walk-voice.m4a@@",
+    "f0": 440,
+    "loop": false
+   }
+  },
+  "dunce-kong": {
+   "jump": "@@asset:assets/audio/games/dunce-kong/jump.m4a@@",
+   "jumpover": "@@asset:assets/audio/games/dunce-kong/jumpover.m4a@@",
+   "smash": "@@asset:assets/audio/games/dunce-kong/smash.m4a@@",
+   "item": "@@asset:assets/audio/games/dunce-kong/item.m4a@@",
+   "rivet": "@@asset:assets/audio/games/dunce-kong/rivet.m4a@@",
+   "throw": "@@asset:assets/audio/games/dunce-kong/throw.m4a@@",
+   "fireball": "@@asset:assets/audio/games/dunce-kong/fireball.m4a@@",
+   "spring": "@@asset:assets/audio/games/dunce-kong/spring.m4a@@",
+   "bounce": "@@asset:assets/audio/games/dunce-kong/bounce.m4a@@",
+   "hammer-voice": {
+    "src": "@@asset:assets/audio/games/dunce-kong/hammer-voice.m4a@@",
+    "f0": 520,
+    "loop": false
+   },
+   "hammer": "@@asset:assets/audio/games/dunce-kong/hammer.m4a@@",
+   "death": "@@asset:assets/audio/games/dunce-kong/death.m4a@@",
+   "cleared": "@@asset:assets/audio/games/dunce-kong/cleared.m4a@@",
+   "extra": "@@asset:assets/audio/games/dunce-kong/extra.m4a@@",
+   "step-voice": {
+    "src": "@@asset:assets/audio/games/dunce-kong/step-voice.m4a@@",
+    "f0": 220,
+    "loop": false
+   }
+  },
+  "erasteroids": {
+   "fire": "@@asset:assets/audio/games/erasteroids/fire.m4a@@",
+   "saucer-fire": "@@asset:assets/audio/games/erasteroids/saucer-fire.m4a@@",
+   "explode": "@@asset:assets/audio/games/erasteroids/explode.m4a@@",
+   "death": "@@asset:assets/audio/games/erasteroids/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/erasteroids/extra.m4a@@",
+   "hyper": "@@asset:assets/audio/games/erasteroids/hyper.m4a@@",
+   "saucer-voice": {
+    "src": "@@asset:assets/audio/games/erasteroids/saucer-voice.m4a@@",
+    "f0": 900,
+    "loop": false
+   },
+   "thrust-voice": {
+    "src": "@@asset:assets/audio/games/erasteroids/thrust-voice.m4a@@",
+    "f0": null,
+    "loop": false
+   },
+   "beat-voice": {
+    "src": "@@asset:assets/audio/games/erasteroids/beat-voice.m4a@@",
+    "f0": 60,
+    "loop": false
+   }
+  },
+  "mystery-meat-time": {
+   "throw": "@@asset:assets/audio/games/mystery-meat-time/throw.m4a@@",
+   "hit": "@@asset:assets/audio/games/mystery-meat-time/hit.m4a@@",
+   "splat": "@@asset:assets/audio/games/mystery-meat-time/splat.m4a@@",
+   "pickup": "@@asset:assets/audio/games/mystery-meat-time/pickup.m4a@@",
+   "manhole": "@@asset:assets/audio/games/mystery-meat-time/manhole.m4a@@",
+   "emerge": "@@asset:assets/audio/games/mystery-meat-time/emerge.m4a@@",
+   "death": "@@asset:assets/audio/games/mystery-meat-time/death.m4a@@",
+   "cone": "@@asset:assets/audio/games/mystery-meat-time/cone.m4a@@",
+   "extra": "@@asset:assets/audio/games/mystery-meat-time/extra.m4a@@",
+   "tick-voice": {
+    "src": "@@asset:assets/audio/games/mystery-meat-time/tick-voice.m4a@@",
+    "f0": 1200,
+    "loop": false
+   }
+  },
+  "froggology": {
+   "hop": "@@asset:assets/audio/games/froggology/hop.m4a@@",
+   "home": "@@asset:assets/audio/games/froggology/home.m4a@@",
+   "lady": "@@asset:assets/audio/games/froggology/lady.m4a@@",
+   "death": "@@asset:assets/audio/games/froggology/death.m4a@@",
+   "cleared": "@@asset:assets/audio/games/froggology/cleared.m4a@@",
+   "extra": "@@asset:assets/audio/games/froggology/extra.m4a@@",
+   "timer-voice": {
+    "src": "@@asset:assets/audio/games/froggology/timer-voice.m4a@@",
+    "f0": 880,
+    "loop": false
+   }
+  },
+  "galgebra": {
+   "dive": "@@asset:assets/audio/games/galgebra/dive.m4a@@",
+   "shot": "@@asset:assets/audio/games/galgebra/shot.m4a@@",
+   "kill": "@@asset:assets/audio/games/galgebra/kill.m4a@@",
+   "death": "@@asset:assets/audio/games/galgebra/death.m4a@@",
+   "crash": "@@asset:assets/audio/games/galgebra/crash.m4a@@",
+   "extra": "@@asset:assets/audio/games/galgebra/extra.m4a@@",
+   "hum-voice": {
+    "src": "@@asset:assets/audio/games/galgebra/hum-voice.m4a@@",
+    "f0": 115,
+    "loop": false
+   }
+  },
+  "locker-gauntlet": {
+   "shot": "@@asset:assets/audio/games/locker-gauntlet/shot.m4a@@",
+   "hit": "@@asset:assets/audio/games/locker-gauntlet/hit.m4a@@",
+   "kill": "@@asset:assets/audio/games/locker-gauntlet/kill.m4a@@",
+   "generator": "@@asset:assets/audio/games/locker-gauntlet/generator.m4a@@",
+   "pickup": "@@asset:assets/audio/games/locker-gauntlet/pickup.m4a@@",
+   "door": "@@asset:assets/audio/games/locker-gauntlet/door.m4a@@",
+   "magic": "@@asset:assets/audio/games/locker-gauntlet/magic.m4a@@",
+   "hurt": "@@asset:assets/audio/games/locker-gauntlet/hurt.m4a@@",
+   "throw": "@@asset:assets/audio/games/locker-gauntlet/throw.m4a@@",
+   "exit": "@@asset:assets/audio/games/locker-gauntlet/exit.m4a@@",
+   "gameover": "@@asset:assets/audio/games/locker-gauntlet/gameover.m4a@@",
+   "heartbeat-voice": {
+    "src": "@@asset:assets/audio/games/locker-gauntlet/heartbeat-voice.m4a@@",
+    "f0": 65,
+    "loop": false
+   }
+  },
+  "space-substitutes": {
+   "shot": "@@asset:assets/audio/games/space-substitutes/shot.m4a@@",
+   "kill": "@@asset:assets/audio/games/space-substitutes/kill.m4a@@",
+   "ufo-hit": "@@asset:assets/audio/games/space-substitutes/ufo-hit.m4a@@",
+   "death": "@@asset:assets/audio/games/space-substitutes/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/space-substitutes/extra.m4a@@",
+   "ufo-voice": {
+    "src": "@@asset:assets/audio/games/space-substitutes/ufo-voice.m4a@@",
+    "f0": null,
+    "loop": false
+   },
+   "march-voice": {
+    "src": "@@asset:assets/audio/games/space-substitutes/march-voice.m4a@@",
+    "f0": 85,
+    "loop": false
+   }
+  },
+  "jock-joust": {
+   "flap": "@@asset:assets/audio/games/jock-joust/flap.m4a@@",
+   "joust": "@@asset:assets/audio/games/jock-joust/joust.m4a@@",
+   "bounce": "@@asset:assets/audio/games/jock-joust/bounce.m4a@@",
+   "egg": "@@asset:assets/audio/games/jock-joust/egg.m4a@@",
+   "hatch": "@@asset:assets/audio/games/jock-joust/hatch.m4a@@",
+   "mount": "@@asset:assets/audio/games/jock-joust/mount.m4a@@",
+   "troll": "@@asset:assets/audio/games/jock-joust/troll.m4a@@",
+   "ptero": "@@asset:assets/audio/games/jock-joust/ptero.m4a@@",
+   "death": "@@asset:assets/audio/games/jock-joust/death.m4a@@",
+   "enemy": "@@asset:assets/audio/games/jock-joust/enemy.m4a@@",
+   "spawn": "@@asset:assets/audio/games/jock-joust/spawn.m4a@@",
+   "lava": "@@asset:assets/audio/games/jock-joust/lava.m4a@@",
+   "free": "@@asset:assets/audio/games/jock-joust/free.m4a@@",
+   "cleared": "@@asset:assets/audio/games/jock-joust/cleared.m4a@@",
+   "bonus": "@@asset:assets/audio/games/jock-joust/bonus.m4a@@",
+   "extra": "@@asset:assets/audio/games/jock-joust/extra.m4a@@",
+   "screech-voice": {
+    "src": "@@asset:assets/audio/games/jock-joust/screech-voice.m4a@@",
+    "f0": 1900,
+    "loop": false
+   }
+  },
+  "lunch-lander": {
+   "landed": "@@asset:assets/audio/games/lunch-lander/landed.m4a@@",
+   "crash": "@@asset:assets/audio/games/lunch-lander/crash.m4a@@",
+   "out-of-fuel": "@@asset:assets/audio/games/lunch-lander/out-of-fuel.m4a@@",
+   "warn-voice": {
+    "src": "@@asset:assets/audio/games/lunch-lander/warn-voice.m4a@@",
+    "f0": 1300,
+    "loop": false
+   },
+   "rumble-voice": {
+    "src": "@@asset:assets/audio/games/lunch-lander/rumble-voice.m4a@@",
+    "f0": null,
+    "loop": false
+   }
+  },
+  "spitball-command": {
+   "fire": "@@asset:assets/audio/games/spitball-command/fire.m4a@@",
+   "burst": "@@asset:assets/audio/games/spitball-command/burst.m4a@@",
+   "city-lost": "@@asset:assets/audio/games/spitball-command/city-lost.m4a@@",
+   "base-lost": "@@asset:assets/audio/games/spitball-command/base-lost.m4a@@",
+   "flyer": "@@asset:assets/audio/games/spitball-command/flyer.m4a@@",
+   "wave-end": "@@asset:assets/audio/games/spitball-command/wave-end.m4a@@",
+   "bonus-city": "@@asset:assets/audio/games/spitball-command/bonus-city.m4a@@",
+   "city-rebuilt": "@@asset:assets/audio/games/spitball-command/city-rebuilt.m4a@@",
+   "wave": "@@asset:assets/audio/games/spitball-command/wave.m4a@@"
+  },
+  "hall-patrol": {
+   "shot": "@@asset:assets/audio/games/hall-patrol/shot.m4a@@",
+   "up": "@@asset:assets/audio/games/hall-patrol/up.m4a@@",
+   "jump": "@@asset:assets/audio/games/hall-patrol/jump.m4a@@",
+   "land": "@@asset:assets/audio/games/hall-patrol/land.m4a@@",
+   "bomb": "@@asset:assets/audio/games/hall-patrol/bomb.m4a@@",
+   "kill": "@@asset:assets/audio/games/hall-patrol/kill.m4a@@",
+   "blast": "@@asset:assets/audio/games/hall-patrol/blast.m4a@@",
+   "tankfire": "@@asset:assets/audio/games/hall-patrol/tankfire.m4a@@",
+   "pass": "@@asset:assets/audio/games/hall-patrol/pass.m4a@@",
+   "formation": "@@asset:assets/audio/games/hall-patrol/formation.m4a@@",
+   "checkpoint": "@@asset:assets/audio/games/hall-patrol/checkpoint.m4a@@",
+   "section": "@@asset:assets/audio/games/hall-patrol/section.m4a@@",
+   "course": "@@asset:assets/audio/games/hall-patrol/course.m4a@@",
+   "death": "@@asset:assets/audio/games/hall-patrol/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/hall-patrol/extra.m4a@@",
+   "engine-voice": {
+    "src": "@@asset:assets/audio/games/hall-patrol/engine-voice.m4a@@",
+    "f0": 90,
+    "loop": false
+   },
+   "saucer-voice": {
+    "src": "@@asset:assets/audio/games/hall-patrol/saucer-voice.m4a@@",
+    "f0": null,
+    "loop": false
+   }
+  },
+  "snack-man": {
+   "dot": "@@asset:assets/audio/games/snack-man/dot.m4a@@",
+   "pellet": "@@asset:assets/audio/games/snack-man/pellet.m4a@@",
+   "ghost-eaten": "@@asset:assets/audio/games/snack-man/ghost-eaten.m4a@@",
+   "fruit-eaten": "@@asset:assets/audio/games/snack-man/fruit-eaten.m4a@@",
+   "death": "@@asset:assets/audio/games/snack-man/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/snack-man/extra.m4a@@",
+   "level": "@@asset:assets/audio/games/snack-man/level.m4a@@",
+   "siren-voice": {
+    "src": "@@asset:assets/audio/games/snack-man/siren-voice.m4a@@",
+    "f0": 480,
+    "loop": false
+   }
+  },
+  "term-paperboy": {
+   "throw": "@@asset:assets/audio/games/term-paperboy/throw.m4a@@",
+   "deliver": "@@asset:assets/audio/games/term-paperboy/deliver.m4a@@",
+   "glass": "@@asset:assets/audio/games/term-paperboy/glass.m4a@@",
+   "window": "@@asset:assets/audio/games/term-paperboy/window.m4a@@",
+   "knock": "@@asset:assets/audio/games/term-paperboy/knock.m4a@@",
+   "target": "@@asset:assets/audio/games/term-paperboy/target.m4a@@",
+   "jump": "@@asset:assets/audio/games/term-paperboy/jump.m4a@@",
+   "crash": "@@asset:assets/audio/games/term-paperboy/crash.m4a@@",
+   "bundle": "@@asset:assets/audio/games/term-paperboy/bundle.m4a@@",
+   "empty": "@@asset:assets/audio/games/term-paperboy/empty.m4a@@",
+   "report": "@@asset:assets/audio/games/term-paperboy/report.m4a@@",
+   "day": "@@asset:assets/audio/games/term-paperboy/day.m4a@@",
+   "extra": "@@asset:assets/audio/games/term-paperboy/extra.m4a@@",
+   "pedal-voice": {
+    "src": "@@asset:assets/audio/games/term-paperboy/pedal-voice.m4a@@",
+    "f0": 210,
+    "loop": false
+   }
+  },
+  "gym-class-pong": {
+   "hit": "@@asset:assets/audio/games/gym-class-pong/hit.m4a@@",
+   "wall": "@@asset:assets/audio/games/gym-class-pong/wall.m4a@@",
+   "point": "@@asset:assets/audio/games/gym-class-pong/point.m4a@@",
+   "gameover": "@@asset:assets/audio/games/gym-class-pong/gameover.m4a@@"
+  },
+  "q-nerd": {
+   "hop": "@@asset:assets/audio/games/q-nerd/hop.m4a@@",
+   "change": "@@asset:assets/audio/games/q-nerd/change.m4a@@",
+   "undo": "@@asset:assets/audio/games/q-nerd/undo.m4a@@",
+   "disc": "@@asset:assets/audio/games/q-nerd/disc.m4a@@",
+   "enter": "@@asset:assets/audio/games/q-nerd/enter.m4a@@",
+   "hatch": "@@asset:assets/audio/games/q-nerd/hatch.m4a@@",
+   "coily": "@@asset:assets/audio/games/q-nerd/coily.m4a@@",
+   "jumpoff": "@@asset:assets/audio/games/q-nerd/jumpoff.m4a@@",
+   "catch": "@@asset:assets/audio/games/q-nerd/catch.m4a@@",
+   "freeze": "@@asset:assets/audio/games/q-nerd/freeze.m4a@@",
+   "death": "@@asset:assets/audio/games/q-nerd/death.m4a@@",
+   "cleared": "@@asset:assets/audio/games/q-nerd/cleared.m4a@@",
+   "extra": "@@asset:assets/audio/games/q-nerd/extra.m4a@@"
+  },
+  "quiz": {
+   "claim": "@@asset:assets/audio/games/quiz/claim.m4a@@",
+   "draw-voice": {
+    "src": "@@asset:assets/audio/games/quiz/draw-voice.m4a@@",
+    "f0": 165,
+    "loop": false
+   },
+   "draw": "@@asset:assets/audio/games/quiz/draw.m4a@@",
+   "fuse-voice": {
+    "src": "@@asset:assets/audio/games/quiz/fuse-voice.m4a@@",
+    "f0": null,
+    "loop": false
+   },
+   "fuse": "@@asset:assets/audio/games/quiz/fuse.m4a@@",
+   "super": "@@asset:assets/audio/games/quiz/super.m4a@@",
+   "sparx": "@@asset:assets/audio/games/quiz/sparx.m4a@@",
+   "split": "@@asset:assets/audio/games/quiz/split.m4a@@",
+   "cleared": "@@asset:assets/audio/games/quiz/cleared.m4a@@",
+   "death": "@@asset:assets/audio/games/quiz/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/quiz/extra.m4a@@",
+   "qix-voice": {
+    "src": "@@asset:assets/audio/games/quiz/qix-voice.m4a@@",
+    "f0": 450,
+    "loop": false
+   }
+  },
+  "class-of-2084": {
+   "shot": "@@asset:assets/audio/games/class-of-2084/shot.m4a@@",
+   "kill": "@@asset:assets/audio/games/class-of-2084/kill.m4a@@",
+   "push": "@@asset:assets/audio/games/class-of-2084/push.m4a@@",
+   "rescue": "@@asset:assets/audio/games/class-of-2084/rescue.m4a@@",
+   "programmed": "@@asset:assets/audio/games/class-of-2084/programmed.m4a@@",
+   "spawn": "@@asset:assets/audio/games/class-of-2084/spawn.m4a@@",
+   "fizzle": "@@asset:assets/audio/games/class-of-2084/fizzle.m4a@@",
+   "death": "@@asset:assets/audio/games/class-of-2084/death.m4a@@",
+   "wave": "@@asset:assets/audio/games/class-of-2084/wave.m4a@@",
+   "extra": "@@asset:assets/audio/games/class-of-2084/extra.m4a@@",
+   "grunt-voice": {
+    "src": "@@asset:assets/audio/games/class-of-2084/grunt-voice.m4a@@",
+    "f0": 90,
+    "loop": false
+   }
+  },
+  "testpest": {
+   "shot": "@@asset:assets/audio/games/testpest/shot.m4a@@",
+   "kill": "@@asset:assets/audio/games/testpest/kill.m4a@@",
+   "spike": "@@asset:assets/audio/games/testpest/spike.m4a@@",
+   "split": "@@asset:assets/audio/games/testpest/split.m4a@@",
+   "zap": "@@asset:assets/audio/games/testpest/zap.m4a@@",
+   "cleared": "@@asset:assets/audio/games/testpest/cleared.m4a@@",
+   "death": "@@asset:assets/audio/games/testpest/death.m4a@@",
+   "extra": "@@asset:assets/audio/games/testpest/extra.m4a@@",
+   "pulsar-voice": {
+    "src": "@@asset:assets/audio/games/testpest/pulsar-voice.m4a@@",
+    "f0": 90,
+    "loop": false
+   }
+  },
+  "scribble-defender": {
+   "laser": "@@asset:assets/audio/games/scribble-defender/laser.m4a@@",
+   "kill": "@@asset:assets/audio/games/scribble-defender/kill.m4a@@",
+   "death": "@@asset:assets/audio/games/scribble-defender/death.m4a@@",
+   "bomb": "@@asset:assets/audio/games/scribble-defender/bomb.m4a@@",
+   "abduct": "@@asset:assets/audio/games/scribble-defender/abduct.m4a@@",
+   "warp": "@@asset:assets/audio/games/scribble-defender/warp.m4a@@",
+   "planet": "@@asset:assets/audio/games/scribble-defender/planet.m4a@@",
+   "baiter": "@@asset:assets/audio/games/scribble-defender/baiter.m4a@@",
+   "extra": "@@asset:assets/audio/games/scribble-defender/extra.m4a@@",
+   "saved": "@@asset:assets/audio/games/scribble-defender/saved.m4a@@",
+   "tally": "@@asset:assets/audio/games/scribble-defender/tally.m4a@@",
+   "thrust-voice": {
+    "src": "@@asset:assets/audio/games/scribble-defender/thrust-voice.m4a@@",
+    "f0": null,
+    "loop": true
+   }
+  }
+ },
+ "mixtapes": {
+  "her": [
+   {
+    "src": "@@asset:assets/audio/mixtapes/her-1.m4a@@",
+    "seconds": 150.88,
+    "title": "Insert Coin"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/her-2.m4a@@",
+    "seconds": 149.269,
+    "title": "Paper Airplane"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/her-3.m4a@@",
+    "seconds": 149.152,
+    "title": "120 Hz"
+   }
+  ],
+  "ace": [
+   {
+    "src": "@@asset:assets/audio/mixtapes/ace-1.m4a@@",
+    "seconds": 149.536,
+    "title": "Top of the Board"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/ace-2.m4a@@",
+    "seconds": 149.067,
+    "title": "Leather and Static"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/ace-3.m4a@@",
+    "seconds": 150.155,
+    "title": "Game Over (For You)"
+   }
+  ],
+  "hal": [
+   {
+    "src": "@@asset:assets/audio/mixtapes/hal-1.m4a@@",
+    "seconds": 145.653,
+    "title": "Blue Neon"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/hal-2.m4a@@",
+    "seconds": 149.269,
+    "title": "Ledger Blues"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/hal-3.m4a@@",
+    "seconds": 143.477,
+    "title": "Last Call at the Quarter Moon"
+   }
+  ],
+  "theo": [
+   {
+    "src": "@@asset:assets/audio/mixtapes/theo-1.m4a@@",
+    "seconds": 150.517,
+    "title": "Back Row"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/theo-2.m4a@@",
+    "seconds": 145.547,
+    "title": "Margin Notes"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/theo-3.m4a@@",
+    "seconds": 152.747,
+    "title": "Rewind"
+   }
+  ],
+  "june": [
+   {
+    "src": "@@asset:assets/audio/mixtapes/june-1.m4a@@",
+    "seconds": 151.051,
+    "title": "Hallway Lights"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/june-2.m4a@@",
+    "seconds": 149.056,
+    "title": "Glass Heart"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/june-3.m4a@@",
+    "seconds": 149.077,
+    "title": "Static Dance"
+   }
+  ],
+  "albright": [
+   {
+    "src": "@@asset:assets/audio/mixtapes/albright-1.m4a@@",
+    "seconds": 143.957,
+    "title": "After the Bell"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/albright-2.m4a@@",
+    "seconds": 151.019,
+    "title": "Solve for You"
+   },
+   {
+    "src": "@@asset:assets/audio/mixtapes/albright-3.m4a@@",
+    "seconds": 151.531,
+    "title": "Never Ending"
+   }
+  ]
+ },
+ "narration": {
+  "1": {
+   "src": "@@asset:assets/audio/narration/page-01.m4a@@",
+   "seconds": 11.517
+  },
+  "2": {
+   "src": "@@asset:assets/audio/narration/page-02.m4a@@",
+   "seconds": 10.82
+  },
+  "3": {
+   "src": "@@asset:assets/audio/narration/page-03.m4a@@",
+   "seconds": 9.752
+  },
+  "4": {
+   "src": "@@asset:assets/audio/narration/page-04.m4a@@",
+   "seconds": 9.242
+  },
+  "5": {
+   "src": "@@asset:assets/audio/narration/page-05.m4a@@",
+   "seconds": 12.771
+  },
+  "6": {
+   "src": "@@asset:assets/audio/narration/page-06.m4a@@",
+   "seconds": 5.898
+  },
+  "7": {
+   "src": "@@asset:assets/audio/narration/page-07.m4a@@",
+   "seconds": 4.505
+  },
+  "8": {
+   "src": "@@asset:assets/audio/narration/page-08.m4a@@",
+   "seconds": 9.845
+  },
+  "9": {
+   "src": "@@asset:assets/audio/narration/page-09.m4a@@",
+   "seconds": 10.077
+  },
+  "10": {
+   "src": "@@asset:assets/audio/narration/page-10.m4a@@",
+   "seconds": 7.291
+  },
+  "11": {
+   "src": "@@asset:assets/audio/narration/page-11.m4a@@",
+   "seconds": 6.13
+  },
+  "fr:1": {
+   "src": "@@asset:assets/audio/narration/fr-page-01.m4a@@",
+   "seconds": 12.957
+  },
+  "fr:2": {
+   "src": "@@asset:assets/audio/narration/fr-page-02.m4a@@",
+   "seconds": 12.399
+  },
+  "fr:3": {
+   "src": "@@asset:assets/audio/narration/fr-page-03.m4a@@",
+   "seconds": 11.424
+  },
+  "fr:4": {
+   "src": "@@asset:assets/audio/narration/fr-page-04.m4a@@",
+   "seconds": 9.242
+  },
+  "fr:5": {
+   "src": "@@asset:assets/audio/narration/fr-page-05.m4a@@",
+   "seconds": 13.886
+  },
+  "fr:6": {
+   "src": "@@asset:assets/audio/narration/fr-page-06.m4a@@",
+   "seconds": 9.149
+  },
+  "fr:7": {
+   "src": "@@asset:assets/audio/narration/fr-page-07.m4a@@",
+   "seconds": 4.505
+  },
+  "fr:8": {
+   "src": "@@asset:assets/audio/narration/fr-page-08.m4a@@",
+   "seconds": 10.356
+  },
+  "fr:9": {
+   "src": "@@asset:assets/audio/narration/fr-page-09.m4a@@",
+   "seconds": 15.279
+  },
+  "fr:10": {
+   "src": "@@asset:assets/audio/narration/fr-page-10.m4a@@",
+   "seconds": 7.384
+  },
+  "fr:11": {
+   "src": "@@asset:assets/audio/narration/fr-page-11.m4a@@",
+   "seconds": 6.362
+  },
+  "es:1": {
+   "src": "@@asset:assets/audio/narration/es-page-01.m4a@@",
+   "seconds": 14.768
+  },
+  "es:2": {
+   "src": "@@asset:assets/audio/narration/es-page-02.m4a@@",
+   "seconds": 16.068
+  },
+  "es:3": {
+   "src": "@@asset:assets/audio/narration/es-page-03.m4a@@",
+   "seconds": 9.195
+  },
+  "es:4": {
+   "src": "@@asset:assets/audio/narration/es-page-04.m4a@@",
+   "seconds": 12.121
+  },
+  "es:5": {
+   "src": "@@asset:assets/audio/narration/es-page-05.m4a@@",
+   "seconds": 13.653
+  },
+  "es:6": {
+   "src": "@@asset:assets/audio/narration/es-page-06.m4a@@",
+   "seconds": 8.313
+  },
+  "es:7": {
+   "src": "@@asset:assets/audio/narration/es-page-07.m4a@@",
+   "seconds": 5.48
+  },
+  "es:8": {
+   "src": "@@asset:assets/audio/narration/es-page-08.m4a@@",
+   "seconds": 11.424
+  },
+  "es:9": {
+   "src": "@@asset:assets/audio/narration/es-page-09.m4a@@",
+   "seconds": 12.957
+  },
+  "es:10": {
+   "src": "@@asset:assets/audio/narration/es-page-10.m4a@@",
+   "seconds": 7.709
+  },
+  "es:11": {
+   "src": "@@asset:assets/audio/narration/es-page-11.m4a@@",
+   "seconds": 8.731
+  },
+  "de:1": {
+   "src": "@@asset:assets/audio/narration/de-page-01.m4a@@",
+   "seconds": 14.814
+  },
+  "de:2": {
+   "src": "@@asset:assets/audio/narration/de-page-02.m4a@@",
+   "seconds": 14.071
+  },
+  "de:3": {
+   "src": "@@asset:assets/audio/narration/de-page-03.m4a@@",
+   "seconds": 9.938
+  },
+  "de:4": {
+   "src": "@@asset:assets/audio/narration/de-page-04.m4a@@",
+   "seconds": 10.356
+  },
+  "de:5": {
+   "src": "@@asset:assets/audio/narration/de-page-05.m4a@@",
+   "seconds": 15.697
+  },
+  "de:6": {
+   "src": "@@asset:assets/audio/narration/de-page-06.m4a@@",
+   "seconds": 8.081
+  },
+  "de:7": {
+   "src": "@@asset:assets/audio/narration/de-page-07.m4a@@",
+   "seconds": 4.04
+  },
+  "de:8": {
+   "src": "@@asset:assets/audio/narration/de-page-08.m4a@@",
+   "seconds": 8.545
+  },
+  "de:9": {
+   "src": "@@asset:assets/audio/narration/de-page-09.m4a@@",
+   "seconds": 12.771
+  },
+  "de:10": {
+   "src": "@@asset:assets/audio/narration/de-page-10.m4a@@",
+   "seconds": 6.548
+  },
+  "de:11": {
+   "src": "@@asset:assets/audio/narration/de-page-11.m4a@@",
+   "seconds": 8.359
+  },
+  "it:1": {
+   "src": "@@asset:assets/audio/narration/it-page-01.m4a@@",
+   "seconds": 16.765
+  },
+  "it:2": {
+   "src": "@@asset:assets/audio/narration/it-page-02.m4a@@",
+   "seconds": 12.492
+  },
+  "it:3": {
+   "src": "@@asset:assets/audio/narration/it-page-03.m4a@@",
+   "seconds": 10.728
+  },
+  "it:4": {
+   "src": "@@asset:assets/audio/narration/it-page-04.m4a@@",
+   "seconds": 11.192
+  },
+  "it:5": {
+   "src": "@@asset:assets/audio/narration/it-page-05.m4a@@",
+   "seconds": 11.935
+  },
+  "it:6": {
+   "src": "@@asset:assets/audio/narration/it-page-06.m4a@@",
+   "seconds": 8.127
+  },
+  "it:7": {
+   "src": "@@asset:assets/audio/narration/it-page-07.m4a@@",
+   "seconds": 4.412
+  },
+  "it:8": {
+   "src": "@@asset:assets/audio/narration/it-page-08.m4a@@",
+   "seconds": 9.381
+  },
+  "it:9": {
+   "src": "@@asset:assets/audio/narration/it-page-09.m4a@@",
+   "seconds": 13.189
+  },
+  "it:10": {
+   "src": "@@asset:assets/audio/narration/it-page-10.m4a@@",
+   "seconds": 6.594
+  },
+  "it:11": {
+   "src": "@@asset:assets/audio/narration/it-page-11.m4a@@",
+   "seconds": 7.059
+  }
+ }
+}

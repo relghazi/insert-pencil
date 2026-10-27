@@ -1,0 +1,86 @@
+{
+  "id": "hall-patrol",
+  "dir": "moonpatrol",
+  "core": "HallPatrolCore",
+  "engine": "PatrolEngine",
+  "tests": "HallPatrolTests",
+  "adapter": "No2HallPatrol",
+  "cheat": {
+    "xbox": [
+      [
+        "stick",
+        "slow down or speed up"
+      ],
+      [
+        "A",
+        "jump"
+      ],
+      [
+        "X",
+        "fire forward and up"
+      ],
+      [
+        "Menu",
+        "pause"
+      ],
+      [
+        "LB",
+        "previous tab"
+      ],
+      [
+        "RB",
+        "next tab"
+      ],
+      [
+        "B",
+        "back"
+      ]
+    ],
+    "keyboard": [
+      [
+        "Left+Right",
+        "slow down or speed up"
+      ],
+      [
+        "Up",
+        "jump"
+      ],
+      [
+        "Space",
+        "fire forward and up"
+      ],
+      [
+        "P",
+        "pause"
+      ],
+      [
+        "Esc",
+        "close notebook"
+      ]
+    ],
+    "notes": [
+      "Books 100 shot, 50 jumped; stacks 100 a shot, 100 jumped. Basketballs 50 shot, 100 jumped; tanks 200 shot, 100 jumped. UFOs 100 or 200, all three 500 more.",
+      "E, J, O, T and Z: 1,000 plus 100 a second under par. Extra buggies at 10,000, 30,000 and 50,000."
+    ]
+  },
+  "victories": [
+    [
+      "hp-average",
+      "ahead of the bell",
+      "finish a section under the average time."
+    ],
+    [
+      "hp-course",
+      "beginner course",
+      "reach point Z of the beginner course."
+    ],
+    [
+      "hp-formation",
+      "clean sweep",
+      "shoot down a whole formation of three UFOs."
+    ]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='section'&&ev.time<ev.par)win('hp-average');if(ev.type==='course')win('hp-course');if(ev.type==='formation')win('hp-formation')}",
+  "readme": "Hall Patrol: Left and Right (or A and D) slow down and speed up, Up or W jumps, Space fires forward and up at once, P pauses.",
+  "claude": "- Hall Patrol (owner 2026-10-26, locker order): authentic 1982 Moon Patrol rules and scoring (src/moonpatrol, 20 rule checks), her six-wheeled buggy patrols the school hallway between lockers, jumping holes in the floor, mousetraps and textbooks under bombing saucers; same amendment list."
+}
