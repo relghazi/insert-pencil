@@ -1,0 +1,21 @@
+{
+  "id": "dunce-kong",
+  "dir": "donkeykong",
+  "core": "KongCore",
+  "engine": "KongEngine",
+  "tests": "KongTests",
+  "adapter": "No2DunceKong",
+  "cheat": {
+    "xbox": [["stick", "walk and climb"], ["A", "jump"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Left+Right", "walk"], ["Up+Down", "climb"], ["Space", "jump"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Jump one barrel 100, two 300, three 500. Mallet 300 to 800.", "Bonus paid at the top. Pull all eight tacks on 100 m. Extra life at 7,000."]
+  },
+  "victories": [
+    ["dk-800", "triple jump", "jump three things at once for 800."],
+    ["dk-mallet", "shop class", "smash something with the mallet for 800."],
+    ["dk-rivets", "loose tacks", "pull all eight tacks and drop Kong."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='jumpover'&&ev.count>=3)win('dk-800');if(ev.type==='smash'&&ev.points===800)win('dk-mallet');if(ev.type==='rivetsDone')win('dk-rivets')}",
+  "readme": "Dunce Kong: left and right walk, up and down climb, Space jumps, P pauses. Four screens: 25 m, 50 m, 75 m and 100 m.",
+  "claude": "- Dunce Kong (owner 2026-10-26, locker order): authentic 1981 Donkey Kong rules and scoring (src/donkeykong, 19 rule checks), all four screens (25 m girders, 50 m pie factory, 75 m elevators, 100 m rivets) in the cabinet order on college-ruled paper; Kong in a dunce cap, a boy in blue, thumbtacks for rivets; same amendment list."
+}

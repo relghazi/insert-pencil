@@ -1,0 +1,12 @@
+{
+  "name": "no2-arcade-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local capture tools for No. 2 Arcade (Playwright in installed Chrome)",
+  "scripts": {
+    "capture": "node capture.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

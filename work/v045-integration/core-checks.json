@@ -1,0 +1,16 @@
+{
+  "defenderRules": 46,
+  "shellRules": 31,
+  "checks": [
+    "Pinned PixiJS unchanged",
+    "All 46 Defender rule checks pass",
+    "Defender is deterministic: seed 1 plays a full wave the same way twice",
+    "All existing shell checks pass",
+    "No save, catalog, module or fixed-step script changed (catalog version literal and the approved Erasteroids amendment aside)",
+    "Retired 3D classroom: approved room source kept as provenance only (owner 2026-10-24: old hub removed from the build)",
+    "Intro final beat uses live hub, no yellow wipe",
+    "Blob worker CSP and offline standalone bundle retained"
+  ],
+  "sha256": "770347b0b74cb39d93734606b9240536fd9d1a26706f5510bf4a3bfde9ff4da2",
+  "bytes": 251769698
+}

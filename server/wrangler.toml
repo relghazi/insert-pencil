@@ -1,0 +1,36 @@
+# No. 2 Arcade online leaderboard (Cloudflare Worker + D1). The owner deploys; see README.md.
+name = "no2-arcade-leaderboard"
+main = "src/worker.js"
+compatibility_date = "2025-10-01"
+
+# Wraps the game cores from ../src into dist/games.js before every dev and deploy.
+[build]
+command = "node build.mjs"
+watch_dir = ["src", "../src"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "no2-arcade-leaderboard"
+database_id = "f7213800-b498-4868-a22f-7f7111823abc"
+migrations_dir = "migrations"
+
+# Every 20 minutes: start the verifier or the issue filer on GitHub when they have work (src/dispatch.js).
+[triggers]
+crons = ["*/20 * * * *"]
+
+[vars]
+# Origins allowed to call the API. "null" is the HTML opened from a file (file://); the others are GitHub Pages and
+# its custom domain (owner 2026-10-27).
+ALLOWED_ORIGINS = "null,https://relghazi.github.io,https://no2arca.de"
+MAX_BODY = "1048576"     # bytes per submission
+MAX_STEPS = "432000"     # one hour of play at 120 Hz
+MAX_RUNS = "50000"       # input changes per replay
+RATE_PLAYER = "20"       # submissions per player id per window
+RATE_IP = "60"           # submissions per IP per window
+RATE_WINDOW = "3600"     # seconds
+RATE_REPORT = "5"        # detention slips per IP per window
+RATE_REPORTS = "50"      # detention slips per window from everyone
+DISPATCH = "relghazi/insert-pencil:leaderboard-verify.yml|runs,relghazi/insert-pencil:report-issues.yml|slips"
+# Secrets (wrangler secret put): IP_SALT, and ADMIN_TOKEN for the verifier's /admin endpoints (unset = no /admin);
+# GH_DISPATCH_TOKEN (optional) lets the cron start the GitHub workflows above (unset = the cron does nothing).
+# Free Workers plan: no replay runs in a request; server/verify.mjs replays pending runs outside Cloudflare.

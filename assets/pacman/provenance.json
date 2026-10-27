@@ -1,0 +1,28 @@
+{
+ "status": "approved by owner 2026-10-28 (school themes)",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; cut with tools/cut-sprite-sheet.py",
+ "candidates": {
+  "incoming/RW/pacman-halls-v1.png": "ad7f74a4af8b1d8716d586040cbdc3cbccb5a5c9e211254a3fe1af36090f5b69"
+ },
+ "assets": {
+  "assets/pacman/apple.webp": "6d7b77890aeaeec042daac4057ec4ac5cf707135ba301c9d8324e0f0d6aff978",
+  "assets/pacman/bell.webp": "1a31c1c1357bb7c43ffd2d8a3746260bd6b041590874ca262c5a3870492587f5",
+  "assets/pacman/cherries.webp": "4036d0f2023e4785a1cc73440cc3cd1a5494f3c86f39320362e2ee7ffb92e859",
+  "assets/pacman/eyes.webp": "59dfaaba7ef11b3578abc9c981d307467440068e51f404f284acee40ffd75f5f",
+  "assets/pacman/fright-white.webp": "373d54405bb43bbc7e50f4e49667a4759e93d0d97bb0a27724cbaea349352c9b",
+  "assets/pacman/fright.webp": "9197dd112f4ebb8053e14c73d2babd772f3b878e80d651a396876fadf1cc6a27",
+  "assets/pacman/ghost-cyan.webp": "37881069221b4c87e30b3a52286090e9748fa7a0644fbce6c44d707c3b1b8982",
+  "assets/pacman/ghost-orange.webp": "117d73c0218c02932dd44587b141fc52539edad88bd94c2985ee4b6325649c0b",
+  "assets/pacman/ghost-pink.webp": "1edc3e2bb12a127c9ab7e3753f6e0e0cabbe2d4410e65ca733b156d6a7d1a1d2",
+  "assets/pacman/ghost-red.webp": "27503f3330fdcd8abc3ceb2da3191d75cdacf57bd88b5a89ab419858d6cffa7f",
+  "assets/pacman/grapes.webp": "743d0495ac23ee33f83ade7c5337bf6ef87d202c21766bd5bf9407ab0dff23b1",
+  "assets/pacman/key.webp": "0a8f4330a06cd12e733201c3cd260300dac94d11e5921f2e16a3b73abb7d33f4",
+  "assets/pacman/orange.webp": "f7026107692381b873af859d371e9dbe116c97aec7fb504acb2c52873b051785",
+  "assets/pacman/pac-open.webp": "8f02bdd4647caf7285c0a651574863296a71fa45dab3c2bbb9027be158827ccf",
+  "assets/pacman/pac-shut.webp": "e47a9ed2d3cffad0cb5665a6517d64e04e1082502a0cf1c5f12371617bf76398",
+  "assets/pacman/pizza.webp": "0d675b75f613d1df9898a79aeed4d32e9243952946f31264106f87d781d90892",
+  "assets/pacman/rocket.webp": "e7b25d63f454d88da8691eab974ebe5fe3b2e34a272997cb7bc926bd003b21a6",
+  "assets/pacman/strawberry.webp": "36039583c7e92fb0358163bebc93647b4be4ef913cee8f7f391cb0891463343a"
+ },
+ "recut": "2026-10-28: re-cut whole with tools/cut-sprite-sheet.py --blobs (owner: images cropped)"
+}

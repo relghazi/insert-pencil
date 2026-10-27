@@ -1,0 +1,11 @@
+{
+ "status": "approved by owner 2026-10-29",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (edit); cut with tools/cut-sprite-sheet.py --blobs",
+ "note": "sub2a: clipboard and hand finished (were cut off at the right), Nano Banana edit of the shipped sprite",
+ "candidates": {
+  "incoming/SS/invaders-sub2a-extend-v2.png": "7684372e7dab8497d45a472ae04d9c0499fd73271bd1dd2814fd35896cdb1eaf"
+ },
+ "assets": {
+  "assets/invaders/sub2a.webp": "60a85ea4e738536867a97e75b381aea475d797ea71d8dc01ca4c2cad3dd44281"
+ }
+}

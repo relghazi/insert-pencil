@@ -1,0 +1,21 @@
+{
+  "id": "froggology",
+  "dir": "frogger",
+  "core": "FroggologyCore",
+  "engine": "FroggerEngine",
+  "tests": "FroggologyTests",
+  "adapter": "No2Froggology",
+  "cheat": {
+    "xbox": [["stick", "hop"], ["D-pad", "hop"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Up", "hop up"], ["Down", "hop down"], ["Left", "hop left"], ["Right", "hop right"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Each new row 10, a frog in a jar 50 plus 10 a half second left. Fly 200, lady frog 200.", "Fill all five jars for 1,000. Extra frog at 20,000."]
+  },
+  "victories": [
+    ["fg-fly", "fly catcher", "bring a frog home to the jar with the fly."],
+    ["fg-lady", "lab partner", "carry the lady frog home."],
+    ["fg-jars", "full shelf", "fill all five jars."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='home'&&ev.fly)win('fg-fly');if(ev.type==='home'&&ev.lady)win('fg-lady');if(ev.type==='cleared')win('fg-jars')}",
+  "readme": "Froggology: arrow keys or WASD hop, P pauses.",
+  "claude": "- Froggology (owner 2026-10-26, locker order): authentic 1981 Frogger rules and scoring (src/frogger, 17 rule checks), her backpack frog crosses a hallway of lab carts and running classmates, then a river of lunch trays and pet turtles, to five specimen jars on biology lab paper; same amendment list."
+}

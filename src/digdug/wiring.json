@@ -1,0 +1,21 @@
+{
+  "id": "dig-doug",
+  "dir": "digdug",
+  "core": "DigDougCore",
+  "engine": "DigDugEngine",
+  "tests": "DigDougTests",
+  "adapter": "No2DigDoug",
+  "cheat": {
+    "xbox": [["stick", "dig"], ["D-pad", "dig"], ["A", "pump"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Up+Down", "dig up and down"], ["Left+Right", "dig left and right"], ["Space", "pump"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Digging 10 a tile. Pop 200, 300, 400 or 500 the deeper it is. A dragon popped sideways scores double.", "A lunchbox dropped on 1 to 8 scores 1,000 to 15,000. Extra life at 10,000, 40,000 and every 40,000."]
+  },
+  "victories": [
+    ["dd-crush", "heavy lunch", "drop one lunchbox on two at once."],
+    ["dd-dragon", "hot air", "pop a dragon from the side."],
+    ["dd-veggie", "eat your vegetables", "pick up the bonus vegetable."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='crush'&&ev.count>=2)win('dd-crush');if(ev.type==='pop'&&ev.kind==='fygar'&&ev.horizontal)win('dd-dragon');if(ev.type==='bonus')win('dd-veggie')}",
+  "readme": "Dig Doug: arrow keys or WASD dig through the dirt, tap Space to pump, P pauses.",
+  "claude": "- Dig Doug (owner 2026-10-26, locker order): authentic 1982 Dig Dug rules and scoring (src/digdug, 19 rule checks), Doug digs under the football field with his trowel and bike pump past goggled backpack moles and the green mascot dragon, lunchboxes for rocks; same amendment list."
+}

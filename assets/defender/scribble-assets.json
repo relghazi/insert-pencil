@@ -1,0 +1,5162 @@
+{
+  "version": "0.3.2",
+  "pixi": "8.6.6",
+  "atlasBytes": 229306256,
+  "atlases": [
+    {
+      "file": "atlas-0.webp",
+      "width": 2048,
+      "height": 1036
+    },
+    {
+      "file": "atlas-1.webp",
+      "width": 2048,
+      "height": 1036
+    },
+    {
+      "file": "atlas-2.webp",
+      "width": 2048,
+      "height": 1832
+    },
+    {
+      "file": "atlas-3.webp",
+      "width": 2048,
+      "height": 1996
+    },
+    {
+      "file": "atlas-4.webp",
+      "width": 2048,
+      "height": 1996
+    },
+    {
+      "file": "atlas-5.webp",
+      "width": 2048,
+      "height": 1600
+    },
+    {
+      "file": "atlas-7.webp",
+      "width": 2048,
+      "height": 1480
+    },
+    {
+      "file": "atlas-8.webp",
+      "width": 2048,
+      "height": 3704
+    },
+    {
+      "file": "atlas-9.webp",
+      "width": 2048,
+      "height": 1352
+    },
+    {
+      "file": "atlas-10.webp",
+      "width": 2048,
+      "height": 800
+    },
+    {
+      "file": "atlas-11.webp",
+      "width": 4096,
+      "height": 4798
+    },
+    {
+      "file": "atlas-12.webp",
+      "width": 3013,
+      "height": 916
+    }
+  ],
+  "assets": {
+    "paper-1": {
+      "id": "paper-1",
+      "file": "paper/college-1.webp",
+      "width": 2048,
+      "height": 2048,
+      "frames": [
+        {
+          "atlas": 0,
+          "x": 8,
+          "y": 8,
+          "w": 1024,
+          "h": 1024
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "paper",
+      "blend": "normal",
+      "brief": "Original 600 dpi scan, college ruling, blue lines/red margin, fibers, nonrepeating irregularities. Seam-safe edges. No mirrored or tiled handwriting.",
+      "placeholder": false,
+      "runtimeScale": 0.5,
+      "author": "Scribble Defender art production",
+      "source": "notebook-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "paper-2": {
+      "id": "paper-2",
+      "file": "paper/college-2.webp",
+      "width": 2048,
+      "height": 2048,
+      "frames": [
+        {
+          "atlas": 1,
+          "x": 8,
+          "y": 8,
+          "w": 1024,
+          "h": 1024
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "paper",
+      "blend": "normal",
+      "brief": "Original 600 dpi scan, college ruling, blue lines/red margin, fibers, nonrepeating irregularities. Seam-safe edges. No mirrored or tiled handwriting.",
+      "placeholder": false,
+      "runtimeScale": 0.5,
+      "author": "Scribble Defender art production",
+      "source": "notebook-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "paper-3": {
+      "id": "paper-3",
+      "file": "paper/college-3.webp",
+      "width": 2048,
+      "height": 2048,
+      "frames": [
+        {
+          "atlas": 2,
+          "x": 8,
+          "y": 8,
+          "w": 1024,
+          "h": 1024
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "paper",
+      "blend": "normal",
+      "brief": "Original 600 dpi scan, college ruling, blue lines/red margin, fibers, nonrepeating irregularities. Seam-safe edges. No mirrored or tiled handwriting.",
+      "placeholder": false,
+      "runtimeScale": 0.5,
+      "author": "Scribble Defender art production",
+      "source": "notebook-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "smart-sweep": {
+      "id": "smart-sweep",
+      "file": "effects/smart-sweep.webp",
+      "width": 1440,
+      "height": 780,
+      "frames": [
+        {
+          "atlas": 2,
+          "x": 1040,
+          "y": 8,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 2,
+          "x": 8,
+          "y": 1040,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 2,
+          "x": 736,
+          "y": 1040,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 2,
+          "x": 8,
+          "y": 1438,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 2,
+          "x": 736,
+          "y": 1438,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 8,
+          "y": 8,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 736,
+          "y": 8,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 8,
+          "y": 406,
+          "w": 720,
+          "h": 390
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Sharpie scribble covers page in sequence; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 5,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "whiteout-wipe": {
+      "id": "whiteout-wipe",
+      "file": "effects/whiteout-wipe.webp",
+      "width": 1440,
+      "height": 780,
+      "frames": [
+        {
+          "atlas": 3,
+          "x": 736,
+          "y": 406,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 8,
+          "y": 804,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 736,
+          "y": 804,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 8,
+          "y": 1202,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 736,
+          "y": 1202,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 8,
+          "y": 1600,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 3,
+          "x": 736,
+          "y": 1600,
+          "w": 720,
+          "h": 390
+        },
+        {
+          "atlas": 4,
+          "x": 8,
+          "y": 8,
+          "w": 720,
+          "h": 390
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "normal",
+      "brief": "White-out swipe clears sweep; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 5,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "title": {
+      "id": "title",
+      "file": "lettering/title.webp",
+      "width": 1800,
+      "height": 640,
+      "frames": [
+        {
+          "atlas": 4,
+          "x": 736,
+          "y": 8,
+          "w": 900,
+          "h": 320
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ui",
+      "blend": "multiply",
+      "brief": "Scribble Defender, blue ballpoint hollow block letters with hand-ruled extrusion, half-finished highlighter, one corrected letter; scan or paint by hand, do not typeset display lettering.",
+      "placeholder": false,
+      "author": "Scribble Defender art production",
+      "source": "lettering-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "trees": {
+      "id": "trees",
+      "file": "terrain/trees.webp",
+      "width": 770,
+      "height": 560,
+      "frames": [
+        {
+          "atlas": 11,
+          "x": 2235,
+          "y": 8,
+          "w": 770,
+          "h": 560
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        1
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Student ballpoint doodle trees; bottom center is ground contact; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DX/def-trees-fit-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "water-tower": {
+      "id": "water-tower",
+      "file": "terrain/water-tower.webp",
+      "width": 585,
+      "height": 900,
+      "frames": [
+        {
+          "atlas": 11,
+          "x": 1285,
+          "y": 8,
+          "w": 585,
+          "h": 900
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        1
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Student ballpoint doodle water-tower; bottom center is ground contact; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DX/def-water-tower-fit-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "hill-1": {
+      "id": "hill-1",
+      "file": "terrain/hill-1.webp",
+      "width": 4096,
+      "height": 1143,
+      "frames": [
+        {
+          "atlas": 10,
+          "x": 0,
+          "y": 0,
+          "w": 4096,
+          "h": 1143
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Seam-safe green colored-pencil strip, top edge registered at source row zero (no transparent gap); renderer deforms mesh exactly to engine terrain; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DG/defender-ground-1-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "hill-2": {
+      "id": "hill-2",
+      "file": "terrain/hill-2.webp",
+      "width": 4096,
+      "height": 988,
+      "frames": [
+        {
+          "atlas": 10,
+          "x": 0,
+          "y": 1151,
+          "w": 4096,
+          "h": 988
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Seam-safe green colored-pencil strip, top edge registered at source row zero (no transparent gap); renderer deforms mesh exactly to engine terrain; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DG/defender-ground-2-seam-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "hill-3": {
+      "id": "hill-3",
+      "file": "terrain/hill-3.webp",
+      "width": 4096,
+      "height": 946,
+      "frames": [
+        {
+          "atlas": 10,
+          "x": 0,
+          "y": 2147,
+          "w": 4096,
+          "h": 946
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Seam-safe green colored-pencil strip, top edge registered at source row zero (no transparent gap); renderer deforms mesh exactly to engine terrain; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DG/defender-ground-3-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "school": {
+      "id": "school",
+      "file": "terrain/school.webp",
+      "width": 1269,
+      "height": 520,
+      "frames": [
+        {
+          "atlas": 11,
+          "x": 8,
+          "y": 8,
+          "w": 1269,
+          "h": 520
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        1
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Student ballpoint doodle school; bottom center is ground contact; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DX/def-school-fit-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "basketball-hoop": {
+      "id": "basketball-hoop",
+      "file": "terrain/basketball-hoop.webp",
+      "width": 349,
+      "height": 560,
+      "frames": [
+        {
+          "atlas": 11,
+          "x": 1878,
+          "y": 8,
+          "w": 349,
+          "h": 560
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        1
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Student ballpoint doodle basketball-hoop; bottom center is ground contact; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DX/def-basketball-hoop-fit-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "baiter-death": {
+      "id": "baiter-death",
+      "file": "ink/baiter-death.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 3440,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 3440,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 3440,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 3440,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 3440,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Sleek careful fighter design with distinct pointed wings dissolves into scribble burst; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "baiter-materialize": {
+      "id": "baiter-materialize",
+      "file": "ink/baiter-materialize.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 3176,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Sleek careful fighter design with distinct pointed wings appears in flickering pen strokes; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "bomber-death": {
+      "id": "bomber-death",
+      "file": "ink/bomber-death.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Chunky robot with bomb chute dissolves into scribble burst; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "bomber-materialize": {
+      "id": "bomber-materialize",
+      "file": "ink/bomber-materialize.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 1328,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Chunky robot with bomb chute appears in flickering pen strokes; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "lander-death": {
+      "id": "lander-death",
+      "file": "ink/lander-death.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Saucer, alien pilot, dashed tractor beam dissolves into scribble burst; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "lander-materialize": {
+      "id": "lander-materialize",
+      "file": "ink/lander-materialize.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 8,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 272,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Saucer, alien pilot, dashed tractor beam appears in flickering pen strokes; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "mutant-death": {
+      "id": "mutant-death",
+      "file": "ink/mutant-death.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 1064,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Saucer gone wrong, teeth, anime eyes and frantic limbs dissolves into scribble burst; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "mutant-materialize": {
+      "id": "mutant-materialize",
+      "file": "ink/mutant-materialize.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 536,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 800,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Saucer gone wrong, teeth, anime eyes and frantic limbs appears in flickering pen strokes; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "player-explosion": {
+      "id": "player-explosion",
+      "file": "ink/player-explosion.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 536,
+          "y": 784,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 800,
+          "y": 784,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 1064,
+          "y": 784,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 1328,
+          "y": 784,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 1592,
+          "y": 784,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 272,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 536,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 800,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 1064,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 1328,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 6,
+          "x": 1592,
+          "y": 1048,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 20,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Ship breaks into paper scraps and pen bursts; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 12,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pod-death": {
+      "id": "pod-death",
+      "file": "ink/pod-death.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 2120,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Lumpy stippled spore cluster dissolves into scribble burst; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pod-materialize": {
+      "id": "pod-materialize",
+      "file": "ink/pod-materialize.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 1592,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 1856,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Lumpy stippled spore cluster appears in flickering pen strokes; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "scribble-burst-1": {
+      "id": "scribble-burst-1",
+      "file": "effects/scribble-burst-1.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 4,
+          "x": 1776,
+          "y": 1590,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1912,
+          "y": 1590,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 8,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 144,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 280,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 416,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 552,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 688,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        }
+      ],
+      "fps": 20,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Scribble explosion variation 1; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "scribble-burst-2": {
+      "id": "scribble-burst-2",
+      "file": "effects/scribble-burst-2.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 4,
+          "x": 824,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 960,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1096,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1232,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1368,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1504,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1640,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 1776,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        }
+      ],
+      "fps": 20,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Scribble explosion variation 2; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "scribble-burst-3": {
+      "id": "scribble-burst-3",
+      "file": "effects/scribble-burst-3.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 4,
+          "x": 1912,
+          "y": 1726,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 8,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 144,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 280,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 416,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 552,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 688,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "atlas": 4,
+          "x": 824,
+          "y": 1862,
+          "w": 128,
+          "h": 128
+        }
+      ],
+      "fps": 20,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Scribble explosion variation 3; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "swarmer-death": {
+      "id": "swarmer-death",
+      "file": "ink/swarmer-death.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 2912,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Tiny angry bug with motion marks dissolves into scribble burst; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "swarmer-materialize": {
+      "id": "swarmer-materialize",
+      "file": "ink/swarmer-materialize.webp",
+      "width": 256,
+      "height": 256,
+      "frames": [
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 536,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 800,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1064,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1328,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 1592,
+          "y": 2384,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 8,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "atlas": 7,
+          "x": 272,
+          "y": 2648,
+          "w": 256,
+          "h": 256
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Tiny angry bug with motion marks appears in flickering pen strokes; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "planet-out": {
+      "id": "planet-out",
+      "file": "effects/planet-out.webp",
+      "width": 1440,
+      "height": 240,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 1096,
+          "y": 8,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 144,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 736,
+          "y": 144,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 272,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 736,
+          "y": 272,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 400,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 736,
+          "y": 400,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 528,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 736,
+          "y": 528,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 656,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 736,
+          "y": 656,
+          "w": 720,
+          "h": 120
+        },
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 784,
+          "w": 720,
+          "h": 120
+        }
+      ],
+      "fps": 18,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Terrain violently crossed out, RIP planet gravestone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 5,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "game-over": {
+      "id": "game-over",
+      "file": "lettering/game-over.webp",
+      "width": 1200,
+      "height": 240,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 736,
+          "y": 784,
+          "w": 600,
+          "h": 120
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ui",
+      "blend": "multiply",
+      "brief": "out of paper. in Sharpie, faint bleed; scan or paint by hand, do not typeset display lettering.",
+      "placeholder": false,
+      "author": "Scribble Defender art production",
+      "source": "lettering-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "mutant-warning": {
+      "id": "mutant-warning",
+      "file": "lettering/mutant-warning.webp",
+      "width": 1400,
+      "height": 200,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 1344,
+          "y": 784,
+          "w": 700,
+          "h": 100
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ui",
+      "blend": "multiply",
+      "brief": "MUTANT PLANET, Sharpie, bleed ghost; scan or paint by hand, do not typeset display lettering.",
+      "placeholder": false,
+      "author": "Scribble Defender art production",
+      "source": "lettering-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pause-title": {
+      "id": "pause-title",
+      "file": "lettering/pause-title.webp",
+      "width": 1000,
+      "height": 200,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 8,
+          "y": 912,
+          "w": 500,
+          "h": 100
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ui",
+      "blend": "multiply",
+      "brief": "pencils down, hurried ballpoint; scan or paint by hand, do not typeset display lettering.",
+      "placeholder": false,
+      "author": "Scribble Defender art production",
+      "source": "lettering-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "wave-clear": {
+      "id": "wave-clear",
+      "file": "lettering/wave-clear.webp",
+      "width": 1000,
+      "height": 200,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 516,
+          "y": 912,
+          "w": 500,
+          "h": 100
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ui",
+      "blend": "multiply",
+      "brief": "WAVE DONE, blue ballpoint with little star; wave number running text separate; scan or paint by hand, do not typeset display lettering.",
+      "placeholder": false,
+      "author": "Scribble Defender art production",
+      "source": "lettering-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "baiter-warning": {
+      "id": "baiter-warning",
+      "file": "lettering/baiter-warning.webp",
+      "width": 800,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 1024,
+          "y": 912,
+          "w": 400,
+          "h": 80
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ui",
+      "blend": "multiply",
+      "brief": "this guy again, ballpoint; scan or paint by hand, do not typeset display lettering.",
+      "placeholder": false,
+      "author": "Scribble Defender art production",
+      "source": "lettering-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "boom-1": {
+      "id": "boom-1",
+      "file": "effects/boom-1.webp",
+      "width": 256,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 992,
+          "y": 616,
+          "w": 256,
+          "h": 160
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "BOOM comic hand lettering variation 1; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "boom-2": {
+      "id": "boom-2",
+      "file": "effects/boom-2.webp",
+      "width": 256,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1256,
+          "y": 616,
+          "w": 256,
+          "h": 160
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "BOOM comic hand lettering variation 2; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "boom-3": {
+      "id": "boom-3",
+      "file": "effects/boom-3.webp",
+      "width": 256,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1520,
+          "y": 616,
+          "w": 256,
+          "h": 160
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "BOOM comic hand lettering variation 3; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pow-1": {
+      "id": "pow-1",
+      "file": "effects/pow-1.webp",
+      "width": 256,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1784,
+          "y": 616,
+          "w": 256,
+          "h": 160
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "POW comic hand lettering variation 1; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pow-2": {
+      "id": "pow-2",
+      "file": "effects/pow-2.webp",
+      "width": 256,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 784,
+          "w": 256,
+          "h": 160
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "POW comic hand lettering variation 2; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pow-3": {
+      "id": "pow-3",
+      "file": "effects/pow-3.webp",
+      "width": 256,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 272,
+          "y": 784,
+          "w": 256,
+          "h": 160
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "POW comic hand lettering variation 3; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "baiter-idle": {
+      "id": "baiter-idle",
+      "file": "ink/baiter-idle.webp",
+      "width": 192,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 1312,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 208,
+          "y": 1312,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 408,
+          "y": 1312,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 608,
+          "y": 1312,
+          "w": 192,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Sleek careful fighter design with distinct pointed wings; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "bomber-idle": {
+      "id": "bomber-idle",
+      "file": "ink/bomber-idle.webp",
+      "width": 192,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 208,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 408,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 608,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 808,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Chunky robot with bomb chute; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "lander-idle": {
+      "id": "lander-idle",
+      "file": "ink/lander-idle.webp",
+      "width": 192,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 512,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 712,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 912,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 1112,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Saucer, alien pilot, dashed tractor beam; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "mutant-idle": {
+      "id": "mutant-idle",
+      "file": "ink/mutant-idle.webp",
+      "width": 192,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1312,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 1512,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 1712,
+          "y": 280,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Saucer gone wrong, teeth, anime eyes and frantic limbs; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "pod-idle": {
+      "id": "pod-idle",
+      "file": "ink/pod-idle.webp",
+      "width": 192,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1008,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 1208,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 1408,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        },
+        {
+          "atlas": 6,
+          "x": 1608,
+          "y": 448,
+          "w": 192,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Lumpy stippled spore cluster; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-00-fall": {
+      "id": "teen-00-fall",
+      "file": "ink/teen-00-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "hoodie; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-00-saved": {
+      "id": "teen-00-saved",
+      "file": "ink/teen-00-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "hoodie; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-00-struggle": {
+      "id": "teen-00-struggle",
+      "file": "ink/teen-00-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "hoodie; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-00-walk": {
+      "id": "teen-00-walk",
+      "file": "ink/teen-00-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "hoodie; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-01-fall": {
+      "id": "teen-01-fall",
+      "file": "ink/teen-01-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "backpack; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-01-saved": {
+      "id": "teen-01-saved",
+      "file": "ink/teen-01-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "backpack; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-01-struggle": {
+      "id": "teen-01-struggle",
+      "file": "ink/teen-01-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "backpack; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-01-walk": {
+      "id": "teen-01-walk",
+      "file": "ink/teen-01-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 8,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "backpack; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-02-fall": {
+      "id": "teen-02-fall",
+      "file": "ink/teen-02-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "headphones; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-02-saved": {
+      "id": "teen-02-saved",
+      "file": "ink/teen-02-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "headphones; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-02-struggle": {
+      "id": "teen-02-struggle",
+      "file": "ink/teen-02-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "headphones; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-02-walk": {
+      "id": "teen-02-walk",
+      "file": "ink/teen-02-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 176,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "headphones; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-03-fall": {
+      "id": "teen-03-fall",
+      "file": "ink/teen-03-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "ponytail; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-03-saved": {
+      "id": "teen-03-saved",
+      "file": "ink/teen-03-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "ponytail; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-03-struggle": {
+      "id": "teen-03-struggle",
+      "file": "ink/teen-03-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "ponytail; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-03-walk": {
+      "id": "teen-03-walk",
+      "file": "ink/teen-03-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "ponytail; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-04-fall": {
+      "id": "teen-04-fall",
+      "file": "ink/teen-04-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "phone, unaware; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-04-saved": {
+      "id": "teen-04-saved",
+      "file": "ink/teen-04-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "phone, unaware; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-04-struggle": {
+      "id": "teen-04-struggle",
+      "file": "ink/teen-04-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "phone, unaware; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-04-walk": {
+      "id": "teen-04-walk",
+      "file": "ink/teen-04-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 344,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "phone, unaware; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-05-fall": {
+      "id": "teen-05-fall",
+      "file": "ink/teen-05-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "varsity jacket; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-05-saved": {
+      "id": "teen-05-saved",
+      "file": "ink/teen-05-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "varsity jacket; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-05-struggle": {
+      "id": "teen-05-struggle",
+      "file": "ink/teen-05-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "varsity jacket; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-05-walk": {
+      "id": "teen-05-walk",
+      "file": "ink/teen-05-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 512,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "varsity jacket; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-06-fall": {
+      "id": "teen-06-fall",
+      "file": "ink/teen-06-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "skate shoes; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-06-saved": {
+      "id": "teen-06-saved",
+      "file": "ink/teen-06-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "skate shoes; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-06-struggle": {
+      "id": "teen-06-struggle",
+      "file": "ink/teen-06-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "skate shoes; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-06-walk": {
+      "id": "teen-06-walk",
+      "file": "ink/teen-06-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 680,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "skate shoes; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-07-fall": {
+      "id": "teen-07-fall",
+      "file": "ink/teen-07-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "braids; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-07-saved": {
+      "id": "teen-07-saved",
+      "file": "ink/teen-07-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "braids; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-07-struggle": {
+      "id": "teen-07-struggle",
+      "file": "ink/teen-07-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "braids; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-07-walk": {
+      "id": "teen-07-walk",
+      "file": "ink/teen-07-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "braids; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-08-fall": {
+      "id": "teen-08-fall",
+      "file": "ink/teen-08-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 736,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "messy hair; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-08-saved": {
+      "id": "teen-08-saved",
+      "file": "ink/teen-08-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 840,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 944,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1048,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1152,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "messy hair; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-08-struggle": {
+      "id": "teen-08-struggle",
+      "file": "ink/teen-08-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "messy hair; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-08-walk": {
+      "id": "teen-08-walk",
+      "file": "ink/teen-08-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 848,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "messy hair; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-09-fall": {
+      "id": "teen-09-fall",
+      "file": "ink/teen-09-fall.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 112,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 216,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "oversized sweater; 16-year-old classmate; fall; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 2,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-09-saved": {
+      "id": "teen-09-saved",
+      "file": "ink/teen-09-saved.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 320,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 424,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 528,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 632,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "oversized sweater; 16-year-old classmate; saved with tiny thx bubble; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-09-struggle": {
+      "id": "teen-09-struggle",
+      "file": "ink/teen-09-struggle.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1672,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1776,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1880,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 8,
+          "y": 1184,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "oversized sweater; 16-year-old classmate; struggle; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "teen-09-walk": {
+      "id": "teen-09-walk",
+      "file": "ink/teen-09-walk.webp",
+      "width": 96,
+      "height": 160,
+      "frames": [
+        {
+          "atlas": 8,
+          "x": 1256,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1360,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1464,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        },
+        {
+          "atlas": 8,
+          "x": 1568,
+          "y": 1016,
+          "w": 96,
+          "h": 160
+        }
+      ],
+      "fps": 7,
+      "pivot": [
+        0.5,
+        0.9
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "oversized sweater; 16-year-old classmate; walk; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "player-idle": {
+      "id": "player-idle",
+      "file": "ink/player-idle.webp",
+      "width": 256,
+      "height": 128,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 272,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 536,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 800,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 1064,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 1328,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 1592,
+          "y": 8,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Paper-plane fighter, nose right, tiny name, recognizable blue silhouette; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 8,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "player-reverse": {
+      "id": "player-reverse",
+      "file": "ink/player-reverse.webp",
+      "width": 256,
+      "height": 128,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 272,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 536,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 800,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 1064,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 1328,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        },
+        {
+          "atlas": 6,
+          "x": 1592,
+          "y": 144,
+          "w": 256,
+          "h": 128
+        }
+      ],
+      "fps": 24,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Reverse banking turn, start nose right and end nose left, neutral pivot; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 6,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "player-thrust": {
+      "id": "player-thrust",
+      "file": "ink/player-thrust.webp",
+      "width": 160,
+      "height": 96,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1856,
+          "y": 144,
+          "w": 160,
+          "h": 96
+        },
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 280,
+          "w": 160,
+          "h": 96
+        },
+        {
+          "atlas": 6,
+          "x": 176,
+          "y": 280,
+          "w": 160,
+          "h": 96
+        },
+        {
+          "atlas": 6,
+          "x": 344,
+          "y": 280,
+          "w": 160,
+          "h": 96
+        }
+      ],
+      "fps": 14,
+      "pivot": [
+        1,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Short yellow highlighter flame, attachment at right edge; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "swarmer-idle": {
+      "id": "swarmer-idle",
+      "file": "ink/swarmer-idle.webp",
+      "width": 96,
+      "height": 96,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 1808,
+          "y": 448,
+          "w": 96,
+          "h": 96
+        },
+        {
+          "atlas": 6,
+          "x": 1912,
+          "y": 448,
+          "w": 96,
+          "h": 96
+        },
+        {
+          "atlas": 6,
+          "x": 8,
+          "y": 616,
+          "w": 96,
+          "h": 96
+        },
+        {
+          "atlas": 6,
+          "x": 112,
+          "y": 616,
+          "w": 96,
+          "h": 96
+        }
+      ],
+      "fps": 10,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "ink",
+      "blend": "multiply",
+      "brief": "Tiny angry bug with motion marks; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "mine": {
+      "id": "mine",
+      "file": "effects/mine.webp",
+      "width": 64,
+      "height": 64,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 440,
+          "y": 616,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "atlas": 6,
+          "x": 512,
+          "y": 616,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "atlas": 6,
+          "x": 584,
+          "y": 616,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "atlas": 6,
+          "x": 656,
+          "y": 616,
+          "w": 64,
+          "h": 64
+        }
+      ],
+      "fps": 6,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Cartoon bomb with fuse; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-baiter": {
+      "id": "radar-baiter",
+      "file": "symbols/radar-baiter.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 744,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette baiter; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-bomb": {
+      "id": "radar-bomb",
+      "file": "symbols/radar-bomb.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 784,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette bomb; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-bomber": {
+      "id": "radar-bomber",
+      "file": "symbols/radar-bomber.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 824,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette bomber; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-human": {
+      "id": "radar-human",
+      "file": "symbols/radar-human.webp",
+      "width": 52,
+      "height": 96,
+      "frames": [
+        {
+          "atlas": 9,
+          "x": 120,
+          "y": 459,
+          "w": 52,
+          "h": 96
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette human; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-lander": {
+      "id": "radar-lander",
+      "file": "symbols/radar-lander.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 904,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette lander; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-mutant": {
+      "id": "radar-mutant",
+      "file": "symbols/radar-mutant.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 944,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette mutant; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-pod": {
+      "id": "radar-pod",
+      "file": "symbols/radar-pod.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 984,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette pod; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-ship": {
+      "id": "radar-ship",
+      "file": "symbols/radar-ship.webp",
+      "width": 96,
+      "height": 47,
+      "frames": [
+        {
+          "atlas": 9,
+          "x": 8,
+          "y": 459,
+          "w": 96,
+          "h": 47
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette ship; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-swarmer": {
+      "id": "radar-swarmer",
+      "file": "symbols/radar-swarmer.webp",
+      "width": 32,
+      "height": 32,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 1064,
+          "y": 1548,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette swarmer; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "sprites-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "enemy-bullet": {
+      "id": "enemy-bullet",
+      "file": "effects/enemy-bullet.webp",
+      "width": 48,
+      "height": 48,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 216,
+          "y": 616,
+          "w": 48,
+          "h": 48
+        },
+        {
+          "atlas": 6,
+          "x": 272,
+          "y": 616,
+          "w": 48,
+          "h": 48
+        },
+        {
+          "atlas": 6,
+          "x": 328,
+          "y": 616,
+          "w": 48,
+          "h": 48
+        },
+        {
+          "atlas": 6,
+          "x": 384,
+          "y": 616,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "fps": 12,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Red pen dart; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 4,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "laser-glow": {
+      "id": "laser-glow",
+      "file": "effects/laser-glow.webp",
+      "width": 256,
+      "height": 40,
+      "frames": [
+        {
+          "atlas": 5,
+          "x": 1232,
+          "y": 1548,
+          "w": 128,
+          "h": 20
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "add",
+      "brief": "Streaky yellow highlighter glow; horizontal line; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "laser-ink": {
+      "id": "laser-ink",
+      "file": "effects/laser-ink.webp",
+      "width": 256,
+      "height": 24,
+      "frames": [
+        {
+          "atlas": 6,
+          "x": 728,
+          "y": 616,
+          "w": 256,
+          "h": 24
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "effects",
+      "blend": "multiply",
+      "brief": "Horizontal ballpoint line. ONLY stretchable asset; clear endpoints; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "effects-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-human-up": {
+      "id": "radar-human-up",
+      "file": "symbols/radar-human-up.webp",
+      "width": 67,
+      "height": 96,
+      "frames": [
+        {
+          "atlas": 9,
+          "x": 188,
+          "y": 459,
+          "w": 67,
+          "h": 96
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette human; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "radar-human-fall": {
+      "id": "radar-human-fall",
+      "file": "symbols/radar-human-fall.webp",
+      "width": 96,
+      "height": 79,
+      "frames": [
+        {
+          "atlas": 9,
+          "x": 271,
+          "y": 459,
+          "w": 96,
+          "h": 79
+        }
+      ],
+      "fps": 0,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "symbols",
+      "blend": "multiply",
+      "brief": "Hand-authored distinct scanner silhouette human; readable at 7 screen px, not color alone; transparent raster, row-major sheet, fixed registration and padding. Scan pencil ghost lines/ballpoint/highlighter; no crayon.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "humans-master.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support"
+    },
+    "scribble-band": {
+      "id": "scribble-band",
+      "file": "terrain/scribble-band.webp",
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "terrain",
+      "blend": "multiply",
+      "brief": "Her blue ballpoint scribble crossing out the ground when the planet is lost; laid along the terrain curve and revealed left to right (owner 2026-10-29 polish).",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DG/defender-scribble-out-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support",
+      "width": 4096,
+      "height": 1122,
+      "frames": [
+        {
+          "atlas": 10,
+          "x": 0,
+          "y": 3109,
+          "w": 4096,
+          "h": 1122
+        }
+      ]
+    },
+    "radar-card": {
+      "id": "radar-card",
+      "file": "hud/radar-card.webp",
+      "fps": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "layer": "hud",
+      "blend": "multiply",
+      "brief": "The radar card: white index card with her freehand ballpoint frame (owner 2026-10-29 polish), drawn as a nine-slice; frame line at x 49..1546, y 48..502 of the card.",
+      "placeholder": false,
+      "columns": 1,
+      "author": "Scribble Defender art production",
+      "source": "incoming/DG/defender-radar-card-v1.png",
+      "license": "Original AI-generated artwork; project distribution",
+      "production": "Authored raster master with registered derived animation/material support",
+      "width": 1600,
+      "height": 559,
+      "frames": [
+        {
+          "atlas": 10,
+          "x": 0,
+          "y": 4239,
+          "w": 1600,
+          "h": 559
+        }
+      ]
+    }
+  },
+  "materials": {},
+  "icons": [],
+  "placeholderCount": 0,
+  "data": {
+    "atlas-0.webp": "@@asset:assets/defender/atlas-0.webp@@",
+    "atlas-1.webp": "@@asset:assets/defender/atlas-0.webp@@",
+    "atlas-2.webp": "@@asset:assets/defender/atlas-2.webp@@",
+    "atlas-3.webp": "@@asset:assets/defender/atlas-3.webp@@",
+    "atlas-4.webp": "@@asset:assets/defender/atlas-4.webp@@",
+    "atlas-5.webp": "@@asset:assets/defender/atlas-5.webp@@",
+    "atlas-7.webp": "@@asset:assets/defender/atlas-7.webp@@",
+    "atlas-8.webp": "@@asset:assets/defender/atlas-8.webp@@",
+    "atlas-9.webp": "@@asset:assets/defender/atlas-9.webp@@",
+    "atlas-10.webp": "@@asset:assets/defender/atlas-10.webp@@",
+    "atlas-11.webp": "@@asset:assets/defender/atlas-11.webp@@",
+    "atlas-12.webp": "@@asset:assets/defender/atlas-12.webp@@"
+  },
+  "iconData": {},
+  "domData": {
+    "title": "@@asset:assets/arcade/hub/defender-title.webp@@",
+    "game-over": "@@asset:assets/defender/game-over.webp@@",
+    "wave-clear": "@@asset:assets/defender/wave-clear.webp@@",
+    "mutant-warning": "@@asset:assets/defender/mutant-warning.webp@@",
+    "baiter-warning": "@@asset:assets/defender/baiter-warning.webp@@",
+    "pause-title": "@@asset:assets/defender/pause-title.webp@@",
+    "radar-ship": "@@asset:assets/defender/radar-ship.webp@@",
+    "radar-lander": "@@asset:assets/defender/radar-lander.webp@@",
+    "radar-mutant": "@@asset:assets/defender/radar-mutant.webp@@",
+    "radar-bomber": "@@asset:assets/defender/radar-bomber.webp@@",
+    "radar-pod": "@@asset:assets/defender/radar-pod.webp@@",
+    "radar-swarmer": "@@asset:assets/defender/radar-swarmer.webp@@",
+    "radar-baiter": "@@asset:assets/defender/radar-baiter.webp@@",
+    "radar-human": "data:image/webp;base64,UklGRkoEAABXRUJQVlA4WAoAAAAwAAAAHwAAHwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIpgAAAAWAFNm2a2XtG/4nwwwhIAMbWURywDjaQAMjVKAgh/PeIXNOgYCImAD+WR3v2fyYsXYldk8yblbFxWbG5JGXWRJNUMkcgMuNhPIKeEt4bgDr13EDuPAWZwJHzaPqC4DLplGYvvCWRR+jXgtfVsKnD59WbuMwAc2z+pgwgLwSLwPIwATeEl6qK+exI/qYMADeiC8vAu8eh8mVBzaNe5bNkatytD+m/EVWUDggrgEAABAMAJ0BKiAAIAA+HQyFQaEFAVUEAHEsQBdmUDwAYpn/gPYA3iPygMwA6gFcBLrv43VUn/AfaB76n8B9oHsC+O/8z7gH8T/l/9+/Jv9/+UY/U1bN/Lxcp/F7/eHeyytFt4HRt6INInlEAAD+//QpmpyWrGmvwoeZM7fhBS1Umxf/BpkVKMW4yDwb0mdx8fB/iT5boiH46g0MsYXmel/5cQL/zqdVjhmP3RSbpH/9Rp/4waK6Z0cA5ICo3zp/mv4Wpb7RZMI+A095Cj0LV39X+HPGn2/tzFfYw5mPUYi4WJk9z+s/4tW4upbknp8zjL2kfmkkSOaDhH1kB3L/K7GOapZb3/mffmFWWpv/XIzifOcYJntudJl3bDeaI2vVt6NgYMvQaDzoOM7Qfhl9vd6TECxI3L1AN/8/HwYh/z+u7muoZaUeQv7D7GV7n//P2vBOoUD6Q8GUOLHuEkW/qnKDgt6rBcQB6SRRepgTFPYk2w+tx3wH8aNtFv9WtAZe+rDWwCLG8qD/+f6n4T8yJzsADezz/J3n2Xkk2fgMyK7MbIsnyphQNfC0pBxHBIaJQAA=",
+    "radar-bomb": "data:image/webp;base64,UklGRhQHAABXRUJQVlA4TAgHAAAvH8AHEE0obNsGTantGCL6H7iSFqI/DdJCUds2UCCUP8o8uwOIokiSkwszaIiM+JfB8MrrJCho20by/uNP9Qj0PwAgEUsh+WOR/GjVN/tK/fWedyuQRK62bYckfWW1u8e27WztDSffeI+iT2Btm6lt27bamEa56o+qRyegeK5LjiTJqu1Uz7kUj9//Yva+JbZYspjWoJV8LUwuMzMz4+N3zxm5tm2btjTnXPvgvbKtyLZtZIoUVsYfsBm6KuQHuCpUZNu2zzl37y2Htm1TluYr/rZt27Zt27YZGakj2525O7dt23ZVTQCAYGrSntlTX2Dfvu6ZxsW/jNDT3fuj0aU2H9CGd9N2nU0q+ZfHR04fRkY/CI3dWjXMQH9d1s/149P3ssHLgxX3riwWF9M2jSfciktrPmYYu0VHjqbk8n0Zx/c32RddPDm35dXN3c7p0wloQ309AMZ4NavTr2RNNiAG2vNHWd9dGND6JUs+e550igxdvpmeLT7sO70/qTG6YebHIiCWB/7OTZUsbipY2563rqJsvK2meWVKdfvU2nnNuPtKb/SXz9XMX+Vvb2T1+p1DZw+nK+4uIVNOp5kf3tRuXzKdXJ3y2bfaZ8KxonaDEI63eXV9d7PBqOp80srlI2xYPvjdr4pixND69xNHlGa+WIwY/nrL3D1akX3S9e+q2qxK39/IdDnMq3dH4r2q3vF1TTaX/n9Zz/f/bW7Zi3hB8lGHkSwRFf+HGvojeoyuiXXxp5b7wkd0963EpNu97T/erfvf7dM4vC7L9X+T7g09bPobAOto+1MOb0DHxt83B7l+P8zprstouTmYV4IOUqwCnsgTTCAXL1Gn5ElNn4ORU6Fa9u/5jUsL1r1oslGb4i8QAWBtKg10r8rjo+85fYMP0R6C/vgLr+Bz0cbrGGAeeDxw5iSKPpXkHhakmkS8P16QSkvU/bi34NCTrzCQAsBaXtPsl5TnkRK5SHlwCgSD/pstFVKW+pMCQYDJ8JnJJHCaiZhcDKXGYc2v+W9aiP716u9/W9OpIgA5fj+3/Bsfw0kIaRKJAkAJNZrT3aqjp14jEHhFXsGIE2PCBWGR93XhSZGQ6hLjpS9r8LSosbAxgMAKzjMZUnnwd9Xoc1IBInoW4ZPqnA8taKpgXoMIGCKFyKFIA1gjFmGgUJR3s0p5kfheFImObNLqvN7CjFafBtsf3ex3PigWdSSigixTHuAtGUWBpopPJHuUdRDwdIGWDEIwiJZQJj9nFdUlo5p5by+d6mZKOSth6uc/XNP9i0jwK1aUkCnMU7qJIbADNMRbqoBKGgrj4Agv4YwkN6zBj6knecRYtODDmdOL68GdgTUhC0doUL/2//3MNI6Z4H+EcPJS/EdKnOQMJTCJKhoBBBlapIhIIoaIdPjtBjdDysPrWkYGq1a5NYtZGAGV8gdvApJAEUTiP3EvUBIPGVlEEbAiBkEmrBkkyQIKJEgiLoDIgCnQZwgMz0rDH5dmEWg2yuSJP9gxunuaPFEOKCUb8ApIkSniEVomBhBQvsQp+iZKy+CA4GIaCLkFUpbmk7IsZgGp/IZJ7NR4LTDMcWBoESGPlZnNmCAiU4AEvEA0RxRNpVJghzATwFC5QY44Z2XIQlL+OFa1pMgzzKlRUEgFCIBEjDqaZ3xAEUKIRBNGYpfoQMoDHEqJaAlSoKfAl+sDG/HPwjP78epro02KFXioICLNwIMwEmTkU6QYzQGgSmwyIlECkkS4yOGAmVEEqYQkJFxyr2z/08Lz/drVaLPbr79OYcAQMQAKOVkR6yVaoEtEMxhEiMKKZEkUzynDOUlGSXmFlkNVk58j5Bcf3Fz02+JmcfR9MGt2NFs0EXOJJEAARkoVGJAJEYDhoFgUpaSKRAdOpCuyyYCEk2ihLpUhvx4mXAWYspha3NzYonuMNtKspKUaxT1OQivQ3WASgkARjLjoArt5pEBzSREhB81NJoagclKU9w7fd2tmTQwA63kcifwt3VB2XKYJkCMYESMDdoQGdIFhoEEcRDjxiOmiAWICcDKmSp+fyjZUA7kAyBFAoHc/Fq6rXXVb7UOzGQEDGTIa4hPIKTItIiEC4hCUHIBS0SFBiHcVFrIvhYEY5DLlJ4ZLpyic8f+/VHzCNfoWMQETQ+IIkEygAKaBlhK0hEEwRDEFKi5VP3PxeewJA5D7GRh8KctnWfyVxj9vehf/eZ+xJJbUZGREF+EumEhDkITJIVAp8SvTrYC75/X8CKZG+4w1/8nAd65R2SNR5RMqh18qlf77FHWPfwR8DQopIU8JPe//Kpd410muUHO/81sLb3ez9t/U6AGmhkdLw+92dgvPu3yrRKjfpuGXRsNijhhzMinEkfBFrzG7+m/9uFT/w5GvP9t/B2Bcj7H33LNPF38Ca5JTuQM="
+  },
+  "domPaper": "@@asset:assets/defender/domPaper.webp@@"
+}

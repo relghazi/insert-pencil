@@ -1,0 +1,16 @@
+{
+ "status": "",
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs; cut with tools/cut-sprite-sheet.py",
+ "candidates": {},
+ "assets": {},
+ "frame-match": {
+  "status": "approved by owner 2026-10-29",
+  "note": "second animation frame edited with Nano Banana to show the same character as the first (and drone-a without its yellow sash)",
+  "candidates": {
+   "incoming/FR/digdug-doug-b-match-v1.png": "421b7568c332a774cc6633b4fb76e22495b7ef5e88bb7d8d6ae4a3d2efd40103"
+  },
+  "assets": {
+   "assets/digdug/doug-b.webp": "1b6a75cc0a43fcbf862240496f50013e78ee35619340158ebc63d1c6c99b04a8"
+  }
+ }
+}

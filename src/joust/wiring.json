@@ -1,0 +1,21 @@
+{
+  "id": "jock-joust",
+  "dir": "joust",
+  "core": "JockJoustCore",
+  "engine": "JoustEngine",
+  "tests": "JockJoustTests",
+  "adapter": "No2JockJoust",
+  "cheat": {
+    "xbox": [["stick", "steer left and right"], ["A", "flap, one press each"], ["Menu", "pause"], ["LB", "previous tab"], ["RB", "next tab"], ["B", "back"]],
+    "keyboard": [["Left+Right", "steer left and right"], ["Space", "flap, one press each"], ["P", "pause"], ["Esc", "close notebook"]],
+    "notes": ["Higher stick wins. Bounder 500, hunter 750, shadow lord 1500. Footballs 250, 500, 750, then 1,000, plus 500 caught in the air.", "Stay off the pit and flap free of the hand. Pterodactyl 1000, only in its open mouth. Extra life every 20,000."]
+  },
+  "victories": [
+    ["jj-air", "interception", "catch a football in the air."],
+    ["jj-ptero", "dino down", "hit the pterodactyl in its open mouth."],
+    ["jj-survive", "still standing", "earn the survival wave bonus."]
+  ],
+  "victoryRule": "(ev,e,n,win)=>{if(ev.type==='egg'&&ev.air)win('jj-air');if(ev.type==='ptero')win('jj-ptero');if(ev.type==='bonus'&&ev.kind==='survival')win('jj-survive')}",
+  "readme": "Jock Joust: left and right steer, Space flaps (one press each), P pauses.",
+  "claude": "- Jock Joust (owner 2026-10-26, locker order): authentic 1982 Joust rules and scoring (src/joust, 21 rule checks), her jock on the school eagle jousting rival jocks on vultures with hockey sticks over bench boards, a dodgeball pit with the referee's hand, footballs for eggs and the pterodactyl; same amendment list."
+}
