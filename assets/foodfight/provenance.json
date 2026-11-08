@@ -1,0 +1,23 @@
+{
+ "tool": "Gemini API, Nano Banana Pro, tools/generate-art.mjs (edit); cut with tools/cut-sprite-sheet.py --blobs",
+ "candidates": {
+  "incoming/FF/foodfight-run-b-backpack-v2.png": "25978b0a54c91f5f2f4a7b36c6b2f81658313b519ede2b2142bdba0038eff970"
+ },
+ "assets": {
+  "assets/foodfight/run-b.webp": "44ba0a56e0fa6eb31a56a0f9a12ae1d2abb91342f504f5cd69681c70d4771296"
+ },
+ "chefs-v2": {
+  "run": {
+   "angelo": "incoming/FF/ff-chef-angelo-v1.png",
+   "zorba": "incoming/FF/ff-chef-zorba-v2.png",
+   "oscar": "incoming/FF/ff-chef-oscar-v1.png",
+   "jacques": "incoming/FF/ff-chef-jacques-v1.png"
+  },
+  "down": {
+   "angelo": "incoming/FF/ff-down2-angelo-v3.png",
+   "zorba": "incoming/FF/ff-down2-zorba-v2.png",
+   "oscar": "incoming/FF/ff-down-oscar-v2.png",
+   "jacques": "incoming/FF/ff-down-jacques-v1.png"
+  }
+ }
+}

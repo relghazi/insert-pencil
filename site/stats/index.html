@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Play stats (public): totals only, read from the leaderboard Worker's public GET /stats
+     (kept 5 minutes there); the numbers come from the small batches the game sends while "share my scores online" is on.
+     Not linked anywhere; typing STATS in the locker opens it. A Worker from before the change still wants the old key,
+     so the page asks for it only when the Worker says so. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self' https://no2-arcade-leaderboard.no2-arcade.workers.dev; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex,nofollow">
+<title>No. 2 Arcade Play Stats</title>
+<link rel="icon" type="image/x-icon" href="icon.ico">
+<style>
+/* Her notebook, skinned like the game: ruled paper with the red margin, like the scoreboard, her hand, scraps of paper taped
+   up for the numbers and charts, her ballpoint inks for the marks, and the wooden ruler with the keys for this page.
+   Fonts, paper, tape, key and ruler come from the scoreboard page next door (/scores/). The game is paper, so is this page:
+   light only, like the scoreboard. */
+@font-face{font-family:Hand;src:url(../scores/fonts/PatrickHand-Regular.ttf) format('truetype');font-display:swap}
+:root{color-scheme:light;--paper:#fbf7ec;--rule:#cdd9ef;--margin:#e7a3a3;--ink:#1b3591;--pencil:#4a4f5c;--soft:#7b7f8c;--red:#c0392b;--hi:#fff1a8;
+ --surface:#fdfaf2;--grid:#d9e2f2;--ink2:#4a4f5c;--ink3:#7b7f8c;--line:#ddd5c2;--s1:#2456b8;--s2:#e0662b;--s3:#1a9a6c;--seq:#2456b8;--focus:#1b3591}
+*{box-sizing:border-box}
+html{background:#6b4a2e}
+body{margin:0;min-height:100vh;color:var(--pencil);font:19px/1.35 Hand,'Patrick Hand',ui-rounded,system-ui,sans-serif;
+ background:var(--paper) repeating-linear-gradient(to bottom,transparent 0 31px,var(--rule) 31px 32px);background-attachment:local}
+/* The scoreboard's page, for consistency: ruled paper with the red margin. The charts sit on plain sheets, so no rule runs behind a chart line. */
+body::before{content:"";position:fixed;inset:0 auto 0 104px;width:2px;background:var(--margin);opacity:.7;pointer-events:none}
+/* The big sheets hang from push pins instead of tape. Nano Banana stats-pins v1. */
+.pin{position:absolute;z-index:3;width:30px;height:auto;top:-22px;pointer-events:none;filter:drop-shadow(2px 4px 2px rgba(40,25,5,.35))}
+main{overflow-x:clip;max-width:1200px;margin:0 auto;padding:24px 16px 120px 124px}
+header{margin-bottom:22px}
+h1{margin:0;line-height:0;display:flex;align-items:center;gap:14px}h1 img.icon{height:96px;width:auto;flex:none}h1 img{height:130px;width:auto;max-width:100%}
+.sub{color:var(--soft);font-size:17px;margin:2px 0 0}header .sub{margin-top:-6px}
+button,input{font:inherit}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+/* Each section on its own kind of paper (different papers and tapes, not tiny pages): watercolor and
+   kraft paper (see below); the numbers on sticky notes; the key form on an index card. Torn edges are
+   cut per piece (tear()), and each piece gets its own tape from the scoreboard's set, at its own place and angle. */
+.scrap{position:relative;filter:drop-shadow(0 5px 9px rgba(50,30,5,.38));transform:rotate(var(--r,0deg))}
+.scrap>.paper{position:absolute;inset:0;clip-path:var(--tear,none);z-index:0}
+.scrap>*:not(.paper):not(.tp){position:relative;z-index:1}
+.tp{position:absolute;z-index:3;pointer-events:none;height:auto;opacity:.95}
+/* Charts sit on plain sheets (ruled and graph lines clashed with the chart lines): light kraft paper
+   and cold-press watercolor paper, taking turns. Nano Banana stats-kraft v1 and stats-bg-watercolor v1. */
+/* a tape across the top-left corner would cover the title: the title steps right of it */
+.tape-tl>h2{margin-left:44px}
+.k-kraft>.paper{background:#e9d6b4 url(kraft.webp) center/cover}
+.k-watercolor>.paper{background:#fbf8f1 url(bg-watercolor.webp) center/cover}
+.k-index>.paper{background:#fffefa repeating-linear-gradient(to bottom,transparent 0 29px,#b9cdea 29px 30px) 0 52px;box-shadow:inset 0 50px 0 -48px #d9534f}
+.k-note>.paper{background:var(--note) center/100% 100% no-repeat}/* painted sticky notes (the flat ones were too perfect), Nano Banana stats-notes v1 */
+.k-note{filter:drop-shadow(1px 3px 3px rgba(60,40,10,.18));padding-top:26px!important}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:26px 18px;margin:8px 0 34px}
+.tile{padding:16px 14px 14px}
+.tile:nth-child(3n+1){--r:-1.2deg;--tr:4deg}.tile:nth-child(3n+2){--r:.9deg;--tr:-5deg}.tile:nth-child(3n){--r:-.4deg;--tr:2deg}
+.tile b{display:block;font-size:40px;line-height:1;color:var(--ink);font-weight:400;font-variant-numeric:tabular-nums}
+.tile span{color:var(--soft);font-size:17px;line-height:1.15;display:block;margin-top:4px}
+/* Sections grouped by category (no long empty sheets): each category has its wide sheets, then two
+   columns that cards stack into by height (pack()), so a short card is never stretched to its neighbour's height. */
+.cat{margin:0 0 30px}
+/* The category names are lettered in her hand like the page heading (hand drawn, no paper of their own).
+   Nano Banana heading-stats-who/what/how/where. */
+.cat>h3{margin:18px 0 26px -4px;line-height:0;transform:rotate(-1deg)}.cat>h3 img{height:78px;width:auto;max-width:100%}.cat>h3 img:is([src^="h-where"],[src^="h-what"],[src^="h-how"]){height:62px}/* lettered smaller on their sheets */
+.cat>.card{margin-bottom:34px}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start}
+.col{display:flex;flex-direction:column;gap:34px;min-width:0}
+.card{padding:20px 18px 14px;min-width:0}
+.card:nth-child(4n+1){--r:-.35deg;--tr:-2deg}.card:nth-child(4n+2){--r:.4deg;--tr:3deg}.card:nth-child(4n+3){--r:.2deg;--tr:-4deg}.card:nth-child(4n){--r:-.25deg;--tr:2deg}
+.card.wide{--r:-.15deg}
+/* Section titles like every sheet in the game: her red ballpoint at body size over a thin red rule. */
+h2{font-size:23px;font-weight:400;color:var(--red);margin:0 0 2px;padding-bottom:2px;border-bottom:1.5px solid var(--red);display:inline-block}
+.card .sub{margin:2px 0 8px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:17px;color:var(--pencil);margin:2px 0 6px}
+.legend i{display:inline-block;width:16px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.legend i.box{height:12px;width:12px;border-radius:3px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{fill:var(--soft);font-family:Hand,sans-serif;font-size:14px}
+svg .lab{fill:var(--ink);font-size:16px}
+/* Hover notes on a sticky note. */
+.tip{position:fixed;pointer-events:none;background:#fff3a6;border-radius:2px;padding:9px 12px 10px;font-size:17px;color:var(--pencil);box-shadow:2px 5px 10px rgba(60,40,10,.25);z-index:9;display:none;min-width:130px;transform:rotate(-1.5deg)}
+.tip .h{color:var(--red);font-size:16px;margin-bottom:2px}.tip .r{display:flex;justify-content:space-between;gap:14px}.tip .r b{color:var(--ink);font-weight:400}.tip .r i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+details{margin-top:8px;padding-left:4px;position:relative;z-index:4}summary{cursor:pointer;color:var(--ink);font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:17px;margin-top:6px}
+th,td{text-align:right;padding:2px 8px;border-bottom:1px solid var(--rule);height:32px}th:first-child,td:first-child{text-align:left}
+th{color:var(--red);font-weight:400}td{color:var(--ink)}
+.scroll{max-height:330px;overflow:auto}
+.bars{display:grid;gap:4px;margin-top:6px}
+.bar{display:grid;grid-template-columns:minmax(90px,36%) 1fr auto;gap:10px;align-items:center;font-size:18px;line-height:1.1;color:var(--ink);min-height:30px}
+.bar .t{border-radius:4px;height:13px;overflow:hidden;display:flex;gap:2px}
+.bar .t span{display:block;height:100%;border-radius:3px}
+.bar .n{color:var(--pencil);min-width:3ch;text-align:right}
+.map svg path{stroke:#b9ae94;stroke-width:.5;vector-effect:non-scaling-stroke}.map svg path.on{stroke:#3f4a66}.map svg path:hover{stroke:var(--ink);stroke-width:1.5}
+.mapkey{display:flex;gap:4px;align-items:center;font-size:16px;color:var(--pencil);margin:6px 0 2px;flex-wrap:wrap}.mapkey i{display:inline-block;width:26px;height:12px;border-radius:3px;margin-right:4px;vertical-align:middle}.mapkey span{margin-right:12px}
+.card h2+.bars,.card .map+h2{margin-top:10px}
+.msg{color:var(--soft);padding:30px 0;text-align:center;font-size:20px}
+/* The key: an index card. */
+form.keycard{position:relative;max-width:460px;margin:40px auto;padding:22px 20px 18px;display:grid;gap:12px;--r:-1deg;--tw:90px}
+form.keycard label{color:var(--red);font-size:22px}
+form.keycard input{padding:6px 2px;border:0;border-bottom:1.5px solid var(--ink);background:transparent;color:var(--ink);font-size:20px}
+form.keycard button{justify-self:end;all:unset;cursor:pointer;color:var(--ink);font-size:20px;display:inline-flex;gap:.35em;align-items:center}
+/* The action ruler, as in the game and on the scoreboard. */
+#ruler{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:5;display:flex;align-items:center;max-width:96vw;height:64px;padding:16px 40px 0;border-style:solid;border-width:0 34px;border-image:url(../scores/ui/ruler.webp) 0 60 fill / 0 34px stretch;filter:drop-shadow(0 4px 6px rgba(30,20,10,.35));white-space:nowrap;color:#22355a;font-size:21px}
+#ruler[hidden]{display:none}
+#ruler #range{display:flex}
+#ruler button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:.35em;padding:.05em .45em;border-radius:8px}
+#ruler button+button,#ruler #range+button{border-left:1.5px solid rgba(60,40,20,.35);border-radius:0;padding-left:.7em;margin-left:.3em}
+#ruler button:is(:hover,:focus-visible){background:rgba(255,231,168,.6)}
+#ruler button[aria-pressed="true"]{background:rgba(255,231,168,.95);border-radius:8px}
+.key{display:inline-block;min-width:1.6em;padding:.05em .4em .15em;text-align:center;font-size:.85em;color:#1f2433;background:url(../scores/ui/key.webp) center/100% 100% no-repeat;filter:drop-shadow(1px 2px 2px #0003)}
+@media (max-width:760px){body::before{left:28px}main{padding:20px 16px 120px 44px}.cols{grid-template-columns:1fr}.cat>h3 img{height:58px}.cat>h3 img:is([src^="h-where"],[src^="h-what"],[src^="h-how"]){height:46px}.tile b{font-size:32px}h1 img{height:84px}h1 img.icon{height:62px}#ruler{font-size:16px;height:54px;padding:13px 18px 0;border-width:0 22px}#ruler .w,#ruler .wide-only{display:none}#ruler{padding:13px 10px 0}#ruler button{padding:.05em .3em}#ruler button+button,#ruler #range+button{padding-left:.45em;margin-left:.2em}}
+</style>
+</head>
+<body>
+<main>
+<header>
+ <h1><img class="icon" src="icon.webp" alt="" width="278" height="320"><img src="heading.webp" alt="play stats" width="1000" height="482"></h1>
+ <p class="sub" id="asof">players who share their scores online, UTC days</p>
+</header>
+<div id="app"></div>
+</main>
+<nav id="ruler" aria-label="what you can do here" hidden>
+ <div id="range" role="group" aria-label="Range"><button data-d="7"><span class="key">1</span>7<span class="w"> days</span></button><button data-d="30"><span class="key">2</span>30<span class="w"> days</span></button><button data-d="90" aria-pressed="true"><span class="key">3</span>90<span class="w"> days</span></button><button data-d="365"><span class="key">4</span>1 year</button></div>
+ <button id="ownerBtn" aria-pressed="false"><span class="key">M</span><span class="w">include </span>me</button>
+</nav>
+<input type="checkbox" id="owner" hidden>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+const API='https://no2-arcade-leaderboard.no2-arcade.workers.dev',KEY='no2-stats-token';
+const TITLES={'scribble-defender':'Scribble Defender','gym-class-pong':'Gym Class Pong','detention-breakout':'Detention Breakout','space-substitutes':'Space Substitutes','erasteroids':'Erasteroids','lunch-lander':'Lunch Lander','spitball-command':'Spitball Command','snack-man':'Snack-Man','recess-zone':'Recess Zone','galgebra':'Galgebra','centigrade':'Centigrade','froggology':'Froggology','quiz':'Quiz','testpest':'Testpest','home-ec-scramble':'Home Ec Scramble','dunce-kong':'Dunce Kong','dig-doug':'Dig Doug','q-nerd':'Q*Nerd','jock-joust':'Jock Joust','class-of-2084':'Robotron: Class of 2084','mystery-meat-time':'Mystery Meat Time','hall-patrol':'Hall Patrol','term-paperboy':'Term Paperboy','locker-gauntlet':'Locker Gauntlet'};
+const LANG={en:'English',fr:'French',es:'Spanish',de:'German',it:'Italian'},DEV={keyboard:'keyboard and mouse',xbox:'controller',touch:'touch'};
+const $=id=>document.getElementById(id),app=$('app'),tip=$('tip');
+const store={get(){try{return localStorage.getItem(KEY)||''}catch{return''}},set(v){try{v?localStorage.setItem(KEY,v):localStorage.removeItem(KEY)}catch{}}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+const fmt=n=>n==null?'–':Number(n).toLocaleString('en-US'),pct=(a,b)=>b?Math.round(a/b*100)+'%':'–',hrs=s=>s>=3600?(s/3600).toFixed(1)+' h':Math.round(s/60)+' min';
+const mk=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+let days=90,data=null;
+
+function askKey(msg){$('ruler').hidden=true;app.replaceChildren();const f=mk('form','keycard scrap');dress(f,'index',3);f.innerHTML='<label for="k">the key, please</label><input type="password" id="k" placeholder="the STATS_TOKEN secret" autocomplete="current-password"><button><span class="key">Enter</span>open</button>';
+ if(msg)app.append(mk('p','msg',esc(msg)));app.append(f);f.onsubmit=e=>{e.preventDefault();store.set($('k').value.trim());load()};$('k').focus()}
+
+async function load(){/* public since 2026-11-01: no key is ever sent (a key header is refused across sites now), and an old saved key is forgotten */const k='';store.set('');app.replaceChildren(mk('p','msg','loading...'));
+ let r;try{r=await fetch(API+'/stats?days='+days+($('owner').checked?'&owner=1':''),{headers:k?{Authorization:'Bearer '+k}:{},cache:'no-store'})}catch{app.replaceChildren(mk('p','msg','could not reach the server.'));return}
+ if(r.status===401){const had=!!k;store.set('');return askKey(had?'that key did not work.':'')}
+ if(r.status===429)return app.replaceChildren(mk('p','msg','that is a lot of looking. try again in a while.'));
+ if(r.status===404)return app.replaceChildren(mk('p','msg','no stats here yet.'));
+ if(!r.ok)return app.replaceChildren(mk('p','msg','the server said '+r.status+'.'));
+ data=await r.json();await worldP;$('ruler').hidden=false;$('asof').textContent='players who share their scores online · UTC days · '+(data.owner?'including you':'without you')+' · updated '+new Date(data.now).toLocaleString();render()}
+
+// Tooltip: rows of [label, value, color?].
+function showTip(e,head,rows){tip.innerHTML='<div class="h">'+esc(head)+'</div>'+rows.map(([l,v,c])=>'<div class="r"><span>'+(c?'<i style="background:'+c+'"></i>':'')+esc(l)+'</span><b>'+esc(v)+'</b></div>').join('');tip.style.display='block';
+ const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+14,y=e.clientY+14;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=e.clientY-h-14;tip.style.left=x+'px';tip.style.top=y+'px'}
+const hideTip=()=>{tip.style.display='none'};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const nice=m=>{if(m<=1)return 1;const p=10**Math.floor(Math.log10(m)),f=m/p;return(f<=1?1:f<=2?2:f<=5?5:10)*p};
+const short=d=>{const[y,m,dd]=d.split('-');return['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][m-1]+' '+(+dd)};
+
+// Time chart over the day series: lines (series of {key,label,color}) or one bar series. One y axis.
+// Drawn at the width it is shown, so its text stays at its real size on a phone and on a wide screen.
+const chartW=wide=>{const w=app.clientWidth-30;return Math.max(300,wide||w<730?Math.min(1100,w):Math.floor((w-14)/2))};
+function timeChart(series,opt={}){const S=data.series,W=opt.W||chartW(false),H=opt.H||210,L=38,R=opt.lines?58:8,T=10,B=24,iw=W-L-R,ih=H-T-B,n=S.length;
+ const top=Math.max(...S.flatMap(d=>series.map(s=>s.get(d)||0))),step=top<=4?1:nice(top/4),max=step*Math.max(1,Math.ceil(top/step)),X=i=>L+(n<2?iw/2:i*iw/(n-1)),Y=v=>T+ih-v/max*ih,bw=Math.max(1,iw/n-2);
+ let g='';for(let v=0;v<=max+1e-9;v+=step){const y=Y(v);g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y+'" y2="'+y+'" stroke="var(--grid)"/><text x="'+(L-6)+'" y="'+(y+4)+'" text-anchor="end">'+fmt(Math.round(v))+'</text>'}
+ const ticks=Math.min(opt.W>700?10:6,n);for(let k=0;k<ticks;k++){const i=Math.round(k*(n-1)/Math.max(1,ticks-1));g+='<text x="'+(opt.lines?X(i):L+i*iw/n+iw/n/2)+'" y="'+(H-6)+'" text-anchor="middle">'+short(S[i].day)+'</text>'}
+ let marks='';if(opt.lines){for(const s of series){const pts=S.map((d,i)=>X(i).toFixed(1)+','+Y(s.get(d)||0).toFixed(1)).join(' ');marks+='<polyline points="'+pts+'" fill="none" stroke="'+s.color+'" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>'}
+  // direct labels at the line ends, nudged apart
+  const ends=series.map(s=>({s,y:Y(s.get(S[n-1])||0)})).sort((a,b)=>a.y-b.y);for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<13)ends[i].y=ends[i-1].y+13;
+  for(const e of ends)marks+='<text class="lab" x="'+(W-R+6)+'" y="'+(e.y+4)+'">'+esc(e.s.label)+'</text>'}
+ else{const s=series[0];S.forEach((d,i)=>{const v=s.get(d)||0,h=v/max*ih,x=L+i*iw/n+1;if(v>0)marks+='<path d="M'+x+','+(T+ih)+'v'+(-Math.max(0,h-Math.min(4,bw/2,h)))+'q0,-'+Math.min(4,bw/2,h)+' '+Math.min(4,bw/2)+',-'+Math.min(4,bw/2,h)+'h'+Math.max(0,bw-2*Math.min(4,bw/2))+'q'+Math.min(4,bw/2)+',0 '+Math.min(4,bw/2)+','+Math.min(4,bw/2,h)+'v'+Math.max(0,h-Math.min(4,bw/2,h))+'z" fill="'+s.color+'"/>'})}
+ const svg=mk('div');svg.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opt.title||'')+'">'+g+marks+'<line id="x" y1="'+T+'" y2="'+(T+ih)+'" stroke="var(--ink3)" stroke-dasharray="3 3" visibility="hidden"/><rect x="'+L+'" y="'+T+'" width="'+iw+'" height="'+ih+'" fill="transparent"/></svg>';
+ const el=svg.firstChild,cross=el.querySelector('#x'),hit=el.querySelector('rect');
+ hit.onmousemove=e=>{const b=el.getBoundingClientRect(),px=(e.clientX-b.left)/b.width*W;const i=Math.max(0,Math.min(n-1,opt.lines?Math.round((px-L)/(iw/Math.max(1,n-1))):Math.floor((px-L)/(iw/n))));const x=opt.lines?X(i):L+i*iw/n+iw/n/2;
+  cross.setAttribute('x1',x);cross.setAttribute('x2',x);cross.setAttribute('visibility','visible');showTip(e,S[i].day,series.map(s=>[s.label,(s.show||fmt)(s.get(S[i])||0),s.color]))};
+ hit.onmouseleave=()=>{cross.setAttribute('visibility','hidden');hideTip()};return el}
+
+function table(head,rows){const t=mk('table');t.innerHTML='<thead><tr>'+head.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(c=>'<td>'+esc(c)+'</td>').join('')+'</tr>').join('')+'</tbody>';return t}
+function details(head,rows){const d=mk('details');d.append(mk('summary','','data table'));const s=mk('div','scroll');s.append(table(head,rows));d.append(s);return d}
+// Papers and tapes, each section its own (fixed order, so a section keeps its look as the data changes).
+const TAPES=['tape','tape-torn','tape-clear','tape-long','tape-frosted','tape-smudge','tape-stub','tape-fold'],KINDS=['watercolor','kraft'];
+const NOTES=[1,2,3,4,5].map(i=>'url(note-'+i+'.webp)');let piece=0;
+const rnd=n=>{const x=Math.sin(n*12.9898+78.233)*43758.5453;return x-Math.floor(x)};
+// A torn edge on one or two sides: a ragged polygon in percent, cut fresh per piece from its seed.
+function tear(n){const top=rnd(n)<.35,bot=rnd(n+1)<.6,pts=[],step=3;
+ for(let x=0;x<=100;x+=step)pts.push(x+'% '+(top?(rnd(n+x)*1.6).toFixed(2):0)+'%');
+ for(let x=100;x>=0;x-=step)pts.push(x+'% '+(bot?(100-rnd(n+x+7)*1.8).toFixed(2):100)+'%');return 'polygon('+pts.join(',')+')'}
+function dress(el,kind,n,pinned){const p=mk('div','paper');el.prepend(p);el.classList.add('k-'+kind);
+ if(kind==='note'){el.style.setProperty('--note',NOTES[n%NOTES.length]);el.style.setProperty('--r',((rnd(n)-.5)*4).toFixed(2)+'deg');return}
+ p.style.setProperty('--tear',tear(n));el.style.setProperty('--r',((rnd(n)-.5)*.9).toFixed(2)+'deg');pinned?pins(el,n):tape(el,n,false)}
+const PINS=['red','blue','yellow','green','white'];
+function pins(el,n){for(const side of['left','right']){const t=document.createElement('img');t.className='tp pin';t.alt='';t.src='pin-'+PINS[(n+(side==='right'?2:0))%PINS.length]+'.webp';t.style[side]=(3+rnd(n+(side==='left'?11:13))*3).toFixed(1)+'%';t.style.transform='rotate('+((rnd(n+17)-.5)*20).toFixed(1)+'deg)';el.append(t)}}
+function tape(el,n,small){const t=document.createElement('img');t.className='tp';t.alt='';t.src='../scores/ui/'+TAPES[n%TAPES.length]+'.webp';
+ const where=small?0:Math.floor(rnd(n+5)*3),w=small?60:90+rnd(n+6)*50,rot=(rnd(n+8)-.5)*14;t.style.width=w+'px';
+ if(where===0){t.style.top='-14px';t.style.left=(30+rnd(n+9)*40)+'%';t.style.transform='translateX(-50%) rotate('+rot+'deg)'}
+ else{if(where===1)el.classList.add('tape-tl');t.style.top='-10px';t.style[where===1?'left':'right']='-18px';t.style.transform='rotate('+(where===1?-35:35)+'deg)';
+  if(n%6===0){const t2=t.cloneNode();t2.style.top='auto';t2.style.bottom='-22px';t2.style.width=Math.round(w*.75)+'px';t2.style[where===1?'left':'right']='auto';t2.style[where===1?'right':'left']='-18px';t2.style.transform='rotate('+(where===1?-35:35)+'deg)';el.append(t2)}}
+ el.append(t)}
+// One category: its wide sheets in order, then the rest split over two columns with the most even bottoms (every split that
+// keeps the reading order inside each column is tried; a category has at most a handful of cards). One column on phones.
+function group(title,wide,cards){const s=mk('section','cat'),hd=mk('h3'),im=mk('img');im.src='h-'+title.split(' ')[0]+'.webp';im.alt=title;hd.append(im);s.append(hd,...wide);app.append(s);if(!cards.length)return;
+ const cols=mk('div','cols'),a=mk('div','col'),b=mk('div','col');cols.append(a,b);s.append(cols);
+ if(innerWidth<=760){a.append(...cards);return}
+ a.append(...cards);const h=cards.map(c=>c.offsetHeight+34);let best=0,score=1/0;
+ for(let m=0;m<1<<cards.length;m++){let x=0,y=0;h.forEach((v,i)=>m>>i&1?y+=v:x+=v);const d=Math.abs(x-y)+(m&1?1:0);if(d<score){score=d;best=m}}
+ cards.forEach((c,i)=>(best>>i&1?b:a).append(c))}
+function card(title,sub,wide){const c=mk('section','card scrap'+(wide?' wide':''));const n=piece++;dress(c,wide?'watercolor':KINDS[n%KINDS.length],n,wide);/* the pinned big sheets are white watercolor paper: kraft melts into the cork */c.append(mk('h2','',esc(title)));if(sub)c.append(mk('p','sub',esc(sub)));return c}
+function legend(items,box){const l=mk('div','legend');l.innerHTML=items.map(([t,c])=>'<span><i class="'+(box?'box':'')+'" style="background:'+c+'"></i>'+esc(t)+'</span>').join('');return l}
+// Ranked horizontal bars; segs: [{key,label,color}] stacked per row, or one value.
+function barList(rows,segs,valueText){const max=Math.max(1,...rows.map(r=>segs.reduce((s,g)=>s+(r[g.key]||0),0))),box=mk('div','bars');
+ for(const r of rows){const tot=segs.reduce((s,g)=>s+(r[g.key]||0),0),b=mk('div','bar'),t=mk('div','t');t.style.width=Math.max(2,tot/max*100)+'%';
+  for(const g of segs)if(r[g.key]){const s=mk('span');s.style.background=g.color;s.style.flex=r[g.key]+' 0 0';t.append(s)}
+  const lane=mk('div');lane.append(t);b.append(mk('span','',esc(r.label)),lane,mk('span','n',esc(valueText?valueText(r,tot):fmt(tot))));
+  b.onmousemove=e=>showTip(e,r.label,segs.filter(g=>r[g.key]).map(g=>[g.label,fmt(r[g.key]),segs.length>1?g.color:null]).concat(r.extra||[]));b.onmouseleave=hideTip;box.append(b)}return box}
+
+// The world map: players per country, Natural Earth outlines packed beside this page (world.json).
+let world=null;const worldP=fetch('world.json').then(r=>r.json()).then(w=>world=w).catch(()=>null);
+const cname=a=>{try{return new Intl.DisplayNames(['en'],{type:'region'}).of(a)}catch{return a}};
+const RAMP=['#cde2fb','#86b6ef','#3987e5','#1c5cab','#0d366b'];
+function mapCard(){const c=card('Where they play','players per country, and the regions they play from (Cloudflare’s guess)',true);
+ const by=Object.fromEntries(data.countries.map(x=>[x.k,x.players])),max=Math.max(1,...Object.values(by));
+ // five steps on a log scale, so one big country does not wash the rest out
+ const cls=v=>Math.min(4,Math.floor(Math.log(v)/Math.log(max+1)*5)),edges=[0,1,2,3,4].map(i=>Math.max(1,Math.ceil((max+1)**(i/5))));
+ const box=mk('div','map');if(!world){box.append(mk('p','sub','the map did not load.'))}else{
+  box.innerHTML='<svg viewBox="0 0 '+world.w+' '+world.h+'" role="img" aria-label="Players per country">'+world.c.map(x=>{const v=x.a&&by[x.a];return'<path d="'+x.d+'" fill="'+(v?RAMP[cls(v)]:'#e2d6bb')+'"'+(v?' class="on"':'')+' data-a="'+(x.a||'')+'" data-n="'+esc(x.n)+'"/>'}).join('')+'</svg>';
+  box.querySelectorAll('path').forEach(p=>{p.onmousemove=e=>showTip(e,p.dataset.a?cname(p.dataset.a):p.dataset.n,[['players',fmt(by[p.dataset.a]||0)]]);p.onmouseleave=hideTip})}
+ const key=mk('div','mapkey');key.innerHTML='<span><i style="background:#e2d6bb"></i>nobody yet</span>'+RAMP.map((col,i)=>{const lo=edges[i],hi=i<4?edges[i+1]-1:max;return lo>max||(i<4&&hi<lo)?'':'<span><i style="background:'+col+'"></i>'+(hi>lo?fmt(lo)+' to '+fmt(hi):fmt(lo))+'</span>'}).join('');
+ c.append(key,box);
+ const rows=(data.regions||[]).map(r=>({label:r.region+', '+cname(r.country),v:r.players}));
+ if(rows.length){c.append(mk('h2','','regions'),barList(rows.slice(0,15),[{key:'v',label:'players',color:css('--seq')}]))}
+ c.append(details(['country','players'],data.countries.map(x=>[cname(x.k),x.players])));return c}
+function render(){piece=0;const d=data,S=d.series,T=d.totals,c1=css('--s1'),c2=css('--s2'),c3=css('--s3'),seq=css('--seq');app.replaceChildren();
+ const runs=S.reduce((s,x)=>s+x.runs,0),secs=S.reduce((s,x)=>s+x.seconds,0),sess=S.reduce((s,x)=>s+x.sessions,0),fresh=S.reduce((s,x)=>s+x.new,0);
+ const coh=k=>{const c=S.filter(x=>x[k]!=null&&x.new);return[c.reduce((s,x)=>s+x[k],0),c.reduce((s,x)=>s+x.new,0)]},[r1,n1]=coh('d1'),[r7,n7]=coh('d7');
+ const tiles=mk('div','tiles');for(const[v,l]of[[fmt(T.dau),'opened the game today'],[fmt(T.playedToday),'played a game today'],[fmt(T.wau),'this week (7 days)'],[fmt(T.mau),'this month (30 days)'],[fmt(T.users),'players ever'],[fmt(fresh),'new in range'],[pct(T.returning,T.users),'came back another day'],[pct(r1,n1),'back the next day'],[pct(r7,n7),'back a week later'],[fmt(runs),'games played in range'],[hrs(secs),'time played in range']]){const t=mk('div','tile scrap');dress(t,'note',piece++);t.append(mk('b','',esc(v)),mk('span','',esc(l)));tiles.append(t)}app.append(tiles);
+ let c=card('Unique players','daily, 7-day and 30-day unique players',true);const U=[{key:'dau',label:'daily',color:c1,get:x=>x.dau},{key:'wau',label:'7 days',color:c2,get:x=>x.wau},{key:'mau',label:'30 days',color:c3,get:x=>x.mau}];
+ c.append(legend(U.map(s=>[s.label,s.color])),timeChart(U,{lines:true,W:chartW(true),H:260,title:'Unique players per day'}),details(['day','daily','7 days','30 days','new','sessions'],S.slice().reverse().map(x=>[x.day,x.dau,x.wau,x.mau,x.new,x.sessions])));const uniqC=c;
+ c=card('New players','first seen that day');c.append(timeChart([{label:'new players',color:seq,get:x=>x.new}],{title:'New players per day'}),details(['day','new','back next day','back after 7 days'],S.filter(x=>x.new).reverse().map(x=>[x.day,x.new,x.d1??'–',x.d7??'–'])));const newpC=c;
+ c=card('Games played','real games, demos left out');c.append(timeChart([{label:'games',color:seq,get:x=>x.runs}],{title:'Games played per day'}),details(['day','games','time'],S.slice().reverse().map(x=>[x.day,x.runs,hrs(x.seconds)])));const gamesC=c;
+ c=card('Time played','hours of real play per day');c.append(timeChart([{label:'hours',color:seq,get:x=>x.seconds/3600,show:v=>v.toFixed(1)+' h'}],{title:'Hours played per day'}));const timeC=c;
+ c=card('Sessions','launches of the game per day');c.append(timeChart([{label:'sessions',color:seq,get:x=>x.sessions}],{title:'Sessions per day'}));const sessC=c;
+ // Games, ranked by games played, split by mode.
+ const by={};for(const g of d.games){const o=by[g.game]??={label:TITLES[g.game]||g.game,normal:0,hard:0,daily:0,players:0,seconds:0,best:0,avgs:[]};o[g.mode||'normal']=(o[g.mode||'normal']||0)+g.runs;o.players=Math.max(o.players,g.players);o.seconds+=g.seconds;o.best=Math.max(o.best,g.best||0);if(g.avg!=null)o.avgs.push([g.avg,g.runs])}
+ const games=Object.values(by).map(o=>({...o,runs:o.normal+o.hard+o.daily,extra:[['players',fmt(o.players)],['time',hrs(o.seconds)],['best score',fmt(o.best)]]})).sort((a,b)=>b.runs-a.runs);
+ const M=[{key:'normal',label:'normal',color:c1},{key:'hard',label:'hard (Ace)',color:c2},{key:'daily',label:'daily challenge',color:c3}];
+ c=card('Most played games','games played in range, by mode',true);if(games.length){c.append(legend(M.map(m=>[m.label,m.color]),true),barList(games,M),details(['game','games','normal','hard','daily','players','time','best','average score'],games.map(o=>[o.label,o.runs,o.normal,o.hard,o.daily,o.players,hrs(o.seconds),fmt(o.best),fmt(o.avgs.length?Math.round(o.avgs.reduce((s,[a,n])=>s+a*n,0)/o.avgs.reduce((s,[,n])=>s+n,0)):null)])))}else c.append(mk('p','sub','no games yet.'));const mostC=c;
+ const split=(title,sub,list,name)=>{const c=card(title,sub);const rows=list.map(x=>({label:name?name(x.k):x.k,v:x.players}));c.append(rows.length?barList(rows,[{key:'v',label:'players',color:seq}]):mk('p','sub','nothing yet.'));return c};
+ const whereC=mapCard(),langC=split('Languages','players by game language',d.langs,k=>LANG[k]||k),devC=split('Devices','players by what they played with',d.devices,k=>DEV[k]||k),verC=split('Versions','players by game version',d.versions,k=>'v'+k);
+ const cw=d.comic.find(x=>x.k==='watched')?.n||0,cs=d.comic.find(x=>x.k==='skipped')?.n||0;c=card('Intro comic','watched to the last panel or skipped');c.append(barList([{label:'watched',v:cw},{label:'skipped',v:cs}],[{key:'v',label:'times',color:seq}],(r,t)=>fmt(t)+' · '+pct(t,cw+cs)));const comicC=c;
+ const H=Array.from({length:24},(_,h)=>({h,n:d.hours.find(x=>x.h===h)?.n||0}));c=card('When they play','games started by hour of day (UTC)');
+ const mx=Math.max(1,...H.map(x=>x.n)),hb=mk('div');hb.innerHTML='<svg viewBox="0 0 560 150" role="img" aria-label="Games by hour of day">'+H.map(x=>{const w=560/24-3,h=x.n/mx*118,X=x.h*560/24+1.5;return(h?'<rect x="'+X+'" y="'+(124-h)+'" width="'+w+'" height="'+h+'" rx="3" fill="'+seq+'" data-h="'+x.h+'"/>':'')+(x.h%3===0?'<text x="'+(X+w/2)+'" y="142" text-anchor="middle">'+x.h+'h</text>':'')}).join('')+'</svg>';
+ hb.querySelectorAll('rect').forEach(r=>{r.onmousemove=e=>showTip(e,r.dataset.h+':00 to '+r.dataset.h+':59 UTC',[['games',fmt(H[r.dataset.h].n)]]);r.onmouseleave=hideTip});c.append(hb);const hoursC=c;
+ group('who plays',[uniqC],[newpC,sessC]);
+ group('what they play',[mostC],[gamesC,timeC,hoursC,comicC]);
+ group('how they play',[],[devC,langC,verC]);
+ group('where they play',[whereC],[]);
+}
+
+$('range').onclick=e=>{const b=e.target.closest('button');if(!b)return;days=+b.dataset.d;for(const x of $('range').children)x.setAttribute('aria-pressed',String(x===b));load()};
+const owner=on=>{$('owner').checked=on;$('ownerBtn').setAttribute('aria-pressed',String(on));load()};
+$('ownerBtn').onclick=()=>owner(!$('owner').checked);
+// The ruler's keys work from the keyboard too, as in the game.
+addEventListener('keydown',e=>{if(e.target.matches?.('input')||e.ctrlKey||e.metaKey||e.altKey||$('ruler').hidden)return;const k=e.key.toLowerCase(),b=$('range').querySelector('[data-d="'+({1:7,2:30,3:90,4:365})[k]+'"]');if(b){b.click();e.preventDefault()}else if(k==='m'){owner(!$('owner').checked);e.preventDefault()}});
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(data)render()},150)});
+load();
+</script>
+</body>
+</html>
