@@ -63,6 +63,10 @@ async function measure(name) {
   const canvas = [];
   for (const f of page.frames()) { if (f !== page.mainFrame()) { const box = await (await f.frameElement().catch(() => null))?.boundingBox(); if (!box || box.width < 10 || !(await f.evaluate(() => document.visibilityState === 'visible' && frameElement?.checkVisibility?.({ visibilityProperty: true, opacityProperty: true }) !== false).catch(() => false))) continue; }
     canvas.push(...await f.evaluate(() => globalThis.No2CanvasText?.() || []).catch(() => [])); }
+  // The four type sizes (title 52, body 30, control 26, meta 22 at 1080p); key glyph labels may be .85 of their word.
+  // One display line is allowed beside them: the Walkman's now-playing song title (.tape-song, .9 of the title).
+  const SIZES = [22, 26, 30, 52].map(x => x * UNIT), DISPLAY = /\btape-song\b/;
+  const offSize = onScreen.filter(i => !DISPLAY.test(i.cls) && !SIZES.some(a => Math.abs(i.size - a) <= 1 || (i.glyph && Math.abs(i.size - a * .85) <= 1)));
   const small = [...onScreen.filter(i => i.size < (i.glyph ? GLYPH_PX : MIN_PX) - .05), ...canvas.filter(t => t.size < MIN_PX - .5).map(t => ({ ...t, family: 'canvas' }))];
   const mode = await page.evaluate(() => document.body.dataset.input || 'keyboard');
   if (xbox && mode !== 'xbox') throw Error(name + ': measured in ' + mode + ' mode, expected xbox');
@@ -85,7 +89,7 @@ async function measure(name) {
   }, { items: onScreen, small, overlaps, MIN_PX });
   await page.screenshot({ path: path.join(out, name + '-audit.png') });
   await page.evaluate(() => document.getElementById('__audit')?.remove());
-  return { name, mode, canvas, count: onScreen.length, sizes, families, small: small.map(i => `${i.text} (${i.size}px ${i.family})`), overlaps: overlaps.map(o => o.join(' | ')), clipped: onScreen.filter(i => i.clipped).map(i => i.text), scrolled: onScreen.filter(i => i.scrolled).length, dupes, items: onScreen.map(({ text, size, family, frame, box }) => ({ text, size, family, frame: !!frame, x: Math.round(box.x), y: Math.round(box.y) })) };
+  return { name, mode, canvas, count: onScreen.length, sizes, families, small: small.map(i => `${i.text} (${i.size}px ${i.family})`), offSize: offSize.map(i => `${i.text} (${i.size}px ${i.cls})`), overlaps: overlaps.map(o => o.join(' | ')), clipped: onScreen.filter(i => i.clipped).map(i => i.text), scrolled: onScreen.filter(i => i.scrolled).length, dupes, items: onScreen.map(({ text, size, family, frame, box }) => ({ text, size, family, frame: !!frame, x: Math.round(box.x), y: Math.round(box.y) })) };
 }
 
 const report = [];
@@ -112,6 +116,6 @@ for (const [n, id] of ids.entries()) {
 await page.evaluate(() => No2.intro.start(true)); await page.waitForTimeout(2000); report.push(await measure('06-intro-page1'));
 await page.waitForTimeout(5000); report.push(await measure('06-intro-page1-zoomed'));
 fs.writeFileSync(path.join(out, 'audit.json'), JSON.stringify({ window: [W, H], minPx: MIN_PX, xbox, errors, screens: report }, null, 2));
-for (const r of report) console.log(`${r.name.padEnd(34)} ${r.mode.padEnd(8)} texts ${String(r.count).padStart(3)}  sizes ${r.sizes.join(',')}  fonts ${r.families.length}  small ${r.small.length}  overlap ${r.overlaps.length}  clipped ${r.clipped.length}  dupes ${r.dupes.length}`);
+for (const r of report) console.log(`${r.name.padEnd(34)} ${r.mode.padEnd(8)} texts ${String(r.count).padStart(3)}  sizes ${r.sizes.join(',')}  fonts ${r.families.length}  small ${r.small.length}  off ${r.offSize.length}  overlap ${r.overlaps.length}  clipped ${r.clipped.length}  dupes ${r.dupes.length}`);
 console.log(JSON.stringify({ errors }));
 await ctx.close();
