@@ -64,8 +64,9 @@ async function measure(name) {
   for (const f of page.frames()) { if (f !== page.mainFrame()) { const box = await (await f.frameElement().catch(() => null))?.boundingBox(); if (!box || box.width < 10 || !(await f.evaluate(() => document.visibilityState === 'visible' && frameElement?.checkVisibility?.({ visibilityProperty: true, opacityProperty: true }) !== false).catch(() => false))) continue; }
     canvas.push(...await f.evaluate(() => globalThis.No2CanvasText?.() || []).catch(() => [])); }
   // The four type sizes (title 52, body 30, control 26, meta 22 at 1080p); key glyph labels may be .85 of their word.
-  // One display line is allowed beside them: the Walkman's now-playing song title (.tape-song, .9 of the title).
-  const SIZES = [22, 26, 30, 52].map(x => x * UNIT), DISPLAY = /\btape-song\b/;
+  // Two display sizes are allowed beside them: the Walkman's now-playing song title (.tape-song, .9 of the title) and the
+  // title screen's large Enter key in its corner (.ink-key-wide).
+  const SIZES = [22, 26, 30, 52].map(x => x * UNIT), DISPLAY = /\b(tape-song|ink-key-wide)\b/;
   const offSize = onScreen.filter(i => !DISPLAY.test(i.cls) && !SIZES.some(a => Math.abs(i.size - a) <= 1 || (i.glyph && Math.abs(i.size - a * .85) <= 1)));
   const small = [...onScreen.filter(i => i.size < (i.glyph ? GLYPH_PX : MIN_PX) - .05), ...canvas.filter(t => t.size < MIN_PX - .5).map(t => ({ ...t, family: 'canvas' }))];
   const mode = await page.evaluate(() => document.body.dataset.input || 'keyboard');
