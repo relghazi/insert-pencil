@@ -26,8 +26,8 @@ page.on('pageerror', e => errors.push(String(e)));
 // Runs inside each frame: every element that directly holds visible text.
 const collect = (frameOffset) => {
   const out = [], vw = innerWidth, vh = innerHeight;
-  const visible = el => { for (let e = el; e && e.nodeType === 1; e = e.parentElement) { const s = getComputedStyle(e); if (s.display === 'none' || s.visibility === 'hidden' || +s.opacity === 0) return false; } return true; };
-  const clipBox = (el, re = /(hidden|clip|auto|scroll)/) => { let r = { l: -1e9, t: -1e9, r: 1e9, b: 1e9 }; for (let e = el.parentElement; e && e.nodeType === 1; e = e.parentElement) { const s = getComputedStyle(e); if (re.test(s.overflow + s.overflowX + s.overflowY)) { const b = e.getBoundingClientRect(); r = { l: Math.max(r.l, b.left), t: Math.max(r.t, b.top), r: Math.min(r.r, b.right), b: Math.min(r.b, b.bottom) }; } } return r; };
+  const visible = el => { for (let e = el; e && e.nodeType === 1; e = e.parentElement) { const s = getComputedStyle(e); if (s.display === 'none' || s.visibility === 'hidden' || +s.opacity === 0) return false; /* screen-reader-only text (a 1px clipped box) is not on screen */ if (e.classList.contains('visually-hidden') || s.clip === 'rect(0px, 0px, 0px, 0px)' || s.clipPath === 'inset(50%)') return false; } return true; };
+  const clipBox = (el, re = /(hidden|clip|auto|scroll)/) => { let r = { l: -1e9, t: -1e9, r: 1e9, b: 1e9 }; /* a fixed box escapes the overflow of every ancestor that does not contain fixed boxes (no transform, filter or contain) */ let fixed = getComputedStyle(el).position === 'fixed'; for (let e = el.parentElement; e && e.nodeType === 1; e = e.parentElement) { const s = getComputedStyle(e); if (fixed && s.transform === 'none' && s.filter === 'none' && !/paint|layout|strict|content/.test(s.contain)) continue; fixed = s.position === 'fixed'; if (re.test(s.overflow + s.overflowX + s.overflowY)) { const b = e.getBoundingClientRect(); r = { l: Math.max(r.l, b.left), t: Math.max(r.t, b.top), r: Math.min(r.r, b.right), b: Math.min(r.b, b.bottom) }; } } return r; };
   for (const el of document.querySelectorAll('body *')) {
     if (['SCRIPT', 'STYLE', 'OPTION'].includes(el.tagName)) continue;
     const text = [...el.childNodes].filter(n => n.nodeType === 3).map(n => n.textContent).join('').replace(/\s+/g, ' ').trim();
@@ -97,7 +97,9 @@ await page.keyboard.press('Enter'); await page.waitForFunction(() => !No2.intro.
 await page.waitForTimeout(2600); report.push(await measure('02-locker'));
 await page.waitForFunction(() => document.getElementById('desk-scores'), null, { timeout: 30000 }).catch(() => {});
 await page.evaluate(() => document.getElementById('desk-scores')?.focus()); report.push(await measure('03-locker-focus-door'));
-for (const k of ['settings', 'scores', 'achievements', 'calculator', 'eraser', 'cast']) { await page.evaluate(k => No2.dialog(k), k); report.push(await measure('04-dialog-' + k)); await page.evaluate(() => No2.closeDialog()); }
+for (const k of ['settings', 'scores', 'achievements', 'calculator', 'eraser', 'cast', 'stickers', 'walkman', 'news', 'report', 'daily', 'globe', 'shoe', 'padsetup']) { await page.evaluate(k => No2.dialog(k), k); report.push(await measure('04-dialog-' + k)); await page.evaluate(() => No2.closeDialog()); }
+// Ace's locker (the hard mode): its code opens it from her locker; Esc goes back.
+await page.keyboard.type('412390', { delay: 60 }); await page.waitForTimeout(3500); report.push(await measure('04-ace-locker')); await page.keyboard.press('Escape'); await page.waitForTimeout(2500);
 const ids = all ? await page.evaluate(() => No2Catalog.notebooks.filter(n => n.available).map(n => n.id)) : ['scribble-defender', 'erasteroids', 'gym-class-pong'];
 for (const [n, id] of ids.entries()) {
   await page.evaluate(id => No2.open(id), id); await page.waitForTimeout(2200);

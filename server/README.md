@@ -35,12 +35,12 @@ Content-Security-Policy keeps `connect-src 'none'`.
 
 ## Deploy (free plan)
 
-Run these in `server/`. Nothing here has been deployed or created yet.
+Run these in `server/` to set the Worker up from scratch. The live Worker is already set up: after a release only the redeploy below applies (`npm run deploy`, plus `npx wrangler d1 migrations apply no2-arcade-leaderboard --remote` when a release adds a migration).
 
 1. `npm install` (installs the pinned wrangler locally).
 2. `npx wrangler login`
 3. `npx wrangler d1 create no2-arcade-leaderboard`, then paste the printed `database_id` into `wrangler.toml`.
-4. `npx wrangler d1 migrations apply no2-arcade-leaderboard --remote` (applies `0001.sql` and `0002.sql`).
+4. `npx wrangler d1 migrations apply no2-arcade-leaderboard --remote` (applies every file in `migrations/` in order).
 5. `npx wrangler secret put IP_SALT` and type any long random string (IPs are only kept as salted hashes in the
    rate-limit table).
 6. Make the verifier token: `openssl rand -hex 32`. Keep it for step 9, then `npx wrangler secret put ADMIN_TOKEN`
