@@ -379,7 +379,7 @@ const books=group('gameplay');/* the grid fills by rows: left column share my sc
 // Today's game first and large, the button to play it right under it, then the top five of today's board.
 /* one game for everyone today: its title large in the middle, a word on it, the board under it; playing it is on the ruler */const hero=make('div','daily-hero');hero.append(make('p','meta daily-kicker','today, everyone plays'));if(TITLE_ART[n.id]){const img=make('img','daily-title');img.alt=n.title;img.src=TITLE_ART[n.id];hero.append(img)}else hero.append(make('p','daily-name',n.title));hero.append(make('p','daily-note',n.note||''));content.append(hero);
 const acts=make('div','actions visually-hidden');acts.append(action("play today's challenge",()=>openNotebook(dd.id,'play',{daily:true}),'primary daily-play'));content.append(acts);
-const list=make('ol','score-list lb-list daily-board'),note=make('p','meta','');const boardBox=make('div','daily-boardbox');boardBox.append(make('p','lb-label',"today's board"),list,note);content.append(boardBox);
+const list=make('ol','score-list lb-list daily-board'),note=make('p','meta','');const boardBox=make('div','daily-boardbox');boardBox.append(make('p','lb-label daily-date',dailyDate(dd.seed)),list,note);content.append(boardBox);
 const fill=rows=>{list.replaceChildren();for(let i=0;i<5;i++){const r=rows?.[i],li=make('li',r?.you?'lb-you':'');li.append(make('i','',String(i+1)),make('span','',r?r.initials:'___'),make('b','',r?No2ScoreText(dd.id,r.score):'0'));list.append(li)}};fill([]);
 const LB=globalThis.No2Leaderboard,mine=LB?.state?.(save)?.best?.[dd.id+'@'+dd.seed];boardBox.append(make('p','meta daily-mine',mine?'your best today: '+No2ScoreText(dd.id,mine):'only games started from this page count.'));
 if(LB?.optedIn?.(save)){note.textContent='checking the board...';LB.sync(save,dd.id,dd.seed)?.then(res=>{if(!list.isConnected||!res)return;fill(res.rows||[]);note.textContent=res.offline?'offline. try again later.':!res.rows?.length?'nobody has played it yet. be the first.':''}).catch(()=>{if(list.isConnected)note.textContent='offline. try again later.'})}else note.textContent='online scores: turn on sharing in settings.';
@@ -543,6 +543,10 @@ const TITLE_ART=globalThis.No2TitleArt||{};
 // Daily challenge: one notebook a day for everyone, by the local date, in a fixed shuffled order so the
 // same game never comes twice in a row; its seed is the date (20261030), never one of the notebooks' own seeds, and its runs
 // go to that day's board.
+// The daily board is named for its day, in the player's language: Sunday, November 8th; dimanche 8 novembre.
+function dailyDate(seed){const d=new Date(Math.floor(seed/10000),Math.floor(seed/100)%100-1,seed%100),l=globalThis.No2I18n?.lang||'en';
+ try{const s=new Intl.DateTimeFormat(l,{weekday:'long',month:'long',day:'numeric'}).format(d);if(l!=='en')return s;const n=d.getDate(),o={one:'st',two:'nd',few:'rd',other:'th'}[new Intl.PluralRules('en',{type:'ordinal'}).select(n)];return s.replace(/\b(\d+)\b/,'$1'+o)}
+ catch{return d.toDateString()}}
 function daily(){const d=new Date(),seed=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(),ids=C.notebooks.map(n=>n.id);let r=2084;const order=ids.slice();for(let i=order.length-1;i>0;i--){r=(Math.imul(r,1103515245)+12345)>>>0;const j=r%(i+1);[order[i],order[j]]=[order[j],order[i]]}
  const day=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);return{id:order[day%order.length],seed}}
 // Gym report stats: runs started and seconds of play per notebook, saved every 15 s and on leaving.
