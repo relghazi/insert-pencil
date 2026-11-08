@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'; import { DatabaseSync }
 import { build } from '../build.mjs';
 const here = path.dirname(fileURLToPath(import.meta.url)), repo = path.resolve(here, '../..'), require = createRequire(import.meta.url);
 const { GAMES } = await import(pathToFileURL(build(path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'no2lb-')), 'games.js'))).href);
-const { replay, decode } = await import('../src/replay.js');
+const { replay, decode, measure } = await import('../src/replay.js');
 const { createHandler } = await import('../src/handler.js');
 const { verify, judge } = await import('../verify.mjs');
 const slips = await import('../reports.mjs');
@@ -47,6 +47,7 @@ await test('a recording that stops before game over is refused', () => { const i
 await test('a recording with steps after game over is refused', () => { const ins = [...game.rec.data().inputs, 50, 0, 0]; assert.equal(replay(GAMES.galgebra, 1979, ins).error, 'inputs after game over'); });
 await test('malformed and oversized input lists are refused before replay', () => {
   const lim = { maxRuns: 50000, maxSteps: 432000, layout: Core.CONFIG.record };
+  test('malformed packed recordings are refused', () => { for (const bad of ['P1.', 'P2.AAAA', 'P1.!!!!', 'P1.AA', 'P1.' + 'gICAgICAgIAB']) { assert.equal(decode(bad, lim).error, 'bad inputs', bad); assert(measure(bad, lim.layout, lim).error, bad); } });
   for (const bad of [[], [1, 0], [0, 0, 0], [1.5, 0, 0], [1, 2, 0], [1, 0, 2], [1, null, 0], [1, .33, 0], 'x']) assert.equal(decode(bad, lim).error, 'bad inputs');
   assert.equal(decode([432001, 0, 0], lim).error, 'replay too long'); assert.equal(decode(Array(50001 * 3).fill(1), lim).error, 'replay too long');
 });
@@ -162,7 +163,7 @@ await test('the verifier only sends its token over https or to this machine', as
   await assert.rejects(verify({ url: 'https://lb.example', token: '', GAMES, fetch: viaHandler(), log: () => {} }), /TOKEN/);
 });
 await test('a different game version is refused', async () => assert.equal((await post(body({ version: '9.9.9' }))).status, 409));
-await test('a body over the size limit is refused', async () => assert.equal((await post('x'.repeat(1048577))).status, 413));
+await test('a body over the size limit is refused', async () => assert.equal((await post('x'.repeat(1900001))).status, 413));
 await test('malformed inputs are refused at submit', async () => assert.equal((await post(body({ inputs: [1, 5, 0], playerId: '2'.repeat(32) }))).status, 422));
 await test('unknown games, bad ids and bad initials are refused', async () => {
   assert.equal((await post(body({ game: 'pong' }))).status, 400); assert.equal((await post(body({ playerId: 'nope' }))).status, 400);
@@ -276,5 +277,13 @@ await test('sticker runs (seeds 0x40000000 to 0x7FFFFFFF) have their own board a
   ins('1'.repeat(32), 'CLS', 500, 77); ins('2'.repeat(32), 'STK', 900, 0x40000000 + 77); ins('3'.repeat(32), 'HRD', 700, 0x80000000 + 77);
   const board = async q => (await (await handle(new Request(base + '/scores?game=quiz' + q), env)).json()).scores.map(r => r.initials);
   assert.deepEqual(await board(''), ['CLS']); assert.deepEqual(await board('&sticker=1'), ['STK']); assert.deepEqual(await board('&hard=1'), ['HRD']);
+});
+await test('a packed recording (what the client sends) is stored as sent, then verified by the replay', async () => {
+  const env2 = { DB: new FakeD1(), ALLOWED_ORIGINS: 'null', IP_SALT: 'test', ADMIN_TOKEN: TOKEN }, packed = game.rec.packed().inputs;
+  assert(typeof packed === 'string' && packed.startsWith('P1.') && packed.length < JSON.stringify(game.rec.data().inputs).length);
+  const r = await handle(new Request(base + '/submit', { method: 'POST', body: body({ inputs: packed, playerId: 'e'.repeat(32) }), headers: { 'Content-Type': 'text/plain', Origin: 'null', 'CF-Connecting-IP': '203.0.113.7' } }), env2);
+  assert.equal(r.status, 202, JSON.stringify(await r.clone().json()));
+  const row = env2.DB.db.prepare('SELECT id, inputs FROM scores').get(); assert.equal(row.inputs, JSON.stringify(packed));
+  assert.deepEqual(judge(GAMES, { id: row.id, game: 'galgebra', version: Core.CONFIG.version, seed: 1979, claimedScore: game.engine.score, inputs: row.inputs }), { id: row.id, status: 'verified', score: game.engine.score });
 });
 console.log(passed + ' leaderboard checks passed');

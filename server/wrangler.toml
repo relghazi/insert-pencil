@@ -22,9 +22,9 @@ crons = ["*/20 * * * *"]
 # Origins allowed to call the API. "null" is the HTML opened from a file (file://); the others are GitHub Pages and
 # its custom domain.
 ALLOWED_ORIGINS = "null,https://relghazi.github.io,https://no2arca.de"
-MAX_BODY = "1048576"     # bytes per submission
+MAX_BODY = "1900000"     # bytes per submission (a D1 value holds at most 2,000,000)
 MAX_STEPS = "432000"     # one hour of play at 120 Hz
-MAX_RUNS = "50000"       # input changes per replay
+MAX_RUNS = "250000"      # input changes per replay
 RATE_PLAYER = "20"       # submissions per player id per window
 RATE_IP = "60"           # submissions per IP per window
 RATE_WINDOW = "3600"     # seconds

@@ -124,7 +124,7 @@ Rude initials (a short list in `src/handler.js`) are stored as `???`.
 
 ## Limits (wrangler.toml [vars])
 
-`MAX_BODY` 1 MB per submission, `MAX_STEPS` one hour of play, `MAX_RUNS` 50,000 input changes,
+`MAX_BODY` 1.9 MB per submission, `MAX_STEPS` one hour of play, `MAX_RUNS` 250,000 input changes (recordings are packed, see src/replay.js),
 `RATE_PLAYER` 20 and `RATE_IP` 60 submissions an hour. The game only queues a run that beats the best it already
 sent for that player, keeps at most 3 waiting, and sends them when a high scores page is shown.
 

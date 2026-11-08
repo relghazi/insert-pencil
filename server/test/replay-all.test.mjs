@@ -8,10 +8,10 @@ import { build, GAMES as LIST } from '../build.mjs';
 const here = path.dirname(fileURLToPath(import.meta.url)), repo = path.resolve(here, '../..'), require = createRequire(import.meta.url);
 const only = process.argv.slice(2).filter(a => !a.startsWith('-'));
 const { GAMES } = await import(pathToFileURL(build(path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'no2lb-')), 'games.js'), only.length ? only : null)).href);
-const { replay, decode } = await import('../src/replay.js');
+const { replay, decode, unpack, measure } = await import('../src/replay.js');
 const LB = require(path.join(repo, 'src/shell/leaderboard.js'));
 const HARD = 0x80000000 + 1979;
-const LIMITS = { maxRuns: 50000, maxSteps: 432000 }, HOLD = 120 * 40, CAP = 120 * 60 * 30;
+const LIMITS = { maxRuns: 250000, maxSteps: 432000 }, HOLD = 120 * 40, CAP = 120 * 60 * 30;
 // After the pilot lets go, most games run out on their own. Lunar Lander (1979) only ends when the fuel is gone and
 // fuel only burns under thrust, so there the hand holds the throttle open instead.
 const LET_GO = { 'lunch-lander': { throttle: 1 } };
@@ -51,6 +51,14 @@ for (const { id } of LIST) {
       assert(!out.error, `seed ${seed}: replay error ${out.error}`);
       assert.equal(out.score, p.engine.score, `seed ${seed}: replay score`);
       assert.equal(out.steps, p.steps, `seed ${seed}: replay steps`);
+      // The packed form (what the client sends) unpacks to exactly the same cells and replays the same.
+      const packed = JSON.parse(JSON.stringify(p.rec.packed())).inputs;
+      assert.deepEqual(unpack(packed, game.record), inputs, `seed ${seed}: packed recording unpacks to the same cells`);
+      assert(!decode(packed, { ...LIMITS, layout: game.record }).error, `seed ${seed}: decode refused the packed recording`);
+      assert.equal(measure(packed, game.record, LIMITS).steps, shape.steps, `seed ${seed}: the Worker's light check counts the same steps`);
+      const po = replay(game, seed, packed);
+      assert.equal(po.score, out.score, `seed ${seed}: packed replay score`);
+      if (seed === 1979) assert(packed.length < JSON.stringify(inputs).length, 'the packed recording is smaller');
       const other = replay(game, seed + 1, inputs);
       // Some cabinets barely use chance (Frogger's lanes, the lander's fixed moon): there another seed may play the same.
       if (!other.error && other.score === out.score && other.steps === out.steps && seed === 1979) console.log(`note ${id}: the seed does not change this run`);

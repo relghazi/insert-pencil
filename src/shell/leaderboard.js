@@ -12,7 +12,7 @@ const RAW='@@leaderboard-url@@',URL_=/^https?:\/\/[^\s'"<>]+$/.test(RAW)?RAW.rep
 // Every notebook. Each core declares how one fixed step's input is recorded, CONFIG.record: a list of [field, kind, ...]
 // read the same way by server/src/replay.js. Every notebook records with the same three hooks in its game.js.
 const GAMES=['scribble-defender','galgebra','erasteroids','gym-class-pong','detention-breakout','space-substitutes','lunch-lander','spitball-command','snack-man','recess-zone','centigrade','froggology','home-ec-scramble','testpest','quiz','dunce-kong','q-nerd','dig-doug','class-of-2084','jock-joust','mystery-meat-time','hall-patrol','term-paperboy','locker-gauntlet'],KEY='No2Arcade:leaderboard';
-const TIMEOUT=4000,MAX_RUNS=50000,MAX_STEPS=432000;
+const TIMEOUT=4000,MAX_RUNS=250000,MAX_STEPS=432000;
 
 // Field kinds, one cell each unless noted: b on/off; n number clamped to [lo,hi] and rounded to 1/d (d 0 keeps it
 // exact); e one of a list of values, stored as its index; p an optional point {x,y} in [lo,hi] rounded to 1/d, three
@@ -21,6 +21,16 @@ const num=(v,lo,hi,d)=>{v=Math.max(lo,Math.min(hi,Number(v)||0));return(d?Math.r
 const Layout={
  width(L){return 1+L.reduce((s,f)=>s+(f[1]==='p'?3:1),0)},
  encode(L,input){const c=[];for(const[k,t,a,b,d]of L){const v=input?.[k];if(t==='b')c.push(v?1:0);else if(t==='n')c.push(num(v,a,b,d));else if(t==='e'){const i=a.indexOf(v??null);c.push(i<0?0:i)}else if(t==='p'){const ok=v&&Number.isFinite(Number(v.x))&&Number.isFinite(Number(v.y));c.push(ok?1:0,ok?num(v.x,a,b,d):0,ok?num(v.y,a,b,d):0)}}return c},
+ // Packed recording (P1): the run-length cells as bytes, base64url after "P1.". Each run is its step count, a bit mask of
+ // the cells that differ from the run before (the first run is compared with all zeros), then only those cells; every
+ // value is a varint, cells as zigzag integers (an n cell times its 1/d, so it comes back exactly). A twin-stick run
+ // costs a few bytes a change instead of about twenty, so an hour of play fits one submission. server/src/replay.js unpacks it.
+ scales(L){const d=[];for(const[,t,,,q]of L){if(t==='n')d.push(q);else if(t==='p')d.push(1,q,q);else d.push(1)}return d},
+ pack(L,runs){const d=Layout.scales(L),w=d.length+1,out=[],vi=n=>{n=Math.floor(n);while(n>=128){out.push(n%128+128);n=Math.floor(n/128)}out.push(n)},zz=n=>n<0?-2*n-1:2*n;
+  const prev=new Array(d.length).fill(0);
+  for(let i=0;i<runs.length;i+=w){vi(runs[i]);let m=0;const vals=[];for(let j=0;j<d.length;j++){const k=Math.round(runs[i+1+j]*d[j]);if(k!==prev[j]){m+=2**j;vals.push(k);prev[j]=k}}vi(m);for(const k of vals)vi(zz(k))}
+  let b='';for(let i=0;i<out.length;i+=8192)b+=String.fromCharCode.apply(null,out.slice(i,i+8192));
+  return'P1.'+btoa(b).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')},
  decode(L,c,i=0){const o={};for(const[k,t,a]of L){if(t==='b')o[k]=c[i++]===1;else if(t==='n')o[k]=c[i++];else if(t==='e')o[k]=a[c[i++]];else if(t==='p'){if(c[i]===1)o[k]={x:c[i+1],y:c[i+2]};i+=3}}return o}
 };
 
@@ -31,6 +41,8 @@ class Recorder{
   if(engine.state!=='end'&&!this.bad){if(!live)this.bad=true;else{const r=this.runs,n=r.length;let same=n>0;for(let j=0;same&&j<w-1;j++)same=r[n-w+1+j]===c[j];if(same)r[n-w]++;else r.push(1,...c);if(r.length>MAX_RUNS*w||++this.steps>MAX_STEPS)this.bad=true}}
   return Layout.decode(this.layout,c)}
  data(){return{seed:this.seed,inputs:this.runs.slice()}}
+ // What is sent and kept waiting: the same recording packed (Layout.pack).
+ packed(){return{seed:this.seed,inputs:Layout.pack(this.layout,this.runs)}}
 }
 
 // Hard mode (Ace's locker): carried by the seed, so a replay needs nothing new. A seed with its top
@@ -70,7 +82,7 @@ const LB={
   const st=this.state(save),name=/^[A-Z]{3}$/.test(initials||'')?initials:st.initials,score=engine.score;if(name)st.initials=name;
   const day=this.dailySeed!=null&&rec.seed===this.dailySeed,hard=!day&&isHard(rec.seed),stk=!day&&isSticker(rec.seed),bk=day?id+'@'+rec.seed:hard?id+'@hard':stk?id+'@sticker':id,isDay=v=>v>=19000101&&v<=29991231,same=p=>p.game===id&&(day?p.seed===rec.seed:hard?isHard(p.seed):stk?isSticker(p.seed):!isDay(p.seed)&&!isHard(p.seed)&&!isSticker(p.seed));
   if(!name||!(score>0)||score<=(st.best[bk]||0)){save.storage.write(KEY,st);return false}
-  st.best[bk]=score;st.pending=[...st.pending.filter(p=>!same(p)||p.claimedScore>score),{game:id,version:rec.version,initials:name,claimedScore:score,...rec.data()}].sort((a,b)=>b.claimedScore-a.claimedScore);
+  st.best[bk]=score;st.pending=[...st.pending.filter(p=>!same(p)||p.claimedScore>score),{game:id,version:rec.version,initials:name,claimedScore:score,...(rec.packed?rec.packed():rec.data())}].sort((a,b)=>b.claimedScore-a.claimedScore);
   save.storage.write(KEY,st);return true},
  async request(path,options={}){const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),TIMEOUT);
   try{return await fetch(URL_+path,{...options,signal:ctl.signal,mode:'cors',credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer',headers:{'Content-Type':'text/plain'}})}finally{clearTimeout(t)}},

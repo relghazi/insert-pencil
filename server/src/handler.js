@@ -3,9 +3,9 @@
 // GET /admin/pending and POST /admin/verdicts (bearer ADMIN_TOKEN). On the free Workers plan (about 10 ms of CPU per
 // request) nothing is replayed here: /submit checks the run's shape and stores it as pending, and server/verify.mjs
 // replays it outside Cloudflare on the same bundled core and posts the verdict.
-import { decode } from './replay.js';
+import { decode, measure } from './replay.js';
 
-const DEFAULTS = { ALLOWED_ORIGINS: 'null', MAX_BODY: 1048576, MAX_STEPS: 432000, MAX_RUNS: 50000, RATE_PLAYER: 20, RATE_IP: 60, RATE_WINDOW: 3600, RATE_REPORT: 5, RATE_REPORTS: 50, RATE_EVENTS: 120, RATE_EVENTS_IP: 600, RATE_STATS: 60, STATS_TTL: 300 };
+const DEFAULTS = { ALLOWED_ORIGINS: 'null', MAX_BODY: 1900000, MAX_STEPS: 432000, MAX_RUNS: 250000, RATE_PLAYER: 20, RATE_IP: 60, RATE_WINDOW: 3600, RATE_REPORT: 5, RATE_REPORTS: 50, RATE_EVENTS: 120, RATE_EVENTS_IP: 600, RATE_STATS: 60, STATS_TTL: 300 };
 // Three-letter initials that are not allowed on the board; they are kept as ??? instead.
 const RUDE = new Set('ASS FUK FUC FCK FUQ FKU SHT CUM CNT KNT KKK NIG NGR FAG SEX TIT DIK DIC COK JIZ PUS VAG HOE WHR XXX PIS ANL SUK SUX NAZ KYS BCH'.split(' '));
 const PLAYER = /^[a-f0-9]{32}$/, INITIALS = /^[A-Z]{3}$/;
@@ -108,7 +108,9 @@ export function createHandler(GAMES) {
     const ipKey = 'ip:' + (await sha256((env.IP_SALT || 'no2') + ip)).slice(0, 24);
     if (!await underLimit(db, 'p:' + playerId, c.RATE_PLAYER, c.RATE_WINDOW, now) || !await underLimit(db, ipKey, c.RATE_IP, c.RATE_WINDOW, now))
       return json(429, { ok: false, error: 'slow down' }, { 'Retry-After': String(c.RATE_WINDOW) });
-    const shape = decode(inputs, { maxRuns: c.MAX_RUNS, maxSteps: c.MAX_STEPS, layout: game.record });
+    // A packed recording only gets the cheap one-pass check here; the verifier decodes and replays every run in full.
+    const limits = { maxRuns: c.MAX_RUNS, maxSteps: c.MAX_STEPS, layout: game.record };
+    const shape = typeof inputs === 'string' ? measure(inputs, game.record, limits) : decode(inputs, limits);
     if (shape.error) return json(422, { ok: false, error: shape.error });
     const packed = JSON.stringify(inputs);
     const hash = await sha256(id + '|' + seed + '|' + packed);

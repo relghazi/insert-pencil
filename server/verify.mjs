@@ -10,7 +10,7 @@ import path from 'node:path'; import { fileURLToPath, pathToFileURL } from 'node
 import { build } from './build.mjs';
 import { decode, replay } from './src/replay.js';
 
-const LIMITS = { maxRuns: 50000, maxSteps: 432000 }, BATCH_MAX = 25;
+const LIMITS = { maxRuns: 250000, maxSteps: 432000 }, BATCH_MAX = 25;
 
 // One stored run in, one verdict out. A run whose version this checkout's core does not have is left pending (the
 // verifier is on another revision than the deployed Worker); everything else is decided for good.
