@@ -2,7 +2,7 @@
 
 ![No. 2 Arcade: she draws after the last bell and her ballpoint games lift off the page](docs/poster.webp)
 
-**No. 2 Arcade**: twenty-four classic arcade games, redrawn as the notebooks of a high school girl who would rather be at the arcade.
+**No. 2 Arcade™**: twenty-four classic arcade games, redrawn as the notebooks of a high school girl who would rather be at the arcade.
 
 | Her locker | Ace's locker | A notebook |
 | --- | --- | --- |
@@ -156,3 +156,6 @@ Two licences, because code and art are shared differently:
 - **Code: MIT** (see [LICENSE](LICENSE)). Use it, change it, ship it.
 - **Art, comic, characters and story: CC BY-NC 4.0** (see [assets/LICENSE.md](assets/LICENSE.md)). Share and remix them for non-commercial projects, with credit.
 - Third-party parts (PixiJS, the fonts, a paper texture) keep their own licences, listed in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+- "No. 2 Arcade" and its logo are trademarks of R3Z Games LLC. The licences above cover the code and the art, not the name or the logo.
+
+<p align="center"><sub>A game by Reza Elghazi · No. 2 Arcade™ © 2026 R3Z Games LLC. Code MIT, art CC BY-NC 4.0. See <a href="LICENSE">LICENSE</a> and <a href="assets/LICENSE.md">assets/LICENSE.md</a>.</sub></p>
