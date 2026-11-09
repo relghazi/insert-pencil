@@ -26,7 +26,7 @@ class StudioSting{
  constructor(host,parent,{reduced=false}={}){
   this.host=host;this.reduced=reduced;this.state='loading';this.done=false;this.t=0;this.parts=[];this.fired=new Set();this.shake=0;this.voice=null;this.bornAt=performance.now();
   const el=this.el=document.createElement('div');el.className='studio-sting';el.setAttribute('role','img');el.setAttribute('aria-label','R3Z Games presents');
-  Object.assign(el.style,{position:'absolute',inset:'0',zIndex:'60',background:'#07070a',opacity:'1',transition:'opacity .4s ease',touchAction:'none',userSelect:'none'});
+  Object.assign(el.style,{position:'absolute',inset:'0',zIndex:'60',background:'#000',opacity:'1',transition:'opacity .4s ease',touchAction:'none',userSelect:'none'});
   this.canvas=document.createElement('canvas');Object.assign(this.canvas.style,{position:'absolute',inset:'0',width:'100%',height:'100%'});this.ctx=this.canvas.getContext('2d');
   this.hint=document.createElement('p');Object.assign(this.hint.style,{position:'absolute',left:'0',right:'0',top:'50%',margin:'0',transform:'translateY(-50%)',textAlign:'center',font:'max(16px,2.04vh)/1 Schoolhand,sans-serif',letterSpacing:'.06em',color:'#bfb899',opacity:'0',pointerEvents:'none'});
   el.append(this.canvas,this.hint);parent.append(el);
@@ -113,7 +113,7 @@ class StudioSting{
   const top=PEN_L+10,tall=top+SIZE[1]+24,s=Math.min(w*(w>h?.41:.72)/SIZE[0],h*.84/tall),j=this.shake>0?3/1.3*this.shake:0,ox=(w-SIZE[0]*s)/2+Math.round(Math.random()*2-1)*j*s,oy=(h-tall*s)/2+top*s+Math.round(Math.random()*2-1)*j*s;
   const cardA=R?Math.min(clamp(t/.25),1-span(t,STILL-.3,STILL)):1-span(t,4.2,END),frameA=R?1:1-sine(span(t,3.75,4.15));
   c.setTransform(d,0,0,d,0,0);
-  const glow=c.createRadialGradient(w/2,h/2,0,w/2,h/2,Math.max(w,h)*.6);glow.addColorStop(0,'rgba(40,34,48,'+(.55*cardA)+')');glow.addColorStop(1,'rgba(0,0,0,0)');c.fillStyle=glow;c.fillRect(0,0,w,h);
+  /* plain black like Jimothy's studio card: a soft glow on near-black shows rings (8-bit banding) */
   c.setTransform(d*s,0,0,d*s,d*ox,d*oy);c.globalAlpha=cardA;const full=(img,dx=0)=>c.drawImage(img,dx,0,SIZE[0],SIZE[1]);
   // The frame, revealed along its outline behind the sparks, with a hot tip just behind them.
   const p=this.trace(t),edge=p*(FR.w+FR.h);
