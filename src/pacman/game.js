@@ -83,7 +83,7 @@ class PacGame{
  // A key let go while a dialog has the input still counts as let go, so nothing stays held after it closes.
  key(e,down){if(!this.inputEnabled()){if(!down){this.held=[];this.warpKey=false}return}const k=e.key;
   // Initials: letters typed on the keyboard go straight in, so no letter moves or pauses here.
-  if(this.mode==='initials'){if(down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k)}return}
+  /* a key let go on the initials sheet is still let go (it falls through), so no direction stays held into the next game */if(this.mode==='initials'&&down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k);return}
   if(down&&(k==='p'||k==='P')){this.pause();e.preventDefault();return}
   if(WARP_KEYS.includes(k)){e.preventDefault();this.warpKey=down;return}
   for(const [name,list] of Object.entries(KEYS))if(list.includes(k)){e.preventDefault();this.held=this.held.filter(n=>n!==name);if(down)this.held.push(name)}

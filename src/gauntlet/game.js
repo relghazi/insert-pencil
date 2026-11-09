@@ -70,9 +70,9 @@ class GauntletGame{
   this.onKey=e=>this.key(e,true);this.offKey=e=>this.key(e,false);addEventListener('keydown',this.onKey);addEventListener('keyup',this.offKey);this.touch=g.No2TouchPad?.(this,app.canvas,W,H)||{fingers:new Map(),stick:()=>({x:0,y:0,d:0}),dir4:()=>null,take:k=>k==='twos'?0:[]};
   this.tracing=await g.No2Tracing?.attach(P,app,this.hud,{quiet:[this.message,this.sub]});this.newGame(this.seed);app.ticker.add(t=>this.frame(t.deltaMS/1000));return this}
  inputEnabled(){return !g.No2||g.No2.gameInputEnabled?.()!==false}
- key(e,down){if(!this.inputEnabled())return;const k=e.key;
+ key(e,down){if(!this.inputEnabled()){if(!down)this.held={};return}const k=e.key;
   // Initials: letters typed on the keyboard go straight in, so no letter moves or pauses here.
-  if(this.mode==='initials'){if(down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k)}return}
+  /* a key let go on the initials sheet is still let go (it falls through), so no direction stays held into the next game */if(this.mode==='initials'&&down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k);return}
   if(down&&(k==='p'||k==='P')){this.pause();e.preventDefault();return}
   for(const [name,list] of Object.entries(KEYS))if(list.includes(k)){this.held[name]=down;if(down&&!e.repeat)this.tap[name]=true;e.preventDefault()}
   if(down&&!e.repeat)this.edge(k)}

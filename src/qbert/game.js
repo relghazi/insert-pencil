@@ -62,7 +62,7 @@ class QnerdGame{
  inputEnabled(){return !g.No2||g.No2.gameInputEnabled?.()!==false}
  key(e,down){if(!this.inputEnabled()){if(!down){this.held={};this.malletKey=false}return}const k=e.key;
   // Initials: letters typed on the keyboard go straight in, so no letter moves or pauses here.
-  if(this.mode==='initials'){if(down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k)}return}
+  /* a key let go on the initials sheet is still let go (it falls through), so no direction stays held into the next game */if(this.mode==='initials'&&down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k);return}
   if(down&&(k==='p'||k==='P')){this.pause();e.preventDefault();return}
   if(MALLET_KEYS.includes(k)){this.malletKey=down;if(down&&!e.repeat&&!this.paused)this.malletTap=true;if(this.engine.sticker==='mallet')e.preventDefault();return}
   // A tap shorter than a frame still hops: it is kept until the nerd takes off.

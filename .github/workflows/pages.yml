@@ -34,6 +34,8 @@ jobs:
           # The website build (the single 249 MB file crashed iPhones): a small index.html with its images,
           # sounds and fonts as separate files in _site/a. The release zip keeps the single offline file.
           node build/build.cjs --web _site
+          # The link preview image (og:image in the page head).
+          cp site/og/no2-arcade.jpg _site/og.jpg
           # The scoreboard page (site/scores) with its paper and tape, the lettered titles, its heading, the Esc keycap, the ink underline and two fonts.
           mkdir -p _site/scores/titles _site/scores/fonts _site/scores/ui
           cp assets/ui/headings/scoreboard.webp assets/ui/key.webp assets/ui/ink-underline.webp _site/scores/ui/

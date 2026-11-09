@@ -48,7 +48,7 @@ class InvadersGame{
  // A key let go while a dialog has the input still counts as let go, so nothing stays held after it closes.
  key(e,down){if(!this.inputEnabled()){if(!down)this.held={};return}const k=e.key;
   // Initials: letters typed on the keyboard go straight in, so no letter moves or pauses here.
-  if(this.mode==='initials'){if(down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k)}return}
+  /* a key let go on the initials sheet is still let go (it falls through), so no direction stays held into the next game */if(this.mode==='initials'&&down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k);return}
   if(down&&(k==='p'||k==='P')){this.pause();e.preventDefault();return}
   for(const [name,list] of Object.entries(KEYS))if(list.includes(k)){this.held[name]=down;e.preventDefault()}
   // A quick tap can go down and up between two frames; latch it so every press fires.

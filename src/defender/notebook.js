@@ -207,7 +207,7 @@ class DefenderGame{
  inputEnabled(){return !g.No2||g.No2.gameInputEnabled?.()!==false}
  key(e,down){if(!this.inputEnabled()){if(!down)this.held={};return}const k=e.key;if(down)this.sounds.unlock();/* a real key (not the shell's on-screen pad) hides the touch buttons */if(down&&e.isTrusted&&!e.repeat)this.lastInput='keys';
   // Initials: letters typed on the keyboard go straight in, so no letter moves or pauses here.
-  if(this.mode==='initials'){if(down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k)}return}
+  /* a key let go on the initials sheet is still let go (it falls through), so no direction stays held into the next game */if(this.mode==='initials'&&down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k);return}
   if(down&&(k==='p'||k==='P')){this.pause();e.preventDefault();return}
   for(const [name,list] of Object.entries(KEYS))if(list.includes(k)){this.held[name]=down;if(down&&name==='fire')this.tap=true;if(down&&(name==='bomb'||name==='warp'))this[name+'Tap']=true;e.preventDefault()}
   if(down&&!e.repeat)this.edge(k)}

@@ -69,7 +69,7 @@ class RobotronGame{
  // A key let go while a dialog has the input, or while the window is away, still counts as let go (review: B or D stayed held).
  key(e,down){if(!this.inputEnabled()){if(!down)this.held={};return}const k=e.key;
   // Initials: letters typed on the keyboard go straight in, so no letter moves or pauses here.
-  if(this.mode==='initials'){if(down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k)}return}
+  /* a key let go on the initials sheet is still let go (it falls through), so no direction stays held into the next game */if(this.mode==='initials'&&down){e.preventDefault();if(!e.repeat||k.startsWith('Arrow'))this.edge(k);return}
   if(down&&(k==='p'||k==='P')){this.pause();e.preventDefault();return}
   // A fire tap shorter than a frame still throws once: it is kept for the next step.
   // Walking keys by where they sit on the keyboard (2026-10-30, languages): W A S D on QWERTY are Z Q S D on AZERTY.
