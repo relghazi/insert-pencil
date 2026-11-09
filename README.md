@@ -1,8 +1,8 @@
 # Insert Pencil
 
-**No. 2 Arcade**: twenty-four classic arcade games, redrawn as the notebooks of a high school girl who would rather be at the arcade.
+![No. 2 Arcade: she draws after the last bell and her ballpoint games lift off the page](docs/poster.webp)
 
-![The title page](docs/title.webp)
+**No. 2 Arcade**: twenty-four classic arcade games, redrawn as the notebooks of a high school girl who would rather be at the arcade.
 
 | Her locker | Ace's locker | A notebook |
 | --- | --- | --- |
