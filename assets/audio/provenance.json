@@ -3243,265 +3243,265 @@
    "bytes": 2382160
   },
   "mix2-her-2": {
-   "candidate": "incoming/MX2/mix2-her-2-v1.wav",
-   "candidateSha256": "df569c73221ac238fd82ef55f30709efb9e182a60261ae798fe0627fee219e69",
+   "candidate": "incoming/MX5/mix2-her-2-v1.wav",
+   "candidateSha256": "b4ac5555d698df7ba88a337181eb038d56fbb7d4a9c2424bde5a5d6b3bb25f40",
    "model": "lyria-3.5",
-   "gainDb": -6.04,
+   "gainDb": -6.15,
    "file": "assets/audio/mixtapes/her-2.m4a",
-   "sha256": "ddc4a62947289b1e2fc6fc248b35cf3cf084247867073f6bf620d88836cd5707",
-   "bytes": 2380103
+   "sha256": "185c81100363a69e8e48255c1a0a1f1089b809b57400c6a61816205b61cdc84f",
+   "bytes": 2401675
   },
   "mix2-her-3": {
-   "candidate": "incoming/MX2/mix2-her-3-v1.wav",
-   "candidateSha256": "1cfa36a93454eafa935120cbb3a6ad47518c4d56a402f6478f4703f3b312521f",
-   "model": "lyria-3.5",
-   "gainDb": -6.53,
-   "file": "assets/audio/mixtapes/her-3.m4a",
-   "sha256": "2dcc2970f2d2f31d255d253efebfae5b2fae391df1c7c77af186c56226f3e3e5",
-   "bytes": 2355858
-  },
-  "mix3-her-4": {
-   "candidate": "incoming/MX3/mix3-her-4-v1.wav",
-   "candidateSha256": "16b0fc4b8408e6bd5e43501e2c6b61095199a91faf35d21f86b6ac730ced8319",
-   "model": "lyria-3.5",
-   "gainDb": -6.26,
-   "file": "assets/audio/mixtapes/her-4.m4a",
-   "sha256": "5d899f1698d5c09ff01d977285ad96334a4b86706e69e96ad0b7b696b7127b6e",
-   "bytes": 2333463
-  },
-  "mix3-her-5": {
-   "candidate": "incoming/MX3/mix3-her-5-v1.wav",
-   "candidateSha256": "830727f21dda1b16ca240c1c654cff07afe660a2e6d97f94b871b105cc83df2f",
-   "model": "lyria-3.5",
-   "gainDb": -6.32,
-   "file": "assets/audio/mixtapes/her-5.m4a",
-   "sha256": "872d432e1accdcc5a56c45f87e4d3b1c9902dd014dfc15daab2f1718211545ab",
-   "bytes": 2356342
-  },
-  "mix2-ace-1": {
-   "candidate": "incoming/MX2/mix2-ace-1-v2.wav",
-   "candidateSha256": "158e05c0b013d5278d87d5a818ce51f13d238c3012732cf43d52f089b22c9546",
-   "model": "lyria-3.5",
-   "gainDb": -5.33,
-   "file": "assets/audio/mixtapes/ace-1.m4a",
-   "sha256": "3e3f5d78c39de09f7382cf34845535518dbb5b9332901399315dc4a976126c05",
-   "bytes": 2359908
-  },
-  "mix2-ace-2": {
-   "candidate": "incoming/MX2/mix2-ace-2-v2.wav",
-   "candidateSha256": "b4af6b07e3e2f18f6309962ca5b2217d02bf82ec8510402a00164d01c4a23645",
-   "model": "lyria-3.5",
-   "gainDb": -5.3,
-   "file": "assets/audio/mixtapes/ace-2.m4a",
-   "sha256": "aeffa87812fb71996588be3611c424cafbe22fda1067c5d9a6f696a3a9379d64",
-   "bytes": 2372659
-  },
-  "mix2-ace-3": {
-   "candidate": "incoming/MX2/mix2-ace-3-v2.wav",
-   "candidateSha256": "370601ef05b81b073c1bd0acde1ceebcd0b7019dae734cf72f2270f28be38ddf",
-   "model": "lyria-3.5",
-   "gainDb": -5.5,
-   "file": "assets/audio/mixtapes/ace-3.m4a",
-   "sha256": "4feebffd5216d004068370262efff44e92e1524e018f018be93e2a30b802f6e4",
-   "bytes": 2377891
-  },
-  "mix3-ace-4": {
-   "candidate": "incoming/MX3/mix3-ace-4-v3.wav",
-   "candidateSha256": "dc06f2cc6b69622e1e86b177f7035113d185152af932adba667694b660935dce",
-   "model": "lyria-3.5",
-   "gainDb": -5.62,
-   "file": "assets/audio/mixtapes/ace-4.m4a",
-   "sha256": "2e7298b116c24ce6db8517ccacdb27b6c05655cec7d37d3260e36ebb7935dc1c",
-   "bytes": 2425586
-  },
-  "mix3-ace-5": {
-   "candidate": "incoming/MX3/mix3-ace-5-v10.wav",
-   "candidateSha256": "9b15ddf365523638b4b45719dd9962f0a1617727c500ea2d265fae1d46d153a8",
-   "model": "lyria-3.5",
-   "gainDb": -5.65,
-   "file": "assets/audio/mixtapes/ace-5.m4a",
-   "sha256": "8e3bd349681d92e9201c0ffd3c1221fa5c5fd7f2a8dff91377d56bbb32c4a3a2",
-   "bytes": 2438081
-  },
-  "mix2-hal-1": {
-   "candidate": "incoming/MX2/mix2-hal-1-v3.wav",
-   "candidateSha256": "977227a544e6ddee99052564b9868ce3e9ab8a4fe28632b057529d0d274b2333",
-   "model": "lyria-3.5",
-   "gainDb": -6.55,
-   "file": "assets/audio/mixtapes/hal-1.m4a",
-   "sha256": "b31363aa3dae7082b67661eaa4b69aa0d80fead8f46eb865d20011f7e28d651d",
-   "bytes": 2327206
-  },
-  "mix2-hal-2": {
-   "candidate": "incoming/MX2/mix2-hal-2-v3.wav",
-   "candidateSha256": "98549ec8b85ad6d68c9b495b168bf4cf83d40e951bd11a17c7f1041960ef5e5c",
-   "model": "lyria-3.5",
-   "gainDb": -6.39,
-   "file": "assets/audio/mixtapes/hal-2.m4a",
-   "sha256": "61a25ef610a9bfcfefdb03268af32473b3f3691dec7f63cff08d37e60b17bf53",
-   "bytes": 2401953
-  },
-  "mix2-hal-3": {
-   "candidate": "incoming/MX2/mix2-hal-3-v3.wav",
-   "candidateSha256": "4dbcb5b75ecfa6863df08a8ad7a7abaf99f01d2a690f3af2d65045687bd3f664",
-   "model": "lyria-3.5",
-   "gainDb": -6.33,
-   "file": "assets/audio/mixtapes/hal-3.m4a",
-   "sha256": "c73cf6494450c136afb27d6fcad1463ee550fe82782277e4462ffac48b5990ba",
-   "bytes": 2278112
-  },
-  "mix3-hal-4": {
-   "candidate": "incoming/MX3/mix3-hal-4-v1.wav",
-   "candidateSha256": "845489dcacf3e15ef2d52992a62f03b947117f6188a625ac31108c457a8ce612",
+   "candidate": "incoming/MX5/mix2-her-3-v1.wav",
+   "candidateSha256": "f4e502ca4d6629da174195b7f5240da982ce7b071d8d12fbb5ebcddd58f64f91",
    "model": "lyria-3.5",
    "gainDb": -6.27,
+   "file": "assets/audio/mixtapes/her-3.m4a",
+   "sha256": "291442e4c0b690e040c9a1321d013d788f344eec7e28a6301ad9bb49563c8270",
+   "bytes": 2359822
+  },
+  "mix3-her-4": {
+   "candidate": "incoming/MX5/mix3-her-4-v1.wav",
+   "candidateSha256": "e7d0f891c6c8d99cffd008e005645787f17a23b004a634d5caa7fb001700f889",
+   "model": "lyria-3.5",
+   "gainDb": -6.31,
+   "file": "assets/audio/mixtapes/her-4.m4a",
+   "sha256": "7082ef5b301355cca36e4ae15c0afb4630b8b10bb2f3414b8d5f659d7f195436",
+   "bytes": 2388476
+  },
+  "mix3-her-5": {
+   "candidate": "incoming/MX5/mix3-her-5-v1.wav",
+   "candidateSha256": "b8faa63b2da5a3708e3cabaf27f84742f61b0e926924398d13e66b2c5389749f",
+   "model": "lyria-3.5",
+   "gainDb": -5.79,
+   "file": "assets/audio/mixtapes/her-5.m4a",
+   "sha256": "99f0df1702d09a034878ef68d6df2fc9ec70af76a5099d24085d8d6fee3fe0bc",
+   "bytes": 2368715
+  },
+  "mix2-ace-1": {
+   "candidate": "incoming/MX5/mix2-ace-1-v1.wav",
+   "candidateSha256": "0af61874391a1d7a92d2670d04e8eba36821ffa77df123e9b5f5eed3b6c405e0",
+   "model": "lyria-3.5",
+   "gainDb": -5.2,
+   "file": "assets/audio/mixtapes/ace-1.m4a",
+   "sha256": "2bff56655df270e4775bb97a5c657b9a6e6f3a65f5f4681c201464d9a8803155",
+   "bytes": 2426031
+  },
+  "mix2-ace-2": {
+   "candidate": "incoming/MX5/mix2-ace-2-v1.wav",
+   "candidateSha256": "f9b0927465ec437385f9c0ad96e763eab2ea22e63fa8644833c9ae13fbf61cb9",
+   "model": "lyria-3.5",
+   "gainDb": -5.26,
+   "file": "assets/audio/mixtapes/ace-2.m4a",
+   "sha256": "64b98491ce83695d8a43edc9c6309a1f72e11336271f3900fa51f57557613630",
+   "bytes": 2450615
+  },
+  "mix2-ace-3": {
+   "candidate": "incoming/MX5/mix2-ace-3-v1.wav",
+   "candidateSha256": "57c3bdbda16acb268874258b8d314b0cf9fd19a52957b41806dca3baa9fe941a",
+   "model": "lyria-3.5",
+   "gainDb": -5.31,
+   "file": "assets/audio/mixtapes/ace-3.m4a",
+   "sha256": "5be00e48aeeee959017595ccb545f55baa62fdfa639f30035cd2770687c1bba0",
+   "bytes": 2228692
+  },
+  "mix3-ace-4": {
+   "candidate": "incoming/MX5/mix3-ace-4-v1.wav",
+   "candidateSha256": "ee81b6641c0df5ca5696766e4afd8ecfa6ef12dbae4273fd75ca6d7c05bf877f",
+   "model": "lyria-3.5",
+   "gainDb": -5.55,
+   "file": "assets/audio/mixtapes/ace-4.m4a",
+   "sha256": "4e20c14ff23f5d5f33c03add1d31b54a109ae387a136c29546a08e8eb098d3da",
+   "bytes": 2460112
+  },
+  "mix3-ace-5": {
+   "candidate": "incoming/MX5/mix3-ace-5-v1.wav",
+   "candidateSha256": "d3cff4f6fcadf791388970c02e6db6b826c0a461fd1b5863d6d497f9582aa9be",
+   "model": "lyria-3.5",
+   "gainDb": -5.34,
+   "file": "assets/audio/mixtapes/ace-5.m4a",
+   "sha256": "f28c5d3c08c3c41cfc2aa79169e741d923a60f1c0b460cb9f13d4e79dde0781a",
+   "bytes": 2414827
+  },
+  "mix2-hal-1": {
+   "candidate": "incoming/MX5/mix2-hal-1-v1.wav",
+   "candidateSha256": "bdd9121ae33e5e1d3fbac285f7b0cae5118a178fe8ad5f9c5447dac5c296e9b5",
+   "model": "lyria-3.5",
+   "gainDb": -6.48,
+   "file": "assets/audio/mixtapes/hal-1.m4a",
+   "sha256": "025821ab5e7529eac0acdb0de8261c5ee9353f1ad8a9b95733c83e5a13cd73b2",
+   "bytes": 2371468
+  },
+  "mix2-hal-2": {
+   "candidate": "incoming/MX5/mix2-hal-2-v1.wav",
+   "candidateSha256": "17230c48985117c68d8eed5e2c0924b75e227a808461bf0e9c41ec42c6ba5bdf",
+   "model": "lyria-3.5",
+   "gainDb": -6.42,
+   "file": "assets/audio/mixtapes/hal-2.m4a",
+   "sha256": "8b93faa2c9bfa4a99a34b981c9a658dd5d634f9a677b62f70705cef78bb0a61d",
+   "bytes": 2404435
+  },
+  "mix2-hal-3": {
+   "candidate": "incoming/MX5/mix2-hal-3-v1.wav",
+   "candidateSha256": "21e6a945e6be9c3ca07ece74a1c5ebeaf9d4f029de0a8f8df342fb5d3f165905",
+   "model": "lyria-3.5",
+   "gainDb": -6.41,
+   "file": "assets/audio/mixtapes/hal-3.m4a",
+   "sha256": "6d660c30e4122513e7abbe39cc5e88668987335252ecfae5ad5dfee893a9ea46",
+   "bytes": 2425658
+  },
+  "mix3-hal-4": {
+   "candidate": "incoming/MX5/mix3-hal-4-v1.wav",
+   "candidateSha256": "48f5e1c20e61995945e5cf262d8d29c707a1d9c26e4d7457ba1b7ff13892ad6a",
+   "model": "lyria-3.5",
+   "gainDb": -6.22,
    "file": "assets/audio/mixtapes/hal-4.m4a",
-   "sha256": "3f4fd8e6bacde48d1af2e5f3999ff4543855b33eac98c03de47f4b053b0f82cb",
-   "bytes": 2387650
+   "sha256": "62bdc1e2e32c84147d06c647d6ab75242a1c870956ef5027117a10cd16837739",
+   "bytes": 2391602
   },
   "mix3-hal-5": {
-   "candidate": "incoming/MX3/mix3-hal-5-v1.wav",
-   "candidateSha256": "c3a00cacd7138d30b4275321af502540e7e672a88a5a8b18e0606de0d04bc15f",
+   "candidate": "incoming/MX5/mix3-hal-5-v1.wav",
+   "candidateSha256": "5e59fa03925eacfab61b598548c47f1e2e44adf199282d9c315ad1f842fe9c55",
    "model": "lyria-3.5",
-   "gainDb": -6.24,
+   "gainDb": -6.25,
    "file": "assets/audio/mixtapes/hal-5.m4a",
-   "sha256": "aa2b9d0e2c4bd7c2bdfb170eff36d415be60c60cb838411c4e90f8eddb2abb2b",
-   "bytes": 2435892
+   "sha256": "b4a0664c130621850aa95c9f8b2d859d8c316e2803cc5f6332986efb35754cd8",
+   "bytes": 2219145
   },
   "mix2-theo-1": {
-   "candidate": "incoming/MX2/mix2-theo-1-v3.wav",
-   "candidateSha256": "d687c7dfddeb3fd34733230158b1316f8e80c8c5f4a5cecfeac1132596ccbf32",
+   "candidate": "incoming/MX5/mix2-theo-1-v1.wav",
+   "candidateSha256": "54356ec2fdb2144fd4275654dc63dd2ead25faec06aac6684e3863966adfab22",
    "model": "lyria-3.5",
-   "gainDb": -6.3,
+   "gainDb": -6.55,
    "file": "assets/audio/mixtapes/theo-1.m4a",
-   "sha256": "cc25f7a5afd7a546a63640379308309c111575694acf5f98d52a22e38863cafa",
-   "bytes": 2369208
+   "sha256": "8ebbd4c1cf8b1b9c8fe22421e8d6836b97864bb713f66ee6b292b5f2536bcc99",
+   "bytes": 2328886
   },
   "mix2-theo-2": {
-   "candidate": "incoming/MX2/mix2-theo-2-v3.wav",
-   "candidateSha256": "1a42caf0e118680b70e806b53a49d4e2de037106f81b2b59be903aad4d45ffdb",
+   "candidate": "incoming/MX5/mix2-theo-2-v1.wav",
+   "candidateSha256": "46ddd41a99a1b1740fa07641c2d13f71b9d0b8d39fa89a68a64f2381990719b2",
    "model": "lyria-3.5",
-   "gainDb": -6.69,
+   "gainDb": -6.27,
    "file": "assets/audio/mixtapes/theo-2.m4a",
-   "sha256": "4209331c3910425455b99757545b80c13cb595ec38e7ed10ca6f524411082e54",
-   "bytes": 2308164
+   "sha256": "8be8ea440c4b521e113a8af57d3489c78ae30b2f4a8e54924d096658eef593c6",
+   "bytes": 2323291
   },
   "mix2-theo-3": {
-   "candidate": "incoming/MX2/mix2-theo-3-v3.wav",
-   "candidateSha256": "b35356958ee3ff3dcb3258615271d1a8495c05b1e9dee572f8f297bbe649abb7",
+   "candidate": "incoming/MX5/mix2-theo-3-v1.wav",
+   "candidateSha256": "c2e0e440aebda30f4dff1fcf653a3bc61ce4790c6c8a67cf0b701097a49e397c",
    "model": "lyria-3.5",
-   "gainDb": -6.75,
+   "gainDb": -6.55,
    "file": "assets/audio/mixtapes/theo-3.m4a",
-   "sha256": "825c32ef46eee873df14d15c36ecf7984e2212d31213e969202ef976081f3191",
-   "bytes": 2382853
+   "sha256": "624645286df92ac683d106c3fcfb9849b1478092eb59ffa1e17207670d6443ff",
+   "bytes": 2369165
   },
   "mix3-theo-4": {
-   "candidate": "incoming/MX3/mix3-theo-4-v1.wav",
-   "candidateSha256": "49e3608351a0526742fd00ab41fde9cef40046133fc73e7637333e21f709003a",
+   "candidate": "incoming/MX5/mix3-theo-4-v1.wav",
+   "candidateSha256": "cec42d1c7be43aa8a6b805cedcbd44a039051df42a43d73d8ba7644aba98539a",
    "model": "lyria-3.5",
-   "gainDb": -6.09,
+   "gainDb": -6.33,
    "file": "assets/audio/mixtapes/theo-4.m4a",
-   "sha256": "90cc84ad4549845460238f9107df9ada8dfce8cc656fc24f4b625cb99e7aa2c5",
-   "bytes": 2396286
+   "sha256": "7bfe38d29200363890d8e5b5f6facbdbcc299b1840b92bf670e47b4bc55251ce",
+   "bytes": 2370361
   },
   "mix3-theo-5": {
-   "candidate": "incoming/MX3/mix3-theo-5-v1.wav",
-   "candidateSha256": "b1b759dd168140179930868a98a07126fd77be0a6685a460a143c625322cd21c",
+   "candidate": "incoming/MX5/mix3-theo-5-v1.wav",
+   "candidateSha256": "c0996f3e2aa06bdf5f211b7693f51d19d9a2735436836e95d7e5c1c65df1d365",
    "model": "lyria-3.5",
-   "gainDb": -6.12,
+   "gainDb": -5.96,
    "file": "assets/audio/mixtapes/theo-5.m4a",
-   "sha256": "faba65218d89f0f2da071475b72bc680439d6386a17006501eed98b6a6202ee3",
-   "bytes": 2446058
+   "sha256": "890367314000c34d047f3b6829c58090827cef4fe26bb9f5727fd2fa67895097",
+   "bytes": 2252478
   },
   "mix2-june-1": {
-   "candidate": "incoming/MX2/mix2-june-1-v1.wav",
-   "candidateSha256": "f60c91ff944f269acbc01ef3a60c2945896e4e3bcad7f433aaa85ba83d62d6b6",
+   "candidate": "incoming/MX5/mix2-june-1-v1.wav",
+   "candidateSha256": "fa5da0ffbe935e140e3c6b8f092d1594c795643d223918a9e2ef2897e604606d",
    "model": "lyria-3.5",
-   "gainDb": -5.62,
+   "gainDb": -5.29,
    "file": "assets/audio/mixtapes/june-1.m4a",
-   "sha256": "215d652c658987d952b0fd8e6d056e2dce9aae76846f5a561b173cf5992bfa51",
-   "bytes": 2402527
+   "sha256": "26e0322ed3b2648fed0df84256f0d603e0fae63f7e379713343ad5ba601fdbb9",
+   "bytes": 2373182
   },
   "mix2-june-2": {
-   "candidate": "incoming/MX2/mix2-june-2-v2.wav",
-   "candidateSha256": "cefced21549cec17a334bca5e0e9a57e56d221159829213881726e78406cf778",
+   "candidate": "incoming/MX5/mix2-june-2-v1.wav",
+   "candidateSha256": "ee3a60137deb688cde5034d26a7c698b7a40f2eea7b7bbeb48c3e04fd722accb",
    "model": "lyria-3.5",
-   "gainDb": -5.37,
+   "gainDb": -5.49,
    "file": "assets/audio/mixtapes/june-2.m4a",
-   "sha256": "04b74a424be1d93cbeacbe44182497cb31568ea8aaa08ac68b67dbc8d3ab7fdc",
-   "bytes": 2379605
+   "sha256": "7b76ca48951034c795e21a76e616ba357e5edb92e83a4b08dddfbce0a2d27381",
+   "bytes": 2388687
   },
   "mix2-june-3": {
-   "candidate": "incoming/MX2/mix2-june-3-v1.wav",
-   "candidateSha256": "bff8b03dd39d0d6c3620b12633c0009edef96dc3740b1d8a91159f08779f1c08",
+   "candidate": "incoming/MX5/mix2-june-3-v1.wav",
+   "candidateSha256": "fb0bab43c6366bc051fe86849241a4c1bff0831d1e5598f233c016b667b16d7c",
    "model": "lyria-3.5",
-   "gainDb": -5.41,
+   "gainDb": -5.5,
    "file": "assets/audio/mixtapes/june-3.m4a",
-   "sha256": "f207b4f760c183fdd3af4c3dd5f9872a316c1750c633561b865b2ba585234c52",
-   "bytes": 2384541
+   "sha256": "8cc784e1190df7a9a57ffbce067a2a4a0d97f0f36c941ee0cf6785096fc2f9a0",
+   "bytes": 2397059
   },
   "mix3-june-4": {
-   "candidate": "incoming/MX3/mix3-june-4-v1.wav",
-   "candidateSha256": "2f0671bde2451b91156dbbc8f32018a2a75c85e6d3821614f2fab9acabc68032",
+   "candidate": "incoming/MX5/mix3-june-4-v1.wav",
+   "candidateSha256": "4b9f6003765a911827ea3ae08e1646de746dc4a08fc9c3825d25e42295041037",
    "model": "lyria-3.5",
-   "gainDb": -5.7,
+   "gainDb": -5.27,
    "file": "assets/audio/mixtapes/june-4.m4a",
-   "sha256": "ffc30d13a9c3f2a335c8e9dc55f35158c2118544259d323a5161842210bdd5fe",
-   "bytes": 2406661
+   "sha256": "e97eba76ebdbc60ff2ea7dca9c68c817dcc39b270e81d6f26cc4b283939a5023",
+   "bytes": 2407786
   },
   "mix3-june-5": {
-   "candidate": "incoming/MX3/mix3-june-5-v1.wav",
-   "candidateSha256": "b79d940db9093ffa26138d4bbf9974f2c17f623ba4ee45760118aa1b4a262e5f",
+   "candidate": "incoming/MX5/mix3-june-5-v1.wav",
+   "candidateSha256": "604786d44aa2248ffe24f3edacd3d2629bc5866d8a34a33c10f29c23e12b8eb4",
    "model": "lyria-3.5",
-   "gainDb": -5.51,
+   "gainDb": -5.89,
    "file": "assets/audio/mixtapes/june-5.m4a",
-   "sha256": "810b1402de263347aa4cc13aa4036ff4dd94c8d9785847b00d47499e1efee35b",
-   "bytes": 2380255
+   "sha256": "92ee8301dbabb2d3a60057dededa053f57b531a663c8f4cdfc6b5b46a95f8f65",
+   "bytes": 2372950
   },
   "mix2-albright-1": {
-   "candidate": "incoming/MX2/mix2-albright-1-v1.wav",
-   "candidateSha256": "c4651ffce19e6c45138b597a5deeac97ff9a1f36926e9776ea86645b803ca8e3",
+   "candidate": "incoming/MX5/mix2-albright-1-v1.wav",
+   "candidateSha256": "7cabb18bade423273afd9884c56dc6ce317adf7d569bc014e3a51e1ed426fcc6",
    "model": "lyria-3.5",
    "gainDb": -5.49,
    "file": "assets/audio/mixtapes/albright-1.m4a",
-   "sha256": "b79a71a65bce0a0d88b2e7988f7982191478775dfc61d908affe2c83117cb70c",
-   "bytes": 2318137
+   "sha256": "172aca7edb11f9a3674e0a38dcc28e2f1ae961e4bab5bc4b7ac4200019d911c7",
+   "bytes": 2456467
   },
   "mix2-albright-2": {
-   "candidate": "incoming/MX2/mix2-albright-2-v1.wav",
-   "candidateSha256": "1f919d2fd2bf0214cfb0726da752cadc3de6bf8cfb38d5556aa5f5e7db47e390",
-   "model": "lyria-3.5",
-   "gainDb": -5.55,
-   "file": "assets/audio/mixtapes/albright-2.m4a",
-   "sha256": "f49a8edb23a6410c923677bb7c09a01b4d4641f766185d70927e22efa58177b9",
-   "bytes": 2421689
-  },
-  "mix2-albright-3": {
-   "candidate": "incoming/MX2/mix2-albright-3-v1.wav",
-   "candidateSha256": "f0a0058d8be921765742b591b8768d25b9820d2bf1de185e9bfc9e4b3c1f469a",
-   "model": "lyria-3.5",
-   "gainDb": -5.61,
-   "file": "assets/audio/mixtapes/albright-3.m4a",
-   "sha256": "bf0a72f597ac27a3d24caca8d886b21ce6a75ce1e0de102106958b0cbee7cd01",
-   "bytes": 2456277
-  },
-  "mix3-albright-4": {
-   "candidate": "incoming/MX3/mix3-albright-4-v1.wav",
-   "candidateSha256": "cde71ad676f930f03f9ad6ff84f2f1ec33d690c957861ca8c33dd2c6608c3edc",
+   "candidate": "incoming/MX5/mix2-albright-2-v1.wav",
+   "candidateSha256": "206e46557dcb01c4634da0486993108f355c4da496afe1212810d8aa9adc6d37",
    "model": "lyria-3.5",
    "gainDb": -5.54,
-   "file": "assets/audio/mixtapes/albright-4.m4a",
-   "sha256": "5ff4965a5298082fb6d606ba490ec559b42860ff88dfab9dea4c27fd8b4047bb",
-   "bytes": 2403704
+   "file": "assets/audio/mixtapes/albright-2.m4a",
+   "sha256": "dca366dce4cb3de2ca6db08636af67a1ac9189f23c54ca181d546420755eec08",
+   "bytes": 2425222
   },
-  "mix3-albright-5": {
-   "candidate": "incoming/MX3/mix3-albright-5-v1.wav",
-   "candidateSha256": "c0e68f12da6bfe8e89334a9a06493d8d8389bc13993082046a14dfddee730759",
+  "mix2-albright-3": {
+   "candidate": "incoming/MX5/mix2-albright-3-v1.wav",
+   "candidateSha256": "d058bf5603fbf0bb0b6883e2bb570cb4a15888072fc3b32e97349b2e5983e159",
    "model": "lyria-3.5",
    "gainDb": -5.48,
+   "file": "assets/audio/mixtapes/albright-3.m4a",
+   "sha256": "1d0b1458eb8d894beb8e6902a5f417f6c122edbab6269aa119a7598f457dc0d2",
+   "bytes": 2414779
+  },
+  "mix3-albright-4": {
+   "candidate": "incoming/MX5/mix3-albright-4-v1.wav",
+   "candidateSha256": "f477b720e95a491bb35c979d85a82b145c7e95a5152ae38245e4461c9de8505d",
+   "model": "lyria-3.5",
+   "gainDb": -5.35,
+   "file": "assets/audio/mixtapes/albright-4.m4a",
+   "sha256": "ab7874b35d258d99492b74260a9cb20ced89fc0465a4e9770672cd78b547396c",
+   "bytes": 2425654
+  },
+  "mix3-albright-5": {
+   "candidate": "incoming/MX5/mix3-albright-5-v1.wav",
+   "candidateSha256": "d98d676706aba927c0ce22ba88bcb141e3936fdcc0a9fc18e875538d6786e5e1",
+   "model": "lyria-3.5",
+   "gainDb": -5.63,
    "file": "assets/audio/mixtapes/albright-5.m4a",
-   "sha256": "ebbbb182ae72bfe7647fd1da77e295a3dcd1356a20945214051e4386c7cbc609",
-   "bytes": 2415352
+   "sha256": "c0d0e48a27b5084fb582d7051e1c6b77809df03ad3fc2987cd12f3af30f24621",
+   "bytes": 2405215
   }
  },
  "narration": {

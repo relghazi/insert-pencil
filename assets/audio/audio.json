@@ -603,157 +603,157 @@
    },
    {
     "src": "@@asset:assets/audio/mixtapes/her-2.m4a@@",
-    "seconds": 149.269,
+    "seconds": 151.296,
     "title": "Paper Airplane"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/her-3.m4a@@",
-    "seconds": 149.152,
+    "seconds": 149.408,
     "title": "120 Hz"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/her-4.m4a@@",
-    "seconds": 146.848,
+    "seconds": 151.232,
     "title": "Pixel by Pixel"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/her-5.m4a@@",
-    "seconds": 148.715,
+    "seconds": 148.619,
     "title": "Continue"
    }
   ],
   "ace": [
    {
     "src": "@@asset:assets/audio/mixtapes/ace-1.m4a@@",
-    "seconds": 149.536,
+    "seconds": 153.995,
     "title": "Top of the Board"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/ace-2.m4a@@",
-    "seconds": 149.067,
+    "seconds": 154.624,
     "title": "Leather and Static"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/ace-3.m4a@@",
-    "seconds": 150.155,
+    "seconds": 139.445,
     "title": "Game Over (For You)"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/ace-4.m4a@@",
-    "seconds": 152.448,
+    "seconds": 154.816,
     "title": "Tilt the Machine"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/ace-5.m4a@@",
-    "seconds": 152.395,
+    "seconds": 150.677,
     "title": "Overdrive Friday"
    }
   ],
   "hal": [
    {
     "src": "@@asset:assets/audio/mixtapes/hal-1.m4a@@",
-    "seconds": 145.653,
+    "seconds": 148.021,
     "title": "Blue Neon"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/hal-2.m4a@@",
-    "seconds": 149.269,
+    "seconds": 150.197,
     "title": "Ledger Blues"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/hal-3.m4a@@",
-    "seconds": 143.477,
+    "seconds": 152.939,
     "title": "Last Call at the Quarter Moon"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/hal-4.m4a@@",
-    "seconds": 150.336,
+    "seconds": 150.944,
     "title": "Quarter Past Two"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/hal-5.m4a@@",
-    "seconds": 154.091,
+    "seconds": 139.2,
     "title": "Rain on the Marquee"
    }
   ],
   "theo": [
    {
     "src": "@@asset:assets/audio/mixtapes/theo-1.m4a@@",
-    "seconds": 150.517,
+    "seconds": 147.371,
     "title": "Back Row"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/theo-2.m4a@@",
-    "seconds": 145.547,
+    "seconds": 146.293,
     "title": "Margin Notes"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/theo-3.m4a@@",
-    "seconds": 152.747,
+    "seconds": 149.621,
     "title": "Rewind"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/theo-4.m4a@@",
-    "seconds": 150.08,
+    "seconds": 149.44,
     "title": "Sunset on the Blacktop"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/theo-5.m4a@@",
-    "seconds": 156.395,
+    "seconds": 141.408,
     "title": "Big Dreams, Small Change"
    }
   ],
   "june": [
    {
     "src": "@@asset:assets/audio/mixtapes/june-1.m4a@@",
-    "seconds": 151.051,
+    "seconds": 146.464,
     "title": "Hallway Lights"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/june-2.m4a@@",
-    "seconds": 149.056,
+    "seconds": 151.275,
     "title": "Glass Heart"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/june-3.m4a@@",
-    "seconds": 149.077,
+    "seconds": 151.947,
     "title": "Static Dance"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/june-4.m4a@@",
-    "seconds": 151.445,
+    "seconds": 152.053,
     "title": "Polaroid Summer"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/june-5.m4a@@",
-    "seconds": 150.443,
+    "seconds": 148.651,
     "title": "Signal Lost"
    }
   ],
   "albright": [
    {
     "src": "@@asset:assets/audio/mixtapes/albright-1.m4a@@",
-    "seconds": 143.957,
+    "seconds": 153.035,
     "title": "After the Bell"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/albright-2.m4a@@",
-    "seconds": 151.019,
+    "seconds": 153.568,
     "title": "Solve for You"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/albright-3.m4a@@",
-    "seconds": 151.531,
+    "seconds": 151.637,
     "title": "Never Ending"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/albright-4.m4a@@",
-    "seconds": 149.899,
+    "seconds": 152.192,
     "title": "Mirror Ball Geometry"
    },
    {
     "src": "@@asset:assets/audio/mixtapes/albright-5.m4a@@",
-    "seconds": 152.149,
+    "seconds": 148.373,
     "title": "Friday Night Fractions"
    }
   ]
