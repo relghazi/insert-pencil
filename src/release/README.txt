@@ -1,7 +1,7 @@
-No. 2 Arcade v0.15.43
+No. 2 Arcade v0.15.44
 No. 2 Arcade™ © 2026 R3Z Games LLC. A game by Reza Elghazi. Code MIT, art CC BY-NC 4.0; "No. 2 Arcade" and its logo are trademarks of R3Z Games LLC.
 
-Open No2-Arcade-v0.15.43.html in a modern browser (Chrome, Edge, Firefox or Safari). It works offline. Its only network connections are the game's own online leaderboard and anonymous play counts (which games are played, how long, in which language and on what kind of device, under a random id; no name, no address), both turned off with "share my scores online" in settings, and a problem report when you send one from the detention slip.
+Open No2-Arcade-v0.15.44.html in a modern browser (Chrome, Edge, Firefox or Safari). It works offline. Its only network connections are the game's own online leaderboard and anonymous play counts (which games are played, how long, in which language and on what kind of device, under a random id; no name, no address), both turned off with "share my scores online" in settings, and a problem report when you send one from the detention slip.
 
 PLAYED LIKE THE ORIGINALS
 If you played these in an arcade, you should feel at home. Each game was compared with its cabinet's own code where it is public, otherwise with the best documentation (The Pac-Man Dossier, operator manuals, StrategyWiki), and tuned to match: speeds, waves and enemy tables, how enemies move and shoot, how fast it gets harder, and the cabinet's scoring. Some are hard, the way they were. On purpose: the Pong coach can be beaten, Galgebra has power-ups, Locker Gauntlet always has three classmates beside you, and Pong scores keep the whole match (11-3). And when the originals stop being hard enough, the locker next to hers belongs to Ace: beat his score in five notebooks and his notebooks are yours, every game starting where its cabinet gets tough.
@@ -38,6 +38,7 @@ With a controller: the play page waits for A. Scribble Defender: LT and RT or th
 In the locker: the badges open achievements, the photo strip opens who's who, the score sheet opens your score notes (and every game's online board), the mirror adds up all your points, the sharpener on the top shelf opens settings, the pink eraser on the top shelf erases scores (with a second check), and the sketchbook replays the intro comic. The Walkman on the top shelf plays the mixtapes: five tapes, each made by someone from her story, five songs each, played in order, every tape in order or shuffled, with song lyrics as subtitles if you like. The globe chooses the language (English, French, Spanish, German or Italian), the daily calendar starts the day's challenge, the volleyball opens the gym report and the detention slip behind her sneaker sends a problem report.
 
 WHAT CHANGED
+v0.15.44: comic pages turn like real paper, round their spine; page 10 matches the rest of the book and Ace's eyes are fixed on page 8.
 v0.15.43: the loading cassette and the studio card sit on plain black, so no faint rings show behind them.
 v0.15.42: the comic's sound effects are relettered in two hand styles, big impacts and quiet sounds, in every language, and its last page shows the locker as it is now.
 v0.15.41: the intro comic repainted so everyone looks the same on every page (her hair and face, Theo, June, Ace and Hal), and the arcade is warm amber again instead of purple.
