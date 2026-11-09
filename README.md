@@ -1,4 +1,4 @@
-# Insert Pencil
+# No. 2 Arcade
 
 ![No. 2 Arcade: she draws after the last bell and her ballpoint games lift off the page](docs/poster.webp)
 
