@@ -113,7 +113,7 @@ The characters (see 04-characters; the bios in 06-story tell you who they are)
 - Ace: the oldest and tallest, but clearly still a teenager. Long black curls, leather jacket, skull tee, black jeans
   with a worn rip at his right knee, black canvas high-tops with white toe caps, and usually looking bored. He's my
   own design, so I'd like him not to resemble any actor or TV character.
-- Hal, the owner: late 60s, brown cable-knit cardigan, glasses on a chain, brown loafers, and a chewed, taped pencil
+- Hal, who runs the Quarter Moon: late 60s, brown cable-knit cardigan, glasses on a chain, brown loafers, and a chewed, taped pencil
   behind his right ear until page 8, when he gives it to Ruby.
 - Mrs. Albright, the teacher: purple sweater, hair in a bun. In the comic I only ever see her sleeves, hands or back.
 - Most important of all: each character should look like the same person in every panel.
