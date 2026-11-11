@@ -40,5 +40,12 @@ if (fs.existsSync(abs('tools/no-quotes.py'))) {
   try { console.log(execFileSync('python3', [abs('tools/no-quotes.py'), 'scan'], { cwd: abs(''), encoding: 'utf8' }).trim().split('\n').slice(-1)[0].replace(/^no markers$/, 'PASS no request quotes or prompts in the public files')); }
   catch (e) { failed++; console.log((e.stdout || '').split('\n').slice(-20).join('\n')); console.log('FAIL tools/no-quotes.py scan'); }
 }
+// Generation prompts stay private: no prompt text in the public files or the built game.
+if (fs.existsSync(abs('tools/prompt-leaks.py'))) {
+  console.log('\n== tools/prompt-leaks.py');
+  try { console.log(execFileSync('python3', [abs('tools/prompt-leaks.py')], { cwd: abs(''), encoding: 'utf8' }).trim().split('\n').slice(-1)[0]); }
+  catch (e) { failed++; console.log((e.stdout || '').split('\n').slice(-20).join('\n')); console.log('FAIL tools/prompt-leaks.py'); }
+}
+
 console.log(failed ? `\n${failed} failure(s)` : '\nAll checks passed');
 process.exit(failed ? 1 : 0);

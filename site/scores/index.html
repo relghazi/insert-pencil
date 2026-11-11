@@ -7,7 +7,7 @@
      (verified runs only, best one per player). The Pages workflow copies the hand-lettered titles, the scoreboard
      heading, the correction-fluid keycap, the ink underline, the game's icon and the two fonts next to this file; the wooden
      ruler (ui/ruler.webp) holds the keys for this page, like every screen in the game. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://no2-arcade-leaderboard.no2-arcade.workers.dev; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://stats.no2arca.de; base-uri 'none'; form-action 'none'">
 <title>No. 2 Arcade Scoreboard</title>
 <link rel="icon" type="image/x-icon" href="ui/icon.ico">
 <style>
@@ -87,7 +87,7 @@ main{padding-bottom:110px!important}
  <p class="legal">Scores are checked about every 20 minutes, so a new one can take a while to show up. Only initials are kept, no accounts. Something wrong? Write it up on the detention slip behind her sneaker in the game's locker.</p>
 </main>
 <script>
-const API='https://no2-arcade-leaderboard.no2-arcade.workers.dev';
+const API='https://stats.no2arca.de';
 const GAMES=[ // in the year each original came out, same-year games in locker order; each credits the original's maker
  ['gym-class-pong','Gym Class Pong','a gym. allegedly.','Pong by Atari, 1972'],
  ['detention-breakout','Detention Breakout','one wall at a time.','Breakout by Atari, 1976'],

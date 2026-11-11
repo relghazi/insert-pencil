@@ -71,7 +71,10 @@ Either edit `src/shell/leaderboard-config.json`:
 { "url": "https://no2-arcade-leaderboard.<you>.workers.dev" }
 ```
 
-or set it for one build: `NO2_LEADERBOARD_URL=https://... npm run build` (the variable wins over the file; unset it
+The live Worker also answers on the custom domain `https://stats.no2arca.de` (added in the Cloudflare dashboard, 2026-11-11);
+the game and the site pages use it, and the workers.dev address keeps working for already released builds.
+
+Or set it for one build: `NO2_LEADERBOARD_URL=https://... npm run build` (the variable wins over the file; unset it
 to use the file). Only `https://` is accepted, plus `http://127.0.0.1` or `http://localhost` for local tests. The
 build writes the address into `src/shell/leaderboard.js` and puts its origin in both CSP `connect-src` lines of
 `src/index.html`, so the page can reach that one origin and nothing else. The built HTML changes, so run

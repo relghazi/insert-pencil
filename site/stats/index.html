@@ -7,7 +7,7 @@
      (kept 5 minutes there); the numbers come from the small batches the game sends while "share my scores online" is on.
      Not linked anywhere; typing STATS in the locker opens it. A Worker from before the change still wants the old key,
      so the page asks for it only when the Worker says so. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self' https://no2-arcade-leaderboard.no2-arcade.workers.dev; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self' https://stats.no2arca.de; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="noindex,nofollow">
 <title>No. 2 Arcade Play Stats</title>
 <link rel="icon" type="image/x-icon" href="icon.ico">
@@ -125,7 +125,7 @@ form.keycard button{justify-self:end;all:unset;cursor:pointer;color:var(--ink);f
 <div class="tip" id="tip" role="status" aria-live="polite"></div>
 <script>
 'use strict';
-const API='https://no2-arcade-leaderboard.no2-arcade.workers.dev',KEY='no2-stats-token';
+const API='https://stats.no2arca.de',KEY='no2-stats-token';
 const TITLES={'scribble-defender':'Scribble Defender','gym-class-pong':'Gym Class Pong','detention-breakout':'Detention Breakout','space-substitutes':'Space Substitutes','erasteroids':'Erasteroids','lunch-lander':'Lunch Lander','spitball-command':'Spitball Command','snack-man':'Snack-Man','recess-zone':'Recess Zone','galgebra':'Galgebra','centigrade':'Centigrade','froggology':'Froggology','quiz':'Quiz','testpest':'Testpest','home-ec-scramble':'Home Ec Scramble','dunce-kong':'Dunce Kong','dig-doug':'Dig Doug','q-nerd':'Q*Nerd','jock-joust':'Jock Joust','class-of-2084':'Robotron: Class of 2084','mystery-meat-time':'Mystery Meat Time','hall-patrol':'Hall Patrol','term-paperboy':'Term Paperboy','locker-gauntlet':'Locker Gauntlet'};
 const LANG={en:'English',fr:'French',es:'Spanish',de:'German',it:'Italian'},DEV={keyboard:'keyboard and mouse',xbox:'controller',touch:'touch'};
 const $=id=>document.getElementById(id),app=$('app'),tip=$('tip');
